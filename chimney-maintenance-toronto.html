@@ -12,7 +12,7 @@
 <style>
 html{scroll-behavior:smooth}
 body{margin:0;background:#121009}
-image-slot{position:absolute;inset:0;width:100%;height:100%;min-width:0;min-height:0}
+.pf-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#171309}
 a{color:#E8622C;text-decoration:none}
 a:hover{color:#FF7A3D}
 ::selection{background:#E8622C;color:#121009}
@@ -20,7 +20,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 @keyframes pfPulse{0%,100%{opacity:1}50%{opacity:0.25}}
 @keyframes pfEmber{0%,100%{opacity:0.5;transform:scale(1)}50%{opacity:1;transform:scale(1.15)}}
 </style>
-<script src="./image-slot.js"></script>
 <script src="./pf3d.js"></script>
 
 <link rel="canonical" href="https://northmark-chimney.ca/chimney-maintenance-toronto" />
@@ -66,13 +65,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
         <a href="/#faq" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#B7AD9A;transition:color .2s" style-hover="color:#F5EFE4">FAQ</a>
       </div>
       <div style="display:flex;align-items:center;gap:10px">
-        <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:11px 17px;font-size:11.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s ease-in-out infinite"></span>CALL NOW</a>
+        <a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:11px 17px;font-size:11.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s ease-in-out infinite"></span>CALL NOW</a>
         <a href="#quote-cta" style="background:#E8622C;color:#121009;padding:12px 19px;font-size:11.5px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A FREE INSPECTION</a>
       </div>
     </sc-if>
     <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
       <div style="display:flex;align-items:center;gap:8px">
-        <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:10px 13px;font-size:11px;font-weight:700;letter-spacing:0.12em"><span style="width:6px;height:6px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL</a>
+        <a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:10px 13px;font-size:11px;font-weight:700;letter-spacing:0.12em"><span style="width:6px;height:6px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL</a>
         <a href="/" style="border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:10px 13px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em">HOME</a>
       </div>
     </sc-if>
@@ -87,7 +86,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
       <p style="margin:0;max-width:540px;font-size:clamp(15.5px,1.3vw,18px);line-height:1.7;color:#C9BFAC;text-wrap:pretty">A chimney serviced before the season is one less thing to think about all winter. Seasonal upkeep that catches small problems while they&rsquo;re still small — and cheap.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap">
         <a href="/#quote" style="background:#E8622C;color:#121009;padding:18px 32px;font-size:13px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A FREE INSPECTION</a>
-        <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.32);color:#F5EFE4;padding:18px 28px;font-size:13px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:8px;height:8px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s ease-in-out infinite"></span>CALL NOW</a>
+        <a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.32);color:#F5EFE4;padding:18px 28px;font-size:13px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:8px;height:8px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s ease-in-out infinite"></span>CALL NOW</a>
       </div>
       <div style="display:flex;align-items:center;gap:14px">
         <span style="color:#E8622C;font-size:13px;letter-spacing:0.22em">★★★★★</span>
@@ -95,7 +94,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
       </div>
     </div>
     <div style="position:relative;aspect-ratio:4/3.4;border:1px solid rgba(245,239,228,0.16);background:#171309">
-      <image-slot id="cmnt-hero" shape="rect" src="assets-lite/maintain.jpg" placeholder="" alt="Northmark Chimney — pre-season maintenance visit"></image-slot>
+      <img class="pf-img" id="cmnt-hero" src="assets-lite/maintain.jpg" alt="Northmark Chimney — pre-season maintenance visit" loading="lazy" decoding="async">
       <div style="position:absolute;top:-1px;right:-1px;width:52px;height:52px;border-top:3px solid #E8622C;border-right:3px solid #E8622C;pointer-events:none"></div>
     </div>
   </div>
@@ -127,7 +126,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
           <div style="display:flex;gap:18px;align-items:baseline;padding:15px 4px;border-bottom:1px solid rgba(245,239,228,0.14);font-size:15px;color:#E4DCCB"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">S-05</span>A rental or multi-unit property</div>
           <div style="display:flex;gap:18px;align-items:baseline;padding:15px 4px;border-bottom:1px solid rgba(245,239,228,0.14);font-size:15px;color:#E4DCCB"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">S-06</span>You just want one less thing to worry about</div>
         </div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px"><a href="/#quote" style="background:#E8622C;color:#121009;padding:16px 28px;font-size:12.5px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A SEASONAL VISIT →</a><a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(245,239,228,0.3);color:#F5EFE4;padding:16px 24px;font-size:12.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL {{ phone }}</a></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px"><a href="/#quote" style="background:#E8622C;color:#121009;padding:16px 28px;font-size:12.5px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A SEASONAL VISIT →</a><a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(245,239,228,0.3);color:#F5EFE4;padding:16px 24px;font-size:12.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL (416) 505-6228</a></div>
       </div>
     </div>
   </div>
@@ -149,8 +148,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
       <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">THE DIFFERENCE</div>
       <h2 style="margin:14px 0 24px;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(32px,4vw,58px);line-height:0.98">BEFORE &amp; AFTER</h2>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(245,239,228,0.14);border:1px solid rgba(245,239,228,0.14)">
-        <div style="position:relative;aspect-ratio:1/1.1;background:#171309"><image-slot id="cmnt-ba-before" shape="rect" src="assets-lite/soot.jpg" placeholder="" alt="BEFORE — season-worn"></image-slot><span style="position:absolute;left:10px;top:10px;background:rgba(18,16,9,0.85);color:#F5EFE4;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.2em;pointer-events:none">BEFORE</span></div>
-        <div style="position:relative;aspect-ratio:1/1.1;background:#171309"><image-slot id="cmnt-ba-after" shape="rect" src="assets-lite/maintain.jpg" placeholder="" alt="AFTER — winter-ready"></image-slot><span style="position:absolute;right:10px;top:10px;background:#E8622C;color:#121009;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.2em;pointer-events:none">AFTER</span></div>
+        <div style="position:relative;aspect-ratio:1/1.1;background:#171309"><img class="pf-img" id="cmnt-ba-before" src="assets-lite/soot.jpg" alt="BEFORE — season-worn" loading="lazy" decoding="async"><span style="position:absolute;left:10px;top:10px;background:rgba(18,16,9,0.85);color:#F5EFE4;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.2em;pointer-events:none">BEFORE</span></div>
+        <div style="position:relative;aspect-ratio:1/1.1;background:#171309"><img class="pf-img" id="cmnt-ba-after" src="assets-lite/maintain.jpg" alt="AFTER — winter-ready" loading="lazy" decoding="async"><span style="position:absolute;right:10px;top:10px;background:#E8622C;color:#121009;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.2em;pointer-events:none">AFTER</span></div>
       </div>
       <div style="border:1px solid rgba(245,239,228,0.14);border-top:none;padding:22px 24px;display:flex;flex-direction:column;gap:14px">
         <span style="color:#E8622C;letter-spacing:0.24em;font-size:12px">★★★★★</span>
@@ -196,7 +195,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
     <p style="margin:0;max-width:460px;font-size:16px;line-height:1.7;color:#9B917E;text-wrap:pretty">Tell us when you last had it serviced — we&rsquo;ll take it from there.</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
       <a href="/#quote" style="background:#E8622C;color:#121009;padding:19px 36px;font-size:13.5px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A FREE INSPECTION</a>
-      <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.32);color:#F5EFE4;padding:19px 32px;font-size:13.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:8px;height:8px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL {{ phone }}</a>
+      <a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.32);color:#F5EFE4;padding:19px 32px;font-size:13.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:8px;height:8px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL (416) 505-6228</a>
     </div>
   </div>
 </section>
@@ -223,7 +222,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
   <div style="height:76px"></div>
   <div style="position:fixed;left:0;right:0;bottom:0;z-index:70;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(245,239,228,0.2);border-top:1px solid rgba(245,239,228,0.2);padding-bottom:env(safe-area-inset-bottom)">
-    <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:flex;align-items:center;justify-content:center;gap:9px;background:#121009;color:#F5EFE4;padding:19px 10px;font-size:12.5px;font-weight:800;letter-spacing:0.12em"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL NOW</a>
+    <a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:flex;align-items:center;justify-content:center;gap:9px;background:#121009;color:#F5EFE4;padding:19px 10px;font-size:12.5px;font-weight:800;letter-spacing:0.12em"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL NOW</a>
     <a href="/#quote" style="display:flex;align-items:center;justify-content:center;background:#E8622C;color:#121009;padding:19px 10px;font-size:12.5px;font-weight:800;letter-spacing:0.12em">BOOK A FREE INSPECTION</a>
   </div>
 </sc-if>
