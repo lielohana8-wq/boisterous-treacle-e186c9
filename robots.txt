@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://northmark-chimney.ca/sitemap.xml

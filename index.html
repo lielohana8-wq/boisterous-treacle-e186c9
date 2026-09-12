@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<form name="inspection-request" netlify netlify-honeypot="bot-field" hidden><input type="text" name="name" /><input type="tel" name="phone" /><input type="text" name="address" /><textarea name="problem"></textarea><input type="text" name="source" /><input type="text" name="submittedAt" /><input name="bot-field" /></form>
+
+<x-dc>
+<helmet>
+<title>Northmark Chimney — Chimney Services in Toronto &amp; the GTA</title>
+<meta name="description" content="Professional chimney cleaning, inspections, repairs and maintenance for homeowners across Toronto and the GTA. Get a free quote from NORTHMARK." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wght@400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#121009}
+image-slot{position:absolute;inset:0;width:100%;height:100%;min-width:0;min-height:0}
+a{color:#E8622C;text-decoration:none}
+a:hover{color:#FF7A3D}
+::selection{background:#E8622C;color:#121009}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #E8622C;outline-offset:2px}
+input::placeholder{color:#9B917E}
+@keyframes pfPulse{0%,100%{opacity:1}50%{opacity:0.25}}
+@keyframes pfTicker{to{transform:translateX(-50%)}}
+@keyframes pfSweep{to{transform:rotate(360deg)}}
+@keyframes pfRise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes pfRing{0%,100%{box-shadow:0 0 70px rgba(232,98,44,0.32),inset 0 0 60px rgba(232,98,44,0.1)}50%{box-shadow:0 0 120px rgba(232,98,44,0.55),inset 0 0 90px rgba(232,98,44,0.18)}}
+@keyframes pfFloat{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-18px) rotate(var(--r,0deg))}}
+@keyframes pfEmber{0%,100%{opacity:0.5;transform:scale(1)}50%{opacity:1;transform:scale(1.15)}}
+section[data-screen-label]{background-color:rgba(15,12,7,0.78)}
+footer[data-screen-label]{background-color:rgba(15,12,7,0.85)}
+</style>
+<script src="./image-slot.js"></script>
+<script src="./pf3d.js"></script>
+<script src="./chimney3d.js"></script>
+<script>window.__pfWorldPaused=false;</script><script src="./world3d.js" defer></script>
+<script>window.PF_CONFIG={phone:null,leadWebhook:null,gaId:null,adsConversionId:null,metaPixelId:null,onEvent:null};</script>
+
+<link rel="canonical" href="https://northmark-chimney.ca/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Northmark Chimney" />
+<meta property="og:title" content="Northmark Chimney — Chimney Services in Toronto &amp; the GTA" />
+<meta property="og:description" content="Professional chimney cleaning, inspections, repairs and maintenance for homeowners across Toronto and the GTA. Get a free quote from NORTHMARK." />
+<meta property="og:url" content="https://northmark-chimney.ca/" />
+<meta property="og:image" content="https://northmark-chimney.ca/assets-lite/hero-dusk.jpg" />
+<meta property="og:locale" content="en_CA" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="geo.region" content="CA-ON" />
+<meta name="geo.placename" content="Toronto" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How often should a chimney be cleaned?","acceptedAnswer":{"@type":"Answer","text":"Most wood-burning chimneys benefit from a yearly cleaning, but it really depends on how much you burn, what you burn, and the chimney’s condition. After seeing yours, we can recommend an honest schedule — sometimes that means less often, not more."}},{"@type":"Question","name":"How do I know if my chimney needs repair?","acceptedAnswer":{"@type":"Answer","text":"Common signs: cracked or spalling brick, white staining, rust on the cap or damper, water in the firebox, smoke drafting poorly, or debris falling into the fireplace. An inspection confirms what’s actually going on before you spend anything."}},{"@type":"Question","name":"Do you provide chimney inspections?","acceptedAnswer":{"@type":"Answer","text":"Yes — on their own or together with a cleaning. You get findings explained in plain language, with photos, so you can see exactly what we see."}},{"@type":"Question","name":"Can you repair chimney masonry?","acceptedAnswer":{"@type":"Answer","text":"Yes. Brick replacement, repointing (tuckpointing), and crown work above the roofline — matched as closely as possible to your home’s existing brick."}},{"@type":"Question","name":"Do you install chimney caps?","acceptedAnswer":{"@type":"Answer","text":"Yes. Caps keep water, animals and debris out of the flue, and they’re sized to your specific flue — not one-size-fits-all."}},{"@type":"Question","name":"Do you service gas fireplaces?","acceptedAnswer":{"@type":"Answer","text":"Tell us about your setup when you leave your details. We’ll confirm whether it’s a fit before anything is booked — no surprises on arrival."}},{"@type":"Question","name":"Do you service my area?","acceptedAnswer":{"@type":"Answer","text":"We serve Toronto, North York, Scarborough, Etobicoke, York, East York, Vaughan, Richmond Hill, Markham, Thornhill, Mississauga, Brampton, Concord and surrounding communities. Not sure? Send your postal code and we’ll confirm."}},{"@type":"Question","name":"How much does chimney cleaning cost?","acceptedAnswer":{"@type":"Answer","text":"It depends on the chimney’s condition and access — so we don’t give blind numbers online. The inspection visit is free, the technician gives you an exact price on-site, and you approve it before any work begins."}},{"@type":"Question","name":"How quickly can you come?","acceptedAnswer":{"@type":"Answer","text":"It varies by season and schedule. Leave your phone and address and we’ll call back with the earliest real slot for your area."}},{"@type":"Question","name":"Is the inspection really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. A technician comes out, looks at the chimney, explains what they see, and gives you a price on the spot — free, no obligation. You decide from there."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","@id":"https://northmark-chimney.ca/#business","name":"Northmark Chimney","alternateName":"Northmark Chimney Services","description":"Professional chimney cleaning, inspections, repairs and maintenance for homeowners across Toronto and the GTA. Free on-site inspection, exact price before work begins.","url":"https://northmark-chimney.ca","telephone":"+1-416-505-6228","email":"info@northmark-chimney.ca","image":"https://northmark-chimney.ca/assets-lite/hero-dusk.jpg","priceRange":"$","address":{"@type":"PostalAddress","addressLocality":"Toronto","addressRegion":"ON","addressCountry":"CA"},"areaServed":[{"@type":"City","name":"Toronto"},{"@type":"City","name":"North York"},{"@type":"City","name":"Scarborough"},{"@type":"City","name":"Etobicoke"},{"@type":"City","name":"York"},{"@type":"City","name":"East York"},{"@type":"City","name":"Vaughan"},{"@type":"City","name":"Richmond Hill"},{"@type":"City","name":"Markham"},{"@type":"City","name":"Thornhill"},{"@type":"City","name":"Mississauga"},{"@type":"City","name":"Brampton"},{"@type":"City","name":"Concord"}],"knowsAbout":["Chimney cleaning","Chimney inspection","Chimney repair","Chimney caps","Chimney liners","Masonry repair","Chimney flashing","Chimney maintenance"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Chimney Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Chimney Cleaning","url":"https://northmark-chimney.ca/chimney-cleaning-toronto"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Chimney Inspection","url":"https://northmark-chimney.ca/chimney-inspection-toronto"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Chimney Repair","url":"https://northmark-chimney.ca/chimney-repair-toronto"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Chimney Cap Installation","url":"https://northmark-chimney.ca/chimney-cap-installation-toronto"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Chimney Liner Services","url":"https://northmark-chimney.ca/chimney-liner-toronto"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Chimney Masonry Repair","url":"https://northmark-chimney.ca/chimney-masonry-repair-toronto"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Chimney Flashing & Waterproofing","url":"https://northmark-chimney.ca/chimney-flashing-toronto"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Chimney Maintenance","url":"https://northmark-chimney.ca/chimney-maintenance-toronto"}}]}}</script>
+
+</helmet>
+<div style="position:relative;z-index:1;background:transparent;color:#F5EFE4;font-family:'Archivo',ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5;overflow-x:clip">
+
+<nav data-screen-label="Nav" style="position:sticky;top:0;z-index:60;background:rgba(18,16,9,0.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(245,239,228,0.1)">
+  <div style="max-width:1440px;margin:0 auto;padding:0 clamp(16px,3vw,40px);height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px">
+    <a href="#top" style="display:flex;align-items:center;gap:12px;color:#F5EFE4">
+      <span style="position:relative;width:20px;height:24px;display:block">
+        <span style="position:absolute;left:0;top:4px;bottom:0;width:4px;background:#F5EFE4"></span>
+        <span style="position:absolute;right:0;top:4px;bottom:0;width:4px;background:#F5EFE4"></span>
+        <span style="position:absolute;left:50%;transform:translateX(-50%);top:0;width:6px;height:6px;background:#E8622C;animation:pfEmber 2.6s ease-in-out infinite"></span>
+      </span>
+      <span style="display:flex;flex-direction:column;gap:2px">
+        <span style="font-family:'Anton',sans-serif;font-size:17px;letter-spacing:0.06em;line-height:1">NORTHMARK</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:8px;letter-spacing:0.34em;color:#9B917E;line-height:1">CHIMNEY SERVICES</span>
+      </span>
+    </a>
+    <sc-if value="{{ notMobile }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;align-items:center;gap:24px">
+        <a href="#services" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#B7AD9A;transition:color .2s" style-hover="color:#F5EFE4">SERVICES</a>
+        <a href="#projects" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#B7AD9A;transition:color .2s" style-hover="color:#F5EFE4">PROJECTS</a>
+        <a href="#reviews" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#B7AD9A;transition:color .2s" style-hover="color:#F5EFE4">REVIEWS</a>
+        <a href="#coverage" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#B7AD9A;transition:color .2s" style-hover="color:#F5EFE4">SERVICE AREAS</a>
+        <a href="/about" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#B7AD9A;transition:color .2s" style-hover="color:#F5EFE4">ABOUT</a>
+        <a href="#faq" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#B7AD9A;transition:color .2s" style-hover="color:#F5EFE4">FAQ</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:11px 17px;font-size:11.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s ease-in-out infinite"></span>CALL NOW</a>
+        <a href="#quote" style="background:#E8622C;color:#121009;padding:12px 19px;font-size:11.5px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A FREE INSPECTION</a>
+      </div>
+    </sc-if>
+    <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;align-items:center;gap:8px">
+        <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:10px 13px;font-size:11px;font-weight:700;letter-spacing:0.12em"><span style="width:6px;height:6px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL</a>
+        <button onClick="{{ openMenu }}" style="background:none;border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:10px 13px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;cursor:pointer">MENU</button>
+      </div>
+    </sc-if>
+  </div>
+</nav>
+
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed;inset:0;z-index:90;background:#121009;color:#F5EFE4;display:flex;flex-direction:column;padding:20px 24px 28px;overflow:auto">
+    <div style="display:flex;align-items:center;justify-content:space-between">
+      <span style="font-family:'Anton',sans-serif;font-size:17px;letter-spacing:0.06em">NORTHMARK</span>
+      <button onClick="{{ closeMenu }}" style="background:none;border:1px solid rgba(245,239,228,0.3);color:#F5EFE4;padding:10px 15px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;cursor:pointer">CLOSE ✕</button>
+    </div>
+    <div style="display:flex;flex-direction:column;margin-top:36px">
+      <a href="#services" onClick="{{ closeMenu }}" style="color:#F5EFE4;font-family:'Anton',sans-serif;font-size:32px;letter-spacing:0.02em;padding:12px 0;border-bottom:1px solid rgba(245,239,228,0.12)">SERVICES</a>
+      <a href="#projects" onClick="{{ closeMenu }}" style="color:#F5EFE4;font-family:'Anton',sans-serif;font-size:32px;letter-spacing:0.02em;padding:12px 0;border-bottom:1px solid rgba(245,239,228,0.12)">PROJECTS</a>
+      <a href="#reviews" onClick="{{ closeMenu }}" style="color:#F5EFE4;font-family:'Anton',sans-serif;font-size:32px;letter-spacing:0.02em;padding:12px 0;border-bottom:1px solid rgba(245,239,228,0.12)">REVIEWS</a>
+      <a href="#coverage" onClick="{{ closeMenu }}" style="color:#F5EFE4;font-family:'Anton',sans-serif;font-size:32px;letter-spacing:0.02em;padding:12px 0;border-bottom:1px solid rgba(245,239,228,0.12)">SERVICE AREAS</a>
+      <a href="/about" style="color:#F5EFE4;font-family:'Anton',sans-serif;font-size:32px;letter-spacing:0.02em;padding:12px 0;border-bottom:1px solid rgba(245,239,228,0.12)">ABOUT</a>
+      <a href="#faq" onClick="{{ closeMenu }}" style="color:#F5EFE4;font-family:'Anton',sans-serif;font-size:32px;letter-spacing:0.02em;padding:12px 0;border-bottom:1px solid rgba(245,239,228,0.12)">FAQ</a>
+    </div>
+    <div style="margin-top:auto;display:flex;flex-direction:column;gap:10px;padding-top:28px">
+      <a href="#quote" onClick="{{ closeMenu }}" style="background:#E8622C;color:#121009;padding:17px;text-align:center;font-size:13px;font-weight:800;letter-spacing:0.12em">BOOK A FREE INSPECTION</a>
+      <a href="{{ telHref }}" onClick="{{ trackCall }}" style="border:1px solid rgba(245,239,228,0.3);color:#F5EFE4;padding:16px;text-align:center;font-size:13px;font-weight:700;letter-spacing:0.12em">CALL NOW</a>
+    </div>
+  </div>
+</sc-if>
+
+<header id="top" data-screen-label="Hero" style="position:relative;overflow:clip;border-bottom:1px solid rgba(245,239,228,0.1)">
+  <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(18,16,9,0.7) 0%,rgba(18,16,9,0.42) 46%,rgba(18,16,9,0.05) 78%,rgba(18,16,9,0.2) 100%),linear-gradient(0deg,rgba(18,16,9,0.6) 0%,rgba(18,16,9,0) 32%);pointer-events:none"></div>
+  <div style="position:relative;max-width:1440px;margin:0 auto;padding:clamp(56px,8vw,120px) clamp(16px,3vw,40px) clamp(48px,6vw,88px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(540px,100%),1fr));gap:clamp(32px,5vw,80px);align-items:end;pointer-events:none">
+    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:26px;animation:pfRise .7s ease both;pointer-events:auto">
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.24em;color:#B7AD9A">
+        <span style="border:1px solid rgba(232,98,44,0.55);color:#FF9A5C;padding:6px 10px;background:rgba(18,16,9,0.5)">TORONTO &amp; GTA</span>
+        <span>CHIMNEY SPECIALISTS</span>
+      </div>
+      <h1 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(46px,9vw,138px);line-height:0.93;letter-spacing:0.005em;text-wrap:balance;text-shadow:0 4px 40px rgba(0,0,0,0.5)">TORONTO’S<br>CHIMNEY<br><span style="color:#E8622C">EXPERTS.</span></h1>
+      <p style="margin:0;max-width:500px;font-size:clamp(15.5px,1.3vw,18px);line-height:1.7;color:#E4DCCB;text-wrap:pretty">Professional chimney cleaning, inspections, repairs and maintenance across Toronto and the GTA. The inspection visit is free — you get an exact price on the spot, and nothing starts without your OK.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a href="#quote" style="background:#E8622C;color:#121009;padding:18px 32px;font-size:13px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A FREE INSPECTION</a>
+        <a href="{{ telHref }}" sc-camel-on-click="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.45);background:rgba(18,16,9,0.4);color:#F5EFE4;padding:18px 28px;font-size:13px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:8px;height:8px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s ease-in-out infinite"></span>CALL NOW</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+        <span style="color:#FF9A5C;font-size:14px;letter-spacing:0.22em">★★★★★</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.18em;color:#C9BFAC">NOW PLAYING ACROSS THE GTA · FREE INSPECTIONS · PRICE ON-SITE</span>
+      </div>
+    </div>
+    <div style="justify-self:end;width:min(100%,420px);animation:pfRise .7s .15s ease both;pointer-events:auto">
+      <div style="background:#F5EFE4;color:#17130C;padding:26px 26px 22px;box-shadow:0 30px 80px rgba(0,0,0,0.55)">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px dashed rgba(23,19,12,0.35);padding-bottom:12px;margin-bottom:16px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;color:#7A7060">FREE INSPECTION — WE COME TO YOU</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;color:#7A7060">~60 SEC</span>
+        </div>
+        <div style="font-size:17px;font-weight:800;letter-spacing:-0.01em;margin-bottom:14px">What’s happening with your chimney?</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <button sc-camel-on-click="{{ heroPick }}" data-svc="Chimney Cleaning" style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 14px;border:1px solid rgba(23,19,12,0.3);background:transparent;font-family:'Archivo',sans-serif;font-size:13.5px;font-weight:600;color:#17130C;cursor:pointer;text-align:left;transition:all .15s" style-hover="border-color:#C4501F;color:#C4501F;background:rgba(196,80,31,0.06)">Smoke problem / overdue cleaning<span style="color:#C4501F">→</span></button>
+          <button sc-camel-on-click="{{ heroPick }}" data-svc="Water / Flashing" style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 14px;border:1px solid rgba(23,19,12,0.3);background:transparent;font-family:'Archivo',sans-serif;font-size:13.5px;font-weight:600;color:#17130C;cursor:pointer;text-align:left;transition:all .15s" style-hover="border-color:#C4501F;color:#C4501F;background:rgba(196,80,31,0.06)">Water getting in around the chimney<span style="color:#C4501F">→</span></button>
+          <button sc-camel-on-click="{{ heroPick }}" data-svc="Masonry Repair" style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 14px;border:1px solid rgba(23,19,12,0.3);background:transparent;font-family:'Archivo',sans-serif;font-size:13.5px;font-weight:600;color:#17130C;cursor:pointer;text-align:left;transition:all .15s" style-hover="border-color:#C4501F;color:#C4501F;background:rgba(196,80,31,0.06)">Cracked brick or crumbling mortar<span style="color:#C4501F">→</span></button>
+          <button sc-camel-on-click="{{ heroPick }}" data-svc="Chimney Inspection" style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 14px;border:1px solid rgba(23,19,12,0.3);background:transparent;font-family:'Archivo',sans-serif;font-size:13.5px;font-weight:600;color:#17130C;cursor:pointer;text-align:left;transition:all .15s" style-hover="border-color:#C4501F;color:#C4501F;background:rgba(196,80,31,0.06)">Not sure — I need an inspection<span style="color:#C4501F">→</span></button>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.16em;color:#7A7060">FREE VISIT · PRICE ON-SITE</span>
+          <a href="#quote" style="font-size:11.5px;font-weight:800;letter-spacing:0.1em;color:#C4501F">LEAVE DETAILS →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div style="position:relative;border-top:1px solid rgba(245,239,228,0.12);background:rgba(18,16,9,0.75);backdrop-filter:blur(6px);overflow:hidden">
+    <div style="display:flex;width:max-content;animation:pfTicker 30s linear infinite">
+      <div style="display:flex;align-items:center;gap:28px;padding:15px 14px 15px 28px">
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">CHIMNEY CLEANING</span><span style="width:6px;height:6px;background:#E8622C"></span>
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">INSPECTIONS</span><span style="width:6px;height:6px;background:#E8622C"></span>
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">REPAIRS</span><span style="width:6px;height:6px;background:#E8622C"></span>
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">CAPS</span><span style="width:6px;height:6px;background:#E8622C"></span>
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">LINERS</span><span style="width:6px;height:6px;background:#E8622C"></span>
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">MASONRY</span><span style="width:6px;height:6px;background:#E8622C"></span>
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">FLASHING</span><span style="width:6px;height:6px;background:#E8622C"></span>
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">MAINTENANCE</span><span style="width:6px;height:6px;background:#E8622C"></span>
+      </div>
+      <div style="display:flex;align-items:center;gap:28px;padding:15px 14px">
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">CHIMNEY CLEANING</span><span style="width:6px;height:6px;background:#E8622C"></span>
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">INSPECTIONS</span><span style="width:6px;height:6px;background:#E8622C"></span>
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">REPAIRS</span><span style="width:6px;height:6px;background:#E8622C"></span>
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">CAPS</span><span style="width:6px;height:6px;background:#E8622C"></span>
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">LINERS</span><span style="width:6px;height:6px;background:#E8622C"></span>
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">MASONRY</span><span style="width:6px;height:6px;background:#E8622C"></span>
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">FLASHING</span><span style="width:6px;height:6px;background:#E8622C"></span>
+        <span style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:0.14em;color:#C9BFAC">MAINTENANCE</span><span style="width:6px;height:6px;background:#E8622C"></span>
+      </div>
+    </div>
+  </div>
+</header>
+<div id="pf-story-break" style="height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;pointer-events:none;text-align:center;padding:0 20px">
+  <span style="font-family:'Anton',sans-serif;font-size:clamp(38px,7vw,110px);line-height:0.95;color:transparent;-webkit-text-stroke:1.5px rgba(245,239,228,0.6);text-shadow:0 8px 70px rgba(0,0,0,0.65)">EVERYTHING A<br />CHIMNEY NEEDS</span>
+</div>
+
+
+
+<section id="services" data-screen-label="Services" style="border-bottom:1px solid rgba(245,239,228,0.1)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,8vw,110px) clamp(16px,3vw,40px)">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:44px">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">01 — SERVICES</div>
+        <h2 style="margin:14px 0 0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(36px,4.5vw,64px);line-height:0.96">EVERYTHING A CHIMNEY NEEDS</h2>
+      </div>
+      <p style="margin:0;max-width:380px;font-size:15px;line-height:1.7;color:#9B917E;text-wrap:pretty">From routine maintenance to complex repairs — one trade, done properly. Start with what your chimney needs most.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:1px;background:rgba(245,239,228,0.14);border:1px solid rgba(245,239,228,0.14);margin-bottom:14px">
+      <div style="background:#121009;display:flex;flex-direction:column;transition:background .25s" style-hover="background:#17130B">
+        <div style="position:relative;aspect-ratio:16/9"><image-slot id="svc-clean" shape="rect" src="assets-lite/flue.jpg" placeholder="" alt="Northmark Chimney — chimney sweep at work"></image-slot><span style="position:absolute;left:14px;top:14px;background:#E8622C;color:#121009;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.18em;pointer-events:none">CORE SERVICE</span></div>
+        <div style="padding:24px 26px 26px;display:flex;flex-direction:column;gap:12px;flex:1">
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><h3 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:26px;letter-spacing:0.02em">CHIMNEY CLEANING</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#E8622C">S/01</span></div>
+          <p style="margin:0;font-size:14.5px;line-height:1.65;color:#9B917E">Creosote, soot and blockages removed — so smoke goes up the flue, not into your living room.</p>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;color:#7A7060">FIXES: POOR DRAFT · SMOKE SMELL · BUILDUP</div>
+          <a href="/chimney-cleaning-toronto" style="margin-top:auto;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(245,239,228,0.14);padding-top:14px;font-size:12px;font-weight:800;letter-spacing:0.12em;color:#E8622C">VIEW SERVICE<span>→</span></a>
+        </div>
+      </div>
+      <div style="background:#121009;display:flex;flex-direction:column;transition:background .25s" style-hover="background:#17130B">
+        <div style="position:relative;aspect-ratio:16/9"><image-slot id="svc-inspect" shape="rect" src="assets-lite/inspect.jpg" placeholder="" alt="Northmark Chimney — technician inspecting a flue"></image-slot></div>
+        <div style="padding:24px 26px 26px;display:flex;flex-direction:column;gap:12px;flex:1">
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><h3 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:26px;letter-spacing:0.02em">CHIMNEY INSPECTION</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#E8622C">S/02</span></div>
+          <p style="margin:0;font-size:14.5px;line-height:1.65;color:#9B917E">A careful assessment with photos, explained in plain language. Ideal before buying, selling — or burning.</p>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;color:#7A7060">FIXES: UNKNOWNS · HOME PURCHASE · PEACE OF MIND</div>
+          <a href="/chimney-inspection-toronto" style="margin-top:auto;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(245,239,228,0.14);padding-top:14px;font-size:12px;font-weight:800;letter-spacing:0.12em;color:#E8622C">VIEW SERVICE<span>→</span></a>
+        </div>
+      </div>
+      <div style="background:#121009;display:flex;flex-direction:column;transition:background .25s" style-hover="background:#17130B">
+        <div style="position:relative;aspect-ratio:16/9"><image-slot id="svc-repair" shape="rect" src="assets-lite/repair.jpg" placeholder="" alt="Northmark Chimney — chimney repair in progress"></image-slot></div>
+        <div style="padding:24px 26px 26px;display:flex;flex-direction:column;gap:12px;flex:1">
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><h3 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:26px;letter-spacing:0.02em">CHIMNEY REPAIR</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#E8622C">S/03</span></div>
+          <p style="margin:0;font-size:14.5px;line-height:1.65;color:#9B917E">Crowns, smoke chambers, fireboxes and structural fixes — done once, done right.</p>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;color:#7A7060">FIXES: DAMAGE · DETERIORATION · SAFETY</div>
+          <a href="/chimney-repair-toronto" style="margin-top:auto;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(245,239,228,0.14);padding-top:14px;font-size:12px;font-weight:800;letter-spacing:0.12em;color:#E8622C">VIEW SERVICE<span>→</span></a>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:1px;background:rgba(245,239,228,0.14);border:1px solid rgba(245,239,228,0.14)">
+      <a href="/chimney-cap-installation-toronto" style="background:#121009;display:flex;align-items:center;gap:14px;padding:16px 18px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="position:relative;width:56px;height:56px;flex:none"><image-slot id="svc-cap" shape="rect" src="assets-lite/cap.jpg" placeholder="" alt="cap"></image-slot></span><span style="flex:1"><span style="display:block;font-size:13.5px;font-weight:800;letter-spacing:0.06em">CHIMNEY CAPS</span><span style="display:block;font-size:12px;color:#9B917E;margin-top:2px">Keep water &amp; animals out</span></span><span style="color:#E8622C">→</span></a>
+      <a href="/chimney-liner-toronto" style="background:#121009;display:flex;align-items:center;gap:14px;padding:16px 18px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="position:relative;width:56px;height:56px;flex:none"><image-slot id="svc-liner" shape="rect" src="assets-lite/liner.jpg" placeholder="" alt="liner"></image-slot></span><span style="flex:1"><span style="display:block;font-size:13.5px;font-weight:800;letter-spacing:0.06em">CHIMNEY LINERS</span><span style="display:block;font-size:12px;color:#9B917E;margin-top:2px">Safe venting, intact liner</span></span><span style="color:#E8622C">→</span></a>
+      <a href="/chimney-masonry-repair-toronto" style="background:#121009;display:flex;align-items:center;gap:14px;padding:16px 18px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="position:relative;width:56px;height:56px;flex:none"><image-slot id="svc-masonry" shape="rect" src="assets-lite/brick.jpg" placeholder="" alt="brick"></image-slot></span><span style="flex:1"><span style="display:block;font-size:13.5px;font-weight:800;letter-spacing:0.06em">MASONRY REPAIR</span><span style="display:block;font-size:12px;color:#9B917E;margin-top:2px">Brick &amp; mortar, matched</span></span><span style="color:#E8622C">→</span></a>
+      <a href="/chimney-flashing-toronto" style="background:#121009;display:flex;align-items:center;gap:14px;padding:16px 18px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="position:relative;width:56px;height:56px;flex:none"><image-slot id="svc-flash" shape="rect" src="assets-lite/flashing.jpg" placeholder="" alt="flashing"></image-slot></span><span style="flex:1"><span style="display:block;font-size:13.5px;font-weight:800;letter-spacing:0.06em">FLASHING &amp; WATERPROOFING</span><span style="display:block;font-size:12px;color:#9B917E;margin-top:2px">Roof-to-chimney joint, sealed right</span></span><span style="color:#E8622C">→</span></a>
+      <a href="/chimney-maintenance-toronto" style="background:#121009;display:flex;align-items:center;gap:14px;padding:16px 18px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="position:relative;width:56px;height:56px;flex:none"><image-slot id="svc-maint" shape="rect" src="assets-lite/maintain.jpg" placeholder="" alt="maintenance"></image-slot></span><span style="flex:1"><span style="display:block;font-size:13.5px;font-weight:800;letter-spacing:0.06em">SEASONAL MAINTENANCE</span><span style="display:block;font-size:12px;color:#9B917E;margin-top:2px">Ready before winter</span></span><span style="color:#E8622C">→</span></a>
+    </div>
+  </div>
+</section>
+<div id="pf-story-smoke" style="height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;pointer-events:none;text-align:center;padding:0 20px">
+  <span style="font-family:'Anton',sans-serif;font-size:clamp(38px,7vw,110px);line-height:0.95;color:transparent;-webkit-text-stroke:1.5px rgba(245,239,228,0.6);text-shadow:0 8px 70px rgba(0,0,0,0.65)">THE CLIMB<br />TO THE CAP</span>
+</div>
+
+
+
+<section id="problems" data-screen-label="Problem finder" style="border-bottom:1px solid rgba(245,239,228,0.1);background-image:radial-gradient(40% 34% at 85% 100%,rgba(232,98,44,0.09),transparent 70%)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,8vw,110px) clamp(16px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:clamp(32px,4vw,72px)">
+    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:24px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">02 — DIAGNOSTICS</div>
+      <h2 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(36px,4.5vw,64px);line-height:0.96;text-wrap:balance">WHAT&rsquo;S HAPPENING WITH YOUR CHIMNEY?</h2>
+      <p style="margin:0;font-size:15.5px;line-height:1.7;color:#9B917E;max-width:420px;text-wrap:pretty">Most chimney problems start small. Pick the one that sounds familiar — it pre-fills your work order with the right service.</p>
+      <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.3);color:#F5EFE4;padding:15px 26px;font-size:12px;font-weight:800;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>RATHER JUST TALK? CALL US</a>
+    </div>
+    <div style="border-top:1px solid rgba(245,239,228,0.14);align-self:start">
+      <button onClick="{{ heroPick }}" data-svc="Chimney Cleaning" style="width:100%;display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:15px 6px;border:none;border-bottom:1px solid rgba(245,239,228,0.14);background:none;color:#E4DCCB;font-family:'Archivo',sans-serif;font-size:15px;text-align:left;cursor:pointer;transition:all .15s" style-hover="background:rgba(232,98,44,0.06);color:#F5EFE4;padding-left:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">S-01</span>Smoke isn&rsquo;t drafting the way it should<span style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:0.12em;color:#7A7060">CLEANING →</span></button>
+      <button onClick="{{ heroPick }}" data-svc="Water / Flashing" style="width:100%;display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:15px 6px;border:none;border-bottom:1px solid rgba(245,239,228,0.14);background:none;color:#E4DCCB;font-family:'Archivo',sans-serif;font-size:15px;text-align:left;cursor:pointer;transition:all .15s" style-hover="background:rgba(232,98,44,0.06);color:#F5EFE4;padding-left:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">S-02</span>Water shows up around the chimney after rain<span style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:0.12em;color:#7A7060">FLASHING →</span></button>
+      <button onClick="{{ heroPick }}" data-svc="Masonry Repair" style="width:100%;display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:15px 6px;border:none;border-bottom:1px solid rgba(245,239,228,0.14);background:none;color:#E4DCCB;font-family:'Archivo',sans-serif;font-size:15px;text-align:left;cursor:pointer;transition:all .15s" style-hover="background:rgba(232,98,44,0.06);color:#F5EFE4;padding-left:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">S-03</span>Bricks are cracked, spalling or losing mortar<span style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:0.12em;color:#7A7060">MASONRY →</span></button>
+      <button onClick="{{ heroPick }}" data-svc="Chimney Cap" style="width:100%;display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:15px 6px;border:none;border-bottom:1px solid rgba(245,239,228,0.14);background:none;color:#E4DCCB;font-family:'Archivo',sans-serif;font-size:15px;text-align:left;cursor:pointer;transition:all .15s" style-hover="background:rgba(232,98,44,0.06);color:#F5EFE4;padding-left:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">S-04</span>The chimney cap is damaged — or missing<span style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:0.12em;color:#7A7060">CAPS →</span></button>
+      <button onClick="{{ heroPick }}" data-svc="Chimney Cleaning" style="width:100%;display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:15px 6px;border:none;border-bottom:1px solid rgba(245,239,228,0.14);background:none;color:#E4DCCB;font-family:'Archivo',sans-serif;font-size:15px;text-align:left;cursor:pointer;transition:all .15s" style-hover="background:rgba(232,98,44,0.06);color:#F5EFE4;padding-left:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">S-05</span>You hear animals or debris inside the flue<span style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:0.12em;color:#7A7060">CLEANING →</span></button>
+      <button onClick="{{ heroPick }}" data-svc="Chimney Inspection" style="width:100%;display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:15px 6px;border:none;border-bottom:1px solid rgba(245,239,228,0.14);background:none;color:#E4DCCB;font-family:'Archivo',sans-serif;font-size:15px;text-align:left;cursor:pointer;transition:all .15s" style-hover="background:rgba(232,98,44,0.06);color:#F5EFE4;padding-left:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">S-06</span>You&rsquo;re buying or selling a home<span style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:0.12em;color:#7A7060">INSPECTION →</span></button>
+      <button onClick="{{ heroPick }}" data-svc="Chimney Inspection" style="width:100%;display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:15px 6px;border:none;border-bottom:1px solid rgba(245,239,228,0.14);background:none;color:#E4DCCB;font-family:'Archivo',sans-serif;font-size:15px;text-align:left;cursor:pointer;transition:all .15s" style-hover="background:rgba(232,98,44,0.06);color:#F5EFE4;padding-left:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">S-07</span>The fireplace hasn&rsquo;t been serviced in years<span style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:0.12em;color:#7A7060">INSPECTION →</span></button>
+      <button onClick="{{ heroPick }}" data-svc="Chimney Cleaning" style="width:100%;display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:15px 6px;border:none;border-bottom:1px solid rgba(245,239,228,0.14);background:none;color:#E4DCCB;font-family:'Archivo',sans-serif;font-size:15px;text-align:left;cursor:pointer;transition:all .15s" style-hover="background:rgba(232,98,44,0.06);color:#F5EFE4;padding-left:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">S-08</span>You want the fireplace ready before winter<span style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:0.12em;color:#7A7060">CLEANING →</span></button>
+    </div>
+  </div>
+</section>
+
+<section id="quote" data-screen-label="Work order form" style="border-bottom:1px solid rgba(245,239,228,0.1);background-image:radial-gradient(50% 40% at 18% 108%,rgba(232,98,44,0.12),transparent 70%)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,8vw,110px) clamp(16px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:clamp(32px,4vw,72px);align-items:start">
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">03 — FREE INSPECTION</div>
+      <h2 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(36px,4.5vw,64px);line-height:0.96">NEED CHIMNEY<br />SERVICE?</h2>
+      <p style="margin:0;font-size:15.5px;line-height:1.7;color:#9B917E;max-width:440px;text-wrap:pretty">We don&rsquo;t sell quotes over the internet. Leave your phone, address and what&rsquo;s going on — we call you back, a technician comes out, inspects for free, and gives you an exact price on the spot.</p>
+      <div style="display:flex;flex-direction:column;gap:11px;border-top:1px solid rgba(245,239,228,0.14);padding-top:22px">
+        <div style="display:flex;gap:12px;font-size:14.5px;color:#C9BFAC"><span style="color:#E8622C;font-weight:800">✓</span>Free on-site inspection, no obligation</div>
+        <div style="display:flex;gap:12px;font-size:14.5px;color:#C9BFAC"><span style="color:#E8622C;font-weight:800">✓</span>Exact price from the technician, on the spot</div>
+        <div style="display:flex;gap:12px;font-size:14.5px;color:#C9BFAC"><span style="color:#E8622C;font-weight:800">✓</span>Local crews across Toronto &amp; the GTA</div>
+      </div>
+      <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;color:#F5EFE4;font-size:14.5px;font-weight:700"><span style="width:8px;height:8px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s ease-in-out infinite"></span>Prefer to talk? Call {{ phone }}</a>
+    </div>
+    <div style="background:#F5EFE4;color:#17130C;padding:clamp(24px,2.8vw,40px);box-shadow:0 30px 80px rgba(0,0,0,0.5)">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;border-bottom:1px dashed rgba(23,19,12,0.35);padding-bottom:16px;margin-bottom:22px">
+        <div style="display:flex;flex-direction:column;gap:3px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.24em;color:#7A7060">NORTHMARK — FREE INSPECTION</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.24em;color:#7A7060">WE CALL YOU BACK · NO OBLIGATION</span>
+        </div>
+        <div style="display:flex;align-items:flex-end;gap:2px;height:26px">
+          <span style="width:2px;height:100%;background:#17130C"></span><span style="width:1px;height:100%;background:#17130C"></span><span style="width:3px;height:100%;background:#17130C"></span><span style="width:1px;height:100%;background:#17130C"></span><span style="width:2px;height:100%;background:#17130C"></span><span style="width:4px;height:100%;background:#17130C"></span><span style="width:1px;height:100%;background:#17130C"></span><span style="width:2px;height:100%;background:#17130C"></span><span style="width:1px;height:100%;background:#17130C"></span><span style="width:3px;height:100%;background:#17130C"></span><span style="width:2px;height:100%;background:#17130C"></span><span style="width:1px;height:100%;background:#17130C"></span>
+        </div>
+      </div>
+      <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <h3 style="margin:0;font-size:21px;font-weight:800;letter-spacing:-0.01em">Book your free inspection.</h3>
+          <p style="margin:0 0 6px;font-size:13.5px;line-height:1.6;color:#5C5546">Leave your details and what&rsquo;s going on — we&rsquo;ll call you back to set a time.</p>
+          <input ref="{{ nameRef }}" aria-label="Name" placeholder="Name" style="width:100%;box-sizing:border-box;padding:15px;border:1px solid rgba(23,19,12,0.35);background:transparent;font-family:'Archivo',sans-serif;font-size:15px;color:#17130C;outline:none" style-focus="border-color:#C4501F" />
+          <input ref="{{ phoneRef }}" type="tel" aria-label="Phone (required)" placeholder="Phone *" style="width:100%;box-sizing:border-box;padding:15px;border:1px solid rgba(23,19,12,0.35);background:transparent;font-family:'Archivo',sans-serif;font-size:15px;color:#17130C;outline:none" style-focus="border-color:#C4501F" />
+          <input ref="{{ addressRef }}" aria-label="Address or postal code (required)" placeholder="Address or postal code *" style="width:100%;box-sizing:border-box;padding:15px;border:1px solid rgba(23,19,12,0.35);background:transparent;font-family:'Archivo',sans-serif;font-size:15px;color:#17130C;outline:none" style-focus="border-color:#C4501F" />
+          <textarea ref="{{ problemRef }}" aria-label="What is going on with your chimney" placeholder="What's going on? A sentence is plenty." style="width:100%;box-sizing:border-box;padding:15px;border:1px solid rgba(23,19,12,0.35);background:transparent;font-family:'Archivo',sans-serif;font-size:15px;color:#17130C;outline:none;height:92px;resize:vertical" style-focus="border-color:#C4501F"></textarea>
+          <button onClick="{{ submitLead }}" style="background:#C4501F;color:#F5EFE4;border:none;padding:17px;font-family:'Archivo',sans-serif;font-size:13px;font-weight:800;letter-spacing:0.12em;cursor:pointer;transition:background .2s" style-hover="background:#A54016">BOOK MY FREE INSPECTION</button>
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.16em;color:#7A7060">WE CALL YOU BACK</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.16em;color:#7A7060">NO SPAM · NO OBLIGATION</span>
+          </div>
+        </div>
+      </sc-if>
+      <sc-if value="{{ formErr }}" hint-placeholder-val="{{ false }}">
+        <div style="border:1px solid #C4501F;background:rgba(196,80,31,0.08);color:#A54016;padding:12px 15px;font-size:13px;font-weight:600;margin-top:14px">{{ formErr }}</div>
+      </sc-if>
+      <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-start">
+          <span style="width:44px;height:44px;background:#C4501F;color:#F5EFE4;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800">✓</span>
+          <h3 style="margin:0;font-size:23px;font-weight:800;letter-spacing:-0.01em">Request received{{ sName }}.</h3>
+          <p style="margin:0;font-size:14.5px;line-height:1.65;color:#5C5546">We&rsquo;ll call you back shortly to set a time for your free inspection. Need us right now?</p>
+          <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid #17130C;color:#17130C;padding:14px 24px;font-size:12px;font-weight:800;letter-spacing:0.12em;transition:all .2s" style-hover="background:#17130C;color:#F5EFE4">CALL {{ phone }}</a>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</section>
+<div id="pf-story-flue" style="height:120vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;pointer-events:none;text-align:center;padding:0 20px">
+  <span style="font-family:'Anton',sans-serif;font-size:clamp(38px,7vw,110px);line-height:0.95;color:transparent;-webkit-text-stroke:1.5px rgba(245,239,228,0.6);text-shadow:0 8px 70px rgba(0,0,0,0.65)">INTO THE FLUE</span>
+  <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.3em;color:rgba(245,239,228,0.6)">WHERE CREOSOTE LIVES</span>
+</div>
+
+
+
+<section id="work" data-screen-label="Before / After + Gallery" style="border-bottom:1px solid rgba(245,239,228,0.1)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,8vw,110px) clamp(16px,3vw,40px)">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:40px">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">04 — FIELD PROOF</div>
+        <h2 style="margin:14px 0 0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(36px,4.5vw,64px);line-height:0.96">THE DIFFERENCE, SIDE BY SIDE</h2>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px">
+      <sc-for list="{{ baTabs }}" as="t" hint-placeholder-count="5">
+        <button onClick="{{ pickBaCat }}" data-cat="{{ t.key }}" style="padding:11px 18px;border:1px solid {{ t.bd }};background:{{ t.bg }};color:{{ t.fg }};font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.16em;cursor:pointer;transition:all .2s">{{ t.key }}</button>
+      </sc-for>
+    </div>
+    <div ref="{{ baBoxRef }}" style="position:relative;aspect-ratio:16/8.5;min-height:320px;border:1px solid rgba(245,239,228,0.16);background:#171309;touch-action:pan-y">
+      <sc-for list="{{ baPairs }}" as="bp" hint-placeholder-count="1">
+        <div style="position:absolute;inset:0;display:{{ bp.display }}">
+          <div style="position:absolute;inset:0"><image-slot id="{{ bp.afterId }}" shape="rect" src="assets-lite/clean.jpg" placeholder="" alt="{{ bp.afterPh }}"></image-slot></div>
+          <div ref="{{ baClipRef }}" style="position:absolute;inset:0;clip-path:inset(0 45% 0 0)"><image-slot id="{{ bp.beforeId }}" shape="rect" src="assets-lite/soot.jpg" placeholder="" alt="{{ bp.beforePh }}"></image-slot></div>
+        </div>
+      </sc-for>
+      <span style="position:absolute;left:14px;top:14px;background:rgba(18,16,9,0.85);color:#F5EFE4;padding:7px 11px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;pointer-events:none;z-index:2">BEFORE</span>
+      <span style="position:absolute;right:14px;top:14px;background:#E8622C;color:#121009;padding:7px 11px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;pointer-events:none;z-index:2">AFTER</span>
+      <span style="position:absolute;left:14px;bottom:14px;background:rgba(18,16,9,0.85);color:#C9BFAC;padding:7px 11px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.18em;pointer-events:none;z-index:2">{{ baLabel }}</span>
+      <div ref="{{ baHandleRef }}" onPointerDown="{{ baDown }}" role="slider" aria-label="Drag to compare before and after" style="position:absolute;top:0;bottom:0;left:55%;width:44px;margin-left:-22px;cursor:ew-resize;z-index:3;touch-action:none;display:flex;align-items:center;justify-content:center">
+        <div style="position:absolute;top:0;bottom:0;left:50%;width:2px;margin-left:-1px;background:#F5EFE4;box-shadow:0 0 14px rgba(0,0,0,0.6)"></div>
+        <div style="position:relative;width:34px;height:34px;background:#E8622C;color:#121009;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800">↔</div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:14px;margin-bottom:56px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.18em;color:#9B917E">DRAG THE HANDLE TO COMPARE</span>
+      <a href="#quote" style="font-size:11.5px;font-weight:800;letter-spacing:0.12em;color:#E8622C">WANT THIS AT YOUR PLACE? FREE INSPECTION →</a>
+    </div>
+    <div id="projects" style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:20px">
+      <div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.24em;color:#9B917E;margin-bottom:8px">NORTHMARK PROJECTS — TORONTO &amp; GTA</div><h3 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(26px,3vw,44px);letter-spacing:0.01em">RECENT CHIMNEY WORK</h3></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <sc-for list="{{ filterTabs }}" as="f" hint-placeholder-count="6">
+          <button onClick="{{ pickFilter }}" data-f="{{ f.key }}" style="padding:10px 16px;border:1px solid {{ f.bd }};background:{{ f.bg }};color:{{ f.fg }};font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;cursor:pointer;transition:all .2s">{{ f.key }}</button>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));grid-auto-rows:160px;grid-auto-flow:dense;gap:12px">
+      <sc-for list="{{ galleryView }}" as="g" hint-placeholder-count="6">
+        <div style="grid-row:{{ g.row }};grid-column:{{ g.col }};position:relative;border:1px solid rgba(245,239,228,0.14);background:#171309;display:flex;flex-direction:column;transition:border-color .2s,transform .2s" style-hover="border-color:#E8622C;transform:translateY(-3px)">
+          <div style="position:relative;flex:1;min-height:0"><image-slot id="{{ g.slot }}" shape="rect" src="{{ g.src }}" placeholder="" alt="{{ g.ph }}"></image-slot></div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:12px 14px;border-top:1px solid rgba(245,239,228,0.14)">
+            <span style="font-size:13px;font-weight:600;color:#F5EFE4">{{ g.title }}</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;color:#9B917E;white-space:nowrap">{{ g.meta }}</span>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" data-screen-label="Reviews" style="border-bottom:1px solid rgba(245,239,228,0.1)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,8vw,110px) clamp(16px,3vw,40px)">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:40px">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">05 — WORD OF MOUTH</div>
+        <h2 style="margin:14px 0 0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(36px,4.5vw,64px);line-height:0.96">WHAT HOMEOWNERS SAY</h2>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:1px;background:rgba(245,239,228,0.14);border:1px solid rgba(245,239,228,0.14)">
+      <div style="background:#121009;padding:clamp(24px,2.6vw,40px);display:flex;flex-direction:column;gap:18px"><span style="color:#E8622C;letter-spacing:0.24em;font-size:13px">★★★★★</span><p style="margin:0;font-size:clamp(17px,1.5vw,21px);line-height:1.6;color:#E4DCCB;text-wrap:pretty">&ldquo;They walked me through exactly what the chimney needed — and what could wait. No pressure, just clear work.&rdquo;</p><div style="margin-top:auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><span style="font-size:13.5px;font-weight:700">M. R.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.16em;color:#9B917E">EAST YORK · CLEANING + INSPECTION</span></div></div>
+      <div style="background:#121009;padding:clamp(24px,2.6vw,40px);display:flex;flex-direction:column;gap:18px"><span style="color:#E8622C;letter-spacing:0.24em;font-size:13px">★★★★★</span><p style="margin:0;font-size:clamp(17px,1.5vw,21px);line-height:1.6;color:#E4DCCB;text-wrap:pretty">&ldquo;Squirrels got in past a rusted cap. NORTHMARK replaced it and left the roof cleaner than they found it.&rdquo;</p><div style="margin-top:auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><span style="font-size:13.5px;font-weight:700">S. T.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.16em;color:#9B917E">NORTH YORK · CHIMNEY CAP</span></div></div>
+      <div style="background:#121009;padding:clamp(24px,2.6vw,40px);display:flex;flex-direction:column;gap:18px"><span style="color:#E8622C;letter-spacing:0.24em;font-size:13px">★★★★★</span><p style="margin:0;font-size:clamp(17px,1.5vw,21px);line-height:1.6;color:#E4DCCB;text-wrap:pretty">&ldquo;Masonry above the roofline was crumbling. The repair matches the original brick — you can&rsquo;t tell where old ends and new begins.&rdquo;</p><div style="margin-top:auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><span style="font-size:13.5px;font-weight:700">J. P.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.16em;color:#9B917E">VAUGHAN · MASONRY REPAIR</span></div></div>
+      <div style="background:#121009;padding:clamp(24px,2.6vw,40px);display:flex;flex-direction:column;gap:18px"><span style="color:#E8622C;letter-spacing:0.24em;font-size:13px">★★★★★</span><p style="margin:0;font-size:clamp(17px,1.5vw,21px);line-height:1.6;color:#E4DCCB;text-wrap:pretty">&ldquo;Booked a pre-purchase inspection on short notice. Photos of everything, plain-language notes, honest advice about what could wait.&rdquo;</p><div style="margin-top:auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><span style="font-size:13.5px;font-weight:700">D. K.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.16em;color:#9B917E">ETOBICOKE · INSPECTION</span></div></div>
+      <div style="background:#121009;padding:clamp(24px,2.6vw,40px);display:flex;flex-direction:column;gap:18px"><span style="color:#E8622C;letter-spacing:0.24em;font-size:13px">★★★★★</span><p style="margin:0;font-size:clamp(17px,1.5vw,21px);line-height:1.6;color:#E4DCCB;text-wrap:pretty">&ldquo;A flashing leak stained our ceiling twice a year. Fixed properly the first time — two heavy rains since, bone dry.&rdquo;</p><div style="margin-top:auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><span style="font-size:13.5px;font-weight:700">A. G.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.16em;color:#9B917E">MISSISSAUGA · FLASHING</span></div></div>
+      <div style="background:#121009;padding:clamp(24px,2.6vw,40px);display:flex;flex-direction:column;gap:18px"><span style="color:#E8622C;letter-spacing:0.24em;font-size:13px">★★★★★</span><p style="margin:0;font-size:clamp(17px,1.5vw,21px);line-height:1.6;color:#E4DCCB;text-wrap:pretty">&ldquo;Fast to call back, on time, and the price the technician gave on-site is exactly the price we paid.&rdquo;</p><div style="margin-top:auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><span style="font-size:13.5px;font-weight:700">R. B.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.16em;color:#9B917E">RICHMOND HILL · CLEANING</span></div></div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:20px">
+      <a href="#" style="border:1px solid rgba(245,239,228,0.25);color:#F5EFE4;padding:14px 24px;font-size:11.5px;font-weight:800;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4">SEE MORE REVIEWS</a>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Standard + Process" style="border-bottom:1px solid rgba(245,239,228,0.1)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,8vw,110px) clamp(16px,3vw,40px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr));gap:clamp(40px,5vw,96px)">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">06 — THE STANDARD</div>
+        <h2 style="margin:14px 0 28px;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(32px,4vw,56px);line-height:0.98">CHIMNEY WORK<br />YOU CAN TRUST</h2>
+        <div style="display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid rgba(245,239,228,0.14)">
+          <div style="display:grid;grid-template-columns:44px minmax(150px,200px) 1fr;gap:12px;padding:15px 4px;border-bottom:1px solid rgba(245,239,228,0.14);align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">P-1</span><span style="font-size:13px;font-weight:800;letter-spacing:0.08em">EXPERIENCE</span><span style="font-size:13.5px;color:#9B917E">Attention to detail, on every visit.</span></div>
+          <div style="display:grid;grid-template-columns:44px minmax(150px,200px) 1fr;gap:12px;padding:15px 4px;border-bottom:1px solid rgba(245,239,228,0.14);align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">P-2</span><span style="font-size:13px;font-weight:800;letter-spacing:0.08em">CLEAR COMMUNICATION</span><span style="font-size:13.5px;color:#9B917E">Know what&rsquo;s happening before work begins.</span></div>
+          <div style="display:grid;grid-template-columns:44px minmax(150px,200px) 1fr;gap:12px;padding:15px 4px;border-bottom:1px solid rgba(245,239,228,0.14);align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">P-3</span><span style="font-size:13px;font-weight:800;letter-spacing:0.08em">QUALITY WORKMANSHIP</span><span style="font-size:13.5px;color:#9B917E">Completed properly, not rushed.</span></div>
+          <div style="display:grid;grid-template-columns:44px minmax(150px,200px) 1fr;gap:12px;padding:15px 4px;border-bottom:1px solid rgba(245,239,228,0.14);align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">P-4</span><span style="font-size:13px;font-weight:800;letter-spacing:0.08em">SAFETY FIRST</span><span style="font-size:13.5px;color:#9B917E">Your home deserves careful attention.</span></div>
+          <div style="display:grid;grid-template-columns:44px minmax(150px,200px) 1fr;gap:12px;padding:15px 4px;border-bottom:1px solid rgba(245,239,228,0.14);align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">P-5</span><span style="font-size:13px;font-weight:800;letter-spacing:0.08em">LOCAL GTA SERVICE</span><span style="font-size:13.5px;color:#9B917E">Toronto and surrounding communities.</span></div>
+          <div style="display:grid;grid-template-columns:44px minmax(150px,200px) 1fr;gap:12px;padding:15px 4px;border-bottom:1px solid rgba(245,239,228,0.14);align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">P-6</span><span style="font-size:13px;font-weight:800;letter-spacing:0.08em">RESPECT FOR YOUR HOME</span><span style="font-size:13.5px;color:#9B917E">Professional conduct, arrival to completion.</span></div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">HOW IT WORKS</div>
+        <h2 style="margin:14px 0 28px;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(32px,4vw,56px);line-height:0.98">SIMPLE, START<br />TO FINISH</h2>
+        <div style="display:flex;flex-direction:column;border-left:1px solid rgba(232,98,44,0.5)">
+          <div style="position:relative;padding:0 0 28px 30px"><span style="position:absolute;left:-6px;top:4px;width:11px;height:11px;background:#E8622C"></span><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#E8622C;letter-spacing:0.18em;margin-bottom:6px">STEP 01</div><h3 style="margin:0 0 6px;font-size:18px;font-weight:700">Tell us what you need</h3><p style="margin:0;font-size:14px;line-height:1.65;color:#9B917E">Use the work order form or call. Describe the problem — photos help.</p></div>
+          <div style="position:relative;padding:0 0 28px 30px"><span style="position:absolute;left:-6px;top:4px;width:11px;height:11px;background:#E8622C"></span><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#E8622C;letter-spacing:0.18em;margin-bottom:6px">STEP 02</div><h3 style="margin:0 0 6px;font-size:18px;font-weight:700">Get a clear quote</h3><p style="margin:0;font-size:14px;line-height:1.65;color:#9B917E">What we recommend, what it costs, and why — before any work begins.</p></div>
+          <div style="position:relative;padding:0 0 28px 30px"><span style="position:absolute;left:-6px;top:4px;width:11px;height:11px;background:#E8622C"></span><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#E8622C;letter-spacing:0.18em;margin-bottom:6px">STEP 03</div><h3 style="margin:0 0 6px;font-size:18px;font-weight:700">We come to your home</h3><p style="margin:0;font-size:14px;line-height:1.65;color:#9B917E">On time, prepared, and respectful of your space.</p></div>
+          <div style="position:relative;padding:0 0 6px 30px"><span style="position:absolute;left:-6px;top:4px;width:11px;height:11px;background:#E8622C"></span><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#E8622C;letter-spacing:0.18em;margin-bottom:6px">STEP 04</div><h3 style="margin:0 0 6px;font-size:18px;font-weight:700">Professional service</h3><p style="margin:0;font-size:14px;line-height:1.65;color:#9B917E">Work done properly, the area left clean, results walked through with you.</p></div>
+        </div>
+        <a href="#quote" style="display:inline-block;margin-top:26px;background:#E8622C;color:#121009;padding:16px 28px;font-size:12.5px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">START STEP 01 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="anatomy" data-screen-label="Know your chimney" style="border-bottom:1px solid rgba(245,239,228,0.1);background-image:radial-gradient(40% 34% at 82% 100%,rgba(232,98,44,0.1),transparent 70%)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,8vw,110px) clamp(16px,3vw,40px)">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:44px">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">07 — EDUCATION</div>
+        <h2 style="margin:14px 0 0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(36px,4.5vw,64px);line-height:0.96">KNOW YOUR CHIMNEY</h2>
+      </div>
+      <p style="margin:0;max-width:420px;font-size:15px;line-height:1.7;color:#9B917E;text-wrap:pretty">Your chimney is part of your home&rsquo;s safety system — it vents smoke and combustion gases out of your living space. No fear tactics: drag the 3D model and tap each part — see what it does and why it matters.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr));gap:clamp(32px,4vw,72px);align-items:stretch">
+      <div style="position:relative;min-height:clamp(460px,58vw,620px);border:1px solid rgba(245,239,228,0.12);background:radial-gradient(60% 50% at 50% 100%,rgba(232,98,44,0.1),transparent 70%),repeating-linear-gradient(0deg,rgba(245,239,228,0.025) 0 1px,transparent 1px 44px),repeating-linear-gradient(90deg,rgba(245,239,228,0.025) 0 1px,transparent 1px 44px)">
+        <chimney-3d anatomy="1" ref="{{ c3dRef }}" style="position:absolute;inset:0;display:block"></chimney-3d>
+        <div style="position:absolute;left:16px;top:14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;color:#9B917E;pointer-events:none">FIG. 01 — INTERACTIVE 3D MODEL</div>
+        <div style="position:absolute;right:16px;top:14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;color:rgba(245,239,228,0.45);pointer-events:none;text-align:right">DRAG TO ROTATE · TAP A PART</div>
+        <div style="position:absolute;left:12px;right:12px;bottom:12px;display:flex;flex-wrap:wrap;gap:6px;z-index:2">
+          <sc-for list="{{ anaChips }}" as="d" hint-placeholder-count="7">
+            <button onClick="{{ anaPick }}" data-i="{{ $index }}" style="display:flex;align-items:center;gap:7px;padding:9px 12px;border:{{ d.ring }};background:{{ d.bg }};color:{{ d.fg }};font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;cursor:pointer;transition:all .2s">{{ d.n }} · {{ d.label }}</button>
+          </sc-for>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column">
+        <div style="border:1px solid rgba(232,98,44,0.4);background:rgba(232,98,44,0.06);padding:clamp(24px,2.6vw,40px);display:flex;flex-direction:column;gap:14px;min-height:220px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.22em;color:#E8622C">PART {{ anaNum }} / 07</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.18em;color:#9B917E">{{ anaRisk }}</span>
+          </div>
+          <h3 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(26px,2.8vw,40px);letter-spacing:0.02em">{{ anaTitle }}</h3>
+          <p style="margin:0;font-size:16px;line-height:1.75;color:#C9BFAC;text-wrap:pretty">{{ anaCopy }}</p>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(245,239,228,0.12);border:1px solid rgba(245,239,228,0.12);border-top:none">
+          <div style="background:#121009;padding:20px 22px"><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.2em;color:#9B917E;margin-bottom:8px">WATER</div><p style="margin:0;font-size:13.5px;line-height:1.6;color:#C9BFAC">Water is masonry&rsquo;s worst enemy. It enters through small gaps — then freeze-thaw cycles do the damage.</p></div>
+          <div style="background:#121009;padding:20px 22px"><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.2em;color:#9B917E;margin-bottom:8px">CREOSOTE</div><p style="margin:0;font-size:13.5px;line-height:1.6;color:#C9BFAC">Burning wood leaves creosote in the flue. Removing it keeps the chimney venting the way it should.</p></div>
+          <div style="background:#121009;padding:20px 22px"><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.2em;color:#9B917E;margin-bottom:8px">WINTER</div><p style="margin:0;font-size:13.5px;line-height:1.6;color:#C9BFAC">Toronto winters are hard on brick. A chimney serviced before the season is one less thing to think about.</p></div>
+          <div style="background:#121009;padding:20px 22px"><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.2em;color:#9B917E;margin-bottom:8px">INSPECTION</div><p style="margin:0;font-size:13.5px;line-height:1.6;color:#C9BFAC">Most problems are invisible from the ground. A proper look finds small issues while they&rsquo;re still small.</p></div>
+        </div>
+        <a href="#quote" onClick="{{ svcQuote }}" data-svc="Chimney Inspection" style="display:flex;justify-content:space-between;align-items:center;border:1px solid rgba(245,239,228,0.2);padding:18px 22px;color:#F5EFE4;font-size:12.5px;font-weight:800;letter-spacing:0.12em;transition:all .2s;margin-top:22px" style-hover="border-color:#E8622C;color:#E8622C">NOT SURE WHAT YOURS NEEDS? BOOK AN INSPECTION<span>→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div id="pf-story-winter" style="height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;pointer-events:none;text-align:center;padding:0 20px">
+  <span style="font-family:'Anton',sans-serif;font-size:clamp(38px,7vw,110px);line-height:0.95;color:transparent;-webkit-text-stroke:1.5px rgba(245,239,228,0.6);text-shadow:0 8px 70px rgba(0,0,0,0.65)">BACK OUT<br />OVER THE GTA</span>
+</div>
+<section id="coverage" data-screen-label="Service area" style="border-bottom:1px solid rgba(245,239,228,0.1)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,8vw,110px) clamp(16px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr));gap:clamp(32px,4vw,72px);align-items:center">
+    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:24px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">08 — COVERAGE</div>
+      <h2 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(36px,4.5vw,64px);line-height:0.96">SERVING TORONTO<br />&amp; THE GTA</h2>
+      <p style="margin:0;font-size:15.5px;line-height:1.7;color:#9B917E;max-width:440px;text-wrap:pretty">Local crews across the city and surrounding communities. If you&rsquo;re not sure we reach you, send your postal code — we&rsquo;ll confirm right away.</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;max-width:520px">
+        <sc-for list="{{ areaNames }}" as="a" hint-placeholder-count="13">
+          <span style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:8px 13px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.14em">{{ a.name }}</span>
+        </sc-for>
+        <span style="border:1px dashed rgba(232,98,44,0.6);color:#E8622C;padding:8px 13px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.14em">+ SURROUNDING AREAS</span>
+      </div>
+      <a href="#quote" style="background:#E8622C;color:#121009;padding:17px 30px;font-size:13px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">CHECK YOUR AREA</a>
+    </div>
+    <div style="position:relative;aspect-ratio:1/0.92;max-height:600px;border:1px solid rgba(245,239,228,0.14);background:#14110A;overflow:hidden">
+      <div style="position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,rgba(245,239,228,0.03) 0 1px,transparent 1px 40px),repeating-linear-gradient(90deg,rgba(245,239,228,0.03) 0 1px,transparent 1px 40px)"></div>
+      <div style="position:absolute;left:51%;top:64%;width:170px;height:170px;margin:-85px 0 0 -85px;border:1px solid rgba(232,98,44,0.4);border-radius:50%"></div>
+      <div style="position:absolute;left:51%;top:64%;width:340px;height:340px;margin:-170px 0 0 -170px;border:1px solid rgba(232,98,44,0.22);border-radius:50%"></div>
+      <div style="position:absolute;left:51%;top:64%;width:520px;height:520px;margin:-260px 0 0 -260px;border:1px solid rgba(232,98,44,0.12);border-radius:50%"></div>
+      <div style="position:absolute;left:51%;top:64%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;background:conic-gradient(from 0deg,rgba(232,98,44,0.14),transparent 70deg);animation:pfSweep 7s linear infinite"></div>
+      <div style="position:absolute;left:-12%;right:-12%;bottom:-34%;height:52%;border-radius:50%;background:rgba(245,239,228,0.045);border-top:1px solid rgba(245,239,228,0.12)"></div>
+      <span style="position:absolute;left:50%;transform:translateX(-50%);bottom:12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.3em;color:rgba(245,239,228,0.4)">LAKE ONTARIO</span>
+      <span style="position:absolute;right:14px;top:12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.22em;color:rgba(245,239,228,0.4)">FIG. 02 — GTA COVERAGE</span>
+      <sc-for list="{{ areas }}" as="ar" hint-placeholder-count="13">
+        <div style="position:absolute;left:{{ ar.x }};top:{{ ar.y }};transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:5px;z-index:2">
+          <span style="width:{{ ar.size }};height:{{ ar.size }};background:{{ ar.bg }};border-radius:50%;border:{{ ar.ring }}"></span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.16em;color:{{ ar.fg }};white-space:nowrap">{{ ar.name }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="faq" data-screen-label="FAQ" style="border-bottom:1px solid rgba(245,239,228,0.1)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,8vw,110px) clamp(16px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(400px,100%),1fr));gap:clamp(32px,4vw,72px);align-items:start">
+    <div style="display:flex;flex-direction:column;gap:22px;position:sticky;top:96px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">SCENE 10 — Q&amp;A</div>
+      <h2 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(36px,4.5vw,64px);line-height:0.96">ASK US<br />ANYTHING</h2>
+      <p style="margin:0;font-size:15px;line-height:1.7;color:#9B917E;max-width:380px;text-wrap:pretty">Straight answers, no fear tactics. Anything we didn&rsquo;t cover — call or send a work order.</p>
+      <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.3);color:#F5EFE4;padding:15px 26px;font-size:12px;font-weight:800;letter-spacing:0.12em;align-self:flex-start;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL {{ phone }}</a>
+    </div>
+    <div style="border-top:1px solid rgba(245,239,228,0.14)">
+      <sc-for list="{{ faqs }}" as="q" hint-placeholder-count="10">
+        <div style="border-bottom:1px solid rgba(245,239,228,0.14)">
+          <button onClick="{{ toggleFaq }}" data-i="{{ $index }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:18px;background:none;border:none;color:#F5EFE4;padding:19px 4px;font-family:'Archivo',sans-serif;font-size:16px;font-weight:600;text-align:left;cursor:pointer;transition:color .2s" style-hover="color:#E8622C">{{ q.q }}<span style="font-family:'IBM Plex Mono',monospace;color:#E8622C;font-size:16px">{{ q.sym }}</span></button>
+          <div style="max-height:{{ q.mh }};overflow:hidden;transition:max-height .35s ease"><p style="margin:0;padding:0 40px 20px 4px;font-size:14.5px;line-height:1.75;color:#9B917E;text-wrap:pretty">{{ q.a }}</p></div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Final CTA" style="position:relative;background-image:radial-gradient(52% 60% at 50% 118%,rgba(232,98,44,0.28),transparent 72%)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(80px,10vw,140px) clamp(16px,3vw,40px);display:flex;flex-direction:column;align-items:center;text-align:center;gap:28px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.3em;color:#E8622C">NO PRESSURE · NO OBLIGATION · JUST ANSWERS</div>
+    <h2 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(52px,9vw,140px);line-height:0.92">READY WHEN<br />YOU ARE.</h2>
+    <p style="margin:0;max-width:480px;font-size:16px;line-height:1.7;color:#9B917E;text-wrap:pretty">Tell us what&rsquo;s going on with your chimney. We&rsquo;ll tell you exactly what it needs — and what it doesn&rsquo;t.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+      <a href="#quote" style="background:#E8622C;color:#121009;padding:19px 36px;font-size:13.5px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A FREE INSPECTION</a>
+      <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.32);color:#F5EFE4;padding:19px 32px;font-size:13.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:8px;height:8px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL NOW</a>
+    </div>
+  </div>
+</section>
+
+<footer data-screen-label="Footer" style="border-top:1px solid rgba(245,239,228,0.1)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(48px,6vw,80px) clamp(16px,3vw,40px) 40px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:40px;margin-bottom:56px">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="position:relative;width:20px;height:24px;display:block">
+            <span style="position:absolute;left:0;top:4px;bottom:0;width:4px;background:#F5EFE4"></span>
+            <span style="position:absolute;right:0;top:4px;bottom:0;width:4px;background:#F5EFE4"></span>
+            <span style="position:absolute;left:50%;transform:translateX(-50%);top:0;width:6px;height:6px;background:#E8622C"></span>
+          </span>
+          <span style="font-family:'Anton',sans-serif;font-size:18px;letter-spacing:0.06em">NORTHMARK</span>
+        </div>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.3em;color:#9B917E">CHIMNEY SERVICES — TORONTO &amp; GTA</span>
+        <p style="margin:6px 0 0;font-size:13.5px;line-height:1.7;color:#9B917E;max-width:300px">Professional chimney cleaning, inspections, repairs and maintenance for homeowners across Toronto and the GTA.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.24em;color:#9B917E;margin-bottom:4px">SERVICES</span>
+        <a href="/chimney-cleaning-toronto" style="color:#C9BFAC;font-size:13.5px;transition:color .2s" style-hover="color:#E8622C">Chimney Cleaning</a>
+        <a href="/chimney-inspection-toronto" style="color:#C9BFAC;font-size:13.5px;transition:color .2s" style-hover="color:#E8622C">Chimney Inspection</a>
+        <a href="/chimney-repair-toronto" style="color:#C9BFAC;font-size:13.5px;transition:color .2s" style-hover="color:#E8622C">Chimney Repair</a>
+        <a href="/chimney-cap-installation-toronto" style="color:#C9BFAC;font-size:13.5px;transition:color .2s" style-hover="color:#E8622C">Caps &amp; Liners</a>
+        <a href="/chimney-masonry-repair-toronto" style="color:#C9BFAC;font-size:13.5px;transition:color .2s" style-hover="color:#E8622C">Masonry &amp; Flashing</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.24em;color:#9B917E;margin-bottom:4px">COMPANY</span>
+        <a href="/about" style="color:#C9BFAC;font-size:13.5px;transition:color .2s" style-hover="color:#E8622C">About</a>
+        <a href="#projects" style="color:#C9BFAC;font-size:13.5px;transition:color .2s" style-hover="color:#E8622C">Projects</a>
+        <a href="#reviews" style="color:#C9BFAC;font-size:13.5px;transition:color .2s" style-hover="color:#E8622C">Reviews</a>
+        <a href="#coverage" style="color:#C9BFAC;font-size:13.5px;transition:color .2s" style-hover="color:#E8622C">Service Areas</a>
+        <a href="#faq" style="color:#C9BFAC;font-size:13.5px;transition:color .2s" style-hover="color:#E8622C">FAQ</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.24em;color:#9B917E;margin-bottom:4px">CONTACT</span>
+        <a href="{{ telHref }}" onClick="{{ trackCall }}" style="color:#F5EFE4;font-size:15px;font-weight:700">{{ phone }}</a>
+        <a href="{{ mailHref }}" style="color:#C9BFAC;font-size:13.5px">{{ emailVal }}</a>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;color:#9B917E;margin-top:6px">{{ hoursVal }}</span>
+        <div style="display:flex;gap:14px;margin-top:6px">
+          <a href="#" style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.18em;color:#9B917E;transition:color .2s" style-hover="color:#E8622C">INSTAGRAM</a>
+          <a href="#" style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.18em;color:#9B917E;transition:color .2s" style-hover="color:#E8622C">FACEBOOK</a>
+          <a href="#" style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.18em;color:#9B917E;transition:color .2s" style-hover="color:#E8622C">GOOGLE</a>
+        </div>
+      </div>
+    </div>
+    <div style="overflow:hidden;margin-bottom:28px">
+      <div style="font-family:'Anton',sans-serif;font-size:clamp(64px,12.5vw,210px);line-height:0.85;text-align:center;color:transparent;-webkit-text-stroke:1px rgba(245,239,228,0.18);letter-spacing:0.02em;white-space:nowrap">NORTHMARK</div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px 24px;flex-wrap:wrap;border-top:1px solid rgba(245,239,228,0.1);padding-top:22px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.14em;color:#9B917E">© 2026 NORTHMARK CHIMNEY SERVICES · TORONTO &amp; GTA</span>
+      <div style="display:flex;gap:20px">
+        <a href="#" style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.14em;color:#9B917E;transition:color .2s" style-hover="color:#F5EFE4">PRIVACY POLICY</a>
+        <a href="#" style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.14em;color:#9B917E;transition:color .2s" style-hover="color:#F5EFE4">TERMS</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
+  <div style="height:76px"></div>
+  <div style="position:fixed;left:0;right:0;bottom:0;z-index:70;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(245,239,228,0.2);border-top:1px solid rgba(245,239,228,0.2);padding-bottom:env(safe-area-inset-bottom)">
+    <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:flex;align-items:center;justify-content:center;gap:9px;background:#121009;color:#F5EFE4;padding:19px 10px;font-size:12.5px;font-weight:800;letter-spacing:0.12em"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL NOW</a>
+    <a href="#quote" style="display:flex;align-items:center;justify-content:center;background:#E8622C;color:#121009;padding:19px 10px;font-size:12.5px;font-weight:800;letter-spacing:0.12em">BOOK A FREE INSPECTION</a>
+  </div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;phoneNumber&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;(416) 505-6228&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Business info&quot;},&quot;email&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;info@northmark-chimney.ca&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Business info&quot;},&quot;showPlaceholderTags&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Content&quot;}}">
+class Component extends DCLogic {
+  state = { mobile: false, menuOpen: false, problem: '', submitted: false, sName: '', formErr: '', faqOpen: -1, filter: 'ALL', baCat: 'CLEANING', anaIdx: 0 };
+  baX = 55; baClipEls = []; baHandleEl = null; baBoxEl = null; dragging = false;
+  componentDidMount() {
+    this.mq = window.matchMedia('(max-width: 1180px)');
+    this.onMq = () => this.setState({ mobile: this.mq.matches });
+    this.mq.addEventListener('change', this.onMq); this.onMq();
+    this.onMove = (e) => {
+      if (!this.dragging || !this.baBoxEl) return;
+      const r = this.baBoxEl.getBoundingClientRect();
+      const cx = e.touches ? e.touches[0].clientX : e.clientX;
+      const x = Math.min(94, Math.max(6, ((cx - r.left) / r.width) * 100));
+      this.applyBa(x);
+    };
+    this.onUp = () => { this.dragging = false; };
+    window.addEventListener('pointermove', this.onMove);
+    window.addEventListener('pointerup', this.onUp);
+  }
+  componentWillUnmount() {
+    this.mq.removeEventListener('change', this.onMq);
+    window.removeEventListener('pointermove', this.onMove);
+    window.removeEventListener('pointerup', this.onUp);
+  }
+  applyBa(x) {
+    this.baX = x;
+    this.baClipEls.forEach(el => { if (el) el.style.clipPath = 'inset(0 ' + (100 - x) + '% 0 0)'; });
+    if (this.baHandleEl) this.baHandleEl.style.left = x + '%';
+  }
+  track(name, data) {
+    try {
+      (window.dataLayer = window.dataLayer || []).push(Object.assign({ event: name }, data || {}));
+      if (window.PF_CONFIG && typeof window.PF_CONFIG.onEvent === 'function') window.PF_CONFIG.onEvent(name, data || {});
+    } catch (err) {}
+  }
+  svcProblem(v) {
+    const map = { 'Chimney Cleaning': 'Chimney needs a cleaning / smoke issue.', 'Chimney Inspection': 'Not sure what it needs — booking a free inspection.', 'Chimney Repair': 'Chimney needs repair.', 'Chimney Cap': 'Chimney cap is damaged or missing.', 'Chimney Liner': 'Possible liner issue.', 'Masonry Repair': 'Cracked brick / crumbling mortar.', 'Water / Flashing': 'Water getting in around the chimney.' };
+    return map[v] || v;
+  }
+  _preselect(e) {
+    const p = this.svcProblem(e.currentTarget.dataset.svc);
+    this.track('problem_selected', { problem: p, source: 'shortcut' });
+    this.setState({ problem: p, submitted: false, formErr: '' });
+    if (this.problemEl) this.problemEl.value = p;
+    window.location.hash = '';
+    window.location.hash = 'quote';
+  }
+  renderVals() {
+    const s = this.state;
+    const ana = [
+      { n: '1', label: 'CAP', title: 'CHIMNEY CAP', risk: 'KEEPS THINGS OUT', copy: 'The cap sits on top of the flue and keeps rain, snow, animals and debris out. A damaged or missing cap is the single most common — and most affordable — thing to fix.' },
+      { n: '2', label: 'CROWN', title: 'CROWN', risk: 'SHEDS WATER', copy: 'The concrete crown sheds water away from the flue opening. Hairline cracks let water into the masonry below, where freeze-thaw cycles slowly widen the damage.' },
+      { n: '3', label: 'LINER', title: 'FLUE LINER', risk: 'PROTECTS THE STRUCTURE', copy: 'The liner carries heat and combustion gases safely up and out, protecting the surrounding structure. It needs to be intact — full stop. We assess liners during every inspection.' },
+      { n: '4', label: 'MASONRY', title: 'MASONRY', risk: 'BRICK + MORTAR', copy: 'Toronto winters are hard on brick. Freeze-thaw, salt and age break down mortar joints. Cracked or spalling brick is the chimney asking for attention — early repointing is far cheaper than a rebuild.' },
+      { n: '5', label: 'FLASHING', title: 'FLASHING', risk: 'COMMON LEAK POINT', copy: 'Flashing seals the joint where the chimney meets the roof — a frequent source of leaks. Water stains on a ceiling near the fireplace usually start right here.' },
+      { n: '6', label: 'DAMPER', title: 'DAMPER & SMOKE CHAMBER', risk: 'CONTROLS AIRFLOW', copy: 'The damper controls airflow; the smoke chamber funnels smoke into the flue. Buildup collects here, and a stuck damper is a common cause of poor drafting.' },
+      { n: '7', label: 'FIREBOX', title: 'FIREBOX', risk: 'WHERE THE FIRE LIVES', copy: 'The firebox takes the most direct heat. Cracked panels or failing mortar joints here matter more than they look — this is where careful attention pays off.' }
+    ];
+    const areasData = [
+      { name: 'TORONTO', x: '51%', y: '64%', main: true },
+      { name: 'YORK', x: '43%', y: '55%' },
+      { name: 'EAST YORK', x: '60%', y: '57%' },
+      { name: 'NORTH YORK', x: '51%', y: '44%' },
+      { name: 'SCARBOROUGH', x: '70%', y: '50%' },
+      { name: 'ETOBICOKE', x: '34%', y: '62%' },
+      { name: 'MISSISSAUGA', x: '24%', y: '72%' },
+      { name: 'BRAMPTON', x: '17%', y: '46%' },
+      { name: 'VAUGHAN', x: '36%', y: '32%' },
+      { name: 'CONCORD', x: '45%', y: '25%' },
+      { name: 'THORNHILL', x: '56%', y: '31%' },
+      { name: 'RICHMOND HILL', x: '49%', y: '14%' },
+      { name: 'MARKHAM', x: '68%', y: '22%' }
+    ];
+    const gal = [
+      { slot: 'g-01', title: 'Crown & brick rebuild', meta: 'MASONRY · NORTH YORK', cat: 'MASONRY', row: 'span 2', col: 'span 2', src: 'assets-lite/brick-repair.jpg', ph: 'Project photo — masonry rebuild' },
+      { slot: 'g-02', title: 'Wood-burning flue sweep', meta: 'CLEANING · EAST YORK', cat: 'CLEANING', row: 'span 1', col: 'span 1', src: 'assets-lite/flue.jpg', ph: 'Project photo — flue sweep' },
+      { slot: 'g-03', title: 'Stainless multi-flue cap', meta: 'CAPS · ETOBICOKE', cat: 'CAPS', row: 'span 1', col: 'span 1', src: 'assets-lite/cap.jpg', ph: 'Project photo — cap install' },
+      { slot: 'g-04', title: 'Liner replacement', meta: 'REPAIRS · SCARBOROUGH', cat: 'REPAIRS', row: 'span 2', col: 'span 1', src: 'assets-lite/liner.jpg', ph: 'Project photo — liner work' },
+      { slot: 'g-05', title: 'Flashing re-seal', meta: 'B&A · VAUGHAN', cat: 'BEFORE & AFTER', row: 'span 1', col: 'span 1', src: 'assets-lite/flashing.jpg', ph: 'Before/after — flashing' },
+      { slot: 'g-06', title: 'Tuckpointing above roofline', meta: 'MASONRY · RICHMOND HILL', cat: 'MASONRY', row: 'span 1', col: 'span 1', src: 'assets-lite/brick.jpg', ph: 'Project photo — tuckpointing' },
+      { slot: 'g-07', title: 'Pre-winter maintenance', meta: 'CLEANING · MISSISSAUGA', cat: 'CLEANING', row: 'span 1', col: 'span 1', src: 'assets-lite/maintain.jpg', ph: 'Project photo — seasonal visit' },
+      { slot: 'g-08', title: 'Level 1 look-over', meta: 'REPAIRS · MARKHAM', cat: 'REPAIRS', row: 'span 1', col: 'span 1', src: 'assets-lite/inspect.jpg', ph: 'Project photo — inspection' }
+    ];
+    const baCats = ['CLEANING', 'MASONRY', 'CAPS', 'FLASHING', 'REPAIRS'];
+    const filters = ['ALL', 'CLEANING', 'REPAIRS', 'MASONRY', 'CAPS', 'BEFORE & AFTER'];
+    const faqsData = [
+      { q: 'How often should a chimney be cleaned?', a: 'Most wood-burning chimneys benefit from a yearly cleaning, but it really depends on how much you burn, what you burn, and the chimney\u2019s condition. After seeing yours, we can recommend an honest schedule — sometimes that means less often, not more.' },
+      { q: 'How do I know if my chimney needs repair?', a: 'Common signs: cracked or spalling brick, white staining, rust on the cap or damper, water in the firebox, smoke drafting poorly, or debris falling into the fireplace. An inspection confirms what\u2019s actually going on before you spend anything.' },
+      { q: 'Do you provide chimney inspections?', a: 'Yes — on their own or together with a cleaning. You get findings explained in plain language, with photos, so you can see exactly what we see.' },
+      { q: 'Can you repair chimney masonry?', a: 'Yes. Brick replacement, repointing (tuckpointing), and crown work above the roofline — matched as closely as possible to your home\u2019s existing brick.' },
+      { q: 'Do you install chimney caps?', a: 'Yes. Caps keep water, animals and debris out of the flue, and they\u2019re sized to your specific flue — not one-size-fits-all.' },
+      { q: 'Do you service gas fireplaces?', a: 'Tell us about your setup when you leave your details. We\u2019ll confirm whether it\u2019s a fit before anything is booked — no surprises on arrival.' },
+      { q: 'Do you service my area?', a: 'We serve Toronto, North York, Scarborough, Etobicoke, York, East York, Vaughan, Richmond Hill, Markham, Thornhill, Mississauga, Brampton, Concord and surrounding communities. Not sure? Send your postal code and we\u2019ll confirm.' },
+      { q: 'How much does chimney cleaning cost?', a: 'It depends on the chimney\u2019s condition and access — so we don\u2019t give blind numbers online. The inspection visit is free, the technician gives you an exact price on-site, and you approve it before any work begins.' },
+      { q: 'How quickly can you come?', a: 'It varies by season and schedule. Leave your phone and address and we\u2019ll call back with the earliest real slot for your area.' },
+      { q: 'Is the inspection really free?', a: 'Yes. A technician comes out, looks at the chimney, explains what they see, and gives you a price on the spot — free, no obligation. You decide from there.' }
+    ];
+    const anaActive = ana[s.anaIdx] || ana[0];
+    return {
+      mobile: s.mobile, notMobile: !s.mobile, menuOpen: s.menuOpen,
+      openMenu: () => this.setState({ menuOpen: true }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      phone: this.props.phoneNumber ?? '(416) 505-6228',
+      telHref: 'tel:+1' + String(this.props.phoneNumber ?? '4165056228').replace(/\D/g, ''),
+      emailVal: this.props.email ?? 'info@northmark-chimney.ca',
+      hoursVal: this.props.hours ?? 'MON–SAT · 8:00–18:00',
+      mailHref: 'mailto:' + (this.props.email ?? 'info@northmark-chimney.ca'),
+      trackCall: () => this.track('phone_click', { source: 'home' }),
+      heroPick: (e) => this._preselect(e),
+      svcQuote: (e) => { const p = this.svcProblem(e.currentTarget.dataset.svc); this.track('problem_selected', { problem: p, source: 'services' }); this.setState({ problem: p, submitted: false, formErr: '' }); if (this.problemEl) this.problemEl.value = p; },
+      anaChips: ana.map((d, i) => ({ n: d.n, label: d.label,
+        bg: i === s.anaIdx ? '#E8622C' : 'rgba(18,16,9,0.85)',
+        fg: i === s.anaIdx ? '#121009' : '#C9BFAC',
+        ring: i === s.anaIdx ? '1px solid #E8622C' : '1px solid rgba(245,239,228,0.3)' })),
+      anaPick: (e) => { const i = +e.currentTarget.dataset.i; this.setState({ anaIdx: i }); if (this.c3d && this.c3d.setActive) this.c3d.setActive(i); },
+      c3dRef: (el) => { if (!el) return; this.c3d = el; if (!el._pfWired) { el._pfWired = true; el.addEventListener('part-select', (ev) => this.setState({ anaIdx: ev.detail.index })); } },
+      anaNum: anaActive.n, anaTitle: anaActive.title, anaCopy: anaActive.copy, anaRisk: anaActive.risk,
+      submitted: s.submitted, notSubmitted: !s.submitted,
+      formErr: s.formErr,
+      sName: s.sName ? ', ' + s.sName : '',
+      nameRef: (el) => { this.nameEl = el; },
+      phoneRef: (el) => { this.phoneEl = el; },
+      addressRef: (el) => { this.addressEl = el; },
+      problemRef: (el) => { this.problemEl = el; if (el && s.problem && !el.value) el.value = s.problem; },
+      submitLead: () => {
+        const name = (this.nameEl && this.nameEl.value.trim()) || '';
+        const phone = (this.phoneEl && this.phoneEl.value.trim()) || '';
+        const address = (this.addressEl && this.addressEl.value.trim()) || '';
+        const problem = (this.problemEl && this.problemEl.value.trim()) || '';
+        if (!phone || !address) { this.setState({ formErr: 'Please add your phone and address so we can call back and come out.' }); return; }
+        const lead = { name, phone, address, problem, source: 'northmark-website', submittedAt: new Date().toISOString() };
+        this.track('lead_submit', lead);
+        try { const fd = new URLSearchParams(); fd.append('form-name', 'inspection-request'); Object.keys(lead).forEach(k => fd.append(k, lead[k])); fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: fd.toString() }); const url = window.PF_CONFIG && window.PF_CONFIG.leadWebhook; if (url) fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(lead) }); } catch (err) {}
+        this.setState({ submitted: true, sName: name ? name.split(' ')[0] : '', formErr: '' });
+      },
+      baLabel: s.baCat + ' · TORONTO & GTA',
+      baTabs: baCats.map(k => ({ key: k,
+        bd: k === s.baCat ? '#E8622C' : 'rgba(245,239,228,0.2)',
+        bg: k === s.baCat ? '#E8622C' : 'transparent',
+        fg: k === s.baCat ? '#121009' : '#C9BFAC' })),
+      pickBaCat: (e) => this.setState({ baCat: e.currentTarget.dataset.cat }),
+      baPairs: baCats.map(k => ({
+        display: k === s.baCat ? 'block' : 'none',
+        beforeId: 'ba-' + k.toLowerCase() + '-before', afterId: 'ba-' + k.toLowerCase() + '-after',
+        beforePh: 'BEFORE — ' + k.toLowerCase() + ' (drop photo)', afterPh: 'AFTER — ' + k.toLowerCase() + ' (drop photo)' })),
+      baBoxRef: (el) => { this.baBoxEl = el; },
+      baHandleRef: (el) => { this.baHandleEl = el; if (el) el.style.left = this.baX + '%'; },
+      baClipRef: (el) => { if (el) { if (!this.baClipEls.includes(el)) this.baClipEls.push(el); el.style.clipPath = 'inset(0 ' + (100 - this.baX) + '% 0 0)'; } },
+      baDown: (e) => { e.preventDefault(); this.dragging = true; },
+      filterTabs: filters.map(k => ({ key: k,
+        bd: k === s.filter ? '#E8622C' : 'rgba(245,239,228,0.2)',
+        bg: k === s.filter ? '#E8622C' : 'transparent',
+        fg: k === s.filter ? '#121009' : '#C9BFAC' })),
+      pickFilter: (e) => this.setState({ filter: e.currentTarget.dataset.f }),
+      galleryView: gal.filter(g => s.filter === 'ALL' || g.cat === s.filter),
+      faqs: faqsData.map((f, i) => ({ q: f.q, a: f.a, mh: i === s.faqOpen ? '400px' : '0px', sym: i === s.faqOpen ? '−' : '+' })),
+      toggleFaq: (e) => { const i = +e.currentTarget.dataset.i; this.setState({ faqOpen: i === s.faqOpen ? -1 : i }); },
+      areaNames: areasData.map(a => ({ name: a.name })),
+      areas: areasData.map(a => ({ name: a.name, x: a.x, y: a.y,
+        size: a.main ? '12px' : '8px',
+        bg: a.main ? '#E8622C' : 'rgba(232,98,44,0.75)',
+        ring: a.main ? '2px solid rgba(245,239,228,0.85)' : '1px solid rgba(18,16,9,0.5)',
+        fg: a.main ? '#F5EFE4' : '#9B917E' }))
+    };
+  }
+
+}
+</script>
+</body>
+</html>
