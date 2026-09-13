@@ -4,6 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
+<script src="/seo-hook.js" defer></script>
+</head>
+<body>
+<x-dc>
+<helmet>
 <title>Chimney Flashing &amp; Waterproofing Toronto | Northmark Chimney</title>
 <meta name="description" content="Chimney flashing repair and waterproofing in Toronto &amp; the GTA. Roof-to-chimney joint, sealed right properly — free inspection from NORTHMARK." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,7 +17,7 @@
 <style>
 html{scroll-behavior:smooth}
 body{margin:0;background:#121009}
-.pf-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#171309}
+image-slot{position:absolute;inset:0;width:100%;height:100%;min-width:0;min-height:0}
 a{color:#E8622C;text-decoration:none}
 a:hover{color:#FF7A3D}
 ::selection{background:#E8622C;color:#121009}
@@ -20,6 +25,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 @keyframes pfPulse{0%,100%{opacity:1}50%{opacity:0.25}}
 @keyframes pfEmber{0%,100%{opacity:0.5;transform:scale(1)}50%{opacity:1;transform:scale(1.15)}}
 </style>
+<script src="./image-slot.js"></script>
 <script src="./pf3d.js"></script>
 
 <link rel="canonical" href="https://northmark-chimney.ca/chimney-flashing-toronto" />
@@ -36,11 +42,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I know the leak is from the chimney?","acceptedAnswer":{"@type":"Answer","text":"Stains near the fireplace, water in the firebox after storms, or a damp attic around the stack are the usual tells. We trace the leak before touching anything."}},{"@type":"Question","name":"Is tar an acceptable fix?","acceptedAnswer":{"@type":"Answer","text":"Tar buys months, not years, and it makes the proper repair harder later. We replace the flashing itself."}},{"@type":"Question","name":"What is counter flashing?","acceptedAnswer":{"@type":"Answer","text":"The second layer, set into the masonry, that covers the step flashing. The two-layer system is what actually keeps water out."}},{"@type":"Question","name":"Do you waterproof the brick too?","acceptedAnswer":{"@type":"Answer","text":"Yes — breathable masonry waterproofing where it makes sense, so the brick sheds water without trapping moisture."}},{"@type":"Question","name":"What does flashing repair cost?","acceptedAnswer":{"@type":"Answer","text":"Depends on the roof, access and how far the water got — so no blind numbers online. The inspection is free and the price is set on-site before any work."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Chimney Flashing & Waterproofing","serviceType":"Chimney Flashing & Waterproofing","url":"https://northmark-chimney.ca/chimney-flashing-toronto","provider":{"@type":"LocalBusiness","name":"Northmark Chimney","url":"https://northmark-chimney.ca","telephone":"+1-416-505-6228","email":"info@northmark-chimney.ca"},"areaServed":[{"@type":"City","name":"Toronto"},{"@type":"City","name":"North York"},{"@type":"City","name":"Scarborough"},{"@type":"City","name":"Etobicoke"},{"@type":"City","name":"York"},{"@type":"City","name":"East York"},{"@type":"City","name":"Vaughan"},{"@type":"City","name":"Richmond Hill"},{"@type":"City","name":"Markham"},{"@type":"City","name":"Thornhill"},{"@type":"City","name":"Mississauga"},{"@type":"City","name":"Brampton"},{"@type":"City","name":"Concord"}],"offers":{"@type":"Offer","description":"Free on-site inspection with an exact price quoted before work begins","priceCurrency":"CAD"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://northmark-chimney.ca/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://northmark-chimney.ca/#services"},{"@type":"ListItem","position":3,"name":"Chimney Flashing & Waterproofing","item":"https://northmark-chimney.ca/chimney-flashing-toronto"}]}</script>
-<script src="/seo-hook.js" defer></script>
-</head>
-<body>
-<x-dc>
 
+</helmet>
 <div style="background:#121009;color:#F5EFE4;font-family:'Archivo',ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5;overflow-x:clip">
 
 <nav data-screen-label="Nav" style="position:sticky;top:0;z-index:60;background:rgba(18,16,9,0.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(245,239,228,0.1)">
@@ -65,13 +68,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
         <a href="/#faq" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#B7AD9A;transition:color .2s" style-hover="color:#F5EFE4">FAQ</a>
       </div>
       <div style="display:flex;align-items:center;gap:10px">
-        <a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:11px 17px;font-size:11.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s ease-in-out infinite"></span>CALL NOW</a>
+        <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:11px 17px;font-size:11.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s ease-in-out infinite"></span>CALL NOW</a>
         <a href="#quote-cta" style="background:#E8622C;color:#121009;padding:12px 19px;font-size:11.5px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A FREE INSPECTION</a>
       </div>
     </sc-if>
     <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
       <div style="display:flex;align-items:center;gap:8px">
-        <a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:10px 13px;font-size:11px;font-weight:700;letter-spacing:0.12em"><span style="width:6px;height:6px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL</a>
+        <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:10px 13px;font-size:11px;font-weight:700;letter-spacing:0.12em"><span style="width:6px;height:6px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL</a>
         <a href="/" style="border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:10px 13px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em">HOME</a>
       </div>
     </sc-if>
@@ -86,15 +89,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
       <p style="margin:0;max-width:540px;font-size:clamp(15.5px,1.3vw,18px);line-height:1.7;color:#C9BFAC;text-wrap:pretty">The joint where your chimney meets the roof is where most leaks we see begin. We seal it properly — step flashing, counter flashing and masonry waterproofing — no tar-over shortcuts.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap">
         <a href="/#quote" style="background:#E8622C;color:#121009;padding:18px 32px;font-size:13px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A FREE INSPECTION</a>
-        <a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.32);color:#F5EFE4;padding:18px 28px;font-size:13px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:8px;height:8px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s ease-in-out infinite"></span>CALL NOW</a>
+        <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.32);color:#F5EFE4;padding:18px 28px;font-size:13px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:8px;height:8px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s ease-in-out infinite"></span>CALL NOW</a>
       </div>
       <div style="display:flex;align-items:center;gap:14px">
         <span style="color:#E8622C;font-size:13px;letter-spacing:0.22em">★★★★★</span>
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.18em;color:#9B917E">TRUSTED BY GTA HOMEOWNERS · FREE INSPECTIONS</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.18em;color:#9B917E">FULLY INSURED · FREE INSPECTIONS · TORONTO &amp; GTA</span>
       </div>
     </div>
     <div style="position:relative;aspect-ratio:4/3.4;border:1px solid rgba(245,239,228,0.16);background:#171309">
-      <img class="pf-img" id="cfla-hero" src="assets-lite/flashing.jpg" alt="Northmark Chimney — step flashing at the roofline" loading="lazy" decoding="async">
+      <image-slot id="cfla-hero" shape="rect" src="assets-lite/flashing.jpg" placeholder="" alt="Northmark Chimney — step flashing at the roofline"></image-slot>
       <div style="position:absolute;top:-1px;right:-1px;width:52px;height:52px;border-top:3px solid #E8622C;border-right:3px solid #E8622C;pointer-events:none"></div>
     </div>
   </div>
@@ -126,7 +129,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
           <div style="display:flex;gap:18px;align-items:baseline;padding:15px 4px;border-bottom:1px solid rgba(245,239,228,0.14);font-size:15px;color:#E4DCCB"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">S-05</span>Tar patches from previous quick fixes</div>
           <div style="display:flex;gap:18px;align-items:baseline;padding:15px 4px;border-bottom:1px solid rgba(245,239,228,0.14);font-size:15px;color:#E4DCCB"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">S-06</span>Ice buildup at the chimney base in winter</div>
         </div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px"><a href="/#quote" style="background:#E8622C;color:#121009;padding:16px 28px;font-size:12.5px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A LEAK VISIT →</a><a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(245,239,228,0.3);color:#F5EFE4;padding:16px 24px;font-size:12.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL (416) 505-6228</a></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px"><a href="/#quote" style="background:#E8622C;color:#121009;padding:16px 28px;font-size:12.5px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A LEAK VISIT →</a><a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(245,239,228,0.3);color:#F5EFE4;padding:16px 24px;font-size:12.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL {{ phone }}</a></div>
       </div>
     </div>
   </div>
@@ -148,8 +151,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
       <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">THE DIFFERENCE</div>
       <h2 style="margin:14px 0 24px;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(32px,4vw,58px);line-height:0.98">BEFORE &amp; AFTER</h2>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(245,239,228,0.14);border:1px solid rgba(245,239,228,0.14)">
-        <div style="position:relative;aspect-ratio:1/1.1;background:#171309"><img class="pf-img" id="cfla-ba-before" src="assets-lite/soot.jpg" alt="BEFORE — failed flashing" loading="lazy" decoding="async"><span style="position:absolute;left:10px;top:10px;background:rgba(18,16,9,0.85);color:#F5EFE4;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.2em;pointer-events:none">BEFORE</span></div>
-        <div style="position:relative;aspect-ratio:1/1.1;background:#171309"><img class="pf-img" id="cfla-ba-after" src="assets-lite/flashing.jpg" alt="AFTER — stepped &amp; sealed" loading="lazy" decoding="async"><span style="position:absolute;right:10px;top:10px;background:#E8622C;color:#121009;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.2em;pointer-events:none">AFTER</span></div>
+        <div style="position:relative;aspect-ratio:1/1.1;background:#171309"><image-slot id="cfla-ba-before" shape="rect" src="assets-lite/soot.jpg" placeholder="" alt="BEFORE — failed flashing"></image-slot><span style="position:absolute;left:10px;top:10px;background:rgba(18,16,9,0.85);color:#F5EFE4;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.2em;pointer-events:none">BEFORE</span></div>
+        <div style="position:relative;aspect-ratio:1/1.1;background:#171309"><image-slot id="cfla-ba-after" shape="rect" src="assets-lite/flashing.jpg" placeholder="" alt="AFTER — stepped &amp; sealed"></image-slot><span style="position:absolute;right:10px;top:10px;background:#E8622C;color:#121009;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.2em;pointer-events:none">AFTER</span></div>
       </div>
       <div style="border:1px solid rgba(245,239,228,0.14);border-top:none;padding:22px 24px;display:flex;flex-direction:column;gap:14px">
         <span style="color:#E8622C;letter-spacing:0.24em;font-size:12px">★★★★★</span>
@@ -188,6 +191,45 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
   </div>
 </section>
 
+<section data-screen-label="How we do it" style="border-bottom:1px solid rgba(245,239,228,0.1)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(56px,7vw,104px) clamp(16px,3vw,40px)">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:32px">
+      <div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">HOW WE DO IT</div><h2 style="margin:12px 0 0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(32px,4vw,58px);line-height:0.98">HOW WE FIX<br />CHIMNEY FLASHING</h2></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><span style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:8px 13px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.14em">TYPICAL VISIT: 2–4 HOURS</span><span style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:8px 13px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.14em">1–2 TECHNICIANS</span><span style="border:1px solid rgba(232,98,44,0.6);color:#E8622C;padding:8px 13px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.14em">FULLY INSURED</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(400px,100%),1fr));gap:clamp(32px,4vw,72px);align-items:start">
+      <div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;color:#9B917E;margin-bottom:6px">EQUIPMENT ON THE TRUCK</div><div style="border-top:1px solid rgba(245,239,228,0.14)">
+        <div style="display:flex;gap:14px;padding:13px 4px;border-bottom:1px solid rgba(245,239,228,0.14);font-size:14.5px;color:#E4DCCB"><span style="color:#E8622C;font-weight:800">✓</span>Galvanized or aluminum step and counter flashing, bent on-site to fit</div>
+        <div style="display:flex;gap:14px;padding:13px 4px;border-bottom:1px solid rgba(245,239,228,0.14);font-size:14.5px;color:#E4DCCB"><span style="color:#E8622C;font-weight:800">✓</span>Roofing sealant and mortar for the counter-flashing reglet</div>
+        <div style="display:flex;gap:14px;padding:13px 4px;border-bottom:1px solid rgba(245,239,228,0.14);font-size:14.5px;color:#E4DCCB"><span style="color:#E8622C;font-weight:800">✓</span>Breathable masonry waterproofing</div>
+        <div style="display:flex;gap:14px;padding:13px 4px;border-bottom:1px solid rgba(245,239,228,0.14);font-size:14.5px;color:#E4DCCB"><span style="color:#E8622C;font-weight:800">✓</span>Roof access and fall protection</div>
+      </div></div>
+      <div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;color:#9B917E;margin-bottom:14px">THE STEPS</div><div style="display:flex;flex-direction:column;border-left:1px solid rgba(232,98,44,0.5)">
+        <div style="position:relative;padding:0 0 22px 28px"><span style="position:absolute;left:-6px;top:4px;width:11px;height:11px;background:#E8622C"></span><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C;letter-spacing:0.18em;margin-bottom:5px">01</div><h3 style="margin:0 0 5px;font-size:16.5px;font-weight:700">Trace</h3><p style="margin:0;font-size:14px;line-height:1.6;color:#9B917E">Leak path found from the attic and roof before anything is touched.</p></div>
+        <div style="position:relative;padding:0 0 22px 28px"><span style="position:absolute;left:-6px;top:4px;width:11px;height:11px;background:#E8622C"></span><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C;letter-spacing:0.18em;margin-bottom:5px">02</div><h3 style="margin:0 0 5px;font-size:16.5px;font-weight:700">Strip</h3><p style="margin:0;font-size:14px;line-height:1.6;color:#9B917E">Failed flashing and old tar removed down to the roof deck and brick.</p></div>
+        <div style="position:relative;padding:0 0 22px 28px"><span style="position:absolute;left:-6px;top:4px;width:11px;height:11px;background:#E8622C"></span><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C;letter-spacing:0.18em;margin-bottom:5px">03</div><h3 style="margin:0 0 5px;font-size:16.5px;font-weight:700">Re-flash</h3><p style="margin:0;font-size:14px;line-height:1.6;color:#9B917E">New step flashing woven into the shingles; counter flashing set into the masonry over it.</p></div>
+        <div style="position:relative;padding:0 0 22px 28px"><span style="position:absolute;left:-6px;top:4px;width:11px;height:11px;background:#E8622C"></span><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C;letter-spacing:0.18em;margin-bottom:5px">04</div><h3 style="margin:0 0 5px;font-size:16.5px;font-weight:700">Seal & test</h3><p style="margin:0;font-size:14px;line-height:1.6;color:#9B917E">Joints sealed; water-tested where access allows.</p></div>
+      </div></div>
+    </div>
+    <p style="margin:28px 0 0;max-width:720px;font-size:15px;line-height:1.7;color:#C9BFAC;text-wrap:pretty">Durations are typical ranges — access, condition and weather change them. Northmark is a fully insured chimney company with years of hands-on experience: we show up when we said we would, do the work properly, and tell you the truth about what your chimney needs.</p>
+  </div>
+</section>
+
+<section data-screen-label="Related services" style="border-bottom:1px solid rgba(245,239,228,0.1)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(16px,3vw,40px)">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:24px">
+      <div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">RELATED SERVICES</div><h2 style="margin:12px 0 0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(28px,3.4vw,46px);line-height:0.96">OFTEN BOOKED TOGETHER</h2></div>
+      <p style="margin:0;max-width:380px;font-size:14.5px;line-height:1.65;color:#9B917E;text-wrap:pretty">One visit, one technician — we check the whole system while we&rsquo;re there and only recommend what actually needs doing.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:1px;background:rgba(245,239,228,0.14);border:1px solid rgba(245,239,228,0.14)">
+      <a href="/chimney-inspection-toronto" style="background:#121009;display:flex;flex-direction:column;gap:8px;padding:22px 24px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="font-family:'Anton',sans-serif;font-size:20px;letter-spacing:0.02em">CHIMNEY INSPECTION IN TORONTO</span><span style="font-size:13.5px;color:#9B917E;line-height:1.55">Condition assessed with photos, explained plainly.</span><span style="margin-top:auto;font-size:11.5px;font-weight:800;letter-spacing:0.12em;color:#E8622C">VIEW SERVICE →</span></a>
+      <a href="/chimney-repair-toronto" style="background:#121009;display:flex;flex-direction:column;gap:8px;padding:22px 24px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="font-family:'Anton',sans-serif;font-size:20px;letter-spacing:0.02em">CHIMNEY REPAIR IN TORONTO</span><span style="font-size:13.5px;color:#9B917E;line-height:1.55">Crowns, smoke chambers and fireboxes fixed right.</span><span style="margin-top:auto;font-size:11.5px;font-weight:800;letter-spacing:0.12em;color:#E8622C">VIEW SERVICE →</span></a>
+      <a href="/chimney-masonry-repair-toronto" style="background:#121009;display:flex;flex-direction:column;gap:8px;padding:22px 24px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="font-family:'Anton',sans-serif;font-size:20px;letter-spacing:0.02em">MASONRY REPAIR IN TORONTO</span><span style="font-size:13.5px;color:#9B917E;line-height:1.55">Tuckpointing and brick matched to your home.</span><span style="margin-top:auto;font-size:11.5px;font-weight:800;letter-spacing:0.12em;color:#E8622C">VIEW SERVICE →</span></a>
+      <a href="/chimney-cap-installation-toronto" style="background:#121009;display:flex;flex-direction:column;gap:8px;padding:22px 24px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="font-family:'Anton',sans-serif;font-size:20px;letter-spacing:0.02em">CHIMNEY CAPS IN TORONTO</span><span style="font-size:13.5px;color:#9B917E;line-height:1.55">Sized to your flue — keeps water and animals out.</span><span style="margin-top:auto;font-size:11.5px;font-weight:800;letter-spacing:0.12em;color:#E8622C">VIEW SERVICE →</span></a>
+    </div>
+  </div>
+</section>
+
 <section id="quote-cta" data-screen-label="Final CTA" style="background-image:radial-gradient(52% 60% at 50% 118%,rgba(232,98,44,0.28),transparent 72%)">
   <div style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,130px) clamp(16px,3vw,40px);display:flex;flex-direction:column;align-items:center;text-align:center;gap:26px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.3em;color:#E8622C">FREE INSPECTION · NO OBLIGATION</div>
@@ -195,7 +237,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
     <p style="margin:0;max-width:460px;font-size:16px;line-height:1.7;color:#9B917E;text-wrap:pretty">Tell us where the water shows up and when — we&rsquo;ll take it from there.</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
       <a href="/#quote" style="background:#E8622C;color:#121009;padding:19px 36px;font-size:13.5px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A FREE INSPECTION</a>
-      <a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.32);color:#F5EFE4;padding:19px 32px;font-size:13.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:8px;height:8px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL (416) 505-6228</a>
+      <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.32);color:#F5EFE4;padding:19px 32px;font-size:13.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:8px;height:8px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL {{ phone }}</a>
     </div>
   </div>
 </section>
@@ -222,7 +264,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
   <div style="height:76px"></div>
   <div style="position:fixed;left:0;right:0;bottom:0;z-index:70;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(245,239,228,0.2);border-top:1px solid rgba(245,239,228,0.2);padding-bottom:env(safe-area-inset-bottom)">
-    <a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:flex;align-items:center;justify-content:center;gap:9px;background:#121009;color:#F5EFE4;padding:19px 10px;font-size:12.5px;font-weight:800;letter-spacing:0.12em"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL NOW</a>
+    <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:flex;align-items:center;justify-content:center;gap:9px;background:#121009;color:#F5EFE4;padding:19px 10px;font-size:12.5px;font-weight:800;letter-spacing:0.12em"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL NOW</a>
     <a href="/#quote" style="display:flex;align-items:center;justify-content:center;background:#E8622C;color:#121009;padding:19px 10px;font-size:12.5px;font-weight:800;letter-spacing:0.12em">BOOK A FREE INSPECTION</a>
   </div>
 </sc-if>
