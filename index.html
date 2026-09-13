@@ -44,7 +44,7 @@ section[data-screen-label]{background-color:rgba(15,12,7,0.78)}
 footer[data-screen-label]{background-color:rgba(15,12,7,0.85)}
 </style>
 <script src="./image-slot.js"></script>
-<script src="./fireplace.js?v=1" defer></script>
+<script src="./fireplace.js?v=3" defer></script>
 <script>window.PF_CONFIG={phone:null,leadWebhook:null,gaId:null,adsConversionId:null,metaPixelId:null,onEvent:null};</script>
 <!-- nm-seo -->
 <link rel="canonical" href="https://northmark-chimney.ca/" />
@@ -53,7 +53,7 @@ footer[data-screen-label]{background-color:rgba(15,12,7,0.85)}
 <meta property="og:title" content="Northmark Chimney — Chimney Services in Toronto &amp; the GTA" />
 <meta property="og:description" content="Professional chimney cleaning, inspections, repairs and maintenance for homeowners across Toronto and the GTA. Get a free quote from NORTHMARK." />
 <meta property="og:url" content="https://northmark-chimney.ca/" />
-<meta property="og:image" content="https://northmark-chimney.ca/real/hero-main.jpg" />
+<meta property="og:image" content="https://northmark-chimney.ca/hero-main.jpg" />
 <meta property="og:locale" content="en_CA" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="geo.region" content="CA-ON" />
@@ -123,14 +123,9 @@ footer[data-screen-label]{background-color:rgba(15,12,7,0.85)}
 
 <header id="top" data-screen-label="Hero" style="position:relative;overflow:clip;border-bottom:1px solid rgba(245,239,228,0.1);background:#070503">
   <div id="nm-fireplace" data-screen-label="Fireplace" style="position:relative;min-height:min(92vh,900px);perspective:1600px;perspective-origin:50% 45%">
-    <div style="position:absolute;inset:0;background:linear-gradient(180deg,#1A130C 0%,#0B0806 55%,#050302 100%)"></div>
-    <div style="position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,0.028) 0 1px,transparent 1px 64px),repeating-linear-gradient(90deg,rgba(255,255,255,0.022) 0 1px,transparent 1px 128px);opacity:0.8"></div>
-    <div style="position:absolute;left:0;right:0;bottom:0;height:60%;background:radial-gradient(60% 100% at 50% 100%,rgba(232,98,44,0.45),rgba(232,98,44,0.12) 45%,transparent 75%)"></div>
-    <div style="position:absolute;left:6%;right:6%;bottom:0;height:22%;background:linear-gradient(180deg,#4A3A2A,#221A12);border-radius:50% 50% 0 0/100% 100% 0 0;box-shadow:0 -10px 40px rgba(0,0,0,0.7);transform:scaleX(1.1)"></div>
-    <div style="position:absolute;left:22%;right:22%;bottom:12%;height:16%;background:linear-gradient(180deg,#5E4A36,#33261A);border-radius:50% 50% 30% 30%/100% 100% 40% 40%;box-shadow:0 8px 30px rgba(0,0,0,0.8)"></div>
-    <div style="position:absolute;left:36%;right:36%;bottom:22%;height:12%;background:linear-gradient(180deg,#6A5440,#3A2B1E);border-radius:50% 50% 30% 30%/100% 100% 40% 40%;box-shadow:0 8px 24px rgba(0,0,0,0.8)"></div>
-    <canvas class="nm-fire" style="position:absolute;inset:0;width:100%;height:100%;display:block"></canvas>
-    <div style="position:absolute;left:0;right:0;bottom:0;height:10%;background:linear-gradient(180deg,rgba(43,33,24,0),#151009)"></div>
+    <div style="position:absolute;inset:0;overflow:hidden;background:#070503"><iframe title="Northmark Chimney — fireplace" src="https://www.youtube-nocookie.com/embed/eg4dvG8kHG0?autoplay=1&mute=1&loop=1&playlist=eg4dvG8kHG0&controls=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&iv_load_policy=3" allow="autoplay; encrypted-media" loading="lazy" style="position:absolute;top:50%;left:50%;width:max(100%,177.78vh);height:max(100%,56.25vw);transform:translate(-50%,-50%);border:0;pointer-events:none"></iframe></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,5,3,0.55) 0%,rgba(7,5,3,0.15) 40%,rgba(7,5,3,0.25) 70%,rgba(7,5,3,0.85) 100%)"></div>
+    <canvas class="nm-fire" style="position:absolute;inset:0;width:100%;height:100%;display:block;mix-blend-mode:screen;opacity:0.75"></canvas>
     <div style="position:absolute;inset:0;transform-style:preserve-3d;pointer-events:none;z-index:3">
       <div class="nm-door nm-door-l" style="position:absolute;left:0;top:0;bottom:0;width:50%;transform-origin:left center;background:linear-gradient(115deg,rgba(70,58,46,0.78),rgba(16,12,9,0.92) 45%,rgba(95,84,72,0.7));border-right:10px solid #171210;box-sizing:border-box;box-shadow:inset 0 0 0 1px rgba(245,239,228,0.14),inset -40px 0 80px rgba(0,0,0,0.5)">
         <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(255,255,255,0.16),rgba(255,255,255,0) 32%,rgba(255,255,255,0.04) 60%,rgba(255,255,255,0.1))"></div>
@@ -197,7 +192,7 @@ footer[data-screen-label]{background-color:rgba(15,12,7,0.85)}
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:1px;background:rgba(245,239,228,0.14);border:1px solid rgba(245,239,228,0.14);margin-bottom:14px">
       <div style="background:#121009;display:flex;flex-direction:column;transition:background .25s" style-hover="background:#17130B">
-        <div style="position:relative;aspect-ratio:16/9"><image-slot id="svc-clean" shape="rect" src="real/svc-cleaning.jpg" placeholder="chimney sweep at work" alt="Northmark Chimney — chimney sweep at work"></image-slot><span style="position:absolute;left:14px;top:14px;background:#E8622C;color:#121009;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.18em;pointer-events:none">CORE SERVICE</span></div>
+        <div style="position:relative;aspect-ratio:16/9"><image-slot id="svc-clean" shape="rect" src="/svc-cleaning.jpg" placeholder="chimney sweep at work" alt="Northmark Chimney — chimney sweep at work"></image-slot><span style="position:absolute;left:14px;top:14px;background:#E8622C;color:#121009;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.18em;pointer-events:none">CORE SERVICE</span></div>
         <div style="padding:24px 26px 26px;display:flex;flex-direction:column;gap:12px;flex:1">
           <div style="display:flex;justify-content:space-between;align-items:baseline"><h3 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:26px;letter-spacing:0.02em">CHIMNEY CLEANING</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#E8622C">S/01</span></div>
           <p style="margin:0;font-size:14.5px;line-height:1.65;color:#9B917E">Creosote, soot and blockages removed — so smoke goes up the flue, not into your living room.</p>
@@ -206,7 +201,7 @@ footer[data-screen-label]{background-color:rgba(15,12,7,0.85)}
         </div>
       </div>
       <div style="background:#121009;display:flex;flex-direction:column;transition:background .25s" style-hover="background:#17130B">
-        <div style="position:relative;aspect-ratio:16/9"><image-slot id="svc-inspect" shape="rect" src="real/svc-inspection.jpg" placeholder="technician inspecting a flue" alt="Northmark Chimney — technician inspecting a flue"></image-slot></div>
+        <div style="position:relative;aspect-ratio:16/9"><image-slot id="svc-inspect" shape="rect" src="/svc-inspection.jpg" placeholder="technician inspecting a flue" alt="Northmark Chimney — technician inspecting a flue"></image-slot></div>
         <div style="padding:24px 26px 26px;display:flex;flex-direction:column;gap:12px;flex:1">
           <div style="display:flex;justify-content:space-between;align-items:baseline"><h3 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:26px;letter-spacing:0.02em">CHIMNEY INSPECTION</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#E8622C">S/02</span></div>
           <p style="margin:0;font-size:14.5px;line-height:1.65;color:#9B917E">A careful assessment with photos, explained in plain language. Ideal before buying, selling — or burning.</p>
@@ -215,7 +210,7 @@ footer[data-screen-label]{background-color:rgba(15,12,7,0.85)}
         </div>
       </div>
       <div style="background:#121009;display:flex;flex-direction:column;transition:background .25s" style-hover="background:#17130B">
-        <div style="position:relative;aspect-ratio:16/9"><image-slot id="svc-repair" shape="rect" src="real/svc-repair.jpg" placeholder="chimney repair in progress" alt="Northmark Chimney — chimney repair in progress"></image-slot></div>
+        <div style="position:relative;aspect-ratio:16/9"><image-slot id="svc-repair" shape="rect" src="/svc-repair.jpg" placeholder="chimney repair in progress" alt="Northmark Chimney — chimney repair in progress"></image-slot></div>
         <div style="padding:24px 26px 26px;display:flex;flex-direction:column;gap:12px;flex:1">
           <div style="display:flex;justify-content:space-between;align-items:baseline"><h3 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:26px;letter-spacing:0.02em">CHIMNEY REPAIR</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#E8622C">S/03</span></div>
           <p style="margin:0;font-size:14.5px;line-height:1.65;color:#9B917E">Crowns, smoke chambers, fireboxes and structural fixes — done once, done right.</p>
@@ -225,11 +220,11 @@ footer[data-screen-label]{background-color:rgba(15,12,7,0.85)}
       </div>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:1px;background:rgba(245,239,228,0.14);border:1px solid rgba(245,239,228,0.14)">
-      <a href="/chimney-cap-installation-toronto" style="background:#121009;display:flex;align-items:center;gap:14px;padding:16px 18px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="position:relative;width:56px;height:56px;flex:none"><image-slot id="svc-cap" shape="rect" src="real/svc-cap.jpg" placeholder="cap" alt="cap"></image-slot></span><span style="flex:1"><span style="display:block;font-size:13.5px;font-weight:800;letter-spacing:0.06em">CHIMNEY CAPS</span><span style="display:block;font-size:12px;color:#9B917E;margin-top:2px">Keep water &amp; animals out</span></span><span style="color:#E8622C">→</span></a>
-      <a href="/chimney-liner-toronto" style="background:#121009;display:flex;align-items:center;gap:14px;padding:16px 18px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="position:relative;width:56px;height:56px;flex:none"><image-slot id="svc-liner" shape="rect" src="real/svc-liner.jpg" placeholder="liner" alt="liner"></image-slot></span><span style="flex:1"><span style="display:block;font-size:13.5px;font-weight:800;letter-spacing:0.06em">CHIMNEY LINERS</span><span style="display:block;font-size:12px;color:#9B917E;margin-top:2px">Safe venting, intact liner</span></span><span style="color:#E8622C">→</span></a>
-      <a href="/chimney-masonry-repair-toronto" style="background:#121009;display:flex;align-items:center;gap:14px;padding:16px 18px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="position:relative;width:56px;height:56px;flex:none"><image-slot id="svc-masonry" shape="rect" src="real/svc-masonry.jpg" placeholder="brick" alt="brick"></image-slot></span><span style="flex:1"><span style="display:block;font-size:13.5px;font-weight:800;letter-spacing:0.06em">MASONRY REPAIR</span><span style="display:block;font-size:12px;color:#9B917E;margin-top:2px">Brick &amp; mortar, matched</span></span><span style="color:#E8622C">→</span></a>
-      <a href="/chimney-flashing-toronto" style="background:#121009;display:flex;align-items:center;gap:14px;padding:16px 18px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="position:relative;width:56px;height:56px;flex:none"><image-slot id="svc-flash" shape="rect" src="real/svc-flashing.jpg" placeholder="flashing" alt="flashing"></image-slot></span><span style="flex:1"><span style="display:block;font-size:13.5px;font-weight:800;letter-spacing:0.06em">FLASHING &amp; WATERPROOFING</span><span style="display:block;font-size:12px;color:#9B917E;margin-top:2px">Roof-to-chimney joint, sealed right</span></span><span style="color:#E8622C">→</span></a>
-      <a href="/chimney-maintenance-toronto" style="background:#121009;display:flex;align-items:center;gap:14px;padding:16px 18px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="position:relative;width:56px;height:56px;flex:none"><image-slot id="svc-maint" shape="rect" src="real/svc-maintenance.jpg" placeholder="maintenance" alt="maintenance"></image-slot></span><span style="flex:1"><span style="display:block;font-size:13.5px;font-weight:800;letter-spacing:0.06em">SEASONAL MAINTENANCE</span><span style="display:block;font-size:12px;color:#9B917E;margin-top:2px">Ready before winter</span></span><span style="color:#E8622C">→</span></a>
+      <a href="/chimney-cap-installation-toronto" style="background:#121009;display:flex;align-items:center;gap:14px;padding:16px 18px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="position:relative;width:56px;height:56px;flex:none"><image-slot id="svc-cap" shape="rect" src="/svc-cap.jpg" placeholder="cap" alt="cap"></image-slot></span><span style="flex:1"><span style="display:block;font-size:13.5px;font-weight:800;letter-spacing:0.06em">CHIMNEY CAPS</span><span style="display:block;font-size:12px;color:#9B917E;margin-top:2px">Keep water &amp; animals out</span></span><span style="color:#E8622C">→</span></a>
+      <a href="/chimney-liner-toronto" style="background:#121009;display:flex;align-items:center;gap:14px;padding:16px 18px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="position:relative;width:56px;height:56px;flex:none"><image-slot id="svc-liner" shape="rect" src="/svc-liner.jpg" placeholder="liner" alt="liner"></image-slot></span><span style="flex:1"><span style="display:block;font-size:13.5px;font-weight:800;letter-spacing:0.06em">CHIMNEY LINERS</span><span style="display:block;font-size:12px;color:#9B917E;margin-top:2px">Safe venting, intact liner</span></span><span style="color:#E8622C">→</span></a>
+      <a href="/chimney-masonry-repair-toronto" style="background:#121009;display:flex;align-items:center;gap:14px;padding:16px 18px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="position:relative;width:56px;height:56px;flex:none"><image-slot id="svc-masonry" shape="rect" src="/svc-masonry.jpg" placeholder="brick" alt="brick"></image-slot></span><span style="flex:1"><span style="display:block;font-size:13.5px;font-weight:800;letter-spacing:0.06em">MASONRY REPAIR</span><span style="display:block;font-size:12px;color:#9B917E;margin-top:2px">Brick &amp; mortar, matched</span></span><span style="color:#E8622C">→</span></a>
+      <a href="/chimney-flashing-toronto" style="background:#121009;display:flex;align-items:center;gap:14px;padding:16px 18px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="position:relative;width:56px;height:56px;flex:none"><image-slot id="svc-flash" shape="rect" src="/svc-flashing.jpg" placeholder="flashing" alt="flashing"></image-slot></span><span style="flex:1"><span style="display:block;font-size:13.5px;font-weight:800;letter-spacing:0.06em">FLASHING &amp; WATERPROOFING</span><span style="display:block;font-size:12px;color:#9B917E;margin-top:2px">Roof-to-chimney joint, sealed right</span></span><span style="color:#E8622C">→</span></a>
+      <a href="/chimney-maintenance-toronto" style="background:#121009;display:flex;align-items:center;gap:14px;padding:16px 18px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="position:relative;width:56px;height:56px;flex:none"><image-slot id="svc-maint" shape="rect" src="/svc-maintenance.jpg" placeholder="maintenance" alt="maintenance"></image-slot></span><span style="flex:1"><span style="display:block;font-size:13.5px;font-weight:800;letter-spacing:0.06em">SEASONAL MAINTENANCE</span><span style="display:block;font-size:12px;color:#9B917E;margin-top:2px">Ready before winter</span></span><span style="color:#E8622C">→</span></a>
     </div>
   </div>
 </section>
@@ -317,14 +312,10 @@ footer[data-screen-label]{background-color:rgba(15,12,7,0.85)}
     <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:40px">
       <div>
         <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">04 — FIELD PROOF</div>
-        <h2 style="margin:14px 0 0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(36px,4.5vw,64px);line-height:0.96">THE FINISHED WORK</h2>
+        <h2 style="margin:14px 0 0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(36px,4.5vw,64px);line-height:0.96">BEFORE &amp; AFTER</h2>
       </div>
     </div>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px">
-      <sc-for list="{{ baTabs }}" as="t" hint-placeholder-count="5">
-        <button onClick="{{ pickBaCat }}" data-cat="{{ t.key }}" style="padding:11px 18px;border:1px solid {{ t.bd }};background:{{ t.bg }};color:{{ t.fg }};font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.16em;cursor:pointer;transition:all .2s">{{ t.key }}</button>
-      </sc-for>
-    </div>
+    
     <div ref="{{ baBoxRef }}" style="position:relative;aspect-ratio:16/8.5;min-height:320px;border:1px solid rgba(245,239,228,0.16);background:#171309;touch-action:pan-y">
       <sc-for list="{{ baPairs }}" as="bp" hint-placeholder-count="1">
         <div style="position:absolute;inset:0;display:{{ bp.display }}">
@@ -332,8 +323,8 @@ footer[data-screen-label]{background-color:rgba(15,12,7,0.85)}
           <div ref="{{ baClipRef }}" style="position:absolute;inset:0;clip-path:inset(0 45% 0 0)"><image-slot id="{{ bp.beforeId }}" shape="rect" src="{{ bp.beforeSrc }}" placeholder="{{ bp.beforePh }}" alt="{{ bp.beforePh }}"></image-slot></div>
         </div>
       </sc-for>
-      <span style="position:absolute;left:14px;top:14px;background:rgba(18,16,9,0.85);color:#F5EFE4;padding:7px 11px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;pointer-events:none;z-index:2">ANGLE A</span>
-      <span style="position:absolute;right:14px;top:14px;background:#E8622C;color:#121009;padding:7px 11px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;pointer-events:none;z-index:2">ANGLE B</span>
+      <span style="position:absolute;left:14px;top:14px;background:rgba(18,16,9,0.85);color:#F5EFE4;padding:7px 11px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;pointer-events:none;z-index:2">BEFORE</span>
+      <span style="position:absolute;right:14px;top:14px;background:#E8622C;color:#121009;padding:7px 11px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;pointer-events:none;z-index:2">AFTER</span>
       <span style="position:absolute;left:14px;bottom:14px;background:rgba(18,16,9,0.85);color:#C9BFAC;padding:7px 11px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.18em;pointer-events:none;z-index:2">{{ baLabel }}</span>
       <div ref="{{ baHandleRef }}" onPointerDown="{{ baDown }}" role="slider" aria-label="Drag to compare before and after" style="position:absolute;top:0;bottom:0;left:55%;width:44px;margin-left:-22px;cursor:ew-resize;z-index:3;touch-action:none;display:flex;align-items:center;justify-content:center">
         <div style="position:absolute;top:0;bottom:0;left:50%;width:2px;margin-left:-1px;background:#F5EFE4;box-shadow:0 0 14px rgba(0,0,0,0.6)"></div>
@@ -665,14 +656,14 @@ class Component extends DCLogic {
       { name: 'MARKHAM', x: '68%', y: '22%' }
     ];
     const gal = [
-      { slot: 'g-01', title: 'Crown & brick rebuild', meta: 'MASONRY · NORTH YORK', cat: 'MASONRY', row: 'span 2', col: 'span 2', src: 'real/g-01.jpg', ph: 'Project photo — masonry rebuild' },
-      { slot: 'g-02', title: 'Cap & crown, freeze-thaw damage repaired', meta: 'MASONRY · EAST YORK', cat: 'MASONRY', row: 'span 1', col: 'span 1', src: 'real/g-02.jpg', ph: 'Project photo — flue sweep' },
-      { slot: 'g-03', title: 'Stainless multi-flue cap', meta: 'CAPS · ETOBICOKE', cat: 'CAPS', row: 'span 1', col: 'span 1', src: 'real/g-03.jpg', ph: 'Project photo — repointed stack' },
-      { slot: 'g-04', title: 'Stone chimney inspection & repair', meta: 'REPAIRS · SCARBOROUGH', cat: 'REPAIRS', row: 'span 2', col: 'span 1', src: 'real/g-04.jpg', ph: 'Project photo — liner work' },
-      { slot: 'g-05', title: 'New stainless cap & crown seal', meta: 'CAPS · VAUGHAN', cat: 'CAPS', row: 'span 1', col: 'span 1', src: 'real/g-05.jpg', ph: 'Before/after — flashing' },
-      { slot: 'g-06', title: 'Tuckpointing above roofline', meta: 'MASONRY · RICHMOND HILL', cat: 'MASONRY', row: 'span 1', col: 'span 1', src: 'real/g-06.jpg', ph: 'Project photo — tuckpointing' },
-      { slot: 'g-07', title: 'Gas log set service', meta: 'CLEANING · MISSISSAUGA', cat: 'CLEANING', row: 'span 1', col: 'span 1', src: 'real/g-07.jpg', ph: 'Project photo — seasonal visit' },
-      { slot: 'g-08', title: 'Gas fireplace service', meta: 'CLEANING · MARKHAM', cat: 'CLEANING', row: 'span 1', col: 'span 1', src: 'real/g-08.jpg', ph: 'Project photo — inspection' }
+      { slot: 'g-01', title: 'Crown & brick rebuild', meta: 'MASONRY · NORTH YORK', cat: 'MASONRY', row: 'span 2', col: 'span 2', src: '/g-01.jpg', ph: 'Project photo — masonry rebuild' },
+      { slot: 'g-02', title: 'Cap & crown, freeze-thaw damage repaired', meta: 'MASONRY · EAST YORK', cat: 'MASONRY', row: 'span 1', col: 'span 1', src: '/g-02.jpg', ph: 'Project photo — flue sweep' },
+      { slot: 'g-03', title: 'Stainless multi-flue cap', meta: 'CAPS · ETOBICOKE', cat: 'CAPS', row: 'span 1', col: 'span 1', src: '/g-03.jpg', ph: 'Project photo — repointed stack' },
+      { slot: 'g-04', title: 'Stone chimney inspection & repair', meta: 'REPAIRS · SCARBOROUGH', cat: 'REPAIRS', row: 'span 2', col: 'span 1', src: '/g-04.jpg', ph: 'Project photo — liner work' },
+      { slot: 'g-05', title: 'New stainless cap & crown seal', meta: 'CAPS · VAUGHAN', cat: 'CAPS', row: 'span 1', col: 'span 1', src: '/g-05.jpg', ph: 'Before/after — flashing' },
+      { slot: 'g-06', title: 'Tuckpointing above roofline', meta: 'MASONRY · RICHMOND HILL', cat: 'MASONRY', row: 'span 1', col: 'span 1', src: '/g-06.jpg', ph: 'Project photo — tuckpointing' },
+      { slot: 'g-07', title: 'Gas log set service', meta: 'CLEANING · MISSISSAUGA', cat: 'CLEANING', row: 'span 1', col: 'span 1', src: '/g-07.jpg', ph: 'Project photo — seasonal visit' },
+      { slot: 'g-08', title: 'Gas fireplace service', meta: 'CLEANING · MARKHAM', cat: 'CLEANING', row: 'span 1', col: 'span 1', src: '/g-08.jpg', ph: 'Project photo — inspection' }
     ];
     const baCats = ['CLEANING', 'MASONRY', 'CAPS', 'FLASHING', 'REPAIRS'];
     const filters = ['ALL', 'CLEANING', 'REPAIRS', 'MASONRY', 'CAPS'];
@@ -726,7 +717,7 @@ class Component extends DCLogic {
         try { const fd = new URLSearchParams(); fd.append('form-name', 'inspection-request'); Object.keys(lead).forEach(k => fd.append(k, lead[k])); fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: fd.toString() }); const url = window.PF_CONFIG && window.PF_CONFIG.leadWebhook; if (url) fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(lead) }); } catch (err) {}
         this.setState({ submitted: true, sName: name ? name.split(' ')[0] : '', formErr: '' });
       },
-      baLabel: s.baCat + ' · TORONTO & GTA',
+      baLabel: 'MASONRY · TORONTO & GTA',
       baTabs: baCats.map(k => ({ key: k,
         bd: k === s.baCat ? '#E8622C' : 'rgba(245,239,228,0.2)',
         bg: k === s.baCat ? '#E8622C' : 'transparent',
@@ -735,8 +726,8 @@ class Component extends DCLogic {
       baPairs: baCats.map(k => ({
         display: k === s.baCat ? 'block' : 'none',
         beforeId: 'ba-' + k.toLowerCase() + '-before', afterId: 'ba-' + k.toLowerCase() + '-after',
-        beforeSrc: 'real/ba-' + k.toLowerCase() + '-before.jpg', afterSrc: 'real/ba-' + k.toLowerCase() + '-after.jpg',
-        beforePh: k.toLowerCase() + ' — finished', afterPh: k.toLowerCase() + ' — finished' })),
+        beforeSrc: '/ba-before.jpg', afterSrc: '/ba-after.jpg',
+        beforePh: 'Before — failing mortar joints', afterPh: 'After — repointed & sealed' })),
       baBoxRef: (el) => { this.baBoxEl = el; },
       baHandleRef: (el) => { this.baHandleEl = el; if (el) el.style.left = this.baX + '%'; },
       baClipRef: (el) => { if (el) { if (!this.baClipEls.includes(el)) this.baClipEls.push(el); el.style.clipPath = 'inset(0 ' + (100 - this.baX) + '% 0 0)'; } },
