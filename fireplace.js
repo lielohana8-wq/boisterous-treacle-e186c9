@@ -10,7 +10,8 @@
     function size() { var r = canvas.getBoundingClientRect(); canvas.width = Math.max(2, r.width * dpr); canvas.height = Math.max(2, r.height * dpr); }
     size(); addEventListener('resize', size);
     // open doors after the paint
-    var opened = false; function open() { if (opened) return; opened = true; root.classList.add('nm-open'); root.setAttribute('data-open', '1'); }
+    var v = root.querySelector('video'); var tryPlay = function () { if (!v) return; v.muted = true; v.defaultMuted = true; v.loop = true; v.playsInline = true; v.setAttribute('muted', ''); v.setAttribute('loop', ''); var p = v.play(); if (p && p.catch) p.catch(function () {}); }; tryPlay(); setTimeout(tryPlay, 800);
+    var opened = false; function open() { if (opened) return; opened = true; root.classList.add('nm-open'); root.setAttribute('data-open', '1'); tryPlay(); }
     if (reduce) open(); else { var onScroll = function () { if ((window.scrollY || 0) > 24) { open(); removeEventListener('scroll', onScroll); removeEventListener('wheel', onScroll); removeEventListener('touchmove', onScroll); } }; addEventListener('scroll', onScroll, { passive: true }); addEventListener('wheel', onScroll, { passive: true }); addEventListener('touchmove', onScroll, { passive: true }); root.addEventListener('click', open); }
     // flames
     var t0 = performance.now(), running = true, visible = true;
