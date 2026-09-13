@@ -4,6 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
+<script src="/seo-hook.js" defer></script>
+</head>
+<body>
+<x-dc>
+<helmet>
 <title>Chimney Repair Toronto | Northmark Chimney</title>
 <meta name="description" content="Chimney repair in Toronto &amp; the GTA. Crowns, smoke chambers, fireboxes and structural fixes — free inspection and on-site pricing from NORTHMARK." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,7 +17,7 @@
 <style>
 html{scroll-behavior:smooth}
 body{margin:0;background:#121009}
-.pf-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#171309}
+image-slot{position:absolute;inset:0;width:100%;height:100%;min-width:0;min-height:0}
 a{color:#E8622C;text-decoration:none}
 a:hover{color:#FF7A3D}
 ::selection{background:#E8622C;color:#121009}
@@ -20,7 +25,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 @keyframes pfPulse{0%,100%{opacity:1}50%{opacity:0.25}}
 @keyframes pfEmber{0%,100%{opacity:0.5;transform:scale(1)}50%{opacity:1;transform:scale(1.15)}}
 </style>
-<script src="./pf3d.js"></script>
+<script src="./image-slot.js"></script>
 
 <link rel="canonical" href="https://northmark-chimney.ca/chimney-repair-toronto" />
 <meta property="og:type" content="website" />
@@ -28,7 +33,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 <meta property="og:title" content="Chimney Repair Toronto | Northmark Chimney" />
 <meta property="og:description" content="Chimney repair in Toronto &amp; the GTA. Crowns, smoke chambers, fireboxes and structural fixes — free inspection and on-site pricing from NORTHMARK." />
 <meta property="og:url" content="https://northmark-chimney.ca/chimney-repair-toronto" />
-<meta property="og:image" content="https://northmark-chimney.ca/assets-lite/repair.jpg" />
+<meta property="og:image" content="https://northmark-chimney.ca/svc-repair.jpg" />
 <meta property="og:locale" content="en_CA" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="geo.region" content="CA-ON" />
@@ -36,11 +41,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I know if my chimney needs repair?","acceptedAnswer":{"@type":"Answer","text":"Debris in the firebox, cracked or spalling brick, white staining, rust, or smoke where it shouldn’t be. The free inspection confirms what’s actually going on before you spend anything."}},{"@type":"Question","name":"Can you match my existing brick and mortar?","acceptedAnswer":{"@type":"Answer","text":"Yes — as closely as possible, especially on older Toronto homes. Matching is part of the job, not an extra."}},{"@type":"Question","name":"Is chimney damage urgent?","acceptedAnswer":{"@type":"Answer","text":"Sometimes. Water and freeze-thaw make small cracks grow, so early repair is usually far cheaper. We’ll tell you honestly what’s urgent and what can wait."}},{"@type":"Question","name":"How much does chimney repair cost?","acceptedAnswer":{"@type":"Answer","text":"It depends entirely on the damage — so we don’t give blind numbers online. The inspection is free and you approve the exact on-site price before any work begins."}},{"@type":"Question","name":"Do you repair fireboxes and dampers?","acceptedAnswer":{"@type":"Answer","text":"Yes — firebox mortar joints and panels, and dampers that are stuck, rusted or missing."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Chimney Repair","serviceType":"Chimney Repair","url":"https://northmark-chimney.ca/chimney-repair-toronto","provider":{"@type":"LocalBusiness","name":"Northmark Chimney","url":"https://northmark-chimney.ca","telephone":"+1-416-505-6228","email":"info@northmark-chimney.ca"},"areaServed":[{"@type":"City","name":"Toronto"},{"@type":"City","name":"North York"},{"@type":"City","name":"Scarborough"},{"@type":"City","name":"Etobicoke"},{"@type":"City","name":"York"},{"@type":"City","name":"East York"},{"@type":"City","name":"Vaughan"},{"@type":"City","name":"Richmond Hill"},{"@type":"City","name":"Markham"},{"@type":"City","name":"Thornhill"},{"@type":"City","name":"Mississauga"},{"@type":"City","name":"Brampton"},{"@type":"City","name":"Concord"}],"offers":{"@type":"Offer","description":"Free on-site inspection with an exact price quoted before work begins","priceCurrency":"CAD"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://northmark-chimney.ca/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://northmark-chimney.ca/#services"},{"@type":"ListItem","position":3,"name":"Chimney Repair","item":"https://northmark-chimney.ca/chimney-repair-toronto"}]}</script>
-<script src="/seo-hook.js" defer></script>
-</head>
-<body>
-<x-dc>
 
+</helmet>
 <div style="background:#121009;color:#F5EFE4;font-family:'Archivo',ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5;overflow-x:clip">
 
 <nav data-screen-label="Nav" style="position:sticky;top:0;z-index:60;background:rgba(18,16,9,0.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(245,239,228,0.1)">
@@ -65,13 +67,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
         <a href="/#faq" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#B7AD9A;transition:color .2s" style-hover="color:#F5EFE4">FAQ</a>
       </div>
       <div style="display:flex;align-items:center;gap:10px">
-        <a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:11px 17px;font-size:11.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s ease-in-out infinite"></span>CALL NOW</a>
+        <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:11px 17px;font-size:11.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s ease-in-out infinite"></span>CALL NOW</a>
         <a href="#quote-cta" style="background:#E8622C;color:#121009;padding:12px 19px;font-size:11.5px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A FREE INSPECTION</a>
       </div>
     </sc-if>
     <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
       <div style="display:flex;align-items:center;gap:8px">
-        <a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:10px 13px;font-size:11px;font-weight:700;letter-spacing:0.12em"><span style="width:6px;height:6px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL</a>
+        <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:10px 13px;font-size:11px;font-weight:700;letter-spacing:0.12em"><span style="width:6px;height:6px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL</a>
         <a href="/" style="border:1px solid rgba(245,239,228,0.28);color:#F5EFE4;padding:10px 13px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em">HOME</a>
       </div>
     </sc-if>
@@ -86,15 +88,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
       <p style="margin:0;max-width:540px;font-size:clamp(15.5px,1.3vw,18px);line-height:1.7;color:#C9BFAC;text-wrap:pretty">From cracked crowns to failing smoke chambers — structural chimney repairs done once, done right, with materials matched to your home. We show you the damage before we talk about the fix.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap">
         <a href="/#quote" style="background:#E8622C;color:#121009;padding:18px 32px;font-size:13px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A FREE INSPECTION</a>
-        <a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.32);color:#F5EFE4;padding:18px 28px;font-size:13px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:8px;height:8px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s ease-in-out infinite"></span>CALL NOW</a>
+        <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.32);color:#F5EFE4;padding:18px 28px;font-size:13px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:8px;height:8px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s ease-in-out infinite"></span>CALL NOW</a>
       </div>
       <div style="display:flex;align-items:center;gap:14px">
         <span style="color:#E8622C;font-size:13px;letter-spacing:0.22em">★★★★★</span>
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.18em;color:#9B917E">TRUSTED BY GTA HOMEOWNERS · FREE INSPECTIONS</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.18em;color:#9B917E">FULLY INSURED · FREE INSPECTIONS · TORONTO &amp; GTA</span>
       </div>
     </div>
     <div style="position:relative;aspect-ratio:4/3.4;border:1px solid rgba(245,239,228,0.16);background:#171309">
-      <img class="pf-img" id="crep-hero" src="assets-lite/repair.jpg" alt="Northmark Chimney — chimney repair in progress" loading="lazy" decoding="async">
+      <image-slot id="crep-hero" shape="rect" src="/svc-repair.jpg" placeholder="" alt="Northmark Chimney — chimney repair in progress"></image-slot>
       <div style="position:absolute;top:-1px;right:-1px;width:52px;height:52px;border-top:3px solid #E8622C;border-right:3px solid #E8622C;pointer-events:none"></div>
     </div>
   </div>
@@ -126,7 +128,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
           <div style="display:flex;gap:18px;align-items:baseline;padding:15px 4px;border-bottom:1px solid rgba(245,239,228,0.14);font-size:15px;color:#E4DCCB"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">S-05</span>Smoke escaping where it shouldn&rsquo;t</div>
           <div style="display:flex;gap:18px;align-items:baseline;padding:15px 4px;border-bottom:1px solid rgba(245,239,228,0.14);font-size:15px;color:#E4DCCB"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C">S-06</span>A previous quick fix that didn&rsquo;t hold</div>
         </div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px"><a href="/#quote" style="background:#E8622C;color:#121009;padding:16px 28px;font-size:12.5px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A REPAIR VISIT →</a><a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(245,239,228,0.3);color:#F5EFE4;padding:16px 24px;font-size:12.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL (416) 505-6228</a></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px"><a href="/#quote" style="background:#E8622C;color:#121009;padding:16px 28px;font-size:12.5px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A REPAIR VISIT →</a><a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(245,239,228,0.3);color:#F5EFE4;padding:16px 24px;font-size:12.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL {{ phone }}</a></div>
       </div>
     </div>
   </div>
@@ -148,8 +150,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
       <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">THE DIFFERENCE</div>
       <h2 style="margin:14px 0 24px;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(32px,4vw,58px);line-height:0.98">BEFORE &amp; AFTER</h2>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(245,239,228,0.14);border:1px solid rgba(245,239,228,0.14)">
-        <div style="position:relative;aspect-ratio:1/1.1;background:#171309"><img class="pf-img" id="crep-ba-before" src="assets-lite/soot.jpg" alt="BEFORE — damaged crown / chamber" loading="lazy" decoding="async"><span style="position:absolute;left:10px;top:10px;background:rgba(18,16,9,0.85);color:#F5EFE4;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.2em;pointer-events:none">BEFORE</span></div>
-        <div style="position:relative;aspect-ratio:1/1.1;background:#171309"><img class="pf-img" id="crep-ba-after" src="assets-lite/repair.jpg" alt="AFTER — repaired &amp; sealed" loading="lazy" decoding="async"><span style="position:absolute;right:10px;top:10px;background:#E8622C;color:#121009;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.2em;pointer-events:none">AFTER</span></div>
+        <div style="position:relative;aspect-ratio:1/1.1;background:#171309"><image-slot id="crep-ba-before" shape="rect" src="/ba-repairs-before.jpg" placeholder="" alt="BEFORE — damaged crown / chamber"></image-slot><span style="position:absolute;left:10px;top:10px;background:rgba(18,16,9,0.85);color:#F5EFE4;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.2em;pointer-events:none">BEFORE</span></div>
+        <div style="position:relative;aspect-ratio:1/1.1;background:#171309"><image-slot id="crep-ba-after" shape="rect" src="/ba-repairs-after.jpg" placeholder="" alt="AFTER — repaired &amp; sealed"></image-slot><span style="position:absolute;right:10px;top:10px;background:#E8622C;color:#121009;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.2em;pointer-events:none">AFTER</span></div>
       </div>
       <div style="border:1px solid rgba(245,239,228,0.14);border-top:none;padding:22px 24px;display:flex;flex-direction:column;gap:14px">
         <span style="color:#E8622C;letter-spacing:0.24em;font-size:12px">★★★★★</span>
@@ -188,6 +190,69 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
   </div>
 </section>
 
+<section data-screen-label="How we do it" style="border-bottom:1px solid rgba(245,239,228,0.1)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(56px,7vw,104px) clamp(16px,3vw,40px)">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:32px">
+      <div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">HOW WE DO IT</div><h2 style="margin:12px 0 0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(32px,4vw,58px);line-height:0.98">HOW WE REPAIR<br />A CHIMNEY</h2></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><span style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:8px 13px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.14em">TYPICAL JOB: HALF DAY TO 2 DAYS</span><span style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:8px 13px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.14em">1–2 TECHNICIANS</span><span style="border:1px solid rgba(232,98,44,0.6);color:#E8622C;padding:8px 13px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.14em">FULLY INSURED</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(400px,100%),1fr));gap:clamp(32px,4vw,72px);align-items:start">
+      <div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;color:#9B917E;margin-bottom:6px">EQUIPMENT ON THE TRUCK</div><div style="border-top:1px solid rgba(245,239,228,0.14)">
+        <div style="display:flex;gap:14px;padding:13px 4px;border-bottom:1px solid rgba(245,239,228,0.14);font-size:14.5px;color:#E4DCCB"><span style="color:#E8622C;font-weight:800">✓</span>Refractory mortar and firebrick for firebox and smoke chamber work</div>
+        <div style="display:flex;gap:14px;padding:13px 4px;border-bottom:1px solid rgba(245,239,228,0.14);font-size:14.5px;color:#E4DCCB"><span style="color:#E8622C;font-weight:800">✓</span>Crown-repair compound or full concrete crown rebuild, depending on damage</div>
+        <div style="display:flex;gap:14px;padding:13px 4px;border-bottom:1px solid rgba(245,239,228,0.14);font-size:14.5px;color:#E4DCCB"><span style="color:#E8622C;font-weight:800">✓</span>Damper assemblies and hardware where replacement is needed</div>
+        <div style="display:flex;gap:14px;padding:13px 4px;border-bottom:1px solid rgba(245,239,228,0.14);font-size:14.5px;color:#E4DCCB"><span style="color:#E8622C;font-weight:800">✓</span>Roof access and fall protection for above-roofline work</div>
+      </div></div>
+      <div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.22em;color:#9B917E;margin-bottom:14px">THE STEPS</div><div style="display:flex;flex-direction:column;border-left:1px solid rgba(232,98,44,0.5)">
+        <div style="position:relative;padding:0 0 22px 28px"><span style="position:absolute;left:-6px;top:4px;width:11px;height:11px;background:#E8622C"></span><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C;letter-spacing:0.18em;margin-bottom:5px">01</div><h3 style="margin:0 0 5px;font-size:16.5px;font-weight:700">Assess</h3><p style="margin:0;font-size:14px;line-height:1.6;color:#9B917E">Damage shown to you with photos before any price is set.</p></div>
+        <div style="position:relative;padding:0 0 22px 28px"><span style="position:absolute;left:-6px;top:4px;width:11px;height:11px;background:#E8622C"></span><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C;letter-spacing:0.18em;margin-bottom:5px">02</div><h3 style="margin:0 0 5px;font-size:16.5px;font-weight:700">Prepare</h3><p style="margin:0;font-size:14px;line-height:1.6;color:#9B917E">Loose material removed, surfaces cleaned back to sound masonry.</p></div>
+        <div style="position:relative;padding:0 0 22px 28px"><span style="position:absolute;left:-6px;top:4px;width:11px;height:11px;background:#E8622C"></span><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C;letter-spacing:0.18em;margin-bottom:5px">03</div><h3 style="margin:0 0 5px;font-size:16.5px;font-weight:700">Repair</h3><p style="margin:0;font-size:14px;line-height:1.6;color:#9B917E">Crowns rebuilt or resurfaced, joints repacked with refractory mortar, dampers replaced as needed.</p></div>
+        <div style="position:relative;padding:0 0 22px 28px"><span style="position:absolute;left:-6px;top:4px;width:11px;height:11px;background:#E8622C"></span><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E8622C;letter-spacing:0.18em;margin-bottom:5px">04</div><h3 style="margin:0 0 5px;font-size:16.5px;font-weight:700">Cure & check</h3><p style="margin:0;font-size:14px;line-height:1.6;color:#9B917E">Materials allowed to cure properly; draft and seal verified before we leave.</p></div>
+      </div></div>
+    </div>
+    <p style="margin:28px 0 0;max-width:720px;font-size:15px;line-height:1.7;color:#C9BFAC;text-wrap:pretty">Durations are typical ranges — access, condition and weather change them. Northmark is a fully insured chimney company with years of hands-on experience: we show up when we said we would, do the work properly, and tell you the truth about what your chimney needs.</p>
+  </div>
+</section>
+
+<section data-screen-label="Service area" style="border-bottom:1px solid rgba(245,239,228,0.1)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(16px,3vw,40px)">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:24px">
+      <div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">WHERE WE WORK</div><h2 style="margin:12px 0 0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(28px,3.4vw,46px);line-height:0.96">CHIMNEY REPAIR ACROSS THE GTA</h2></div>
+      <p style="margin:0;max-width:420px;font-size:14.5px;line-height:1.65;color:#9B917E;text-wrap:pretty">Same crew, same standard, same free on-site inspection — from downtown Toronto to Brampton and Richmond Hill. Not sure we reach you? Leave your postal code and we&rsquo;ll confirm.</p>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <a href="/#coverage" style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:9px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;transition:all .2s" style-hover="border-color:#E8622C;color:#E8622C">CHIMNEY REPAIR · TORONTO</a>
+        <a href="/#coverage" style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:9px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;transition:all .2s" style-hover="border-color:#E8622C;color:#E8622C">CHIMNEY REPAIR · NORTH YORK</a>
+        <a href="/#coverage" style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:9px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;transition:all .2s" style-hover="border-color:#E8622C;color:#E8622C">CHIMNEY REPAIR · SCARBOROUGH</a>
+        <a href="/#coverage" style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:9px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;transition:all .2s" style-hover="border-color:#E8622C;color:#E8622C">CHIMNEY REPAIR · ETOBICOKE</a>
+        <a href="/#coverage" style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:9px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;transition:all .2s" style-hover="border-color:#E8622C;color:#E8622C">CHIMNEY REPAIR · YORK</a>
+        <a href="/#coverage" style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:9px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;transition:all .2s" style-hover="border-color:#E8622C;color:#E8622C">CHIMNEY REPAIR · EAST YORK</a>
+        <a href="/#coverage" style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:9px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;transition:all .2s" style-hover="border-color:#E8622C;color:#E8622C">CHIMNEY REPAIR · VAUGHAN</a>
+        <a href="/#coverage" style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:9px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;transition:all .2s" style-hover="border-color:#E8622C;color:#E8622C">CHIMNEY REPAIR · RICHMOND HILL</a>
+        <a href="/#coverage" style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:9px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;transition:all .2s" style-hover="border-color:#E8622C;color:#E8622C">CHIMNEY REPAIR · MARKHAM</a>
+        <a href="/#coverage" style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:9px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;transition:all .2s" style-hover="border-color:#E8622C;color:#E8622C">CHIMNEY REPAIR · THORNHILL</a>
+        <a href="/#coverage" style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:9px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;transition:all .2s" style-hover="border-color:#E8622C;color:#E8622C">CHIMNEY REPAIR · MISSISSAUGA</a>
+        <a href="/#coverage" style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:9px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;transition:all .2s" style-hover="border-color:#E8622C;color:#E8622C">CHIMNEY REPAIR · BRAMPTON</a>
+        <a href="/#coverage" style="border:1px solid rgba(245,239,228,0.2);color:#C9BFAC;padding:9px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;transition:all .2s" style-hover="border-color:#E8622C;color:#E8622C">CHIMNEY REPAIR · CONCORD</a>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Related services" style="border-bottom:1px solid rgba(245,239,228,0.1)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(16px,3vw,40px)">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:24px">
+      <div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.26em;color:#E8622C">RELATED SERVICES</div><h2 style="margin:12px 0 0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(28px,3.4vw,46px);line-height:0.96">OFTEN BOOKED TOGETHER</h2></div>
+      <p style="margin:0;max-width:380px;font-size:14.5px;line-height:1.65;color:#9B917E;text-wrap:pretty">One visit, one technician — we check the whole system while we&rsquo;re there and only recommend what actually needs doing.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:1px;background:rgba(245,239,228,0.14);border:1px solid rgba(245,239,228,0.14)">
+      <a href="/chimney-inspection-toronto" style="background:#121009;display:flex;flex-direction:column;gap:8px;padding:22px 24px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="font-family:'Anton',sans-serif;font-size:20px;letter-spacing:0.02em">CHIMNEY INSPECTION IN TORONTO</span><span style="font-size:13.5px;color:#9B917E;line-height:1.55">Condition assessed with photos, explained plainly.</span><span style="margin-top:auto;font-size:11.5px;font-weight:800;letter-spacing:0.12em;color:#E8622C">VIEW SERVICE →</span></a>
+      <a href="/chimney-liner-toronto" style="background:#121009;display:flex;flex-direction:column;gap:8px;padding:22px 24px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="font-family:'Anton',sans-serif;font-size:20px;letter-spacing:0.02em">CHIMNEY LINERS IN TORONTO</span><span style="font-size:13.5px;color:#9B917E;line-height:1.55">Stainless liners for safe venting.</span><span style="margin-top:auto;font-size:11.5px;font-weight:800;letter-spacing:0.12em;color:#E8622C">VIEW SERVICE →</span></a>
+      <a href="/chimney-flashing-toronto" style="background:#121009;display:flex;flex-direction:column;gap:8px;padding:22px 24px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="font-family:'Anton',sans-serif;font-size:20px;letter-spacing:0.02em">FLASHING &AMP; WATERPROOFING IN TORONTO</span><span style="font-size:13.5px;color:#9B917E;line-height:1.55">The most common leak source, sealed properly.</span><span style="margin-top:auto;font-size:11.5px;font-weight:800;letter-spacing:0.12em;color:#E8622C">VIEW SERVICE →</span></a>
+      <a href="/chimney-masonry-repair-toronto" style="background:#121009;display:flex;flex-direction:column;gap:8px;padding:22px 24px;color:#F5EFE4;transition:background .2s" style-hover="background:#17130B"><span style="font-family:'Anton',sans-serif;font-size:20px;letter-spacing:0.02em">MASONRY REPAIR IN TORONTO</span><span style="font-size:13.5px;color:#9B917E;line-height:1.55">Tuckpointing and brick matched to your home.</span><span style="margin-top:auto;font-size:11.5px;font-weight:800;letter-spacing:0.12em;color:#E8622C">VIEW SERVICE →</span></a>
+    </div>
+  </div>
+</section>
+
 <section id="quote-cta" data-screen-label="Final CTA" style="background-image:radial-gradient(52% 60% at 50% 118%,rgba(232,98,44,0.28),transparent 72%)">
   <div style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,130px) clamp(16px,3vw,40px);display:flex;flex-direction:column;align-items:center;text-align:center;gap:26px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.3em;color:#E8622C">FREE INSPECTION · NO OBLIGATION</div>
@@ -195,7 +260,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
     <p style="margin:0;max-width:460px;font-size:16px;line-height:1.7;color:#9B917E;text-wrap:pretty">Tell us what you&rsquo;re seeing — cracks, debris, smoke — and we&rsquo;ll take it from there.</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
       <a href="/#quote" style="background:#E8622C;color:#121009;padding:19px 36px;font-size:13.5px;font-weight:800;letter-spacing:0.12em;transition:background .2s" style-hover="background:#FF7A3D">BOOK A FREE INSPECTION</a>
-      <a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.32);color:#F5EFE4;padding:19px 32px;font-size:13.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:8px;height:8px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL (416) 505-6228</a>
+      <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,239,228,0.32);color:#F5EFE4;padding:19px 32px;font-size:13.5px;font-weight:700;letter-spacing:0.12em;transition:border-color .2s" style-hover="border-color:#F5EFE4"><span style="width:8px;height:8px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL {{ phone }}</a>
     </div>
   </div>
 </section>
@@ -222,7 +287,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
   <div style="height:76px"></div>
   <div style="position:fixed;left:0;right:0;bottom:0;z-index:70;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(245,239,228,0.2);border-top:1px solid rgba(245,239,228,0.2);padding-bottom:env(safe-area-inset-bottom)">
-    <a href="tel:+14165056228" onClick="{{ trackCall }}" style="display:flex;align-items:center;justify-content:center;gap:9px;background:#121009;color:#F5EFE4;padding:19px 10px;font-size:12.5px;font-weight:800;letter-spacing:0.12em"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL NOW</a>
+    <a href="{{ telHref }}" onClick="{{ trackCall }}" style="display:flex;align-items:center;justify-content:center;gap:9px;background:#121009;color:#F5EFE4;padding:19px 10px;font-size:12.5px;font-weight:800;letter-spacing:0.12em"><span style="width:7px;height:7px;border-radius:50%;background:#E8622C;animation:pfPulse 2.2s infinite"></span>CALL NOW</a>
     <a href="/#quote" style="display:flex;align-items:center;justify-content:center;background:#E8622C;color:#121009;padding:19px 10px;font-size:12.5px;font-weight:800;letter-spacing:0.12em">BOOK A FREE INSPECTION</a>
   </div>
 </sc-if>
@@ -259,14 +324,5 @@ class Component extends DCLogic {
   }
 }
 </script>
-
-<!-- seo-engine:links:start -->
-<nav aria-label="More from Northmark Chimney" style="max-width:1100px;margin:0 auto;padding:36px 20px 48px;font-family:system-ui,sans-serif;color:#F5EFE4;background:#121009;border-top:1px solid #2a2418">
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px">
-<div><h2 style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 10px;color:#9B917E">Chimney services</h2><ul style="list-style:none;margin:0;padding:0;display:grid;gap:6px"><li><a href="/chimney-cleaning-toronto" style="color:#F5EFE4">Chimney cleaning</a></li><li><a href="/chimney-inspection-toronto" style="color:#F5EFE4">Chimney inspection</a></li><li><a href="/chimney-cap-installation-toronto" style="color:#F5EFE4">Chimney caps</a></li><li><a href="/chimney-liner-toronto" style="color:#F5EFE4">Chimney liners</a></li><li><a href="/chimney-masonry-repair-toronto" style="color:#F5EFE4">Masonry repair</a></li><li><a href="/chimney-flashing-toronto" style="color:#F5EFE4">Flashing &amp; waterproofing</a></li><li><a href="/chimney-maintenance-toronto" style="color:#F5EFE4">Chimney maintenance</a></li></ul></div>
-<div><h2 style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 10px;color:#9B917E">Service area</h2><p style="margin:0;line-height:1.7">Toronto, York, East York, North York, Scarborough, Etobicoke, Mississauga, Brampton, Vaughan, Concord, Thornhill, Richmond Hill, Markham</p></div>
-<div><h2 style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 10px;color:#9B917E">Book a free inspection</h2><p style="margin:0 0 6px"><a href="tel:+14165056228" style="color:#E8622C;font-weight:700">(416) 505-6228</a></p><p style="margin:0"><a href="/" style="color:#F5EFE4">Northmark Chimney — home</a> · <a href="/about" style="color:#F5EFE4">About</a></p></div>
-</div></nav>
-<!-- seo-engine:links:end -->
 </body>
 </html>
