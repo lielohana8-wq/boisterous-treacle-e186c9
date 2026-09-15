@@ -64,6 +64,7 @@ footer[data-screen-label]{background-color:rgba(15,12,7,0.85)}
   #work .ba-box{aspect-ratio:4/3!important;min-height:0!important}
 }
 </style>
+<style>#work .ba-tabs{display:none!important}</style>
 </head>
 <body>
 <x-dc>
@@ -207,7 +208,7 @@ footer[data-screen-label]{background-color:rgba(15,12,7,0.85)}
         </div>
       </div>
       <div style="background:#121009;display:flex;flex-direction:column;transition:background .25s" style-hover="background:#17130B">
-        <div style="position:relative;aspect-ratio:16/9"><img class="pf-img" id="svc-inspect" src="/svc-inspection.jpg" alt="Northmark Chimney — technician inspecting a flue" loading="lazy" decoding="async"></div>
+        <div style="position:relative;aspect-ratio:16/9"><img class="pf-img" id="svc-inspect" src="/assets-lite/inspect.jpg" alt="Northmark Chimney — technician inspecting a flue" loading="lazy" decoding="async"></div>
         <div style="padding:24px 26px 26px;display:flex;flex-direction:column;gap:12px;flex:1">
           <div style="display:flex;justify-content:space-between;align-items:baseline"><h3 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:26px;letter-spacing:0.02em">CHIMNEY INSPECTION</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#E8622C">S/02</span></div>
           <p style="margin:0;font-size:14.5px;line-height:1.65;color:#9B917E">A careful assessment with photos, explained in plain language. Ideal before buying, selling — or burning.</p>
@@ -671,8 +672,18 @@ class Component extends DCLogic {
       { slot: 'g-06', title: 'Tuckpointing above roofline', meta: 'MASONRY · RICHMOND HILL', cat: 'MASONRY', row: 'span 1', col: 'span 1', src: '/g-06.jpg', ph: 'Project photo — tuckpointing' },
       { slot: 'g-07', title: 'Gas log set service', meta: 'CLEANING · MISSISSAUGA', cat: 'CLEANING', row: 'span 1', col: 'span 1', src: '/g-07.jpg', ph: 'Project photo — seasonal visit' },
       { slot: 'g-08', title: 'Gas fireplace service', meta: 'CLEANING · MARKHAM', cat: 'CLEANING', row: 'span 1', col: 'span 1', src: '/g-08.jpg', ph: 'Project photo — inspection' }
+      { slot: 'ba-cleaning-before', title: 'Chimney cleaning', meta: 'CLEANING · TORONTO & GTA', cat: 'CLEANING', row: 'span 1', col: 'span 1', src: '/ba-cleaning-before.jpg', ph: 'Completed chimney cleaning' },
+      { slot: 'ba-cleaning-after', title: 'Chimney cleaning', meta: 'CLEANING · TORONTO & GTA', cat: 'CLEANING', row: 'span 1', col: 'span 1', src: '/ba-cleaning-after.jpg', ph: 'Completed chimney cleaning' },
+      { slot: 'ba-caps-before', title: 'Cap & crown work', meta: 'CAPS · TORONTO & GTA', cat: 'CAPS', row: 'span 1', col: 'span 1', src: '/ba-caps-before.jpg', ph: 'Completed cap and crown work' },
+      { slot: 'ba-caps-after', title: 'Cap & crown work', meta: 'CAPS · TORONTO & GTA', cat: 'CAPS', row: 'span 1', col: 'span 1', src: '/ba-caps-after.jpg', ph: 'Completed cap and crown work' },
+      { slot: 'ba-flashing-before', title: 'Stone chimney & flashing', meta: 'REPAIRS · TORONTO & GTA', cat: 'REPAIRS', row: 'span 1', col: 'span 1', src: '/ba-flashing-before.jpg', ph: 'Completed flashing work on a stone chimney' },
+      { slot: 'ba-flashing-after', title: 'Stone chimney & flashing', meta: 'REPAIRS · TORONTO & GTA', cat: 'REPAIRS', row: 'span 1', col: 'span 1', src: '/ba-flashing-after.jpg', ph: 'Completed flashing work on a stone chimney' },
+      { slot: 'ba-masonry-before', title: 'Brick chimney rebuild', meta: 'MASONRY · TORONTO & GTA', cat: 'MASONRY', row: 'span 1', col: 'span 1', src: '/ba-masonry-before.jpg', ph: 'Completed masonry work' },
+      { slot: 'ba-masonry-after', title: 'Brick chimney', meta: 'MASONRY · TORONTO & GTA', cat: 'MASONRY', row: 'span 1', col: 'span 1', src: '/ba-masonry-after.jpg', ph: 'Chimney masonry' },
+      { slot: 'ba-repairs-before', title: 'Chimney repair', meta: 'REPAIRS · TORONTO & GTA', cat: 'REPAIRS', row: 'span 1', col: 'span 1', src: '/ba-repairs-before.jpg', ph: 'Completed chimney repair' },
+      { slot: 'ba-repairs-after', title: 'Chimney repair', meta: 'REPAIRS · TORONTO & GTA', cat: 'REPAIRS', row: 'span 1', col: 'span 1', src: '/ba-repairs-after.jpg', ph: 'Completed chimney repair' },
     ];
-    const baCats = ['CLEANING', 'MASONRY', 'CAPS', 'FLASHING', 'REPAIRS'];
+    const baCats = ['MASONRY'];
     const filters = ['ALL', 'CLEANING', 'REPAIRS', 'MASONRY', 'CAPS'];
     const faqsData = [
       { q: 'How often should a chimney be cleaned?', a: 'Most wood-burning chimneys benefit from a yearly cleaning, but it really depends on how much you burn, what you burn, and the chimney\u2019s condition. After seeing yours, we can recommend an honest schedule — sometimes that means less often, not more.' },
@@ -732,7 +743,7 @@ class Component extends DCLogic {
       pickBaCat: (e) => this.setState({ baCat: e.currentTarget.dataset.cat }),
       baPairs: baCats.map(k => ({
         display: k === s.baCat ? 'block' : 'none',
-        beforeId: 'ba-' + k.toLowerCase() + '-before', afterId: 'ba-' + k.toLowerCase() + '-after',
+        beforeId: 'ba-before', afterId: 'ba-after',
         beforeSrc: '/ba-before.jpg', afterSrc: '/ba-after.jpg',
         beforePh: 'Before — failing mortar joints', afterPh: 'After — repointed & sealed' })),
       baBoxRef: (el) => { this.baBoxEl = el; },
