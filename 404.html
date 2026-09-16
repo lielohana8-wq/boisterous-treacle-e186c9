@@ -229,6 +229,100 @@ h1{font-size:36px}h2{font-size:28px}
 .twoup .lbl{position:static;display:inline-block}
 .twoup .lbl.l{background:transparent;border:1px solid rgba(255,255,255,.45);color:#fff}
 @media(max-width:620px){.twoup{grid-template-columns:1fr;gap:26px}.twoup img{aspect-ratio:4/3}.tile{aspect-ratio:3/2}.shot img{aspect-ratio:4/3}.hero .acts .btn{flex:1 1 100%}}
+
+/* ---------- winter promotion ---------- */
+.promo{background:var(--copper);color:#fff;position:relative;z-index:60}
+.promo .wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-block:11px;font-size:14px}
+.promo b{font-weight:800;letter-spacing:-.005em}
+.promo .pdate{color:rgba(255,255,255,.82);font-weight:600}
+.promo a{margin-inline-start:auto;font-weight:800;border-bottom:1px solid rgba(255,255,255,.55);padding-bottom:1px;white-space:nowrap}
+.promo a:hover{border-bottom-color:#fff}
+.pdot{width:8px;height:8px;border-radius:50%;background:#fff;flex:none;box-shadow:0 0 0 4px rgba(255,255,255,.25)}
+.hdr{position:relative;background:var(--ink)}
+.hero .wrap{padding-top:66px}
+.hchip{display:inline-flex;align-items:center;gap:10px;margin:26px 0 0;padding:10px 16px 10px 10px;border:1px solid rgba(201,84,29,.55);border-radius:2px;background:rgba(201,84,29,.12);color:#fff;font-weight:700;font-size:15px}
+.hchip span{background:var(--copper);color:#fff;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:5px 9px;border-radius:2px}
+.ribbon{position:absolute;top:14px;inset-inline-start:14px;z-index:2;background:var(--copper);color:#fff;font-size:11px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;padding:7px 11px;border-radius:2px}
+.pline{margin:0 0 18px;color:#C9D1DD;font-size:15.5px;max-width:48ch}
+.pline b{display:inline-block;color:var(--copper);font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-inline-end:10px}
+.fpromo{color:#fff;font-weight:700;margin-bottom:10px;font-size:15px}
+.fpromo b{display:block;color:var(--copper);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:3px}
+
+/* modal */
+.pmwrap{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:24px}
+.pmwrap[hidden]{display:none}
+.pm-back{position:absolute;inset:0;background:rgba(7,10,15,.9)}
+.pm-card{position:relative;background:var(--ink2);color:#fff;max-width:480px;width:100%;padding:44px 44px 34px;border-radius:2px;border-top:4px solid var(--copper);text-align:center;box-shadow:0 50px 100px -30px rgba(0,0,0,.8);animation:pmin .32s cubic-bezier(.2,.8,.3,1)}
+@keyframes pmin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.pm-x{position:absolute;top:10px;inset-inline-end:12px;background:none;border:0;color:#8C95A5;font-size:30px;line-height:1;cursor:pointer;padding:6px 10px}
+.pm-x:hover{color:#fff}
+.pm-x:focus{outline:none}.pm-x:focus-visible{outline:2px solid var(--copper);outline-offset:2px;border-radius:2px}
+.pm-kicker{font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--copper);margin:0 0 14px}
+.pm-card h2{font-size:32px;margin:0 0 6px;color:#fff}
+.pm-price{font-size:64px;font-weight:800;letter-spacing:-.05em;line-height:1;margin:0 0 6px;color:#fff}
+.pm-until{color:#F0A277;font-weight:700;font-size:14px;margin:0 0 14px}
+.pm-blurb{color:#AEB6C4;font-size:15.5px;margin:14px auto 24px;max-width:34ch}
+.pm-card .btn{width:100%}
+.pm-phone{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-size:23px;font-weight:800;letter-spacing:-.03em;margin-top:18px;color:#fff}
+.pm-phone svg{color:var(--copper)}
+.pm-fine{color:#77808F;font-size:12.5px;margin:18px 0 0;line-height:1.5}
+@media(max-width:1020px){.hero .wrap{padding-top:44px}.promo .wrap{padding-block:10px;font-size:13px;gap:9px}.promo a{margin-inline-start:0;width:100%}}
+@media(max-width:620px){.pm-card{padding:36px 24px 28px}.pm-price{font-size:52px}.pm-card h2{font-size:26px}.hchip{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.pm-card{animation:none}}
+.pm-incl{display:inline-flex;align-items:center;gap:8px;color:#fff;font-weight:700;font-size:14px;background:rgba(201,84,29,.16);border:1px solid rgba(201,84,29,.5);border-radius:2px;padding:8px 14px;margin:6px 0 0}
+.pm-incl svg{color:var(--copper)}
+.hchip em{display:block;font-style:normal;font-weight:600;font-size:13px;color:#F0A277;margin-top:2px}
+.hchip{align-items:flex-start;padding-top:12px;padding-bottom:12px}
+.fpromo span{display:block;color:var(--copper);font-weight:600;font-size:13.5px;letter-spacing:0;text-transform:none;margin-top:2px}
+@media(max-width:620px){
+.promo a{display:none}
+.promo .wrap{padding-block:9px;font-size:12.5px;gap:8px}
+.hchip{display:block;width:100%;padding:14px 16px}
+.hchip span{display:inline-block;margin-bottom:8px}
+.hchip em{display:block;margin-top:3px}
+}
+
+.hero .hp-promo b{color:#F0A277}
+.hero .hp-promo svg{color:#F0A277}
+
+/* ---------- winter offer band ---------- */
+.offer{background:var(--ink2);color:#fff;border-top:4px solid var(--copper);border-bottom:1px solid var(--linew)}
+.offer .wrap{padding-block:60px 64px}
+.o-kicker{display:flex;align-items:center;gap:11px;font-size:13px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--copper);margin:0 0 30px}
+.o-until{color:#8C95A5;letter-spacing:.12em}
+.o-pulse{width:9px;height:9px;border-radius:50%;background:var(--copper);box-shadow:0 0 0 5px rgba(201,84,29,.22)}
+.o-grid{display:grid;grid-template-columns:auto 1fr;gap:64px;align-items:center}
+.o-money{padding-inline-end:64px;border-inline-end:1px solid var(--linew)}
+.o-price{font-size:clamp(88px,10.5vw,168px);font-weight:800;letter-spacing:-.065em;line-height:.82;color:var(--copper);margin:0}
+.o-price span{font-size:.4em;vertical-align:super;letter-spacing:-.02em;margin-inline-end:6px}
+.o-money h2{font-size:clamp(26px,2.7vw,40px);margin:14px 0 0;color:#fff;letter-spacing:-.04em}
+.o-list{list-style:none;margin:0 0 26px;padding:0;display:grid;gap:13px}
+.o-list li{display:flex;gap:12px;align-items:flex-start;font-size:17px;font-weight:700;color:#fff}
+.o-list svg{color:var(--copper);flex:none;margin-top:5px}
+.o-acts{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.o-acts .btn{padding:19px 34px;font-size:17px}
+.o-phone{display:inline-flex;align-items:center;gap:10px;font-size:23px;font-weight:800;letter-spacing:-.035em;color:#fff}
+.o-phone svg{color:var(--copper)}
+.o-fine{color:#77808F;font-size:12.5px;line-height:1.5;margin:22px 0 0;max-width:62ch}
+.ttag{display:inline-block;color:#F0A277;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:7px}
+@media(max-width:1020px){
+.offer .wrap{padding-block:46px 50px}
+.o-grid{grid-template-columns:1fr;gap:34px}
+.o-money{padding-inline-end:0;border-inline-end:0;border-bottom:1px solid var(--linew);padding-bottom:30px}
+.o-kicker{margin-bottom:22px}
+}
+@media(max-width:620px){
+.o-price{font-size:92px}.o-money h2{font-size:26px}
+.o-list li{font-size:15.5px}
+.o-acts{gap:16px}.o-acts .btn{width:100%}
+}
 </style><script src="/seo-hook.js" defer></script><style>.boxwrap{background:var(--navy);min-height:86vh;display:flex;align-items:center;justify-content:center;padding:150px 24px 90px}.box{background:#fff;color:var(--ink);max-width:620px;width:100%;border-radius:2px;border-top:3px solid var(--copper);padding:52px 46px;text-align:center;box-shadow:0 40px 90px -40px rgba(0,0,0,.65)}.box .ok{display:inline-grid;place-items:center;width:74px;height:74px;border-radius:50%;background:#E8F5EC;color:#1E7F45;margin-bottom:24px}.box h1{font-size:clamp(30px,4vw,44px);margin-bottom:14px}.box .lead{margin:0 auto 30px;max-width:48ch}.box .next{text-align:start;background:var(--stone);border-radius:2px;padding:24px 28px;margin-bottom:28px}.box .next b{display:block;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}.box .next ol{margin:0;padding-inline-start:20px;display:grid;gap:9px;color:#3B4252}.box .ph{font-weight:800;font-size:26px;display:inline-flex;align-items:center;gap:10px;letter-spacing:-.02em}.box .ph svg{color:var(--copper)}.box .hrs{color:var(--mut);font-size:14px;margin:8px 0 0}.box .home{margin:26px 0 0}.box .home a{color:var(--mut);font-weight:600;border-bottom:1px solid var(--line)}@media(max-width:600px){.boxwrap{padding:120px 16px 70px}.box{padding:36px 22px}}</style></head><body><header class="hdr"><div class="wrap"><a class="brand" href="/" aria-label="Northmark Chimney home"><img src="/logo.png" alt="Northmark Chimney" width="150" height="115"></a><nav class="nav" id="nav"><div class="dd"><button class="ddb" aria-expanded="false">Services</button><div class="ddm"><a href="/chimney-cleaning-toronto">Chimney Cleaning</a><a href="/chimney-inspection-toronto">Chimney Inspection</a><a href="/chimney-repair-toronto">Chimney Repair</a><a href="/chimney-cap-installation-toronto">Chimney Caps</a><a href="/chimney-liner-toronto">Chimney Liners</a><a href="/chimney-masonry-repair-toronto">Masonry &amp; Tuckpointing</a><a href="/chimney-flashing-toronto">Flashing &amp; Waterproofing</a><a href="/chimney-maintenance-toronto">Chimney Maintenance</a><a href="/fireplace-repair-toronto">Fireplace Repair</a></div></div><a href="/#work">Our Work</a><a href="/#areas">Service Areas</a><a href="/about">About</a><a href="/#faq">FAQ</a></nav><div class="hact"><a class="hphone" href="tel:+14165056228"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.7.5 2.6.7a2 2 0 0 1 1.7 2z"/></svg><span class="t">(416) 505-6228</span></a><button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button></div></div></header><section class="boxwrap"><div class="box"><h1>Page Not Found</h1><p class="lead">That page does not exist or has moved. Call us and we will point you the right way.</p><a class="ph" href="tel:+14165056228"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.7.5 2.6.7a2 2 0 0 1 1.7 2z"/></svg>(416) 505-6228</a><p class="hrs">Every Day 8:00–20:00</p><p class="home"><a href="/">Back To Home</a></p></div></section><footer class="ftr"><div class="wrap"><div><a class="plate" href="/"><img src="/logo.png" alt="Northmark Chimney"></a><p>Chimney cleaning, inspection, repair and maintenance for homeowners across Toronto and the GTA.</p><a class="fphone" href="tel:+14165056228"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.7.5 2.6.7a2 2 0 0 1 1.7 2z"/></svg>(416) 505-6228</a><p><a href="mailto:Northmarkchimney@gmail.com">Northmarkchimney@gmail.com</a><br>Every Day 8:00–20:00</p></div><div><h4>Services</h4><ul><li><a href="/chimney-cleaning-toronto">Chimney Cleaning</a></li><li><a href="/chimney-inspection-toronto">Chimney Inspection</a></li><li><a href="/chimney-repair-toronto">Chimney Repair</a></li><li><a href="/chimney-cap-installation-toronto">Chimney Caps</a></li><li><a href="/chimney-liner-toronto">Chimney Liners</a></li><li><a href="/chimney-masonry-repair-toronto">Masonry &amp; Tuckpointing</a></li><li><a href="/chimney-flashing-toronto">Flashing &amp; Waterproofing</a></li><li><a href="/chimney-maintenance-toronto">Chimney Maintenance</a></li><li><a href="/fireplace-repair-toronto">Fireplace Repair</a></li></ul></div><div><h4>Where We Work</h4><p>Toronto, York, East York, North York, Scarborough, Etobicoke, Mississauga, Brampton, Vaughan, Concord, Thornhill, Richmond Hill, Markham</p></div><div><h4>Northmark</h4><p><a href="/about">About Northmark</a></p><p><a href="mailto:Northmarkchimney@gmail.com">Northmarkchimney@gmail.com</a></p></div><div class="copy">© Northmark Chimney, Toronto and the GTA. <a href="tel:+14165056228">(416) 505-6228</a></div></div></footer>
 <div class="sticky one"><a class="btn" href="tel:+14165056228"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.7.5 2.6.7a2 2 0 0 1 1.7 2z"/></svg>Call (416) 505-6228</a></div>
-<script>(function(){var b=document.getElementById('burger'),n=document.getElementById('nav');if(b&&n)b.onclick=function(){n.classList.toggle('open')};document.querySelectorAll('.ddb').forEach(function(x){x.onclick=function(e){e.preventDefault();var o=x.parentNode.classList.toggle('open');x.setAttribute('aria-expanded',o)}});var r=document.getElementById('ba');if(r){var i=r.querySelector('input');i.oninput=function(){r.style.setProperty('--v',i.value+'%')};}})();</script></body></html>
+<script>(function(){var b=document.getElementById('burger'),n=document.getElementById('nav');if(b&&n)b.onclick=function(){n.classList.toggle('open')};document.querySelectorAll('.ddb').forEach(function(x){x.onclick=function(e){e.preventDefault();var o=x.parentNode.classList.toggle('open');x.setAttribute('aria-expanded',o)}});var w=document.getElementById('pmwrap');if(w){var K='nm-promo-seen',DAYS=7,shown=false,seen=false;
+try{var t=parseInt(localStorage.getItem(K)||'0',10);seen=t>0&&(Date.now()-t)<DAYS*864e5}catch(e){}
+function pmOpen(){if(shown||seen)return;shown=true;w.hidden=false;document.body.style.overflow='hidden';var x=w.querySelector('.pm-x');if(x)x.focus({preventScroll:true})}
+function pmClose(){w.hidden=true;document.body.style.overflow='';try{localStorage.setItem(K,String(Date.now()))}catch(e){}}
+if(!seen){setTimeout(pmOpen,7000);var onScroll=function(){if((window.scrollY||0)>window.innerHeight*0.6){pmOpen();window.removeEventListener('scroll',onScroll)}};window.addEventListener('scroll',onScroll,{passive:true})}
+w.addEventListener('click',function(e){if(e.target.hasAttribute('data-pmclose'))pmClose()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!w.hidden)pmClose()});}
+var r=document.getElementById('ba');if(r){var i=r.querySelector('input');i.oninput=function(){r.style.setProperty('--v',i.value+'%')};}})();</script></body></html>
