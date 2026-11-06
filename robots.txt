@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /tools/
 
 # AI answer engines are welcome to read the site
 User-agent: GPTBot
