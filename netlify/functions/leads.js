@@ -7,7 +7,7 @@ const FORM = "inspection-request";
 
 exports.handler = async (event, context) => {
   connectLambda(event);
-  if (!user(context)) return json(401, { error: "login required" });
+  if (!(await user(event))) return json(401, { error: "login required" });
   const token = process.env.NETLIFY_API_TOKEN;
   const s = store();
   if (event.httpMethod === "PATCH") {

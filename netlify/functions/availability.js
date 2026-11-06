@@ -12,7 +12,7 @@ exports.handler = async (event, context) => {
     return json(200, Object.assign({}, DEFAULT, v), { "cache-control": "public, max-age=60", "access-control-allow-origin": "*" });
   }
   if (event.httpMethod === "PUT") {
-    if (!user(context)) return json(401, { error: "login required" });
+    if (!(await user(event))) return json(401, { error: "login required" });
     let body; try { body = JSON.parse(event.body || "{}"); } catch (e) { return json(400, { error: "bad json" }); }
     const clean = {
       blocked: {}, closed_weekdays: (body.closed_weekdays || []).map(Number).filter(n => n >= 0 && n <= 6),

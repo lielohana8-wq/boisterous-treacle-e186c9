@@ -158,7 +158,7 @@ def main():
                  "check": "19-Point Chimney Check", "prices": "What It Costs (prices)", "reviews": "Check Us Before You Book (reviews)"}
     shared_fields = [{"name": k, "label": SHARED_HE.get(k, k), "widget": "object", "collapsed": True, "fields": section_fields(v)} for k, v in shared.items()]
     config = {
-        "backend": {"name": "git-gateway", "branch": BRANCH, "commit_messages": {"create": "Content: add {{collection}} “{{slug}}”", "update": "Content: update {{collection}} “{{slug}}”", "delete": "Content: delete {{collection}} “{{slug}}”", "uploadMedia": "Photo: {{path}}", "deleteMedia": "Photo removed: {{path}}"}},
+        "backend": {"name": "github", "repo": "lielohana8-wq/boisterous-treacle-e186c9", "base_url": "https://api.netlify.com", "branch": BRANCH, "commit_messages": {"create": "Content: add {{collection}} “{{slug}}”", "update": "Content: update {{collection}} “{{slug}}”", "delete": "Content: delete {{collection}} “{{slug}}”", "uploadMedia": "Photo: {{path}}", "deleteMedia": "Photo removed: {{path}}"}},
         "locale": "en",
         "site_url": "https://northmark-chimney.ca", "display_url": "https://northmark-chimney.ca", "logo_url": "/logo.png",
         "media_folder": "uploads", "public_folder": "/uploads",

@@ -51,7 +51,7 @@ h1{font-size:24px;margin:0 0 4px}.sub{color:var(--mut);margin:0 0 18px;font-size
 <body>
 <header><img src="/logo.png" alt=""><a href="./">← Menu</a><span class="sp"></span><a href="cms.html">Edit the site</a><button class="btn line sm" id="logout" type="button" hidden>Sign out</button></header>
 <main>
-  <section id="login" class="login" hidden><h1>Calendar &amp; leads</h1><p class="sub">Sign in to see the requests.</p><button class="btn" id="btn-login" type="button">Sign in</button></section>
+  <section id="login" class="login" hidden><h1>Calendar &amp; leads</h1><p class="sub">Sign in to see the requests.</p><button class="btn" id="btn-login" type="button">Sign in with GitHub</button><p id="login-msg" class="msg err" style="margin-top:18px" hidden></p></section>
   <section id="app" hidden>
     <h1>Calendar &amp; leads</h1>
     <p class="sub">Every request from the booking form shows up here on the day the customer asked for. Mark days or time windows as taken — and the form on the site stops offering them.</p>
@@ -83,14 +83,14 @@ h1{font-size:24px;margin:0 0 4px}.sub{color:var(--mut);margin:0 0 18px;font-size
     </div>
   </section>
 </main>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script src="auth.js"></script>
 <script>
 (function () {
   var WINDOWS = ['Morning (7:00 – 11:00)', 'Midday (11:00 – 15:00)', 'Afternoon (15:00 – 19:00)', 'Evening (19:00 – 22:00)'];
   var WIN_HE = { 'Morning (7:00 – 11:00)': 'Morning 7–11', 'Midday (11:00 – 15:00)': 'Midday 11–15', 'Afternoon (15:00 – 19:00)': 'Afternoon 15–19', 'Evening (19:00 – 22:00)': 'Evening 19–22', 'First available (Soonest you can come)': 'First available' };
   var STATUS = { new: 'New', called: 'Called', booked: 'Booked', sent: 'Sent to contractor', done: 'Done', cancel: 'Cancelled' };
   var DOW = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-  var id = window.netlifyIdentity, token = null, leads = [], avail = { blocked: {}, closed_weekdays: [], max_days: 60, lead_days: 0 }, cur = new Date(), sel = null;
+  var A = window.NMAuth, token = null, leads = [], avail = { blocked: {}, closed_weekdays: [], max_days: 60, lead_days: 0 }, cur = new Date(), sel = null;
   cur.setDate(1);
   var $ = function (s) { return document.querySelector(s); };
   function msg(t, err) { var m = $('#msg'); m.textContent = t || ''; m.hidden = !t; m.className = 'msg' + (err ? ' err' : ''); }
@@ -202,12 +202,12 @@ h1{font-size:24px;margin:0 0 4px}.sub{color:var(--mut);margin:0 0 18px;font-size
   // ---------- auth
   function show(user) {
     $('#login').hidden = !!user; $('#app').hidden = !user; $('#logout').hidden = !user;
-    if (user) user.jwt().then(function (t) { token = t; load(); });
+    token = user ? user.token : null;
+    if (user) load();
   }
-  if (!id) { msg('The sign-in widget did not load.', true); $('#login').hidden = false; return; }
-  id.on('init', show); id.on('login', function (u) { show(u); id.close(); }); id.on('logout', function () { show(null); });
-  $('#btn-login').addEventListener('click', function () { id.open('login'); }); $('#logout').addEventListener('click', function () { id.logout(); });
-  id.init();
+  $('#btn-login').addEventListener('click', function () { var lm = $('#login-msg'); lm.hidden = true; A.login().then(show).catch(function (e) { if (e.message !== 'cancelled') { lm.textContent = e.message; lm.hidden = false; } }); });
+  $('#logout').addEventListener('click', function () { A.logout(); show(null); });
+  A.check().then(show);
 })();
 </script>
 </body>

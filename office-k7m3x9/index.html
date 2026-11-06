@@ -31,9 +31,9 @@ footer{padding:16px 20px;color:var(--mut);font-size:13px;text-align:center}
 <main>
   <section id="login" class="login" hidden>
     <h1>Sign in to manage the site</h1>
-    <p class="sub">Use the email and password from your invitation.</p>
-    <button class="btn" id="btn-login" type="button">Sign in</button>
-    <div class="note">No password yet? Open the invitation email from Netlify and click its link — it brings you here and asks you to choose a password.</div>
+    <p class="sub">Sign in with the GitHub account that owns the site’s repository.</p>
+    <button class="btn" id="btn-login" type="button">Sign in with GitHub</button>
+    <div class="note" id="login-msg" hidden></div>
   </section>
   <section id="home" hidden>
     <h1>What would you like to do?</h1>
@@ -48,20 +48,20 @@ footer{padding:16px 20px;color:var(--mut);font-size:13px;text-align:center}
   </section>
 </main>
 <footer>Northmark Chimney · internal</footer>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script src="auth.js"></script>
 <script>
 (function(){
-  var id=window.netlifyIdentity; if(!id){document.getElementById('login').hidden=false;return}
+  var A=window.NMAuth;
   function show(user){
     document.getElementById('login').hidden=!!user; document.getElementById('home').hidden=!user;
-    document.getElementById('who').textContent=user?(user.user_metadata&&user.user_metadata.full_name||user.email):'';
+    document.getElementById('who').textContent=user?(user.name||user.login||''):'';
   }
-  id.on('init',function(user){show(user)});
-  id.on('login',function(user){show(user);id.close()});
-  id.on('logout',function(){show(null)});
-  document.getElementById('btn-login').addEventListener('click',function(){id.open('login')});
-  document.getElementById('btn-logout').addEventListener('click',function(){id.logout()});
-  id.init({locale:'en'});
+  function err(t){var m=document.getElementById('login-msg');m.textContent=t||'';m.hidden=!t}
+  document.getElementById('btn-login').addEventListener('click',function(){
+    err('');A.login().then(show).catch(function(e){if(e.message!=='cancelled')err(e.message)});
+  });
+  document.getElementById('btn-logout').addEventListener('click',function(){A.logout();show(null)});
+  A.check().then(show);
 })();
 </script>
 </body>

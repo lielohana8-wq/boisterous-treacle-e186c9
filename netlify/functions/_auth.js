@@ -1,10 +1,27 @@
-/* Shared helpers for the admin functions. Requests from the admin pages carry the Netlify
-   Identity JWT; Netlify verifies it and exposes the user on context.clientContext.user. */
+/* Shared helpers for the admin functions. Requests from the admin pages carry the GitHub token
+   the owner signed in with (same token Decap CMS uses). A request is accepted only if that token
+   can push to the site's repository. */
 const { getStore, connectLambda } = require("@netlify/blobs");
 
-function user(context) {
-  const u = context && context.clientContext && context.clientContext.user;
-  return u && u.email ? u : null;
+const REPO = process.env.ADMIN_REPO || "lielohana8-wq/boisterous-treacle-e186c9";
+const cache = new Map(); // token -> { user, until }
+
+async function user(event) {
+  const h = (event && event.headers) || {};
+  const m = String(h.authorization || h.Authorization || "").match(/^Bearers+(.+)$/i);
+  if (!m) return null;
+  const token = m[1].trim();
+  const hit = cache.get(token);
+  if (hit && hit.until > Date.now()) return hit.user;
+  try {
+    const r = await fetch("https://api.github.com/repos/" + REPO, { headers: { authorization: "token " + token, accept: "application/vnd.github+json", "user-agent": "northmark-admin" } });
+    if (!r.ok) return null;
+    const repo = await r.json();
+    if (!repo.permissions || !repo.permissions.push) return null;
+    const u = { ok: true };
+    cache.set(token, { user: u, until: Date.now() + 5 * 60 * 1000 });
+    return u;
+  } catch (e) { return null; }
 }
 
 function json(status, body, extra) {
