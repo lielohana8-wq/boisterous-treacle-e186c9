@@ -11,7 +11,7 @@ function json(status, body, extra) {
   return { statusCode: status, headers: Object.assign({ "content-type": "application/json; charset=utf-8", "cache-control": "no-store" }, extra || {}), body: JSON.stringify(body) };
 }
 
-function store() { return getStore({ name: "northmark-admin", consistency: "strong" }); }
+function store() { return getStore("northmark-admin"); }
 
 async function siteId(token) {
   if (process.env.SITE_ID) return process.env.SITE_ID;
