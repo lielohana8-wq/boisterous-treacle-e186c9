@@ -3,6 +3,6 @@
   "private": true,
   "description": "northmark-chimney.ca — static site built by build/build.py; admin functions in netlify/functions",
   "dependencies": {
-    "@netlify/blobs": "^11.1.8"
+    "@netlify/blobs": "11.1.7"
   }
 }
