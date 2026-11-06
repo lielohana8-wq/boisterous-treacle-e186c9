@@ -1,0 +1,92 @@
+{
+ "meta": {
+  "title": "Free Chimney Inspection Toronto, {{site.offer_price}} Sweep | Northmark",
+  "description": "Free chimney inspection anywhere in Toronto and the GTA: WETT-certified technician, 19-point check, camera photos, and a {{site.offer_price}} sweep this winter. Open 7 days."
+ },
+ "lp-hero": {
+  "t": "Open 7 days across the GTA",
+  "h1": "Free Chimney Inspection At Your Home <em>{{site.offer_price}} Chimney Sweep This Winter</em>",
+  "p": "A WETT-certified technician comes out, checks 19 points inside and out, photographs what he finds and tells you the exact price — before anything starts. If all you need is a sweep, that is {{site.offer_price}} this winter.",
+  "t-2": "Prefer to talk? We answer {{site.hours}}, every day."
+ },
+ "inc": {
+  "h2": "What A Northmark Sweep Includes",
+  "li": "Floors and the fireplace area covered before any tool comes out",
+  "li-2": "Flue brushed top to bottom with the vacuum running at the firebox",
+  "li-3": "Smoke shelf, smoke chamber and damper cleaned by hand",
+  "li-4": "A camera look inside the flue, with photos",
+  "li-5": "The full 19-point check, at no extra cost",
+  "li-6": "The area vacuumed and left the way we found it",
+  "p": "Winter pricing for a standard chimney sweep, inspection included. Call and we will confirm it for your chimney before booking.",
+  "img": {
+   "src": "/svc-liner.jpg",
+   "alt": "Camera view inside a chimney flue during a Northmark sweep"
+  }
+ },
+ "w": {
+  "h2": "Before & After: Real Northmark Work",
+  "p": "Our own photos from homes across Toronto and the GTA.",
+  "img": {
+   "src": "/ba-flashing-before.jpg",
+   "alt": "Before: stone chimney with a worn crown and weathered joints"
+  },
+  "t": "Before",
+  "img-2": {
+   "src": "/ba-flashing-after.jpg",
+   "alt": "After: the same stone chimney with a new crown and flashing"
+  },
+  "t-2": "After",
+  "t-3": "Flashing & Waterproofing",
+  "h3": "A weathered crown and worn joints on a stone chimney",
+  "dt": "Where",
+  "dd": "Toronto & GTA",
+  "dt-2": "The Problem",
+  "dd-2": "A weathered crown and worn joints on a stone chimney.",
+  "dt-3": "What We Did",
+  "dd-3": "New crown, joints filled, and the chimney sealed where it meets the roof.",
+  "dt-4": "The Result",
+  "dd-4": "Water-shedding crown and a sealed roofline on the same chimney.",
+  "btn": "Book my free inspection"
+ },
+ "why": {
+  "h2": "Why Homeowners Choose Northmark",
+  "p": "Not promises — just how every visit works.",
+  "h3": "WETT-Certified",
+  "p-2": "Our work is carried out by a WETT-certified technician — the Wood Energy Technology Transfer certification Canadian insurers and home inspectors recognise.",
+  "h3-2": "See What We See",
+  "p-3": "A camera goes inside the flue. You get the photos, so you are not taking our word for it.",
+  "h3-3": "Know The Price Before Work Starts",
+  "p-4": "The technician gives you the exact price at your home, after the inspection. Nothing starts until you say yes.",
+  "h3-4": "No Pressure",
+  "p-5": "If something doesn’t need fixing, we tell you. If it can wait, we tell you that too."
+ },
+ "faq": {
+  "h2": "The Questions People Actually Ask",
+  "p": "Anything else — call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "Will the sweep make a mess in my house?",
+  "p-2": "No. Floors and the fireplace area are covered before any tool comes out, the vacuum runs the whole time we sweep, and the area is left the way we found it — or cleaner. That is step one of every visit, not an extra.",
+  "q-2": "Is the inspection really free, or is there a catch?",
+  "p-3": "It is free. A technician comes to your home, works through the 19-point check and gives you the price on the spot. If you decide not to go ahead, you pay nothing and you still have the photos and the report.",
+  "q-3": "Will you try to sell me a repair I don’t need?",
+  "p-4": "No. If something doesn’t need fixing, we say so, and if it can wait, we tell you that too. You see the photos of whatever we do recommend, so you are not taking our word for it.",
+  "q-4": "Do you work Saturdays and Sundays?",
+  "p-5": "Yes. We work every day, {{site.hours}}, weekends included — at the same price as a weekday.",
+  "q-5": "How long does a sweep take?",
+  "p-6": "It depends on the chimney’s condition and access. We give you a realistic window when we confirm the booking, and we stay until it is done properly.",
+  "q-6": "What if you find something during the sweep?",
+  "p-7": "We show you the photos, explain what it means, and give you a price for the repair. What happens next is your call — the sweep is still {{site.offer_price}} either way.",
+  "q-7": "Are you WETT-certified?",
+  "p-8": "Yes. The work is carried out by a WETT-certified technician — the certification Canadian insurers and home inspectors ask about."
+ },
+ "book-bottom": {
+  "h2": "Pick A Time For Your Free Inspection",
+  "p": "Choose a day and a window that suit you. We confirm by phone within the hour — every day, {{site.hours}}, weekends included.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ },
+ "footer": {
+  "p": "Chimney cleaning, inspection and repair for homeowners across Toronto and the GTA. The inspection at your home is free, and you get the exact price before any work starts.",
+  "p-2": "<a href=\"mailto:{{site.email}}\">{{site.email}}</a> · Every Day {{site.hours}}",
+  "p-3": "Toronto · York · East York · North York · Scarborough · Etobicoke · Mississauga · Brampton · Vaughan · Concord · Thornhill · Richmond Hill · Markham · Oakville · Burlington · Milton · Halton Hills · Caledon · Ajax · Pickering · Whitby · Oshawa · Clarington · Newmarket · Aurora · King City · Stouffville · Uxbridge",
+  "p-4": "© Northmark Chimney · Toronto & the GTA"
+ }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Site admin — Northmark</title>
+<link rel="icon" href="/favicon.png">
+<style>
+:root{--paper:#F6F3ED;--card:#FFFDFA;--ink:#16191D;--ink-2:#4A5058;--mut:#5F666F;--copper:#A93F13;--copper-2:#8E3410;--rule:#D6CFC3;--green:#147A3D}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+header{background:var(--card);border-bottom:1px solid var(--rule);padding:14px 20px;display:flex;align-items:center;gap:14px}
+header img{height:46px}header b{font-size:17px}header span{color:var(--mut);font-size:13px}
+header .who{margin-inline-start:auto;font-size:14px;color:var(--mut)}
+main{max-width:980px;width:100%;margin:0 auto;padding:36px 20px 60px;flex:1}
+h1{font-size:28px;margin:0 0 6px;letter-spacing:-.02em}.sub{color:var(--ink-2);margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:24px;text-decoration:none;color:inherit;display:block;box-shadow:0 10px 30px -18px rgba(74,48,28,.3);transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-2px);border-color:rgba(169,63,19,.4)}.card h2{margin:0 0 6px;font-size:20px}.card p{margin:0;color:var(--ink-2);font-size:15px}
+.card .go{display:inline-block;margin-top:14px;color:var(--copper);font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--copper);color:#fff;border:0;border-radius:10px;padding:14px 22px;font:600 16px system-ui,sans-serif;cursor:pointer}
+.btn:hover{background:var(--copper-2)}.btn.line{background:transparent;color:var(--ink);border:1.5px solid #C8C0B2}
+.login{max-width:460px;margin:60px auto;text-align:center}
+.note{background:#FCEFE5;border:1px solid rgba(180,71,27,.28);border-radius:10px;padding:14px 16px;font-size:14px;color:var(--ink-2);margin-top:28px}
+[hidden]{display:none!important}
+footer{padding:16px 20px;color:var(--mut);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<header><img src="/logo.png" alt=""><div><b>Northmark Chimney</b><br><span>Site admin</span></div><div class="who" id="who"></div></header>
+<main>
+  <section id="login" class="login" hidden>
+    <h1>Sign in to manage the site</h1>
+    <p class="sub">Use the email and password from your invitation.</p>
+    <button class="btn" id="btn-login" type="button">Sign in</button>
+    <div class="note">No password yet? Open the invitation email from Netlify and click its link — it brings you here and asks you to choose a password.</div>
+  </section>
+  <section id="home" hidden>
+    <h1>What would you like to do?</h1>
+    <p class="sub">Every change is saved and live on the site within about a minute.</p>
+    <div class="grid">
+      <a class="card" href="cms.html#/collections/projects"><h2>Jobs &amp; projects</h2><p>Add a new job with photos — it becomes a page on the site and a card on the home page.</p><span class="go">Open →</span></a>
+      <a class="card" href="calendar.html"><h2>Calendar &amp; leads</h2><p>Requests from the booking form, block days and time windows, a status for every lead.</p><span class="go">Open →</span></a>
+      <a class="card" href="cms.html#/collections/pages"><h2>Page texts &amp; photos</h2><p>Every page of the site: headings, paragraphs, captions and photos.</p><span class="go">Open →</span></a>
+      <a class="card" href="cms.html#/collections/settings"><h2>Business details &amp; offer</h2><p>Phone, WhatsApp, hours, offer price, footer and popup.</p><span class="go">Open →</span></a>
+    </div>
+    <p style="margin-top:34px"><a class="btn line" href="/" target="_blank" rel="noopener">Open the website ↗</a> &nbsp; <button class="btn line" id="btn-logout" type="button">Sign out</button></p>
+  </section>
+</main>
+<footer>Northmark Chimney · internal</footer>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+(function(){
+  var id=window.netlifyIdentity; if(!id){document.getElementById('login').hidden=false;return}
+  function show(user){
+    document.getElementById('login').hidden=!!user; document.getElementById('home').hidden=!user;
+    document.getElementById('who').textContent=user?(user.user_metadata&&user.user_metadata.full_name||user.email):'';
+  }
+  id.on('init',function(user){show(user)});
+  id.on('login',function(user){show(user);id.close()});
+  id.on('logout',function(){show(null)});
+  document.getElementById('btn-login').addEventListener('click',function(){id.open('login')});
+  document.getElementById('btn-logout').addEventListener('click',function(){id.logout()});
+  id.init({locale:'en'});
+})();
+</script>
+</body>
+</html>

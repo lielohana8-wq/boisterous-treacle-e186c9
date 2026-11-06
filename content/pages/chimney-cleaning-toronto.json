@@ -1,0 +1,122 @@
+{
+ "meta": {
+  "title": "Chimney Sweep & Chimney Cleaning Toronto | Northmark Chimney",
+  "description": "Chimney sweep and cleaning in Toronto & the GTA. Creosote and soot removed, photos of your flue, home left clean. {{site.offer_price}} this winter with a free inspection."
+ },
+ "hero": {
+  "t": "Chimney Cleaning",
+  "h1": "Chimney Sweep & Cleaning In Toronto",
+  "p": "Every fire leaves soot and creosote in the flue. We sweep it out, show you photos of the inside of your chimney, and leave your home as clean as we found it.",
+  "p-2": "<b>{{site.offer_price}}</b><span>Winter chimney sweep — free inspection included</span>",
+  "t-2": "<b>Flue, smoke chamber and firebox</b> — swept and vacuumed",
+  "t-3": "<b>Photos of the flue</b> — before you decide anything else",
+  "t-4": "<b>Floors covered</b> — and the area left clean"
+ },
+ "signs": {
+  "h2": "Signs Your Chimney Needs A Sweep",
+  "p": "If one of these sounds familiar, it is time.",
+  "h3": "It’s Been A Year Or More",
+  "p-2": "Or you don’t know when it was last done. Most wood-burning chimneys benefit from a yearly sweep.",
+  "h3-2": "Smoke Drifts Into The Room",
+  "p-3": "Buildup narrows the flue, so smoke doesn’t draw up the way it should.",
+  "h3-3": "A Strong Campfire Smell",
+  "p-4": "Creosote deposits smell, especially in humid weather.",
+  "h3-4": "Black Flakes In The Firebox",
+  "p-5": "Soot and creosote falling from above mean there is buildup in the flue.",
+  "h3-5": "You Just Bought The House",
+  "p-6": "You don’t know how the last owner used it. A sweep and a look inside is the clean start.",
+  "h3-6": "Leaves Or Nests In The Flue",
+  "p-7": "Debris blocks the flue. It comes out during the sweep — and a cap keeps it out.",
+  "p-8": "Not sure which one you’re seeing? That is what the free inspection is for. <a href=\"#book\">Book it here</a> or call <a href=\"tel:{{site.phone_tel}}\">{{site.phone}}</a>."
+ },
+ "inc": {
+  "h2": "What A Chimney Sweep Includes",
+  "li": "Floors and furniture covered, fireplace opening sealed",
+  "li-2": "Flue brushed top to bottom, vacuum running at the firebox",
+  "li-3": "Smoke shelf, smoke chamber and damper cleaned by hand",
+  "li-4": "Camera look inside the flue, with photos",
+  "li-5": "A plain-language word on anything worth watching",
+  "li-6": "The area vacuumed and left clean",
+  "img": {
+   "src": "/svc-liner.jpg",
+   "alt": "Camera view inside a chimney flue during a Northmark visit"
+  }
+ },
+ "how": {
+  "h2": "How We Clean A Chimney",
+  "p": "Every visit starts with protecting your home and ends with photos and a clean work area.",
+  "h3": "Protect",
+  "p-2": "Floors and furniture covered; the fireplace opening sealed so nothing escapes into the room.",
+  "h3-2": "Sweep",
+  "p-3": "Brushes run the full length of the flue while the vacuum captures creosote and soot at the firebox.",
+  "h3-3": "Chamber & Damper",
+  "p-4": "Smoke shelf, smoke chamber and damper cleaned by hand — this is where buildup hides.",
+  "h3-4": "Show You",
+  "p-5": "Photos of the flue and a straight word on anything worth watching."
+ },
+ "proof": {
+  "h2": "Real Work, Real Photos",
+  "p": "From our own jobs — not stock photography.",
+  "img": {
+   "src": "/svc-liner.jpg",
+   "alt": "Inside a chimney flue, photographed with the inspection camera"
+  },
+  "cap": "Inside the flue<span>What the camera shows you</span>",
+  "img-2": {
+   "src": "/g-07.jpg",
+   "alt": "Fireplace after a chimney sweep in Mississauga"
+  },
+  "cap-2": "Chimney sweep<span>Mississauga</span>",
+  "img-3": {
+   "src": "/g-08.jpg",
+   "alt": "Fireplace after a chimney sweep in Markham"
+  },
+  "cap-3": "Chimney sweep<span>Markham</span>",
+  "p-2": "See more before-and-after photos and recent jobs.",
+  "btn": "See all our work"
+ },
+ "faq": {
+  "h2": "Questions About Chimney Cleaning",
+  "p": "Anything else — call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "How often should a chimney be cleaned?",
+  "p-2": "Most wood-burning chimneys benefit from a yearly cleaning, but it depends on how much you burn, what you burn, and the chimney’s condition. After seeing yours, we’ll recommend an honest schedule — sometimes that means less often, not more.",
+  "q-2": "How much does chimney cleaning cost?",
+  "p-3": "This winter, a standard chimney sweep is {{site.offer_price}}, with the inspection included. Chimneys differ, so call {{site.phone}} and we will confirm the price for yours before booking.",
+  "q-3": "Will it make a mess in my home?",
+  "p-4": "Protecting your home is step one of every visit: floors and the fireplace area are covered before any tool comes out, and we vacuum as we sweep. The area is left the way we found it — or cleaner.",
+  "q-4": "How long does a cleaning take?",
+  "p-5": "It varies with the chimney’s condition and access. We’ll give you a realistic window when we confirm your booking, and we stay until it’s done properly.",
+  "q-5": "What if you find a problem during the cleaning?",
+  "p-6": "We show you — with photos — explain what it means in plain language, and give you a price if repair work makes sense. What happens next is always your call."
+ },
+ "rel": {
+  "h2": "Often Booked Together",
+  "p": "One visit, one crew. Most jobs combine two of these.",
+  "img": {
+   "src": "/svc-liner.jpg",
+   "alt": "Inspection camera view inside a chimney flue"
+  },
+  "h3": "Chimney Inspection",
+  "p-2": "<b>Fixes</b>Not knowing what shape your chimney is in.",
+  "p-3": "Camera photos and a plain-language answer. Free.",
+  "img-2": {
+   "src": "/ba-cleaning-after.jpg",
+   "alt": "Brick chimney with two stainless caps, well maintained"
+  },
+  "h3-2": "Chimney Maintenance",
+  "p-4": "<b>Fixes</b>Small problems that grow over a winter.",
+  "p-5": "A yearly sweep and check, with photos to compare.",
+  "img-3": {
+   "src": "/ba-caps-after.jpg",
+   "alt": "Brick chimney with a stainless chimney cap installed"
+  },
+  "h3-3": "Chimney Caps",
+  "p-6": "<b>Fixes</b>Rain, snow and animals getting into an open flue.",
+  "p-7": "A cap sized to your flue, not one-size-fits-all."
+ },
+ "book-bottom": {
+  "h2": "Book Your Chimney Sweep",
+  "p": "Tell us about your fireplace and when it was last serviced. This winter a standard sweep is {{site.offer_price}}, with the free inspection included.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

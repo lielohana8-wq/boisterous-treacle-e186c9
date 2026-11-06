@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "title": "Fireplace Repair Toronto | Northmark Chimney",
+  "description": "Fireplace repair in Toronto & the GTA: fireboxes, dampers, smoke chambers and gas fireplaces. Free inspection, photos, and the price before any work."
+ },
+ "hero": {
+  "t": "Fireplace Repair",
+  "h1": "Fireplace Repair In Toronto",
+  "p": "Cracked firebox panels, crumbling mortar, a damper that won’t seal, a gas fireplace that won’t light or stay lit. We work on the part of the system you actually sit in front of — wood-burning and gas.",
+  "t-2": "<b>Wood-burning and gas</b> — fireplaces",
+  "t-3": "<b>Firebox, damper</b> — and smoke chamber",
+  "t-4": "<b>Safety issues first</b> — explained in plain language"
+ },
+ "signs": {
+  "h2": "Signs Your Fireplace Needs Repair",
+  "p": "Look inside the firebox with a flashlight. These are the things to notice.",
+  "h3": "Cracked Firebox Panels Or Bricks",
+  "p-2": "Cracks let heat reach parts of the house they shouldn’t.",
+  "h3-2": "Crumbling Mortar In The Firebox",
+  "p-3": "Joints wear out from years of heat and need repacking.",
+  "h3-3": "A Damper That Won’t Close",
+  "p-4": "Stuck, rusted or missing — heat escapes all winter.",
+  "h3-4": "A Gas Fireplace That Won’t Stay Lit",
+  "p-5": "Or won’t light at all. Tell us the make if you know it.",
+  "h3-5": "Smoke Coming Into The Room",
+  "p-6": "The fireplace isn’t drawing properly. It could be the damper, the smoke chamber or the flue.",
+  "h3-6": "Rust In The Firebox",
+  "p-7": "Moisture is getting in from above.",
+  "p-8": "Not sure which one you’re seeing? That is what the free inspection is for. <a href=\"#book\">Book it here</a> or call <a href=\"tel:{{site.phone_tel}}\">{{site.phone}}</a>."
+ },
+ "inc": {
+  "h2": "What We Repair",
+  "li": "Firebox mortar joints and panels",
+  "li-2": "Dampers that are stuck, rusted or missing",
+  "li-3": "Smoke chambers",
+  "li-4": "Gas fireplaces that won’t light or stay lit",
+  "li-5": "A look at the chimney above it, with photos",
+  "img": {
+   "src": "/g-08.jpg",
+   "alt": "Gas fireplace in a Markham home"
+  }
+ },
+ "how": {
+  "h2": "How We Repair A Fireplace",
+  "p": "Every visit starts with protecting your home and ends with photos and a clean work area.",
+  "h3": "Assess",
+  "p-2": "Firebox, damper and, for gas units, the components — with photos of anything worn or unsafe.",
+  "h3-2": "Prepare",
+  "p-3": "Floors and the room around the fireplace covered; loose material removed.",
+  "h3-3": "Repair",
+  "p-4": "Joints repacked with refractory mortar, panels or damper replaced, gas components serviced as needed.",
+  "h3-4": "Check",
+  "p-5": "Everything checked in operation before we leave, and the area cleaned."
+ },
+ "proof": {
+  "h2": "Real Work, Real Photos",
+  "p": "From our own jobs — not stock photography.",
+  "img": {
+   "src": "/g-07.jpg",
+   "alt": "Gas fireplace in Mississauga"
+  },
+  "cap": "Fireplace service<span>Mississauga</span>",
+  "img-2": {
+   "src": "/g-08.jpg",
+   "alt": "Gas fireplace in Markham"
+  },
+  "cap-2": "Fireplace service<span>Markham</span>",
+  "img-3": {
+   "src": "/svc-cleaning.jpg",
+   "alt": "Clean fireplace and floor after a visit"
+  },
+  "cap-3": "Area left clean<span>Every visit</span>",
+  "p-2": "See more before-and-after photos and recent jobs.",
+  "btn": "See all our work"
+ },
+ "faq": {
+  "h2": "Questions About Fireplace Repair",
+  "p": "Anything else — call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "Do you work on gas fireplaces?",
+  "p-2": "Yes. Tell us about your setup when you book — the make if you know it, and what it is doing or not doing — and we’ll confirm it is a fit before anything is booked.",
+  "q-2": "Can you repair a cracked firebox?",
+  "p-3": "Yes — firebox mortar joints and panels. We show you the damage first and price it before any work.",
+  "q-3": "My damper won’t close. Can you fix it?",
+  "p-4": "Yes — dampers that are stuck, rusted or missing can be repaired or replaced.",
+  "q-4": "Should I use the fireplace until it’s fixed?",
+  "p-5": "If the firebox is cracked or smoke is coming into the room, we’d rather you didn’t until it has been looked at. The inspection is free.",
+  "q-5": "How much does fireplace repair cost?",
+  "p-6": "It depends on what is worn or damaged, so we price it after the free inspection — at your home, before any work starts."
+ },
+ "rel": {
+  "h2": "Often Booked Together",
+  "p": "One visit, one crew. Most jobs combine two of these.",
+  "img": {
+   "src": "/ba-repairs-after.jpg",
+   "alt": "Brick chimney after repair work, Toronto area"
+  },
+  "h3": "Chimney Repair",
+  "p-2": "<b>Fixes</b>Cracked crowns, damaged fireboxes, water getting in.",
+  "p-3": "Fixed once, with materials matched to your home.",
+  "img-2": {
+   "src": "/svc-cleaning.jpg",
+   "alt": "Fireplace after a Northmark chimney sweep, floor clean"
+  },
+  "h3-2": "Chimney Cleaning",
+  "p-4": "<b>Fixes</b>Soot and creosote building up in the flue.",
+  "p-5": "A cleaner-burning fireplace, and no mess left behind.",
+  "img-3": {
+   "src": "/about-van.jpg",
+   "alt": "Brick chimney with a cap on a GTA home"
+  },
+  "h3-3": "Chimney Liners",
+  "p-6": "<b>Fixes</b>A cracked, damaged or missing flue liner.",
+  "p-7": "Heat and smoke vented the way they should be."
+ },
+ "book-bottom": {
+  "h2": "Fix The Fireplace",
+  "p": "Wood or gas, tell us what it’s doing — or not doing — and we’ll take it from there.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

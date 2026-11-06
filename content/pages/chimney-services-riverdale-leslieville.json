@@ -1,0 +1,76 @@
+{
+ "meta": {
+  "title": "Chimney Sweep &amp; Repair, Riverdale Toronto | Northmark",
+  "description": "Chimney sweep and repair in Riverdale & Leslieville: {{site.offer_price}} sweep this winter with a free 19-point inspection, photos, and the price before any work starts."
+ },
+ "hero": {
+  "t": "Riverdale & Leslieville, Toronto",
+  "h1": "Chimney Services In Riverdale & Leslieville",
+  "p": "Victorian and Edwardian semis, most of them built before chimney liners were standard.",
+  "btn": "Book my free inspection",
+  "t-2": "<b>Free 19-point inspection</b> — at your home, with photos",
+  "t-3": "<b>{{site.offer_price}} chimney sweep</b> — this winter, inspection included",
+  "t-4": "<b>Open every day</b> — {{site.hours}}, Saturdays and Sundays included",
+  "img": {
+   "src": "/g-02.jpg",
+   "alt": "Brick chimney on an older Toronto semi after masonry work"
+  }
+ },
+ "loc": {
+  "img": {
+   "src": "/g-02.jpg",
+   "alt": "Brick chimney on an older Toronto semi after masonry work"
+  },
+  "cap": "Masonry &amp;amp; tuckpointing<span>East York</span>",
+  "h2": "What We See On Riverdale & Leslieville Chimneys",
+  "p": "A lot of the flues here are original clay, and on the older semis the chimney is shared inside the party wall — two homes, one stack. That combination is why we spend more time on liners and smoke chambers in this part of the city than almost anywhere else.",
+  "p-2": "Access is the other thing. Narrow lots, laneways and close neighbours mean we plan how the ladders and drop sheets go in before we arrive, so nothing gets dragged through your living room.",
+  "btn": "Book my free inspection"
+ },
+ "svc": {
+  "h2": "What Riverdale & Leslieville Homeowners Book Most",
+  "p": "Every job starts with the free 19-point inspection, so you only pay for what the chimney actually needs.",
+  "img": {
+   "src": "/about-van.jpg",
+   "alt": "Brick chimney with a cap on a GTA home"
+  },
+  "h3": "Chimney Liners",
+  "p-2": "<b>Fixes</b>A cracked, damaged or missing flue liner.",
+  "p-3": "Heat and smoke vented the way they should be.",
+  "img-2": {
+   "src": "/svc-cleaning.jpg",
+   "alt": "Fireplace after a Northmark chimney sweep, floor clean"
+  },
+  "h3-2": "Chimney Cleaning",
+  "p-4": "<b>Fixes</b>Soot and creosote building up in the flue.",
+  "p-5": "A cleaner-burning fireplace, and no mess left behind.",
+  "img-3": {
+   "src": "/ba-masonry-after.jpg",
+   "alt": "Brick chimney after masonry repair"
+  },
+  "h3-3": "Masonry & Tuckpointing",
+  "p-6": "<b>Fixes</b>Open mortar joints, flaking brick, a worn crown.",
+  "p-7": "Repointed and matched to your brick."
+ },
+ "faq": {
+  "h2": "Questions From Riverdale & Leslieville",
+  "p": "Anything else — call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "Do you charge to come out to Riverdale & Leslieville?",
+  "p-2": "No. The 19-point inspection at your home is free, and you get the photos and the report whether or not you go ahead with any work.",
+  "q-2": "Will the sweep make a mess in my house?",
+  "p-3": "No. Floors and the fireplace area are covered before any tool comes out, the vacuum runs while we sweep, and the area is left the way we found it — or cleaner.",
+  "q-3": "Do you work Saturdays and Sundays?",
+  "p-4": "Yes. Every day, {{site.hours}}, at the same price as a weekday.",
+  "q-4": "How much is a chimney sweep in Riverdale & Leslieville?",
+  "p-5": "A standard chimney sweep is {{site.offer_price}} this winter, with the free 19-point inspection included. Repairs are priced at your home after the inspection, before any work starts. Call {{site.phone}} and we will confirm it for your chimney."
+ },
+ "near": {
+  "h2": "Nearby Areas We Serve",
+  "p": "Not on the list? Call and ask — we cover Toronto and most of the GTA."
+ },
+ "book": {
+  "h2": "Book In Riverdale & Leslieville",
+  "p": "Tell us what is going on with your chimney and we will come and look at it, free.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

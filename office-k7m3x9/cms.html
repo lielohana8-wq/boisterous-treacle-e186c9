@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Edit the site — Northmark</title>
+<link rel="icon" href="/favicon.png">
+<style>
+#nm-bar{position:fixed;bottom:0;right:0;left:0;z-index:999999;background:#16191D;color:#EDEAE4;font:14px system-ui,sans-serif;padding:8px 14px;display:flex;gap:16px;align-items:center}
+#nm-bar a{color:#F0B08A;text-decoration:none;font-weight:600}#nm-bar span{color:#AEB7C0}
+body.nm-ready #nc-root{padding-bottom:38px}
+</style>
+</head>
+<body>
+<div id="nm-bar"><a href="./">← Back to menu</a><span>A change goes live when you click <b>Publish</b> at the top. The site updates within about a minute.</span><a href="calendar.html">Calendar &amp; leads</a></div>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>window.CMS_MANUAL_INIT = true;</script>
+<script src="https://unpkg.com/decap-cms@3.17.3/dist/decap-cms.js"></script>
+<script>
+fetch('config.json', {cache: 'no-store'}).then(function (r) { return r.json(); }).then(function (config) {
+  CMS.init({ config: config });
+  document.body.classList.add('nm-ready');
+}).catch(function (e) { document.body.insertAdjacentHTML('beforeend', '<p style="padding:60px 20px;font:16px system-ui">Could not load the editor settings (config.json): ' + e + '</p>'); });
+</script>
+</body>
+</html>

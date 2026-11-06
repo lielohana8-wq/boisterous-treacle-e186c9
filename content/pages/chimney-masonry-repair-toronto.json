@@ -1,0 +1,143 @@
+{
+ "meta": {
+  "title": "Chimney Tuckpointing & Masonry Repair Toronto | Northmark",
+  "description": "Chimney tuckpointing, masonry repair and rebuilds in Toronto & the GTA. Repointing, brick replacement and crown work matched to your home. Free inspection."
+ },
+ "hero": {
+  "t": "Masonry & Tuckpointing",
+  "h1": "Chimney Masonry & Tuckpointing In Toronto",
+  "p": "Toronto freeze-thaw is hard on brick. We repoint worn joints, replace damaged brick, repair crowns and rebuild above the roofline when it comes to that — matched as closely as possible to your home’s original brick.",
+  "t-2": "<b>Joints cut out and repointed</b> — not smeared over",
+  "t-3": "<b>Brick matched</b> — as closely as possible",
+  "t-4": "<b>From one joint</b> — to a rebuild above the roofline"
+ },
+ "signs": {
+  "h2": "Signs Your Chimney Masonry Needs Work",
+  "p": "Brick and mortar tell you when water is getting in.",
+  "h3": "Gaps In The Mortar Joints",
+  "p-2": "Mortar wears out first, by design. Open joints let water in behind the brick.",
+  "h3-2": "Brick Faces Flaking Off",
+  "p-3": "Spalling — frost pushing the face off the brick. It keeps going once it starts.",
+  "h3-3": "White Staining",
+  "p-4": "Salt left behind as water moves through the masonry.",
+  "h3-4": "A Cracked Crown",
+  "p-5": "The slab on top is the chimney’s roof. Cracks send water straight down inside.",
+  "h3-5": "Loose Bricks Near The Top",
+  "p-6": "Above the roofline the weather is hardest, so that is where it shows first.",
+  "p-7": "Not sure which one you’re seeing? That is what the free inspection is for. <a href=\"#book\">Book it here</a> or call <a href=\"tel:{{site.phone_tel}}\">{{site.phone}}</a>."
+ },
+ "inc": {
+  "h2": "From A Joint To A Rebuild",
+  "p": "Chimney masonry is not one job. These are the four scopes we work in, smallest to largest — the free inspection tells you which one your chimney is in.",
+  "h3": "Tuckpointing / Repointing",
+  "p-2": "The joints are worn or open but the brick is sound. We cut the old mortar out to a proper depth and repoint it, matching the colour and joint profile.",
+  "p-3": "The most common masonry job, and the one that prevents the expensive ones.",
+  "h3-2": "Crown Repair Or Replacement",
+  "p-4": "When the crown cracks, water runs straight down inside the chimney. Small cracks can be sealed; a broken crown is cut out and recast with a proper overhang and drip edge.",
+  "p-5": "Fixing a crown early is the cheapest way to avoid a rebuild.",
+  "h3-3": "Brick Replacement",
+  "p-6": "Where frost has pushed the face off individual bricks, those bricks come out and matching ones go in. The rest of the chimney stays where it is.",
+  "p-7": "Worth doing while the damage is counted in bricks, not in courses.",
+  "h3-4": "Partial Or Full Rebuild",
+  "p-8": "When enough of the structure has gone — usually above the roofline — we take it down to sound masonry and rebuild. Same brick where we can match it, new crown, new cap.",
+  "p-9": "The point of the other three jobs is to never need this one."
+ },
+ "how": {
+  "h2": "How We Repair Chimney Masonry",
+  "p": "Every visit starts with protecting your home and ends with photos and a clean work area.",
+  "h3": "Cut Back",
+  "p-2": "Failed joints ground out to sound depth; loose or spalled bricks removed.",
+  "h3-2": "Replace",
+  "p-3": "Matching brick set where needed.",
+  "h3-3": "Repoint",
+  "p-4": "Joints packed and struck to match the original profile — not smeared over the face.",
+  "h3-4": "Protect",
+  "p-5": "Crown checked and, where it makes sense, breathable masonry waterproofing applied."
+ },
+ "proof": {
+  "h2": "Real Work, Real Photos",
+  "p": "From our own jobs — not stock photography.",
+  "img": {
+   "src": "/ba-before.jpg",
+   "alt": "Before: brick chimney with washed-out mortar joints"
+  },
+  "t": "Before",
+  "img-2": {
+   "src": "/ba-after.jpg",
+   "alt": "After: the same chimney repointed and sealed at the roofline"
+  },
+  "t-2": "After",
+  "t-3": "Masonry & Tuckpointing",
+  "h3": "Mortar washed out of the joints, leaving them open to water",
+  "dt": "Where",
+  "dd": "Toronto & GTA",
+  "dt-2": "The Problem",
+  "dd-2": "Mortar washed out of the joints, leaving them open to water.",
+  "dt-3": "What We Did",
+  "dd-3": "Cut out the old mortar, repointed the joints and sealed the chimney where it meets the roof.",
+  "dt-4": "The Result",
+  "dd-4": "Closed joints and a sealed roofline — the after photo is the same chimney.",
+  "btn": "About Masonry & Tuckpointing",
+  "img-3": {
+   "src": "/g-06.jpg",
+   "alt": "Tuckpointing above the roofline in Richmond Hill"
+  },
+  "cap": "Tuckpointing above roofline<span>Richmond Hill</span>",
+  "img-4": {
+   "src": "/g-02.jpg",
+   "alt": "Masonry and tuckpointing on a chimney in East York"
+  },
+  "cap-2": "Masonry &amp; tuckpointing<span>East York</span>",
+  "img-5": {
+   "src": "/g-01.jpg",
+   "alt": "Crown and brick rebuild in North York"
+  },
+  "cap-3": "Crown &amp; brick rebuild<span>North York</span>",
+  "p-2": "See more before-and-after photos and recent jobs.",
+  "btn-2": "See all our work"
+ },
+ "faq": {
+  "h2": "Questions About Masonry & Tuckpointing",
+  "p": "Anything else — call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "What is tuckpointing?",
+  "p-2": "Cutting back failing mortar joints and refilling them properly — struck to match the original profile, not smeared over the brick face.",
+  "q-2": "Can you match the brick on an older home?",
+  "p-3": "Matching is the craft. We source and blend as closely as possible so the repair blends into the original work.",
+  "q-3": "When is a rebuild needed instead of repair?",
+  "p-4": "When brick and joints have deteriorated past the point of repointing — usually above the roofline. The free inspection tells you honestly which side of that line you’re on.",
+  "q-4": "What season is best for masonry work?",
+  "p-5": "Mortar needs workable temperatures, so most masonry runs spring through fall. Book early — the season fills up.",
+  "q-5": "How much does masonry repair cost?",
+  "p-6": "It depends on the scope — a few joints or a rebuild — so we price it after the free inspection, at your home, before any work starts."
+ },
+ "rel": {
+  "h2": "Often Booked Together",
+  "p": "One visit, one crew. Most jobs combine two of these.",
+  "img": {
+   "src": "/ba-repairs-after.jpg",
+   "alt": "Brick chimney after repair work, Toronto area"
+  },
+  "h3": "Chimney Repair",
+  "p-2": "<b>Fixes</b>Cracked crowns, damaged fireboxes, water getting in.",
+  "p-3": "Fixed once, with materials matched to your home.",
+  "img-2": {
+   "src": "/ba-flashing-after.jpg",
+   "alt": "Stone chimney with new crown and flashing at the roofline"
+  },
+  "h3-2": "Flashing & Waterproofing",
+  "p-4": "<b>Fixes</b>Leaks where the chimney meets the roof.",
+  "p-5": "Flashing replaced properly — no tar-over shortcuts.",
+  "img-3": {
+   "src": "/ba-caps-after.jpg",
+   "alt": "Brick chimney with a stainless chimney cap installed"
+  },
+  "h3-3": "Chimney Caps",
+  "p-6": "<b>Fixes</b>Rain, snow and animals getting into an open flue.",
+  "p-7": "A cap sized to your flue, not one-size-fits-all."
+ },
+ "book-bottom": {
+  "h2": "Save The Brick",
+  "p": "Send a photo of the chimney if you have one — or just book the free inspection and we’ll take it from there.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

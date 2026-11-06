@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Calendar &amp; leads — Northmark</title>
+<link rel="icon" href="/favicon.png">
+<style>
+:root{--paper:#F6F3ED;--card:#FFFDFA;--field:#F1ECE3;--ink:#16191D;--ink-2:#4A5058;--mut:#5F666F;--copper:#A93F13;--copper-2:#8E3410;--rule:#D6CFC3;--rule-2:#E4DED4;--green:#147A3D;--red:#B3261E;--glow:#FCEFE5}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+header{background:var(--card);border-bottom:1px solid var(--rule);padding:10px 18px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:5}
+header img{height:40px}header a{color:var(--copper);text-decoration:none;font-weight:600}header .sp{flex:1}
+main{max-width:1240px;margin:0 auto;padding:22px 18px 80px}
+h1{font-size:24px;margin:0 0 4px}.sub{color:var(--mut);margin:0 0 18px;font-size:14px}
+.tabs{display:flex;gap:6px;margin-bottom:18px;flex-wrap:wrap}.tabs button{background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:9px 16px;font:600 14px system-ui;cursor:pointer;color:var(--ink-2)}
+.tabs button[aria-selected=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(300px,.7fr);gap:18px;align-items:start}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px;box-shadow:0 10px 30px -18px rgba(74,48,28,.3)}
+.calhead{display:flex;align-items:center;gap:10px;margin-bottom:10px}.calhead b{font-size:18px;flex:1;text-align:center}
+.nav{width:38px;height:38px;border:1px solid var(--rule);background:var(--card);border-radius:10px;cursor:pointer;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.dow{font-size:12px;color:var(--mut);text-align:center;padding:4px 0}
+.day{min-height:84px;border:1px solid var(--rule-2);border-radius:10px;padding:6px;background:var(--card);cursor:pointer;text-align:start;font:inherit;position:relative;display:flex;flex-direction:column;gap:3px}
+.day:hover{border-color:var(--copper)}.day.off{background:var(--paper);color:var(--mut)}.day.sel{border-color:var(--copper);box-shadow:0 0 0 2px rgba(169,63,19,.2)}
+.day.today .n{background:var(--copper);color:#fff;border-radius:50%}.day .n{font-weight:700;font-size:13px;width:22px;height:22px;display:grid;place-items:center}
+.day.closed{background:repeating-linear-gradient(135deg,#F1ECE3 0 6px,#E8E1D5 6px 12px)}
+.pill{font-size:11px;line-height:1.3;padding:2px 6px;border-radius:6px;background:var(--glow);color:var(--copper-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pill.done{background:#E6F3EC;color:#166534}.pill.cancel{background:#F5E5E3;color:var(--red);text-decoration:line-through}.pill.blk{background:#E4DED4;color:var(--ink-2)}
+.side h2{font-size:18px;margin:0 0 10px}.side h3{font-size:14px;margin:16px 0 8px;color:var(--mut)}
+.wins{display:grid;gap:6px}.wins label{display:flex;align-items:center;gap:8px;padding:9px 10px;border:1px solid var(--rule-2);border-radius:8px;background:var(--field);cursor:pointer}
+.wins label.all{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--copper);color:#fff;border:0;border-radius:10px;padding:11px 18px;font:600 14px system-ui;cursor:pointer}
+.btn:hover{background:var(--copper-2)}.btn.line{background:transparent;color:var(--ink);border:1.5px solid #C8C0B2}.btn.sm{padding:8px 12px;font-size:13px}
+.lead{border:1px solid var(--rule-2);border-radius:12px;padding:12px 14px;margin-bottom:10px;background:var(--card);display:grid;gap:6px}
+.lead .top{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.lead b{font-size:15px}.lead .when{color:var(--copper-2);font-weight:600;font-size:13px}
+.lead .meta{color:var(--ink-2);font-size:13.5px}.lead .acts{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.lead select,.lead input,.lead textarea,.side select,.side input{font:14px system-ui;padding:8px 10px;border:1px solid var(--rule);border-radius:8px;background:#fff;color:var(--ink)}
+.lead textarea{width:100%;min-height:44px;resize:vertical}
+.status-new{border-inline-start:4px solid var(--copper)}.status-booked{border-inline-start:4px solid #2563EB}.status-done{border-inline-start:4px solid var(--green)}.status-cancel{border-inline-start:4px solid var(--red);opacity:.7}
+.tel{color:var(--ink);text-decoration:none;font-weight:600;direction:ltr;display:inline-block}
+.wa{background:var(--green);color:#fff;border-radius:8px;padding:6px 10px;text-decoration:none;font-size:13px;font-weight:600}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+.msg{padding:12px 14px;border-radius:10px;background:var(--glow);border:1px solid rgba(180,71,27,.28);margin-bottom:14px;font-size:14px}
+.msg.err{background:#F5E5E3;border-color:rgba(179,38,30,.3)}
+.login{max-width:440px;margin:60px auto;text-align:center}
+.settings{display:grid;gap:12px;max-width:520px}.settings label{display:grid;gap:4px;font-size:14px}.settings .wd{display:flex;gap:6px;flex-wrap:wrap}.settings .wd label{flex-direction:row;align-items:center;gap:6px;border:1px solid var(--rule-2);padding:6px 10px;border-radius:8px;background:var(--field)}
+[hidden]{display:none!important}
+@media(max-width:860px){.layout{grid-template-columns:1fr}.day{min-height:62px}.pill{display:none}.day .cnt{font-size:11px;color:var(--copper)}}
+</style>
+</head>
+<body>
+<header><img src="/logo.png" alt=""><a href="./">← Menu</a><span class="sp"></span><a href="cms.html">Edit the site</a><button class="btn line sm" id="logout" type="button" hidden>Sign out</button></header>
+<main>
+  <section id="login" class="login" hidden><h1>Calendar &amp; leads</h1><p class="sub">Sign in to see the requests.</p><button class="btn" id="btn-login" type="button">Sign in</button></section>
+  <section id="app" hidden>
+    <h1>Calendar &amp; leads</h1>
+    <p class="sub">Every request from the booking form shows up here on the day the customer asked for. Mark days or time windows as taken — and the form on the site stops offering them.</p>
+    <div id="msg" class="msg" hidden></div>
+    <div class="tabs" role="tablist"><button role="tab" aria-selected="true" data-tab="cal">Calendar</button><button role="tab" aria-selected="false" data-tab="leads">All leads <span id="cnt-new"></span></button><button role="tab" aria-selected="false" data-tab="settings">Availability settings</button></div>
+
+    <div id="tab-cal" class="layout">
+      <div class="card">
+        <div class="calhead"><button class="nav" id="prev" type="button" aria-label="Previous month">‹</button><b id="mtitle"></b><button class="nav" id="next" type="button" aria-label="Next month">›</button><button class="btn line sm" id="todayBtn" type="button">Today</button></div>
+        <div class="grid" id="dow"></div><div class="grid" id="days"></div>
+        <p class="sub" style="margin-top:10px">Click a day to open it on the right. Striped = blocked day.</p>
+      </div>
+      <aside class="card side" id="side"><h2>Pick a day</h2><p class="sub">You will see that day's requests here and can block time windows.</p></aside>
+    </div>
+
+    <div id="tab-leads" hidden>
+      <div class="filters"><select id="fstatus"><option value="">All statuses</option><option value="new">New</option><option value="called">Called</option><option value="booked">Booked</option><option value="sent">Sent to contractor</option><option value="done">Done</option><option value="cancel">Cancelled</option></select>
+        <input id="fq" placeholder="Search name / phone / address" style="min-width:220px"><button class="btn line sm" id="refresh" type="button">Refresh</button><span class="sub" id="lcount"></span></div>
+      <div id="leads"></div>
+    </div>
+
+    <div id="tab-settings" class="card" hidden>
+      <div class="settings">
+        <label>How many days ahead can be booked<input id="s-max" type="number" min="1" max="365"></label>
+        <label>Minimum days in advance (0 = today is fine)<input id="s-lead" type="number" min="0" max="30"></label>
+        <div><div style="font-size:14px;margin-bottom:6px">Weekdays you never work</div><div class="wd" id="s-wd"></div></div>
+        <div><button class="btn" id="s-save" type="button">Save</button></div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+(function () {
+  var WINDOWS = ['Morning (7:00 – 11:00)', 'Midday (11:00 – 15:00)', 'Afternoon (15:00 – 19:00)', 'Evening (19:00 – 22:00)'];
+  var WIN_HE = { 'Morning (7:00 – 11:00)': 'Morning 7–11', 'Midday (11:00 – 15:00)': 'Midday 11–15', 'Afternoon (15:00 – 19:00)': 'Afternoon 15–19', 'Evening (19:00 – 22:00)': 'Evening 19–22', 'First available (Soonest you can come)': 'First available' };
+  var STATUS = { new: 'New', called: 'Called', booked: 'Booked', sent: 'Sent to contractor', done: 'Done', cancel: 'Cancelled' };
+  var DOW = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  var id = window.netlifyIdentity, token = null, leads = [], avail = { blocked: {}, closed_weekdays: [], max_days: 60, lead_days: 0 }, cur = new Date(), sel = null;
+  cur.setDate(1);
+  var $ = function (s) { return document.querySelector(s); };
+  function msg(t, err) { var m = $('#msg'); m.textContent = t || ''; m.hidden = !t; m.className = 'msg' + (err ? ' err' : ''); }
+  function iso(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function api(path, opts) {
+    opts = opts || {}; opts.headers = Object.assign({ 'content-type': 'application/json' }, opts.headers || {});
+    if (token) opts.headers.authorization = 'Bearer ' + token;
+    return fetch('/.netlify/functions/' + path, opts).then(function (r) { return r.json().then(function (j) { if (!r.ok) throw new Error(j.error || r.status); return j; }); });
+  }
+  function phoneDigits(p) { var d = String(p || '').replace(/\D/g, ''); if (d.length === 10) d = '1' + d; return d; }
+  function fmtDate(s) { if (!s) return ''; var d = new Date(s + 'T12:00:00'); return isNaN(d) ? s : d.toLocaleDateString('en-CA', { weekday: 'short', month: 'short', day: 'numeric' }); }
+  function fmtTs(s) { var d = new Date(s); return isNaN(d) ? '' : d.toLocaleString('en-CA', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }); }
+
+  // ---------- calendar
+  function render() {
+    var y = cur.getFullYear(), m = cur.getMonth();
+    $('#mtitle').textContent = cur.toLocaleDateString('en-CA', { month: 'long', year: 'numeric' });
+    $('#dow').innerHTML = DOW.map(function (d) { return '<div class="dow">' + d + '</div>'; }).join('');
+    var first = new Date(y, m, 1), start = first.getDay(), days = new Date(y, m + 1, 0).getDate(), today = iso(new Date());
+    var html = '';
+    for (var i = 0; i < start; i++) html += '<div></div>';
+    for (var d = 1; d <= days; d++) {
+      var day = iso(new Date(y, m, d)), bl = avail.blocked[day] || [], closed = bl.indexOf('all') > -1 || (avail.closed_weekdays || []).indexOf(new Date(y, m, d).getDay()) > -1;
+      var ls = leads.filter(function (l) { return l.visit_date === day && l.status !== 'cancel'; });
+      var cls = 'day' + (day === today ? ' today' : '') + (closed ? ' closed' : '') + (day === sel ? ' sel' : '') + (day < today ? ' off' : '');
+      html += '<button type="button" class="' + cls + '" data-day="' + day + '"><span class="n">' + d + '</span>';
+      ls.slice(0, 3).forEach(function (l) { html += '<span class="pill' + (l.status === 'done' ? ' done' : '') + '">' + esc(l.name || l.phone) + '</span>'; });
+      if (ls.length > 3) html += '<span class="pill">+' + (ls.length - 3) + '</span>';
+      if (ls.length) html += '<span class="cnt">' + ls.length + ' request' + (ls.length > 1 ? 's' : '') + '</span>';
+      if (!closed && bl.length) html += '<span class="pill blk">Blocked: ' + bl.map(function (w) { return (WIN_HE[w] || w).split(' ')[0]; }).join(', ') + '</span>';
+      html += '</button>';
+    }
+    $('#days').innerHTML = html;
+    $('#days').querySelectorAll('[data-day]').forEach(function (b) { b.addEventListener('click', function () { sel = b.dataset.day; render(); side(); }); });
+    $('#cnt-new').textContent = leads.filter(function (l) { return l.status === 'new'; }).length ? '(' + leads.filter(function (l) { return l.status === 'new'; }).length + ' new)' : '';
+  }
+  function side() {
+    var s = $('#side'); if (!sel) return;
+    var bl = avail.blocked[sel] || [], all = bl.indexOf('all') > -1, ls = leads.filter(function (l) { return l.visit_date === sel; });
+    var h = '<h2>' + new Date(sel + 'T12:00:00').toLocaleDateString('en-CA', { weekday: 'long', month: 'long', day: 'numeric' }) + '</h2>';
+    h += '<h3>Availability on this day</h3><div class="wins"><label class="all"><input type="checkbox" data-win="all"' + (all ? ' checked' : '') + '> Whole day taken</label>';
+    WINDOWS.forEach(function (w) { h += '<label><input type="checkbox" data-win="' + esc(w) + '"' + (bl.indexOf(w) > -1 ? ' checked' : '') + (all ? ' disabled' : '') + '> ' + WIN_HE[w] + ' taken</label>'; });
+    h += '</div><p style="margin:10px 0 0"><button class="btn sm" id="saveDay" type="button">Save availability</button></p>';
+    h += '<h3>Requests for this day (' + ls.length + ')</h3>' + (ls.length ? ls.map(leadCard).join('') : '<p class="sub">No requests for this day.</p>');
+    s.innerHTML = h; bindLeads(s);
+    s.querySelector('[data-win="all"]').addEventListener('change', function (e) { s.querySelectorAll('[data-win]:not([data-win="all"])').forEach(function (c) { c.disabled = e.target.checked; }); });
+    $('#saveDay').addEventListener('click', function () {
+      var wins = []; if (s.querySelector('[data-win="all"]').checked) wins = ['all']; else s.querySelectorAll('[data-win]:checked').forEach(function (c) { wins.push(c.dataset.win); });
+      var next = JSON.parse(JSON.stringify(avail)); if (wins.length) next.blocked[sel] = wins; else delete next.blocked[sel];
+      api('availability', { method: 'PUT', body: JSON.stringify(next) }).then(function (a) { avail = a; msg('Saved. The booking form is updated.'); render(); side(); }).catch(function (e) { msg('Could not save: ' + e.message, true); });
+    });
+  }
+
+  // ---------- leads
+  function leadCard(l) {
+    var ph = phoneDigits(l.phone);
+    var h = '<div class="lead status-' + esc(l.status || 'new') + '" data-id="' + esc(l.id) + '"><div class="top"><b>' + esc(l.name || '—') + '</b>';
+    h += '<a class="tel" href="tel:+' + ph + '">' + esc(l.phone) + '</a>';
+    if (ph) h += '<a class="wa" target="_blank" rel="noopener" href="https://wa.me/' + ph + '?text=' + encodeURIComponent('Hi ' + (l.name || '') + ', this is Northmark Chimney about your inspection request.') + '">WhatsApp</a>';
+    h += '<span class="when">' + (l.visit_date ? fmtDate(l.visit_date) : 'no date') + (l.visit_time ? ' · ' + (WIN_HE[l.visit_time] || l.visit_time) : '') + '</span></div>';
+    h += '<div class="meta">' + [l.service, l.address].filter(Boolean).map(esc).join(' · ') + (l.message ? '<br>“' + esc(l.message) + '”' : '') + '<br><span style="color:var(--mut)">Received ' + fmtTs(l.created_at) + (l.page ? ' · ' + esc(l.page.replace(/^https?:\/\/[^/]+/, '')) : '') + '</span></div>';
+    h += '<div class="acts"><select data-f="status">' + Object.keys(STATUS).map(function (k) { return '<option value="' + k + '"' + (k === (l.status || 'new') ? ' selected' : '') + '>' + STATUS[k] + '</option>'; }).join('') + '</select>';
+    h += '<input data-f="visit_date" type="date" value="' + esc(l.visit_date) + '" title="Change the booked day"><select data-f="visit_time"><option value="">Window</option>' + WINDOWS.concat(['First available (Soonest you can come)']).map(function (w) { return '<option value="' + esc(w) + '"' + (w === l.visit_time ? ' selected' : '') + '>' + WIN_HE[w] + '</option>'; }).join('') + '</select></div>';
+    h += '<textarea data-f="note" placeholder="Note (who it went to, what was agreed...)">' + esc(l.note || '') + '</textarea></div>';
+    return h;
+  }
+  function bindLeads(root) {
+    root.querySelectorAll('.lead').forEach(function (card) {
+      var save = function (f, v) {
+        var body = { id: card.dataset.id }; body[f] = v;
+        api('leads', { method: 'PATCH', body: JSON.stringify(body) }).then(function () {
+          var l = leads.find(function (x) { return x.id === card.dataset.id; }); if (l) l[f] = v;
+          card.className = 'lead status-' + (l && l.status || 'new'); render(); if (sel && root.id === 'side' && f !== 'note') side();
+        }).catch(function (e) { msg('Not saved: ' + e.message, true); });
+      };
+      card.querySelectorAll('[data-f]').forEach(function (el) { el.addEventListener('change', function () { save(el.dataset.f, el.value); }); });
+    });
+  }
+  function renderLeads() {
+    var st = $('#fstatus').value, q = ($('#fq').value || '').toLowerCase();
+    var ls = leads.filter(function (l) { return (!st || (l.status || 'new') === st) && (!q || [l.name, l.phone, l.address, l.service, l.message].join(' ').toLowerCase().indexOf(q) > -1); })
+      .sort(function (a, b) { return a.created_at < b.created_at ? 1 : -1; });
+    $('#lcount').textContent = ls.length + ' leads'; $('#leads').innerHTML = ls.length ? ls.map(leadCard).join('') : '<p class="sub">No leads.</p>'; bindLeads($('#leads'));
+  }
+  function load() {
+    msg('Loading...');
+    return Promise.all([api('availability'), api('leads')]).then(function (r) { avail = r[0]; leads = r[1]; msg(''); render(); renderLeads(); settings(); if (sel) side(); })
+      .catch(function (e) { msg('Could not load: ' + e.message, true); render(); });
+  }
+  function settings() {
+    $('#s-max').value = avail.max_days || 60; $('#s-lead').value = avail.lead_days || 0;
+    $('#s-wd').innerHTML = DOW.map(function (d, i) { return '<label><input type="checkbox" value="' + i + '"' + ((avail.closed_weekdays || []).indexOf(i) > -1 ? ' checked' : '') + '> ' + ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][i] + '</label>'; }).join('');
+  }
+  $('#s-save').addEventListener('click', function () {
+    var next = JSON.parse(JSON.stringify(avail)); next.max_days = +$('#s-max').value || 60; next.lead_days = +$('#s-lead').value || 0;
+    next.closed_weekdays = []; $('#s-wd').querySelectorAll('input:checked').forEach(function (c) { next.closed_weekdays.push(+c.value); });
+    api('availability', { method: 'PUT', body: JSON.stringify(next) }).then(function (a) { avail = a; msg('Settings saved.'); render(); }).catch(function (e) { msg('Error: ' + e.message, true); });
+  });
+  $('#prev').addEventListener('click', function () { cur.setMonth(cur.getMonth() - 1); render(); });
+  $('#next').addEventListener('click', function () { cur.setMonth(cur.getMonth() + 1); render(); });
+  $('#todayBtn').addEventListener('click', function () { cur = new Date(); cur.setDate(1); sel = iso(new Date()); render(); side(); });
+  $('#fstatus').addEventListener('change', renderLeads); $('#fq').addEventListener('input', renderLeads); $('#refresh').addEventListener('click', load);
+  document.querySelectorAll('[role=tab]').forEach(function (t) { t.addEventListener('click', function () {
+    document.querySelectorAll('[role=tab]').forEach(function (x) { x.setAttribute('aria-selected', x === t); });
+    ['cal', 'leads', 'settings'].forEach(function (k) { $('#tab-' + k).hidden = t.dataset.tab !== k; });
+  }); });
+
+  // ---------- auth
+  function show(user) {
+    $('#login').hidden = !!user; $('#app').hidden = !user; $('#logout').hidden = !user;
+    if (user) user.jwt().then(function (t) { token = t; load(); });
+  }
+  if (!id) { msg('The sign-in widget did not load.', true); $('#login').hidden = false; return; }
+  id.on('init', show); id.on('login', function (u) { show(u); id.close(); }); id.on('logout', function () { show(null); });
+  $('#btn-login').addEventListener('click', function () { id.open('login'); }); $('#logout').addEventListener('click', function () { id.logout(); });
+  id.init();
+})();
+</script>
+</body>
+</html>

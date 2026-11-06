@@ -1,0 +1,75 @@
+{
+ "meta": {
+  "title": "Chimney Service Prices In Toronto | Northmark Chimney",
+  "description": "How chimney work is priced in Toronto & the GTA: a {{site.offer_price}} standard sweep this winter with a free inspection; repairs priced at your home before any work."
+ },
+ "hero": {
+  "t": "Prices",
+  "h1": "What Chimney Work Costs In Toronto",
+  "p": "Straight answer: for anything beyond a standard sweep, nobody can price a chimney honestly without seeing it. So we come and look for free, and you get the exact number at your home — before any work starts.",
+  "btn": "Book my free inspection",
+  "t-2": "<b>Free inspection at your home</b> — a real look, then a price on the spot",
+  "t-3": "<b>Nothing starts</b> — without your OK",
+  "t-4": "<b>Warranty</b> — on materials and labour",
+  "img": {
+   "src": "/svc-masonry.jpg",
+   "alt": "Brick chimney on a Toronto-area home"
+  }
+ },
+ "p1": {
+  "h2": "The One Price We Can Publish",
+  "p": "A standard chimney sweep, this winter.",
+  "p-2": "<span>$</span>200",
+  "p-3": "Winter Special",
+  "h3": "Chimney Sweep — Free Inspection Included",
+  "p-4": "A full chimney sweep with the free inspection included — we look inside the flue, show you the photos, and tell you if anything else needs doing. Nothing else starts without your OK.",
+  "p-5": "Winter pricing for a standard chimney sweep, inspection included. Call and we will confirm it for your chimney before booking.",
+  "btn": "Book The {{site.offer_price}} Sweep"
+ },
+ "p2": {
+  "h2": "What Changes The Price",
+  "p": "Five things decide what a chimney job costs. This is what we are looking at during the free inspection.",
+  "h3": "How Many Flues",
+  "p-2": "A single open fireplace is a different job from a chimney serving a fireplace and a furnace.",
+  "h3-2": "How The Chimney Is Reached",
+  "p-3": "A walkable roof, a steep roof or a third storey all change how long the work takes and what equipment comes along.",
+  "h3-3": "What We Find Inside",
+  "p-4": "A light seasonal layer sweeps out quickly. Years of hardened creosote does not.",
+  "h3-4": "Whether Anything Is Damaged",
+  "p-5": "A cracked crown, a missing cap or open mortar joints are repairs, priced separately from a sweep.",
+  "h3-5": "What The Fuel Is",
+  "p-6": "Wood, gas and oil leave different deposits behind and are inspected differently."
+ },
+ "p3": {
+  "h2": "Why You Will Not Find A Price List Here",
+  "p": "Plenty of sites publish a range so wide it tells you nothing, then quote something different once they are at your door. We would rather not start that way.",
+  "p-2": "Two chimneys on the same street can need completely different work. One needs an hour with a brush. The other has a cracked crown letting water into the brickwork, and sweeping it would be the least useful thing we could do that day.",
+  "p-3": "So the order is: free inspection, photographs of what we found, then a price you can say no to. If you do say no, you have lost nothing and you know what your chimney needs.",
+  "p-4": "Whatever the price turns out to be, it covers work we stand behind: both the materials we fit and the labour carry a warranty. If something we installed fails, we come back and put it right.",
+  "img": {
+   "src": "/svc-liner.jpg",
+   "alt": "Camera view inside a chimney flue, photographed during an inspection"
+  },
+  "cap": "What we photograph during the inspection: the inside of your flue."
+ },
+ "faq": {
+  "h2": "Common Questions About Price",
+  "q": "How much does a chimney sweep cost in Toronto?",
+  "p": "Our winter price is {{site.offer_price}} for a standard chimney sweep, with the inspection included. Chimneys differ, so call {{site.phone}} and we will confirm it for yours before booking.",
+  "q-2": "Why do you not publish a price for repairs?",
+  "p-2": "Because a repair price that is not based on seeing the chimney is a guess, and a guess either wastes your time or turns into a bill you did not agree to. We look first, then give you the number.",
+  "q-3": "Is the inspection really free?",
+  "p-3": "Yes. A technician comes to your home, inspects the chimney, and gives you a price on the spot. No obligation, and nothing starts without your OK.",
+  "q-4": "Do you charge extra for evenings or weekends?",
+  "p-4": "We work every day, {{site.hours}}, at the same price. Call {{site.phone}} for the earliest slot in your area.",
+  "q-5": "Is the work covered by a warranty?",
+  "p-5": "Yes. Every job carries a warranty that covers both the materials we fit and the labour. If something we installed fails, we come back and put it right.",
+  "q-6": "How do I get an exact price?",
+  "p-6": "Call {{site.phone}} or leave your details below. We book a free inspection, and you get the exact price at your home before any work begins."
+ },
+ "book": {
+  "h2": "Get Your Exact Price",
+  "p": "Book the free inspection and you will have a real number the same visit.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

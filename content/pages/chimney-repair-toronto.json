@@ -1,0 +1,125 @@
+{
+ "meta": {
+  "title": "Chimney Repair Toronto | Northmark Chimney",
+  "description": "Chimney repair in Toronto & the GTA: cracked crowns, damaged brick and mortar, leaks, fireboxes and smoke chambers. Free inspection, price before work."
+ },
+ "hero": {
+  "t": "Chimney Repair",
+  "h1": "Chimney Repair In Toronto",
+  "p": "Cracked crowns, crumbling mortar, water getting in, a failing firebox or smoke chamber. We show you the damage with photos, tell you what is urgent and what can wait, and give you the price before any work starts.",
+  "t-2": "<b>Damage shown with photos</b> — before any price is set",
+  "t-3": "<b>Urgent or can-wait</b> — explained honestly",
+  "t-4": "<b>Materials matched</b> — to your home"
+ },
+ "signs": {
+  "h2": "Signs Your Chimney Needs Repair",
+  "p": "Most of these are visible from the ground or from inside the house. If you recognise one, it is worth a look.",
+  "h3": "White Staining On The Brick",
+  "p-2": "Efflorescence — salt left behind as water moves through the masonry. The brick is absorbing water it should be shedding.",
+  "h3-2": "Brick Or Mortar On The Roof",
+  "p-3": "Spalling. Water gets into the brick, freezes, expands and pushes the face off. Once it starts it keeps going.",
+  "h3-3": "A Cracked Or Crumbling Crown",
+  "p-4": "The concrete slab on top is the chimney’s roof. Once it cracks, water runs straight down inside the structure.",
+  "h3-4": "Gaps In The Mortar Joints",
+  "p-5": "Mortar wears out before brick. Open joints let water in behind the face of the chimney.",
+  "h3-5": "Damp Patches Near The Chimney",
+  "p-6": "Water is getting in somewhere above — usually the crown, the cap or the flashing.",
+  "h3-6": "Rust On The Damper Or Firebox",
+  "p-7": "Something is letting moisture into the flue. Rust is often the first visible sign.",
+  "h3-7": "Tiles Or Debris In The Firebox",
+  "p-8": "The liner may be breaking up. A damaged liner is a safety issue, not a cosmetic one.",
+  "h3-8": "A Leaning Chimney",
+  "p-9": "Or a gap between chimney and house. That is structural — stop using the fireplace and call.",
+  "p-10": "Not sure which one you’re seeing? That is what the free inspection is for. <a href=\"#book\">Book it here</a> or call <a href=\"tel:{{site.phone_tel}}\">{{site.phone}}</a>."
+ },
+ "inc": {
+  "h2": "What We Repair",
+  "li": "Cracked or crumbling crowns — resurfaced or rebuilt",
+  "li-2": "Open mortar joints and spalled brick",
+  "li-3": "Firebox joints and panels",
+  "li-4": "Smoke chambers",
+  "li-5": "Dampers that are stuck, rusted or missing",
+  "li-6": "Leaks at the crown, cap or flashing",
+  "img": {
+   "src": "/g-01.jpg",
+   "alt": "Brick chimney with rebuilt crown and new cap in North York"
+  }
+ },
+ "how": {
+  "h2": "How We Repair A Chimney",
+  "p": "Every visit starts with protecting your home and ends with photos and a clean work area.",
+  "h3": "Assess",
+  "p-2": "The damage shown to you with photos before any price is set.",
+  "h3-2": "Prepare",
+  "p-3": "Loose material removed, surfaces cleaned back to sound masonry.",
+  "h3-3": "Repair",
+  "p-4": "Crowns rebuilt or resurfaced, joints repacked, dampers replaced as needed.",
+  "h3-4": "Cure & Check",
+  "p-5": "Materials allowed to cure properly; draft and seal checked before we leave."
+ },
+ "proof": {
+  "h2": "Real Work, Real Photos",
+  "p": "From our own jobs — not stock photography.",
+  "img": {
+   "src": "/g-01.jpg",
+   "alt": "Crown and brick rebuild on a chimney in North York"
+  },
+  "cap": "Crown &amp; brick rebuild<span>North York</span>",
+  "img-2": {
+   "src": "/g-04.jpg",
+   "alt": "Stone chimney repaired in Scarborough"
+  },
+  "cap-2": "Stone chimney inspection &amp; repair<span>Scarborough</span>",
+  "img-3": {
+   "src": "/ba-repairs-after.jpg",
+   "alt": "Brick chimney after repair"
+  },
+  "cap-3": "Chimney repair<span>Toronto &amp; GTA</span>",
+  "p-2": "See more before-and-after photos and recent jobs.",
+  "btn": "See all our work"
+ },
+ "faq": {
+  "h2": "Questions About Chimney Repair",
+  "p": "Anything else — call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "How do I know if my chimney needs repair?",
+  "p-2": "Debris in the firebox, cracked or flaking brick, white staining, rust, or smoke where it shouldn’t be. The free inspection confirms what is actually going on before you spend anything.",
+  "q-2": "How much does chimney repair cost?",
+  "p-3": "It depends entirely on the damage, so we don’t give blind numbers online. The inspection is free and you approve the exact price, at your home, before any work begins.",
+  "q-3": "Is chimney damage urgent?",
+  "p-4": "Sometimes. Water and freeze-thaw make small cracks grow, so early repair is usually far cheaper. We’ll tell you honestly what is urgent and what can wait.",
+  "q-4": "Can you match my existing brick and mortar?",
+  "p-5": "Yes — as closely as possible, especially on older Toronto homes. Matching is part of the job, not an extra.",
+  "q-5": "Do you repair fireboxes and dampers?",
+  "p-6": "Yes — firebox mortar joints and panels, and dampers that are stuck, rusted or missing."
+ },
+ "rel": {
+  "h2": "Often Booked Together",
+  "p": "One visit, one crew. Most jobs combine two of these.",
+  "img": {
+   "src": "/ba-masonry-after.jpg",
+   "alt": "Brick chimney after masonry repair"
+  },
+  "h3": "Masonry & Tuckpointing",
+  "p-2": "<b>Fixes</b>Open mortar joints, flaking brick, a worn crown.",
+  "p-3": "Repointed and matched to your brick.",
+  "img-2": {
+   "src": "/ba-flashing-after.jpg",
+   "alt": "Stone chimney with new crown and flashing at the roofline"
+  },
+  "h3-2": "Flashing & Waterproofing",
+  "p-4": "<b>Fixes</b>Leaks where the chimney meets the roof.",
+  "p-5": "Flashing replaced properly — no tar-over shortcuts.",
+  "img-3": {
+   "src": "/ba-caps-after.jpg",
+   "alt": "Brick chimney with a stainless chimney cap installed"
+  },
+  "h3-3": "Chimney Caps",
+  "p-6": "<b>Fixes</b>Rain, snow and animals getting into an open flue.",
+  "p-7": "A cap sized to your flue, not one-size-fits-all."
+ },
+ "book-bottom": {
+  "h2": "Fix It Properly",
+  "p": "Tell us what you’re seeing — cracks, debris, water, smoke — and we’ll come and look, free.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

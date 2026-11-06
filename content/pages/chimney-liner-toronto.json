@@ -1,0 +1,114 @@
+{
+ "meta": {
+  "title": "Chimney Liner Installation Toronto | Northmark Chimney",
+  "description": "Chimney liner inspection and replacement in Toronto & the GTA. Stainless liners sized to your fireplace, stove or furnace. Free inspection with photos."
+ },
+ "hero": {
+  "t": "Chimney Liners",
+  "h1": "Chimney Liners In Toronto",
+  "p": "The liner carries heat and smoke up and out, and protects the rest of the chimney from them. When it cracks or breaks up, it needs attention. We check it with a camera, show you what we find, and reline with stainless steel sized to your appliance when that is what it needs.",
+  "t-2": "<b>Camera check</b> — of the existing liner",
+  "t-3": "<b>Stainless liner</b> — sized to the appliance",
+  "t-4": "<b>Draft tested</b> — before we call it done"
+ },
+ "signs": {
+  "h2": "Signs Of A Damaged Chimney Liner",
+  "p": "Liner problems are hidden inside the chimney. These are the clues.",
+  "h3": "Tile Pieces In The Firebox",
+  "p-2": "Pieces of clay liner falling down mean it is breaking up.",
+  "h3-2": "Poor Draft Or Smoke In The Room",
+  "p-3": "A cracked or wrongly sized liner doesn’t draw properly.",
+  "h3-3": "A Home Inspection Flagged It",
+  "p-4": "We’ll look, photograph it, and tell you what it actually needs.",
+  "h3-4": "A New Stove, Insert Or Furnace",
+  "p-5": "A new appliance may need a liner sized to it.",
+  "h3-5": "Visible Cracks",
+  "p-6": "Seen from the top of the chimney or in inspection photos.",
+  "p-7": "Not sure which one you’re seeing? That is what the free inspection is for. <a href=\"#book\">Book it here</a> or call <a href=\"tel:{{site.phone_tel}}\">{{site.phone}}</a>."
+ },
+ "inc": {
+  "h2": "What Relining Includes",
+  "li": "Existing flue inspected and cleaned",
+  "li-2": "Liner sized to your fireplace, stove or furnace",
+  "li-3": "Stainless liner fed down from the roof",
+  "li-4": "Connected and secured at the appliance",
+  "li-5": "Top plate and cap sealed at the crown",
+  "li-6": "Draft tested with the appliance",
+  "img": {
+   "src": "/about-van.jpg",
+   "alt": "Brick chimney with cap above a Toronto-area home"
+  }
+ },
+ "how": {
+  "h2": "How We Line A Chimney",
+  "p": "Every visit starts with protecting your home and ends with photos and a clean work area.",
+  "h3": "Assess & Size",
+  "p-2": "The existing flue inspected and cleaned; the liner diameter matched to the fireplace, stove or furnace.",
+  "h3-2": "Install",
+  "p-3": "The liner fed down from the roof and connected at the appliance.",
+  "h3-3": "Seal",
+  "p-4": "Top plate and cap sealed at the crown; the bottom connection secured.",
+  "h3-4": "Test",
+  "p-5": "Draft checked with the appliance before we call it done."
+ },
+ "proof": {
+  "h2": "Real Work, Real Photos",
+  "p": "From our own jobs — not stock photography.",
+  "img": {
+   "src": "/svc-liner.jpg",
+   "alt": "Camera view inside a chimney flue"
+  },
+  "cap": "Inside the flue<span>What the camera shows you</span>",
+  "img-2": {
+   "src": "/popup-chimney.jpg",
+   "alt": "Brick chimney with repointed joints, a sealed crown and a new stainless cap, finished by Northmark"
+  },
+  "cap-2": "Repointed and capped<span>Finished from the roof</span>",
+  "p-2": "See more before-and-after photos and recent jobs.",
+  "btn": "See all our work"
+ },
+ "faq": {
+  "h2": "Questions About Chimney Liners",
+  "p": "Anything else — call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "What does a chimney liner actually do?",
+  "p-2": "It carries heat and combustion gases safely up and out, protecting the surrounding masonry and your home’s structure. It needs to be intact.",
+  "q-2": "How do I know my liner is failing?",
+  "p-3": "Tile fragments in the firebox, poor draft, visible cracks, or a flagged home-sale inspection. The free inspection confirms the condition with photos.",
+  "q-3": "Stainless steel or clay?",
+  "p-4": "Stainless is what we install for relining: durable, correctly sized, and suitable for most appliances. We’ll explain the trade-offs for your setup.",
+  "q-4": "Does liner size really matter?",
+  "p-5": "Yes — an oversized or undersized liner drafts poorly. Sizing to the appliance is most of the job.",
+  "q-5": "How much does a new liner cost?",
+  "p-6": "It depends on the chimney’s height, the appliance and access, so we price it after the free inspection — at your home, before any work starts."
+ },
+ "rel": {
+  "h2": "Often Booked Together",
+  "p": "One visit, one crew. Most jobs combine two of these.",
+  "img": {
+   "src": "/svc-liner.jpg",
+   "alt": "Inspection camera view inside a chimney flue"
+  },
+  "h3": "Chimney Inspection",
+  "p-2": "<b>Fixes</b>Not knowing what shape your chimney is in.",
+  "p-3": "Camera photos and a plain-language answer. Free.",
+  "img-2": {
+   "src": "/svc-cleaning.jpg",
+   "alt": "Fireplace after a Northmark chimney sweep, floor clean"
+  },
+  "h3-2": "Chimney Cleaning",
+  "p-4": "<b>Fixes</b>Soot and creosote building up in the flue.",
+  "p-5": "A cleaner-burning fireplace, and no mess left behind.",
+  "img-3": {
+   "src": "/ba-caps-after.jpg",
+   "alt": "Brick chimney with a stainless chimney cap installed"
+  },
+  "h3-3": "Chimney Caps",
+  "p-6": "<b>Fixes</b>Rain, snow and animals getting into an open flue.",
+  "p-7": "A cap sized to your flue, not one-size-fits-all."
+ },
+ "book-bottom": {
+  "h2": "Vent It Safely",
+  "p": "Tell us what you burn and what you’re seeing — we’ll take it from there.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

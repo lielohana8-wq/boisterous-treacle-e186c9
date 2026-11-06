@@ -1,0 +1,76 @@
+{
+ "meta": {
+  "title": "Chimney Sweep &amp; Repair, The Beaches Toronto | Northmark",
+  "description": "Chimney sweep and repair in The Beaches: {{site.offer_price}} sweep this winter with a free 19-point inspection, photos, and the price before any work starts."
+ },
+ "hero": {
+  "t": "The Beaches, Toronto",
+  "h1": "Chimney Services In The Beaches",
+  "p": "Wind and driving rain off the lake hit the crown and the cap first.",
+  "btn": "Book my free inspection",
+  "t-2": "<b>Free 19-point inspection</b> — at your home, with photos",
+  "t-3": "<b>{{site.offer_price}} chimney sweep</b> — this winter, inspection included",
+  "t-4": "<b>Open every day</b> — {{site.hours}}, Saturdays and Sundays included",
+  "img": {
+   "src": "/ba-flashing-after.jpg",
+   "alt": "Chimney crown and flashing sealed against water"
+  }
+ },
+ "loc": {
+  "img": {
+   "src": "/ba-flashing-after.jpg",
+   "alt": "Chimney crown and flashing sealed against water"
+  },
+  "cap": "New crown, joints filled, roofline sealed<span>Toronto &amp;amp; GTA</span>",
+  "h2": "What We See On The Beaches Chimneys",
+  "p": "Water is what kills a chimney in this neighbourhood. Rain that arrives sideways gets past a cracked crown or a missing cap, soaks into the brick, and then freeze-thaw does the rest over the winter.",
+  "p-2": "So on a Beaches roof we spend most of the inspection at the top: the crown, the cap, the top courses of brick and the flashing where the chimney meets the roof. If water is getting in, that is almost always where it starts.",
+  "btn": "Book my free inspection"
+ },
+ "svc": {
+  "h2": "What The Beaches Homeowners Book Most",
+  "p": "Every job starts with the free 19-point inspection, so you only pay for what the chimney actually needs.",
+  "img": {
+   "src": "/ba-caps-after.jpg",
+   "alt": "Brick chimney with a stainless chimney cap installed"
+  },
+  "h3": "Chimney Caps",
+  "p-2": "<b>Fixes</b>Rain, snow and animals getting into an open flue.",
+  "p-3": "A cap sized to your flue, not one-size-fits-all.",
+  "img-2": {
+   "src": "/ba-flashing-after.jpg",
+   "alt": "Stone chimney with new crown and flashing at the roofline"
+  },
+  "h3-2": "Flashing & Waterproofing",
+  "p-4": "<b>Fixes</b>Leaks where the chimney meets the roof.",
+  "p-5": "Flashing replaced properly — no tar-over shortcuts.",
+  "img-3": {
+   "src": "/ba-masonry-after.jpg",
+   "alt": "Brick chimney after masonry repair"
+  },
+  "h3-3": "Masonry & Tuckpointing",
+  "p-6": "<b>Fixes</b>Open mortar joints, flaking brick, a worn crown.",
+  "p-7": "Repointed and matched to your brick."
+ },
+ "faq": {
+  "h2": "Questions From The Beaches",
+  "p": "Anything else — call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "Do you charge to come out to The Beaches?",
+  "p-2": "No. The 19-point inspection at your home is free, and you get the photos and the report whether or not you go ahead with any work.",
+  "q-2": "Will the sweep make a mess in my house?",
+  "p-3": "No. Floors and the fireplace area are covered before any tool comes out, the vacuum runs while we sweep, and the area is left the way we found it — or cleaner.",
+  "q-3": "Do you work Saturdays and Sundays?",
+  "p-4": "Yes. Every day, {{site.hours}}, at the same price as a weekday.",
+  "q-4": "How much is a chimney sweep in The Beaches?",
+  "p-5": "A standard chimney sweep is {{site.offer_price}} this winter, with the free 19-point inspection included. Repairs are priced at your home after the inspection, before any work starts. Call {{site.phone}} and we will confirm it for your chimney."
+ },
+ "near": {
+  "h2": "Nearby Areas We Serve",
+  "p": "Not on the list? Call and ask — we cover Toronto and most of the GTA."
+ },
+ "book": {
+  "h2": "Book In The Beaches",
+  "p": "Tell us what is going on with your chimney and we will come and look at it, free.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "meta": {
+  "title": "Chimney Maintenance Toronto | Northmark Chimney",
+  "description": "Yearly chimney maintenance in Toronto & the GTA: sweep, full check and photos you can compare year to year. Book before winter. Free inspection."
+ },
+ "hero": {
+  "t": "Chimney Maintenance",
+  "h1": "Chimney Maintenance In Toronto",
+  "p": "A chimney serviced before the season is one less thing to think about all winter. A yearly sweep and check catches small problems while they are still small — and still cheap.",
+  "p-2": "<b>{{site.offer_price}}</b><span>Winter chimney sweep — free inspection included</span>",
+  "t-2": "<b>Sweep and full check</b> — in one visit",
+  "t-3": "<b>Photos logged</b> — to compare year to year",
+  "t-4": "<b>Best booked</b> — before the first cold snap"
+ },
+ "signs": {
+  "h2": "Who Yearly Maintenance Is For",
+  "p": "If you use your fireplace, this is the visit that keeps it boring — in the good way.",
+  "h3": "You Burn Wood Every Winter",
+  "p-2": "Buildup comes back every season. A yearly sweep keeps it under control.",
+  "h3-2": "You’d Rather Catch It Early",
+  "p-3": "A hairline crack in the crown costs a fraction of a water-damaged stack.",
+  "h3-3": "You Own A Rental",
+  "p-4": "Leave the property details and we sort scheduling and access with you or your tenants.",
+  "h3-4": "You Had Work Done Before",
+  "p-5": "A yearly look protects the repair you already paid for.",
+  "p-6": "Not sure which one you’re seeing? That is what the free inspection is for. <a href=\"#book\">Book it here</a> or call <a href=\"tel:{{site.phone_tel}}\">{{site.phone}}</a>."
+ },
+ "inc": {
+  "h2": "What A Maintenance Visit Includes",
+  "li": "Sweep of the flue, smoke chamber and firebox",
+  "li-2": "Damper, cap, crown and flashing checked",
+  "li-3": "Signs of moisture checked inside and out",
+  "li-4": "Photos logged year over year",
+  "li-5": "A straight answer on what to watch and when to come back",
+  "img": {
+   "src": "/svc-maintenance.jpg",
+   "alt": "Clean fireplace after a maintenance visit"
+  }
+ },
+ "how": {
+  "h2": "What A Maintenance Visit Looks Like",
+  "p": "Every visit starts with protecting your home and ends with photos and a clean work area.",
+  "h3": "Protect",
+  "p-2": "Floors and the fireplace area covered before any tool comes out.",
+  "h3-2": "Sweep",
+  "p-3": "Flue, smoke chamber and firebox swept and vacuumed.",
+  "h3-3": "Check",
+  "p-4": "Damper, cap, crown, flashing and moisture signs checked, inside and out.",
+  "h3-4": "Log",
+  "p-5": "Photos compared with last time, and a straight answer on what to watch."
+ },
+ "proof": {
+  "h2": "Real Work, Real Photos",
+  "p": "From our own jobs — not stock photography.",
+  "img": {
+   "src": "/g-08.jpg",
+   "alt": "Fireplace after a chimney sweep in Markham"
+  },
+  "cap": "Chimney sweep<span>Markham</span>",
+  "img-2": {
+   "src": "/svc-liner.jpg",
+   "alt": "Camera view inside a flue"
+  },
+  "cap-2": "Inside the flue<span>Photographed every visit</span>",
+  "p-2": "See more before-and-after photos and recent jobs.",
+  "btn": "See all our work"
+ },
+ "faq": {
+  "h2": "Questions About Chimney Maintenance",
+  "p": "Anything else — call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "How often should a chimney be maintained?",
+  "p-2": "For most wood-burning chimneys, once a year — ideally before the season. After seeing yours we’ll recommend an honest schedule; sometimes that means less often.",
+  "q-2": "What does a maintenance visit include?",
+  "p-3": "A sweep and a check: flue, damper, cap, crown, flashing and moisture signs — with photos you can compare year over year.",
+  "q-3": "When is the best time to book?",
+  "p-4": "Late summer and early fall, before the first cold snap fills the calendar. Spring works too — problems found then are cheapest to fix.",
+  "q-4": "Do you service rentals and multi-unit properties?",
+  "p-5": "Yes. Leave the property details and we’ll sort scheduling and access with you or your tenants.",
+  "q-5": "Is maintenance really worth it?",
+  "p-6": "Catching a hairline crown crack costs a fraction of rebuilding a water-damaged stack. Maintenance is how chimneys stay boring — in the good way."
+ },
+ "rel": {
+  "h2": "Often Booked Together",
+  "p": "One visit, one crew. Most jobs combine two of these.",
+  "img": {
+   "src": "/svc-cleaning.jpg",
+   "alt": "Fireplace after a Northmark chimney sweep, floor clean"
+  },
+  "h3": "Chimney Cleaning",
+  "p-2": "<b>Fixes</b>Soot and creosote building up in the flue.",
+  "p-3": "A cleaner-burning fireplace, and no mess left behind.",
+  "img-2": {
+   "src": "/svc-liner.jpg",
+   "alt": "Inspection camera view inside a chimney flue"
+  },
+  "h3-2": "Chimney Inspection",
+  "p-4": "<b>Fixes</b>Not knowing what shape your chimney is in.",
+  "p-5": "Camera photos and a plain-language answer. Free.",
+  "img-3": {
+   "src": "/ba-caps-after.jpg",
+   "alt": "Brick chimney with a stainless chimney cap installed"
+  },
+  "h3-3": "Chimney Caps",
+  "p-6": "<b>Fixes</b>Rain, snow and animals getting into an open flue.",
+  "p-7": "A cap sized to your flue, not one-size-fits-all."
+ },
+ "book-bottom": {
+  "h2": "Ready For Winter",
+  "p": "Tell us when it was last serviced. This winter a standard sweep is {{site.offer_price}}, with the inspection included.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

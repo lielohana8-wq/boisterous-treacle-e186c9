@@ -1,0 +1,74 @@
+{
+ "cleaning": {
+  "name": "Chimney Cleaning",
+  "url": "/chimney-cleaning-toronto",
+  "image": "/svc-cleaning.jpg",
+  "alt": "Fireplace after a Northmark chimney sweep, floor clean",
+  "fixes": "Soot and creosote building up in the flue.",
+  "benefit": "A cleaner-burning fireplace, and no mess left behind."
+ },
+ "inspection": {
+  "name": "Chimney Inspection",
+  "url": "/chimney-inspection-toronto",
+  "image": "/report-sample.jpg",
+  "alt": "Chimney inspection report with camera photos",
+  "fixes": "Not knowing what state the flue and firebox are in.",
+  "benefit": "Camera photos and a 19-point report, free at your home."
+ },
+ "repair": {
+  "name": "Chimney Repair",
+  "url": "/chimney-repair-toronto",
+  "image": "/ba-repairs-after.jpg",
+  "alt": "Repaired brick chimney above the roofline",
+  "fixes": "Cracked crowns, damaged brick, water getting in.",
+  "benefit": "Fixed once, with materials matched to your home."
+ },
+ "caps": {
+  "name": "Chimney Caps",
+  "url": "/chimney-cap-installation-toronto",
+  "image": "/ba-caps-after.jpg",
+  "alt": "Stainless steel chimney cap fitted on a flue",
+  "fixes": "Rain, snow, birds and animals getting into the flue.",
+  "benefit": "Caps measured to your flue, in stainless so they last."
+ },
+ "liners": {
+  "name": "Chimney Liners",
+  "url": "/chimney-liner-toronto",
+  "image": "/liner.jpg",
+  "alt": "Stainless chimney liner",
+  "fixes": "A cracked, damaged or missing flue liner.",
+  "benefit": "Heat and exhaust vented the way they should be."
+ },
+ "masonry": {
+  "name": "Masonry & Tuckpointing",
+  "url": "/chimney-masonry-repair-toronto",
+  "image": "/ba-after.jpg",
+  "alt": "Repointed brick chimney in Toronto",
+  "fixes": "Crumbling mortar, loose or spalling brick, a leaning or leaking chimney.",
+  "benefit": "Repointing, brick replacement and rebuilds, matched to your home."
+ },
+ "flashing": {
+  "name": "Flashing & Waterproofing",
+  "url": "/chimney-flashing-toronto",
+  "image": "/ba-flashing-after.jpg",
+  "alt": "Chimney flashing sealed at the roofline",
+  "fixes": "Water stains near the chimney, leaks that show up after rain.",
+  "benefit": "Flashing resealed or replaced, and the masonry sealed against water."
+ },
+ "maintenance": {
+  "name": "Chimney Maintenance",
+  "url": "/chimney-maintenance-toronto",
+  "image": "/svc-maintenance.jpg",
+  "alt": "Chimney maintenance visit",
+  "fixes": "Small problems turning into expensive ones.",
+  "benefit": "A yearly sweep and check, so nothing is a surprise."
+ },
+ "fireplace": {
+  "name": "Fireplace Repair",
+  "url": "/fireplace-repair-toronto",
+  "image": "/svc-cleaning.jpg",
+  "alt": "Clean fireplace and hearth after a Northmark visit",
+  "fixes": "Fireboxes, dampers, smoke chambers, gas fireplaces that will not light or stay lit.",
+  "benefit": "Wood and gas, with safety issues explained in plain language."
+ }
+}

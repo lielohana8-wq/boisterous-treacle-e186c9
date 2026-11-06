@@ -1,0 +1,122 @@
+{
+ "meta": {
+  "title": "Free Chimney Inspection Toronto | Northmark Chimney",
+  "description": "Free chimney inspection at your Toronto or GTA home. Camera photos of the flue, a plain-language explanation, and the price before any work. No obligation."
+ },
+ "hero": {
+  "t": "Chimney Inspection",
+  "h1": "Chimney Inspection In Toronto",
+  "p": "Not sure what shape your chimney is in? We check it top to bottom — inside the flue with a camera — and show you the photos. You find out what needs attention, what can wait and what is fine. Free, with no obligation.",
+  "t-2": "<b>Camera inside the flue</b> — photos you keep",
+  "t-3": "<b>What’s urgent, what can wait</b> — and what is fine",
+  "t-4": "<b>Buying or selling?</b> — know before your conditions date"
+ },
+ "when": {
+  "h2": "When To Book A Chimney Inspection",
+  "p": "Most people call us for one of these reasons.",
+  "h3": "You’re Buying Or Selling A Home",
+  "p-2": "Know what the chimney needs before your conditions date, with photos to back it up.",
+  "h3-2": "It Hasn’t Been Looked At In Years",
+  "p-3": "Or you don’t know when it was. An inspection tells you where it stands.",
+  "h3-3": "Something Seems Off",
+  "p-4": "Smoke in the room, a smell, water near the fireplace, or debris in the firebox.",
+  "h3-4": "After A Hard Winter",
+  "p-5": "Freeze-thaw and wind damage the crown, cap and flashing — often out of sight from the ground.",
+  "h3-5": "Before The First Fire",
+  "p-6": "A fireplace that has sat unused deserves a look before it is lit again.",
+  "h3-6": "You Want A Second Look",
+  "p-7": "Been told you need a big repair? See the photos and decide for yourself.",
+  "p-8": "Not sure which one you’re seeing? That is what the free inspection is for. <a href=\"#book\">Book it here</a> or call <a href=\"tel:{{site.phone_tel}}\">{{site.phone}}</a>."
+ },
+ "inc": {
+  "h2": "What We Check",
+  "li": "Firebox, damper and smoke chamber",
+  "li-2": "The flue and liner, with a camera",
+  "li-3": "Brick and mortar joints, inside and out",
+  "li-4": "Crown and chimney cap, checked from the roof",
+  "li-5": "Flashing where the chimney meets the roof",
+  "li-6": "Signs of water getting in",
+  "p": "You get photos of every issue and a written summary: what needs attention now, what can wait, and what is fine.",
+  "img": {
+   "src": "/ba-flashing-before.jpg",
+   "alt": "Stone chimney crown and joints photographed from the roof during an inspection"
+  }
+ },
+ "how": {
+  "h2": "How We Inspect A Chimney",
+  "p": "Every visit starts with protecting your home and ends with photos and a clean work area.",
+  "h3": "Interior",
+  "p-2": "Firebox, damper, smoke chamber and the flue — the condition of the liner, mortar joints and any buildup.",
+  "h3-2": "Exterior",
+  "p-3": "Cap, crown, brick, mortar and flashing checked from the roof, not the driveway.",
+  "h3-3": "Document",
+  "p-4": "Every issue photographed, so you see exactly what we see.",
+  "h3-4": "Explain",
+  "p-5": "A plain-language summary on-site: what needs attention now, what can wait, what is fine."
+ },
+ "proof": {
+  "h2": "Real Work, Real Photos",
+  "p": "From our own jobs — not stock photography.",
+  "img": {
+   "src": "/svc-liner.jpg",
+   "alt": "Camera view inside a chimney flue"
+  },
+  "cap": "Inside the flue<span>Photographed during an inspection</span>",
+  "img-2": {
+   "src": "/popup-chimney.jpg",
+   "alt": "Brick chimney with repointed joints, a sealed crown and a new stainless cap, finished by Northmark"
+  },
+  "cap-2": "Repointed and capped<span>Crown sealed, joints renewed, new stainless cap</span>",
+  "img-3": {
+   "src": "/g-04.jpg",
+   "alt": "Stone chimney inspected and repaired in Scarborough"
+  },
+  "cap-3": "Stone chimney inspection &amp; repair<span>Scarborough</span>",
+  "p-2": "See more before-and-after photos and recent jobs.",
+  "btn": "See all our work"
+ },
+ "faq": {
+  "h2": "Questions About Chimney Inspection",
+  "p": "Anything else — call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "Is the inspection really free?",
+  "p-2": "Yes. The technician comes to your home, looks at the chimney, explains what they see and prices any recommended work on the spot. No obligation — you decide from there.",
+  "q-2": "What does a chimney inspection include?",
+  "p-3": "A full visual check — flue, liner, damper, firebox, brick and mortar, crown, cap and flashing — documented with photos and explained on-site in plain language.",
+  "q-3": "Do I get something in writing?",
+  "p-4": "Yes — the photos, and a written summary of what needs attention, what can wait, and what is fine as it is.",
+  "q-4": "Can you inspect a chimney before I buy a home?",
+  "p-5": "Yes. Tell us your timeline when you book and we’ll do our best to fit the visit before your conditions date. If your lender or insurer asks for a specific type of report, check what they require first, so we can tell you whether ours fits.",
+  "q-5": "How long does an inspection take?",
+  "p-6": "It depends on the chimney and access. We give you a realistic window when we confirm the visit, and we don’t rush the look-over."
+ },
+ "rel": {
+  "h2": "Often Booked Together",
+  "p": "One visit, one crew. Most jobs combine two of these.",
+  "img": {
+   "src": "/svc-cleaning.jpg",
+   "alt": "Fireplace after a Northmark chimney sweep, floor clean"
+  },
+  "h3": "Chimney Cleaning",
+  "p-2": "<b>Fixes</b>Soot and creosote building up in the flue.",
+  "p-3": "A cleaner-burning fireplace, and no mess left behind.",
+  "img-2": {
+   "src": "/ba-repairs-after.jpg",
+   "alt": "Brick chimney after repair work, Toronto area"
+  },
+  "h3-2": "Chimney Repair",
+  "p-4": "<b>Fixes</b>Cracked crowns, damaged fireboxes, water getting in.",
+  "p-5": "Fixed once, with materials matched to your home.",
+  "img-3": {
+   "src": "/about-van.jpg",
+   "alt": "Brick chimney with a cap on a GTA home"
+  },
+  "h3-3": "Chimney Liners",
+  "p-6": "<b>Fixes</b>A cracked, damaged or missing flue liner.",
+  "p-7": "Heat and smoke vented the way they should be."
+ },
+ "book-bottom": {
+  "h2": "Book Your Free Inspection",
+  "p": "Tell us about the home and your timeline. We come out, look, and show you what we find.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

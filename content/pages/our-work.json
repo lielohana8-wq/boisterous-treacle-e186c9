@@ -1,0 +1,133 @@
+{
+ "meta": {
+  "title": "Our Work: Chimney Before & After Photos | Northmark Chimney",
+  "description": "Real before-and-after photos of Northmark chimney repairs, caps, masonry and sweeps across Toronto and the GTA. Book a free inspection: {{site.phone}}."
+ },
+ "hero": {
+  "t": "Our Work",
+  "h1": "Our Work: Real Chimney Jobs Across Toronto & The GTA",
+  "p": "Before-and-after photos and recent jobs from Northmark crews. These are our own photos — the same kind you get from your inspection.",
+  "btn": "Book my free inspection",
+  "t-2": "<b>{{site.count_chimneys}} chimneys serviced</b> — swept, inspected, repaired and rebuilt",
+  "t-3": "<b>Photos from real jobs</b> — no stock images",
+  "t-4": "<b>Warranty</b> — on materials and labour",
+  "img": {
+   "src": "/g-01.jpg",
+   "alt": "Brick chimney with a rebuilt crown and new cap in North York"
+  }
+ },
+ "ba": {
+  "h2": "Before & After",
+  "p": "The same chimney, photographed before we started and after we finished.",
+  "img": {
+   "src": "/ba-before.jpg",
+   "alt": "Before: brick chimney with washed-out mortar joints"
+  },
+  "t": "Before",
+  "img-2": {
+   "src": "/ba-after.jpg",
+   "alt": "After: the same chimney repointed and sealed at the roofline"
+  },
+  "t-2": "After",
+  "t-3": "Masonry & Tuckpointing",
+  "h3": "Mortar washed out of the joints, leaving them open to water",
+  "dt": "Where",
+  "dd": "Toronto & GTA",
+  "dt-2": "The Problem",
+  "dd-2": "Mortar washed out of the joints, leaving them open to water.",
+  "dt-3": "What We Did",
+  "dd-3": "Cut out the old mortar, repointed the joints and sealed the chimney where it meets the roof.",
+  "dt-4": "The Result",
+  "dd-4": "Closed joints and a sealed roofline — the after photo is the same chimney.",
+  "btn": "About Masonry & Tuckpointing",
+  "img-3": {
+   "src": "/ba-flashing-before.jpg",
+   "alt": "Before: stone chimney with a worn crown and weathered joints"
+  },
+  "t-4": "Before",
+  "img-4": {
+   "src": "/ba-flashing-after.jpg",
+   "alt": "After: the same stone chimney with a new crown and flashing"
+  },
+  "t-5": "After",
+  "t-6": "Flashing & Waterproofing",
+  "h3-2": "A weathered crown and worn joints on a stone chimney",
+  "dt-5": "Where",
+  "dd-5": "Toronto & GTA",
+  "dt-6": "The Problem",
+  "dd-6": "A weathered crown and worn joints on a stone chimney.",
+  "dt-7": "What We Did",
+  "dd-7": "New crown, joints filled, and the chimney sealed where it meets the roof.",
+  "dt-8": "The Result",
+  "dd-8": "Water-shedding crown and a sealed roofline on the same chimney.",
+  "btn-2": "About Flashing & Waterproofing"
+ },
+ "g": {
+  "h2": "Recent Jobs By Area",
+  "p": "Tap a photo to read about that service.",
+  "img": {
+   "src": "/g-01.jpg",
+   "alt": "Crown & brick rebuild in North York"
+  },
+  "cap": "Crown &amp; brick rebuild<span>North York</span>",
+  "img-2": {
+   "src": "/g-03.jpg",
+   "alt": "Stainless multi-flue cap in Etobicoke"
+  },
+  "cap-2": "Stainless multi-flue cap<span>Etobicoke</span>",
+  "img-3": {
+   "src": "/g-06.jpg",
+   "alt": "Tuckpointing above roofline in Richmond Hill"
+  },
+  "cap-3": "Tuckpointing above roofline<span>Richmond Hill</span>",
+  "img-4": {
+   "src": "/g-04.jpg",
+   "alt": "Stone chimney inspection & repair in Scarborough"
+  },
+  "cap-4": "Stone chimney inspection &amp; repair<span>Scarborough</span>",
+  "img-5": {
+   "src": "/g-05.jpg",
+   "alt": "New stainless cap & crown seal in Vaughan"
+  },
+  "cap-5": "New stainless cap &amp; crown seal<span>Vaughan</span>",
+  "img-6": {
+   "src": "/g-02.jpg",
+   "alt": "Masonry & tuckpointing in East York"
+  },
+  "cap-6": "Masonry &amp; tuckpointing<span>East York</span>",
+  "img-7": {
+   "src": "/g-07.jpg",
+   "alt": "Chimney sweep in Mississauga"
+  },
+  "cap-7": "Chimney sweep<span>Mississauga</span>",
+  "img-8": {
+   "src": "/g-08.jpg",
+   "alt": "Chimney sweep in Markham"
+  },
+  "cap-8": "Chimney sweep<span>Markham</span>"
+ },
+ "t": {
+  "h2": "Three Recent Jobs",
+  "p": "Different chimneys, different problems — all across the GTA.",
+  "img": {
+   "src": "/g-04.jpg",
+   "alt": "Stone chimney inspected and repaired in Scarborough"
+  },
+  "cap": "Stone chimney repair<span>Scarborough</span>",
+  "img-2": {
+   "src": "/g-03.jpg",
+   "alt": "Stainless multi-flue cap fitted on a chimney in Etobicoke"
+  },
+  "cap-2": "Multi-flue cap<span>Etobicoke</span>",
+  "img-3": {
+   "src": "/g-07.jpg",
+   "alt": "Chimney swept at a home in Mississauga"
+  },
+  "cap-3": "Chimney sweep<span>Mississauga</span>"
+ },
+ "book": {
+  "h2": "Want This For Your Chimney?",
+  "p": "Book the free inspection. We photograph what we find and give you the price before any work starts.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

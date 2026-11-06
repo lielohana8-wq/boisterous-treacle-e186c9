@@ -1,0 +1,76 @@
+{
+ "meta": {
+  "title": "Chimney Sweep &amp; Repair, Mimico Toronto | Northmark",
+  "description": "Chimney sweep and repair in Mimico & New Toronto: {{site.offer_price}} sweep this winter with a free 19-point inspection, photos, and the price before any work starts."
+ },
+ "hero": {
+  "t": "Mimico & New Toronto, Toronto",
+  "h1": "Chimney Services In Mimico & New Toronto",
+  "p": "Lakeshore exposure — the same wind and water that works on The Beaches, from the other side of the city.",
+  "btn": "Book my free inspection",
+  "t-2": "<b>Free 19-point inspection</b> — at your home, with photos",
+  "t-3": "<b>{{site.offer_price}} chimney sweep</b> — this winter, inspection included",
+  "t-4": "<b>Open every day</b> — {{site.hours}}, Saturdays and Sundays included",
+  "img": {
+   "src": "/g-03.jpg",
+   "alt": "Stainless multi-flue chimney cap on a lakeshore home"
+  }
+ },
+ "loc": {
+  "img": {
+   "src": "/g-03.jpg",
+   "alt": "Stainless multi-flue chimney cap on a lakeshore home"
+  },
+  "cap": "Stainless multi-flue cap<span>Etobicoke</span>",
+  "h2": "What We See On Mimico & New Toronto Chimneys",
+  "p": "Driving rain off the lake finds a cracked crown or a missing cap quickly, and once water is in the brick, freeze-thaw does the rest over the winter. The top of the chimney is where we spend the inspection.",
+  "p-2": "A cap sized to the flue and a sound crown are the cheapest protection these chimneys can get.",
+  "btn": "Book my free inspection"
+ },
+ "svc": {
+  "h2": "What Mimico & New Toronto Homeowners Book Most",
+  "p": "Every job starts with the free 19-point inspection, so you only pay for what the chimney actually needs.",
+  "img": {
+   "src": "/ba-caps-after.jpg",
+   "alt": "Brick chimney with a stainless chimney cap installed"
+  },
+  "h3": "Chimney Caps",
+  "p-2": "<b>Fixes</b>Rain, snow and animals getting into an open flue.",
+  "p-3": "A cap sized to your flue, not one-size-fits-all.",
+  "img-2": {
+   "src": "/ba-flashing-after.jpg",
+   "alt": "Stone chimney with new crown and flashing at the roofline"
+  },
+  "h3-2": "Flashing & Waterproofing",
+  "p-4": "<b>Fixes</b>Leaks where the chimney meets the roof.",
+  "p-5": "Flashing replaced properly — no tar-over shortcuts.",
+  "img-3": {
+   "src": "/ba-masonry-after.jpg",
+   "alt": "Brick chimney after masonry repair"
+  },
+  "h3-3": "Masonry & Tuckpointing",
+  "p-6": "<b>Fixes</b>Open mortar joints, flaking brick, a worn crown.",
+  "p-7": "Repointed and matched to your brick."
+ },
+ "faq": {
+  "h2": "Questions From Mimico & New Toronto",
+  "p": "Anything else — call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "Do you charge to come out to Mimico & New Toronto?",
+  "p-2": "No. The 19-point inspection at your home is free, and you get the photos and the report whether or not you go ahead with any work.",
+  "q-2": "Will the sweep make a mess in my house?",
+  "p-3": "No. Floors and the fireplace area are covered before any tool comes out, the vacuum runs while we sweep, and the area is left the way we found it — or cleaner.",
+  "q-3": "Do you work Saturdays and Sundays?",
+  "p-4": "Yes. Every day, {{site.hours}}, at the same price as a weekday.",
+  "q-4": "How much is a chimney sweep in Mimico & New Toronto?",
+  "p-5": "A standard chimney sweep is {{site.offer_price}} this winter, with the free 19-point inspection included. Repairs are priced at your home after the inspection, before any work starts. Call {{site.phone}} and we will confirm it for your chimney."
+ },
+ "near": {
+  "h2": "Nearby Areas We Serve",
+  "p": "Not on the list? Call and ask — we cover Toronto and most of the GTA."
+ },
+ "book": {
+  "h2": "Book In Mimico & New Toronto",
+  "p": "Tell us what is going on with your chimney and we will come and look at it, free.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

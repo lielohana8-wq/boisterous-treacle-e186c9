@@ -1,0 +1,76 @@
+{
+ "meta": {
+  "title": "Chimney Sweep &amp; Repair, The Danforth Toronto | Northmark",
+  "description": "Chimney sweep and repair in The Danforth & Greektown: {{site.offer_price}} sweep this winter with a free 19-point inspection, photos, and the price before any work starts."
+ },
+ "hero": {
+  "t": "The Danforth & Greektown, Toronto",
+  "h1": "Chimney Services In The Danforth & Greektown",
+  "p": "Brick semis from the 1910s and 1920s, with the chimney sitting in the wall between two houses.",
+  "btn": "Book my free inspection",
+  "t-2": "<b>Free 19-point inspection</b> — at your home, with photos",
+  "t-3": "<b>{{site.offer_price}} chimney sweep</b> — this winter, inspection included",
+  "t-4": "<b>Open every day</b> — {{site.hours}}, Saturdays and Sundays included",
+  "img": {
+   "src": "/g-02.jpg",
+   "alt": "Masonry and tuckpointing on an older Toronto chimney"
+  }
+ },
+ "loc": {
+  "img": {
+   "src": "/g-02.jpg",
+   "alt": "Masonry and tuckpointing on an older Toronto chimney"
+  },
+  "cap": "Masonry &amp;amp; tuckpointing<span>East York</span>",
+  "h2": "What We See On The Danforth & Greektown Chimneys",
+  "p": "When a stack is shared, what happens on one side affects the other. We look at the whole chimney rather than just your half, and you see photos of both flues before anything is priced.",
+  "p-2": "The mortar on these stacks is the original soft mix, and above the roofline it is the first thing the weather takes out. Repointing early is what keeps it from turning into a rebuild.",
+  "btn": "Book my free inspection"
+ },
+ "svc": {
+  "h2": "What The Danforth & Greektown Homeowners Book Most",
+  "p": "Every job starts with the free 19-point inspection, so you only pay for what the chimney actually needs.",
+  "img": {
+   "src": "/ba-masonry-after.jpg",
+   "alt": "Brick chimney after masonry repair"
+  },
+  "h3": "Masonry & Tuckpointing",
+  "p-2": "<b>Fixes</b>Open mortar joints, flaking brick, a worn crown.",
+  "p-3": "Repointed and matched to your brick.",
+  "img-2": {
+   "src": "/svc-cleaning.jpg",
+   "alt": "Fireplace after a Northmark chimney sweep, floor clean"
+  },
+  "h3-2": "Chimney Cleaning",
+  "p-4": "<b>Fixes</b>Soot and creosote building up in the flue.",
+  "p-5": "A cleaner-burning fireplace, and no mess left behind.",
+  "img-3": {
+   "src": "/about-van.jpg",
+   "alt": "Brick chimney with a cap on a GTA home"
+  },
+  "h3-3": "Chimney Liners",
+  "p-6": "<b>Fixes</b>A cracked, damaged or missing flue liner.",
+  "p-7": "Heat and smoke vented the way they should be."
+ },
+ "faq": {
+  "h2": "Questions From The Danforth & Greektown",
+  "p": "Anything else — call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "Do you charge to come out to The Danforth & Greektown?",
+  "p-2": "No. The 19-point inspection at your home is free, and you get the photos and the report whether or not you go ahead with any work.",
+  "q-2": "Will the sweep make a mess in my house?",
+  "p-3": "No. Floors and the fireplace area are covered before any tool comes out, the vacuum runs while we sweep, and the area is left the way we found it — or cleaner.",
+  "q-3": "Do you work Saturdays and Sundays?",
+  "p-4": "Yes. Every day, {{site.hours}}, at the same price as a weekday.",
+  "q-4": "How much is a chimney sweep in The Danforth & Greektown?",
+  "p-5": "A standard chimney sweep is {{site.offer_price}} this winter, with the free 19-point inspection included. Repairs are priced at your home after the inspection, before any work starts. Call {{site.phone}} and we will confirm it for your chimney."
+ },
+ "near": {
+  "h2": "Nearby Areas We Serve",
+  "p": "Not on the list? Call and ask — we cover Toronto and most of the GTA."
+ },
+ "book": {
+  "h2": "Book In The Danforth & Greektown",
+  "p": "Tell us what is going on with your chimney and we will come and look at it, free.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "meta": {
+  "title": "About Northmark Chimney — Toronto & GTA Chimney Services",
+  "description": "Northmark is a chimney services company serving Toronto and the GTA: {{site.years_text}}, {{site.count_chimneys}} chimneys, free inspection with photos and the price before any work."
+ },
+ "hero": {
+  "t": "About Northmark",
+  "h1": "A Chimney Company Built On Doing The Work Properly",
+  "p": "Northmark is a chimney services company serving homeowners across Toronto and the GTA. One trade, done well: chimneys — cleaned, inspected, repaired and maintained. We explain what we see in plain language, price before we work, and leave every home the way we found it. Or cleaner.",
+  "btn": "Book my free inspection",
+  "img": {
+   "src": "/popup-chimney.jpg",
+   "alt": "Brick chimney with repointed joints, a sealed crown and a new stainless cap, finished by Northmark"
+  }
+ },
+ "a1": {
+  "h2": "No Pressure. No Guesswork. No Shortcuts.",
+  "p": "A chimney is not a place for improvisation. Every visit follows the same discipline: protect the home, do the work properly, show the homeowner exactly what we found, and put it in writing.",
+  "h3": "WETT-Certified",
+  "p-2": "Our work is carried out by a WETT-certified technician — the Wood Energy Technology Transfer certification Canadian insurers and home inspectors recognise.",
+  "h3-2": "No Guesswork",
+  "p-3": "Every visit starts with a look — inside the flue with a camera — and you see the photos.",
+  "h3-3": "No Pressure",
+  "p-4": "If something doesn’t need fixing, we say so. You decide what happens next.",
+  "h3-4": "No Shortcuts",
+  "p-5": "We use quality materials and stand behind them: every job carries a warranty on materials and labour."
+ },
+ "a2": {
+  "h2": "Northmark By The Numbers",
+  "p": "3+",
+  "h3": "Years In Business",
+  "p-2": "Working across Toronto and the GTA.",
+  "p-3": "{{site.count_chimneys}}",
+  "h3-2": "Chimneys Serviced",
+  "p-4": "Swept, inspected, repaired and rebuilt.",
+  "p-5": "7",
+  "h3-3": "Days A Week",
+  "p-6": "Open every day, {{site.hours}}.",
+  "p-7": "$0",
+  "h3-4": "For The Inspection",
+  "p-8": "We look first. You get the price on the spot."
+ },
+ "a3": {
+  "h2": "What Every Toronto Homeowner Should Know",
+  "p": "Four things we explain on almost every visit.",
+  "h3": "Your Chimney Is A Safety System",
+  "p-2": "It carries smoke and combustion gases out of your living space. When it works, you never think about it.",
+  "h3-2": "Water Is Masonry’s Worst Enemy",
+  "p-3": "It gets in through small gaps — then Toronto’s freeze-thaw cycles do the damage.",
+  "h3-3": "Creosote Builds Up Every Season",
+  "p-4": "Burning wood leaves it in the flue. Removing it keeps the chimney venting the way it should.",
+  "h3-4": "Most Problems Can’t Be Seen From The Ground",
+  "p-5": "A proper look finds small issues while they are still small — and still cheap."
+ },
+ "a4": {
+  "h2": "Three Recent Jobs",
+  "img": {
+   "src": "/g-04.jpg",
+   "alt": "Stone chimney inspected and repaired in Scarborough"
+  },
+  "cap": "Stone chimney repair<span>Scarborough</span>",
+  "img-2": {
+   "src": "/g-03.jpg",
+   "alt": "Stainless multi-flue cap fitted on a chimney in Etobicoke"
+  },
+  "cap-2": "Multi-flue cap<span>Etobicoke</span>",
+  "img-3": {
+   "src": "/g-07.jpg",
+   "alt": "Chimney swept at a home in Mississauga"
+  },
+  "cap-3": "Chimney sweep<span>Mississauga</span>",
+  "p": "See before-and-after photos from our jobs.",
+  "btn": "View Our Work"
+ },
+ "areas": {
+  "t": "Service Area",
+  "p": "<a class=\"xl\" href=\"{{site.google_profile}}\" target=\"_blank\" rel=\"noopener\">Open Northmark On Google Maps</a><a class=\"xl\" href=\"{{site.google_profile}}\" target=\"_blank\" rel=\"noopener\">See Our Google Reviews</a>",
+  "h2": "Where We Work",
+  "p-2": "Northmark is a local chimney company. We work across Toronto, the GTA and out to Oakville, Oshawa and Newmarket — every day of the week, {{site.hours}}. The inspection visit to your home is free.",
+  "li": "Toronto",
+  "li-2": "York",
+  "li-3": "<a href=\"/chimney-services-east-york\">East York</a>",
+  "li-4": "<a href=\"/chimney-services-north-york\">North York</a>",
+  "li-5": "<a href=\"/chimney-services-scarborough\">Scarborough</a>",
+  "li-6": "<a href=\"/chimney-services-etobicoke\">Etobicoke</a>",
+  "li-7": "<a href=\"/chimney-services-mississauga\">Mississauga</a>",
+  "li-8": "Brampton",
+  "li-9": "<a href=\"/chimney-services-vaughan\">Vaughan</a>",
+  "li-10": "Concord",
+  "li-11": "Thornhill",
+  "li-12": "<a href=\"/chimney-services-richmond-hill\">Richmond Hill</a>",
+  "li-13": "<a href=\"/chimney-services-markham\">Markham</a>",
+  "p-3": "<b>Also serving:</b> Oakville · Burlington · Milton · Halton Hills · Caledon · Ajax · Pickering · Whitby · Oshawa · Clarington · Newmarket · Aurora · King City · Stouffville · Uxbridge",
+  "p-4": "Not sure if we service your area? <a href=\"tel:{{site.phone_tel}}\">Give us a call.</a>",
+  "btn": "Book my free inspection"
+ },
+ "book": {
+  "h2": "Let’s Talk Chimneys",
+  "p": "Tell us what’s going on. We’ll take a look, free, and give you a clear price.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

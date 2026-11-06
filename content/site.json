@@ -1,0 +1,69 @@
+{
+ "phone": "(289) 514-5267",
+ "phone_tel": "+12895145267",
+ "whatsapp": "14164502859",
+ "email": "Northmarkchimney@gmail.com",
+ "hours": "7:00–22:00",
+ "google_profile": "https://share.google/HRH623MMM2RBJ27UI",
+ "count_chimneys": "2,000+",
+ "years_text": "3+ years",
+ "offer_price": "$200",
+ "chrome": {
+  "footer": {
+   "p": "Chimney cleaning, inspection, repair and maintenance for homeowners across Toronto and the GTA. Free inspection at your home, price before any work starts.",
+   "p-2": "<a href=\"mailto:{{site.email}}\">{{site.email}}</a><br>Every Day {{site.hours}}",
+   "p-3": "Services",
+   "li": "<a href=\"/chimney-cleaning-toronto\">Chimney Cleaning</a>",
+   "li-2": "<a href=\"/chimney-inspection-toronto\">Chimney Inspection</a>",
+   "li-3": "<a href=\"/chimney-repair-toronto\">Chimney Repair</a>",
+   "li-4": "<a href=\"/chimney-cap-installation-toronto\">Chimney Caps</a>",
+   "li-5": "<a href=\"/chimney-liner-toronto\">Chimney Liners</a>",
+   "li-6": "<a href=\"/chimney-masonry-repair-toronto\">Masonry &amp; Tuckpointing</a>",
+   "li-7": "<a href=\"/chimney-flashing-toronto\">Flashing &amp; Waterproofing</a>",
+   "li-8": "<a href=\"/chimney-maintenance-toronto\">Chimney Maintenance</a>",
+   "li-9": "<a href=\"/fireplace-repair-toronto\">Fireplace Repair</a>",
+   "p-4": "Where We Work",
+   "li-10": "Toronto",
+   "li-11": "York",
+   "li-12": "<a href=\"/chimney-services-east-york\">East York</a>",
+   "li-13": "<a href=\"/chimney-services-north-york\">North York</a>",
+   "li-14": "<a href=\"/chimney-services-scarborough\">Scarborough</a>",
+   "li-15": "<a href=\"/chimney-services-etobicoke\">Etobicoke</a>",
+   "li-16": "<a href=\"/chimney-services-mississauga\">Mississauga</a>",
+   "li-17": "Brampton",
+   "li-18": "<a href=\"/chimney-services-vaughan\">Vaughan</a>",
+   "li-19": "Concord",
+   "li-20": "Thornhill",
+   "li-21": "<a href=\"/chimney-services-richmond-hill\">Richmond Hill</a>",
+   "li-22": "<a href=\"/chimney-services-markham\">Markham</a>",
+   "p-5": "Northmark",
+   "li-23": "<a href=\"/our-work\">Our Work</a>",
+   "li-24": "<a href=\"/projects/\">Project Case Studies</a>",
+   "li-25": "<a href=\"/about\">About</a>",
+   "li-26": "<a href=\"/chimney-service-prices-toronto\">How We Price</a>",
+   "li-27": "<a href=\"/#faq\">FAQ</a>",
+   "li-28": "<a href=\"/#areas\">Service Areas</a>",
+   "p-6": "Leave your details and we call you back. No obligation.",
+   "btn": "Book a free inspection",
+   "t": "© Northmark Chimney · Toronto & the GTA"
+  },
+  "popup": {
+   "img": {
+    "src": "/popup-chimney.jpg",
+    "alt": "Brick chimney with repointed joints, a sealed crown and a new stainless cap, finished by Northmark"
+   },
+   "cap": "<span class=\"pm-kicker\">Winter Special</span><span class=\"pm-price\">{{site.offer_price}}</span><span class=\"pm-what\">Chimney sweep</span>",
+   "h2": "Book your {{site.offer_price}} sweep",
+   "p": "The inspection is free either way — with or without the sweep.",
+   "p-2": "or call us",
+   "p-3": "Winter pricing for a standard chimney sweep, inspection included. Call and we will confirm it for your chimney before booking."
+  }
+ },
+ "projects_hub": {
+  "title": "Chimney Projects In Toronto & The GTA | Northmark Chimney",
+  "description": "Real Northmark chimney jobs, start to finish: tuckpointing in Toronto, a stone chimney restored in concrete, a gas burner installed. Our own photos.",
+  "h1": "Chimney Projects: Real Jobs In Toronto & The GTA, Start To Finish",
+  "lead": "Recent Northmark jobs, each written up the way we explain work to the homeowner: what we found, what we did, and the photo of the finished chimney. No stock images — every photo here was taken on the job.",
+  "hero_project": "stone-chimney-restoration"
+ }
+}

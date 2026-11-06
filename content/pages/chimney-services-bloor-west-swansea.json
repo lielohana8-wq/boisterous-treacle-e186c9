@@ -1,0 +1,76 @@
+{
+ "meta": {
+  "title": "Chimney Sweep & Repair, Bloor West Village | Northmark",
+  "description": "Chimney sweep and repair in Bloor West Village & Swansea: {{site.offer_price}} sweep this winter with a free 19-point inspection, photos, and the price before any work starts."
+ },
+ "hero": {
+  "t": "Bloor West Village & Swansea, Toronto",
+  "h1": "Chimney Services In Bloor West Village & Swansea",
+  "p": "Steep roofs and tall stacks on Edwardian and Tudor-revival homes — access is half the job.",
+  "btn": "Book my free inspection",
+  "t-2": "<b>Free 19-point inspection</b> — at your home, with photos",
+  "t-3": "<b>{{site.offer_price}} chimney sweep</b> — this winter, inspection included",
+  "t-4": "<b>Open every day</b> — {{site.hours}}, Saturdays and Sundays included",
+  "img": {
+   "src": "/g-06.jpg",
+   "alt": "Tuckpointing on a tall brick chimney above the roofline"
+  }
+ },
+ "loc": {
+  "img": {
+   "src": "/g-06.jpg",
+   "alt": "Tuckpointing on a tall brick chimney above the roofline"
+  },
+  "cap": "Tuckpointing above roofline<span>Richmond Hill</span>",
+  "h2": "What We See On Bloor West Village & Swansea Chimneys",
+  "p": "A steep roof changes how the work is done: more staging, more time at the top, and a proper look at the crown and the cap instead of a glance from the driveway. We tell you what the access means for the price before anything starts.",
+  "p-2": "Wood-burning fireplaces here are still used all winter, so a yearly sweep with the 19-point check is the usual visit.",
+  "btn": "Book my free inspection"
+ },
+ "svc": {
+  "h2": "What Bloor West Village & Swansea Homeowners Book Most",
+  "p": "Every job starts with the free 19-point inspection, so you only pay for what the chimney actually needs.",
+  "img": {
+   "src": "/svc-cleaning.jpg",
+   "alt": "Fireplace after a Northmark chimney sweep, floor clean"
+  },
+  "h3": "Chimney Cleaning",
+  "p-2": "<b>Fixes</b>Soot and creosote building up in the flue.",
+  "p-3": "A cleaner-burning fireplace, and no mess left behind.",
+  "img-2": {
+   "src": "/ba-masonry-after.jpg",
+   "alt": "Brick chimney after masonry repair"
+  },
+  "h3-2": "Masonry & Tuckpointing",
+  "p-4": "<b>Fixes</b>Open mortar joints, flaking brick, a worn crown.",
+  "p-5": "Repointed and matched to your brick.",
+  "img-3": {
+   "src": "/ba-caps-after.jpg",
+   "alt": "Brick chimney with a stainless chimney cap installed"
+  },
+  "h3-3": "Chimney Caps",
+  "p-6": "<b>Fixes</b>Rain, snow and animals getting into an open flue.",
+  "p-7": "A cap sized to your flue, not one-size-fits-all."
+ },
+ "faq": {
+  "h2": "Questions From Bloor West Village & Swansea",
+  "p": "Anything else — call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "Do you charge to come out to Bloor West Village & Swansea?",
+  "p-2": "No. The 19-point inspection at your home is free, and you get the photos and the report whether or not you go ahead with any work.",
+  "q-2": "Will the sweep make a mess in my house?",
+  "p-3": "No. Floors and the fireplace area are covered before any tool comes out, the vacuum runs while we sweep, and the area is left the way we found it — or cleaner.",
+  "q-3": "Do you work Saturdays and Sundays?",
+  "p-4": "Yes. Every day, {{site.hours}}, at the same price as a weekday.",
+  "q-4": "How much is a chimney sweep in Bloor West Village & Swansea?",
+  "p-5": "A standard chimney sweep is {{site.offer_price}} this winter, with the free 19-point inspection included. Repairs are priced at your home after the inspection, before any work starts. Call {{site.phone}} and we will confirm it for your chimney."
+ },
+ "near": {
+  "h2": "Nearby Areas We Serve",
+  "p": "Not on the list? Call and ask — we cover Toronto and most of the GTA."
+ },
+ "book": {
+  "h2": "Book In Bloor West Village & Swansea",
+  "p": "Tell us what is going on with your chimney and we will come and look at it, free.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

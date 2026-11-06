@@ -1,0 +1,4 @@
+tools/__pycache__/
+build/__pycache__/
+node_modules/
+.netlify/

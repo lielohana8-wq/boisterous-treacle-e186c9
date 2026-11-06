@@ -1,0 +1,241 @@
+{
+ "meta": {
+  "title": "Chimney Services Toronto & GTA — Free Inspection | Northmark",
+  "description": "Chimney cleaning, inspection and repair in Toronto & the GTA. Free inspection at your home: camera photos, a clear price before any work, no pressure."
+ },
+ "hero": {
+  "t": "Open 7 days across the GTA",
+  "h1": "Free Chimney Inspection In Toronto &amp; The GTA <em>We photograph every problem we find, and you get the price before we start.</em>",
+  "p": "Chimney cleaning, inspection and repair for homeowners across Toronto and the GTA. A WETT-certified technician checks 19 points inside and out, photographs what he finds and gives you the exact price — before anything starts. This winter a standard sweep is {{site.offer_price}}.",
+  "p-2": "<b>{{site.offer_price}}</b><span>Chimney sweep this winter — <b style=\"font-size:inherit\">free inspection included</b></span>",
+  "img": {
+   "src": "/home-hero.jpg",
+   "alt": "Rebuilt brick chimney with a new stainless cap, photographed by Northmark after the job"
+  }
+ },
+ "problems": {
+  "h2": "What’s Going On With Your Chimney?",
+  "p": "Pick the one that sounds like yours. Every one starts the same way: a free inspection, with photos.",
+  "h3": "Haven’t Had Your Chimney Cleaned?",
+  "p-2": "Soot and creosote build up every time you burn wood. If it’s been a year or more — or you don’t know — start with a sweep and a look inside.",
+  "h3-2": "Seeing Cracks Or Loose Bricks?",
+  "p-3": "Open mortar joints, a cracked crown or brick flaking off all let water in. Caught early, it’s usually a repair, not a rebuild.",
+  "h3-3": "Water Coming In?",
+  "p-4": "Stains near the fireplace, water in the firebox or a damp attic around the chimney usually point to the flashing, the crown or the cap.",
+  "h3-4": "Smoke Or Draft Problems?",
+  "p-5": "Smoke coming back into the room means something is in the way — buildup, a blockage or a liner problem. A camera inspection shows which.",
+  "h3-5": "Buying A Home?",
+  "p-6": "Have the chimney looked at before your conditions date. You get photos and a plain explanation of what you are buying.",
+  "h3-6": "Need A Chimney Cap?",
+  "p-7": "An open flue lets in rain, snow, leaves and animals. A cap measured to your flue keeps them out."
+ },
+ "services": {
+  "h2": "Chimney Services, From Sweep To Rebuild",
+  "p": "Every job starts with the free inspection, so you only pay for what your chimney actually needs.",
+  "img": {
+   "src": "/svc-cleaning.jpg",
+   "alt": "Fireplace after a Northmark chimney sweep, floor clean"
+  },
+  "h3": "Chimney Cleaning",
+  "p-2": "<b>Fixes</b>Soot and creosote building up in the flue.",
+  "p-3": "A cleaner-burning fireplace, and no mess left behind.",
+  "img-2": {
+   "src": "/svc-liner.jpg",
+   "alt": "Inspection camera view inside a chimney flue"
+  },
+  "h3-2": "Chimney Inspection",
+  "p-4": "<b>Fixes</b>Not knowing what shape your chimney is in.",
+  "p-5": "Camera photos and a plain-language answer. Free.",
+  "img-3": {
+   "src": "/ba-repairs-after.jpg",
+   "alt": "Brick chimney after repair work, Toronto area"
+  },
+  "h3-3": "Chimney Repair",
+  "p-6": "<b>Fixes</b>Cracked crowns, damaged fireboxes, water getting in.",
+  "p-7": "Fixed once, with materials matched to your home.",
+  "img-4": {
+   "src": "/ba-caps-after.jpg",
+   "alt": "Brick chimney with a stainless chimney cap installed"
+  },
+  "h3-4": "Chimney Caps",
+  "p-8": "<b>Fixes</b>Rain, snow and animals getting into an open flue.",
+  "p-9": "A cap sized to your flue, not one-size-fits-all.",
+  "img-5": {
+   "src": "/about-van.jpg",
+   "alt": "Brick chimney with a cap on a GTA home"
+  },
+  "h3-5": "Chimney Liners",
+  "p-10": "<b>Fixes</b>A cracked, damaged or missing flue liner.",
+  "p-11": "Heat and smoke vented the way they should be.",
+  "img-6": {
+   "src": "/ba-masonry-after.jpg",
+   "alt": "Brick chimney after masonry repair"
+  },
+  "h3-6": "Masonry & Tuckpointing",
+  "p-12": "<b>Fixes</b>Open mortar joints, flaking brick, a worn crown.",
+  "p-13": "Repointed and matched to your brick.",
+  "img-7": {
+   "src": "/ba-flashing-after.jpg",
+   "alt": "Stone chimney with new crown and flashing at the roofline"
+  },
+  "h3-7": "Flashing & Waterproofing",
+  "p-14": "<b>Fixes</b>Leaks where the chimney meets the roof.",
+  "p-15": "Flashing replaced properly — no tar-over shortcuts.",
+  "img-8": {
+   "src": "/ba-cleaning-after.jpg",
+   "alt": "Brick chimney with two stainless caps, well maintained"
+  },
+  "h3-8": "Chimney Maintenance",
+  "p-16": "<b>Fixes</b>Small problems that grow over a winter.",
+  "p-17": "A yearly sweep and check, with photos to compare.",
+  "img-9": {
+   "src": "/g-07.jpg",
+   "alt": "Gas fireplace serviced by Northmark"
+  },
+  "h3-9": "Fireplace Repair",
+  "p-18": "<b>Fixes</b>A cracked firebox, a stuck damper, a gas fireplace that won’t light.",
+  "p-19": "Back in safe working order."
+ },
+ "why": {
+  "h2": "Why Homeowners Choose Northmark",
+  "p": "What you can expect on every visit — not promises, just how we work.",
+  "h3": "WETT-Certified",
+  "p-2": "Our work is carried out by a WETT-certified technician — the Wood Energy Technology Transfer certification Canadian insurers and home inspectors recognise.",
+  "h3-2": "See What We See",
+  "p-3": "A camera goes inside the flue. You get the photos, so you are not taking our word for it.",
+  "h3-3": "Know The Price Before Work Starts",
+  "p-4": "The technician gives you the exact price at your home, after the inspection. Nothing starts until you say yes.",
+  "h3-4": "No Pressure",
+  "p-5": "If something doesn’t need fixing, we tell you. If it can wait, we tell you that too.",
+  "h3-5": "Your Home Protected",
+  "p-6": "Floors and the fireplace area are covered before any tool comes out. We leave it the way we found it — or cleaner.",
+  "h3-6": "Warranty On Materials & Labour",
+  "p-7": "Every job is covered — the materials we use and the work we do. If something we installed fails, we come back."
+ },
+ "how": {
+  "h2": "From “Something’s Wrong” To “I Know Exactly What I’m Paying For.”",
+  "p": "Four steps. No guessing, no surprise invoice.",
+  "h3": "Tell Us What’s Going On",
+  "p-2": "Call or send the form. Describe what you’re seeing — smoke, water, cracks, or just “it’s been a while.”",
+  "h3-2": "Free Inspection At Your Home",
+  "p-3": "A technician comes out and checks the chimney, outside and inside the flue with a camera.",
+  "h3-3": "See The Photos + Get A Clear Price",
+  "p-4": "We show you what we found, explain what matters and what can wait, and give you the exact price.",
+  "h3-4": "Approve The Work, Then We Get It Done",
+  "p-5": "Nothing starts without your OK. The work is done properly and the area is left clean.",
+  "btn": "Book my free inspection",
+  "p-6": "or call <a class=\"tl\" href=\"tel:{{site.phone_tel}}\">{{site.phone}}</a> — Every Day {{site.hours}}."
+ },
+ "work": {
+  "h2": "Before & After: Real Northmark Work",
+  "p": "Photos from our own jobs across Toronto and the GTA — no stock images.",
+  "img": {
+   "src": "/ba-flashing-before.jpg",
+   "alt": "Before: stone chimney with a worn crown and weathered joints"
+  },
+  "t": "Before",
+  "img-2": {
+   "src": "/ba-flashing-after.jpg",
+   "alt": "After: the same stone chimney with a new crown and flashing"
+  },
+  "t-2": "After",
+  "t-3": "Flashing & Waterproofing",
+  "h3": "A weathered crown and worn joints on a stone chimney",
+  "dt": "Where",
+  "dd": "Toronto & GTA",
+  "dt-2": "The Problem",
+  "dd-2": "A weathered crown and worn joints on a stone chimney.",
+  "dt-3": "What We Did",
+  "dd-3": "New crown, joints filled, and the chimney sealed where it meets the roof.",
+  "dt-4": "The Result",
+  "dd-4": "Water-shedding crown and a sealed roofline on the same chimney.",
+  "btn": "About Flashing & Waterproofing",
+  "img-3": {
+   "src": "/g-01.jpg",
+   "alt": "Crown & brick rebuild in North York"
+  },
+  "cap": "Crown &amp; brick rebuild<span>North York</span>",
+  "img-4": {
+   "src": "/g-03.jpg",
+   "alt": "Stainless multi-flue cap in Etobicoke"
+  },
+  "cap-2": "Stainless multi-flue cap<span>Etobicoke</span>",
+  "img-5": {
+   "src": "/g-06.jpg",
+   "alt": "Tuckpointing above roofline in Richmond Hill"
+  },
+  "cap-3": "Tuckpointing above roofline<span>Richmond Hill</span>",
+  "p-2": "More before-and-after photos, recent jobs by area and all project case studies.",
+  "btn-2": "See all our work",
+  "btn-3": "All case studies"
+ },
+ "areas": {
+  "t": "Service Area",
+  "p": "<a class=\"xl\" href=\"{{site.google_profile}}\" target=\"_blank\" rel=\"noopener\">Open Northmark On Google Maps</a><a class=\"xl\" href=\"{{site.google_profile}}\" target=\"_blank\" rel=\"noopener\">See Our Google Reviews</a>",
+  "h2": "Serving Homeowners Across Toronto & The GTA",
+  "p-2": "Northmark is a local chimney company. We work across Toronto, the GTA and out to Oakville, Oshawa and Newmarket — every day of the week, {{site.hours}}. The inspection visit to your home is free.",
+  "li": "Toronto",
+  "li-2": "York",
+  "li-3": "<a href=\"/chimney-services-east-york\">East York</a>",
+  "li-4": "<a href=\"/chimney-services-north-york\">North York</a>",
+  "li-5": "<a href=\"/chimney-services-scarborough\">Scarborough</a>",
+  "li-6": "<a href=\"/chimney-services-etobicoke\">Etobicoke</a>",
+  "li-7": "<a href=\"/chimney-services-mississauga\">Mississauga</a>",
+  "li-8": "Brampton",
+  "li-9": "<a href=\"/chimney-services-vaughan\">Vaughan</a>",
+  "li-10": "Concord",
+  "li-11": "Thornhill",
+  "li-12": "<a href=\"/chimney-services-richmond-hill\">Richmond Hill</a>",
+  "li-13": "<a href=\"/chimney-services-markham\">Markham</a>",
+  "p-3": "<b>Also serving:</b> Oakville · Burlington · Milton · Halton Hills · Caledon · Ajax · Pickering · Whitby · Oshawa · Clarington · Newmarket · Aurora · King City · Stouffville · Uxbridge",
+  "p-4": "Not sure if we service your area? <a href=\"tel:{{site.phone_tel}}\">Give us a call.</a>",
+  "btn": "Book my free inspection"
+ },
+ "faq": {
+  "h2": "Questions Homeowners Ask Before They Call",
+  "p": "Straight answers. Anything else, call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "Are you WETT-certified?",
+  "p-2": "Yes. The work is carried out by a WETT-certified technician — the certification Canadian insurers and home inspectors ask about.",
+  "q-2": "Will the sweep make a mess in my house?",
+  "p-3": "No. Floors and the fireplace area are covered before any tool comes out, the vacuum runs the whole time we sweep, and the area is left the way we found it — or cleaner. That is step one of every visit, not an extra.",
+  "q-3": "Is the inspection really free, or is there a catch?",
+  "p-4": "It is free. A technician comes to your home, works through the 19-point check and gives you the price on the spot. If you decide not to go ahead, you pay nothing and you still have the photos and the report.",
+  "q-4": "Will you try to sell me a repair I don’t need?",
+  "p-5": "No. If something doesn’t need fixing, we say so, and if it can wait, we tell you that too. You see the photos of whatever we do recommend, so you are not taking our word for it.",
+  "q-5": "Do you work Saturdays and Sundays?",
+  "p-6": "Yes. We work every day, {{site.hours}}, weekends included — at the same price as a weekday.",
+  "q-6": "How long does a sweep take?",
+  "p-7": "It depends on the chimney’s condition and access. We give you a realistic window when we confirm the booking, and we stay until it is done properly.",
+  "q-7": "What if you find something during the sweep?",
+  "p-8": "We show you the photos, explain what it means, and give you a price for the repair. What happens next is your call — the sweep is still {{site.offer_price}} either way.",
+  "q-8": "What happens during the inspection?",
+  "p-9": "We cover the area around the fireplace, check the firebox, damper and smoke chamber, look inside the flue with a camera, and check the cap, crown, brick and flashing from the roof. Then we show you the photos and explain what we found.",
+  "q-9": "Do I get photos?",
+  "p-10": "Yes. Every issue we find is photographed, so you see exactly what we see. The photos are yours to keep.",
+  "q-10": "Do I have to approve repairs right away?",
+  "p-11": "No. You get the price at the inspection, and nothing starts without your OK. If you want time to think it over, that is fine.",
+  "q-11": "How much does chimney cleaning cost?",
+  "p-12": "This winter, a standard chimney sweep is {{site.offer_price}}, with the inspection included. Chimneys differ, so we confirm the price for yours before booking. <a href=\"/chimney-service-prices-toronto\">How we price the work</a>.",
+  "q-12": "How much does chimney repair cost?",
+  "p-13": "It depends on what is damaged and how the chimney is reached, so we don’t publish blind numbers. The inspection is free, and you get the exact price at your home before any work begins.",
+  "q-13": "How often should I clean my chimney?",
+  "p-14": "Most wood-burning chimneys benefit from a yearly cleaning, but it depends on how much you burn, what you burn, and the chimney’s condition. After seeing yours, we’ll recommend an honest schedule — sometimes that means less often, not more.",
+  "q-14": "Can you inspect a chimney before I buy a home?",
+  "p-15": "Yes. Tell us your timeline and we’ll do our best to fit the visit before your conditions date. You get photos and a written summary. If your lender or insurer asks for a specific type of report, check what they require first, so we can tell you whether ours fits.",
+  "q-15": "Can you repair cracked brick and mortar?",
+  "p-16": "Yes. Repointing (tuckpointing), brick replacement, crown repair and rebuilds above the roofline — matched as closely as possible to your home’s existing brick.",
+  "q-16": "Do you install chimney caps?",
+  "p-17": "Yes. Caps keep water, animals and debris out of the flue, and they are sized to your specific flue — not one-size-fits-all.",
+  "q-17": "Is the work covered by a warranty?",
+  "p-18": "Yes. Every job carries a warranty on both the materials we use and the labour. If something we installed fails, we come back and put it right.",
+  "q-18": "How quickly can you come?",
+  "p-19": "It depends on the season and your area. We work every day, {{site.hours}}. Call {{site.phone}} or send the form and we’ll give you the earliest real time we have.",
+  "q-19": "What areas do you serve?",
+  "p-20": "Toronto, York, East York, North York, Scarborough, Etobicoke, Mississauga, Brampton, Vaughan, Concord, Thornhill, Richmond Hill and Markham. Not sure about your street? Call and ask."
+ },
+ "book-bottom": {
+  "h2": "See What Your Chimney Actually Needs.",
+  "p": "Book a free inspection. We’ll show you what we find, explain what matters, and give you a clear price before any work starts.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

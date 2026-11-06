@@ -1,0 +1,89 @@
+{
+ "meta": {
+  "title": "Chimney Services North York | Northmark Chimney",
+  "description": "Chimney cleaning, inspection and repair in North York. Free inspection at your home, camera photos, and the price before any work. Call {{site.phone}}."
+ },
+ "hero": {
+  "t": "North York",
+  "h1": "Chimney Services In North York",
+  "p": "Chimney cleaning, inspection and repair for homeowners in North York. The inspection visit is free, you see photos of what we find, and you get the price before anything starts.",
+  "btn": "Book my free inspection",
+  "t-2": "<b>Free 19-point inspection at your home</b> — a real look, then a price on the spot",
+  "t-3": "<b>Camera photos you keep</b> — you see what we see, before any work",
+  "t-4": "<b>Open every day</b> — {{site.hours}}, Saturdays and Sundays included",
+  "img": {
+   "src": "/popup-chimney.jpg",
+   "alt": "Brick chimney with repointed joints, a sealed crown and a new stainless cap, finished by Northmark"
+  }
+ },
+ "job": {
+  "img": {
+   "src": "/g-01.jpg",
+   "alt": "Masonry and tuckpointing on a chimney in North York"
+  },
+  "cap": "Masonry and tuckpointing<span>North York</span>",
+  "h2": "Chimneys In North York",
+  "p": "Post-war brick chimneys are common here, and after sixty-odd winters the mortar joints are usually the first thing to go.",
+  "p-2": "The photo is a job we completed in North York — masonry and tuckpointing. If your chimney has a similar problem, the visit starts the same way: we come out, look at it, and tell you what it needs and what it costs.",
+  "btn": "Book my free inspection",
+  "btn-2": "About Masonry & Tuckpointing"
+ },
+ "svc": {
+  "h2": "Chimney Services For North York Homes",
+  "p": "What we are asked for most here. Every job starts with the free inspection.",
+  "img": {
+   "src": "/ba-masonry-after.jpg",
+   "alt": "Brick chimney after masonry repair"
+  },
+  "h3": "Masonry & Tuckpointing",
+  "p-2": "<b>Fixes</b>Open mortar joints, flaking brick, a worn crown.",
+  "p-3": "Repointed and matched to your brick.",
+  "img-2": {
+   "src": "/ba-repairs-after.jpg",
+   "alt": "Brick chimney after repair work, Toronto area"
+  },
+  "h3-2": "Chimney Repair",
+  "p-4": "<b>Fixes</b>Cracked crowns, damaged fireboxes, water getting in.",
+  "p-5": "Fixed once, with materials matched to your home.",
+  "img-3": {
+   "src": "/svc-cleaning.jpg",
+   "alt": "Fireplace after a Northmark chimney sweep, floor clean"
+  },
+  "h3-3": "Chimney Cleaning",
+  "p-6": "<b>Fixes</b>Soot and creosote building up in the flue.",
+  "p-7": "A cleaner-burning fireplace, and no mess left behind.",
+  "p-8": "Also in North York: ",
+  "li": "<a href=\"/chimney-inspection-toronto\">Chimney Inspection</a>",
+  "li-2": "<a href=\"/chimney-cap-installation-toronto\">Chimney Caps</a>",
+  "li-3": "<a href=\"/chimney-liner-toronto\">Chimney Liners</a>",
+  "li-4": "<a href=\"/chimney-flashing-toronto\">Flashing &amp; Waterproofing</a>",
+  "li-5": "<a href=\"/chimney-maintenance-toronto\">Chimney Maintenance</a>",
+  "li-6": "<a href=\"/fireplace-repair-toronto\">Fireplace Repair</a>"
+ },
+ "faq": {
+  "h2": "Questions From North York",
+  "p": "Anything else — call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "Do you charge to come out to North York?",
+  "p-2": "No. The inspection visit is free, at your home. A technician looks at the chimney, shows you what they found, and gives you a price on the spot. You decide from there.",
+  "q-2": "How soon can you get to North York?",
+  "p-3": "Call {{site.phone}} and we will give you the earliest real slot for your area. We work every day, {{site.hours}}.",
+  "q-3": "Do you do both wood-burning and gas fireplaces?",
+  "p-4": "Yes. They need different attention, so tell us which you have when you call and we will send the right person.",
+  "q-4": "Will the sweep make a mess in my house?",
+  "p-5": "No. Floors and the fireplace area are covered before any tool comes out, the vacuum runs while we sweep, and the area is left the way we found it — or cleaner.",
+  "q-5": "Do you work Saturdays and Sundays?",
+  "p-6": "Yes. Every day, {{site.hours}}, at the same price as a weekday.",
+  "q-6": "What chimney work do you do in North York?",
+  "p-7": "The same as everywhere we work: cleaning, inspections, repairs, caps, liners, masonry and tuckpointing, flashing, maintenance and fireplace repair. Every job starts with the free inspection."
+ },
+ "near": {
+  "h2": "Nearby Areas We Serve",
+  "p": "Not on the list? Call and ask — we cover Toronto and most of the GTA.",
+  "p-2": "<a class=\"xl\" href=\"{{site.google_profile}}\" target=\"_blank\" rel=\"noopener\" style=\"color:#fff\">Open Northmark On Google Maps</a>"
+ },
+ "book": {
+  "h2": "Book In North York",
+  "p": "Tell us what is going on with your chimney and we will come and look at it, free.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}

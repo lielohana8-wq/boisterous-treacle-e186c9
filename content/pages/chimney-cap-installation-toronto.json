@@ -1,0 +1,119 @@
+{
+ "meta": {
+  "title": "Chimney Cap Installation Toronto | Northmark Chimney",
+  "description": "Chimney cap installation in Toronto & the GTA. Caps measured to your flue keep rain, snow, animals and debris out. Free inspection, price before work."
+ },
+ "hero": {
+  "t": "Chimney Caps",
+  "h1": "Chimney Caps In Toronto",
+  "p": "An open flue lets in rain, snow, leaves and animals. A cap sized to your chimney keeps them out — single-flue, multi-flue or custom, measured on the roof, not guessed from the driveway.",
+  "t-2": "<b>Measured on the roof</b> — to your flue size and count",
+  "t-3": "<b>Old or rusted cap</b> — removed and taken away",
+  "t-4": "<b>Screened</b> — to keep animals and debris out"
+ },
+ "signs": {
+  "h2": "Signs You Need A Chimney Cap",
+  "p": "A cap is the simplest protection a chimney can get.",
+  "h3": "No Cap At All",
+  "p-2": "The flue is open to the sky, so rain, snow and debris go straight down.",
+  "h3-2": "A Rusted Or Bent Cap",
+  "p-3": "Rust and storm damage let water and animals through.",
+  "h3-3": "Animals In The Chimney",
+  "p-4": "Scratching or nesting sounds usually mean the flue is open. If something is nesting, we deal with that first.",
+  "h3-4": "Water In The Firebox",
+  "p-5": "Rain coming straight down the flue often means a missing or damaged cap.",
+  "h3-5": "Leaves In The Fireplace",
+  "p-6": "If debris is landing in the firebox, it is coming in from the top.",
+  "p-7": "Not sure which one you’re seeing? That is what the free inspection is for. <a href=\"#book\">Book it here</a> or call <a href=\"tel:{{site.phone_tel}}\">{{site.phone}}</a>."
+ },
+ "inc": {
+  "h2": "What Cap Installation Includes",
+  "li": "Flue size and count measured on the roof",
+  "li-2": "Single-flue, multi-flue or custom cap",
+  "li-3": "Old cap removed and taken away",
+  "li-4": "Cap fastened and sealed weather-tight",
+  "li-5": "Screen to keep animals and debris out",
+  "li-6": "Draft checked, photos of the finished install",
+  "img": {
+   "src": "/g-03.jpg",
+   "alt": "Stainless multi-flue chimney cap installed in Etobicoke"
+  }
+ },
+ "how": {
+  "h2": "How We Install A Chimney Cap",
+  "p": "Every visit starts with protecting your home and ends with photos and a clean work area.",
+  "h3": "Measure",
+  "p-2": "Flue dimensions and count measured on the roof — not guessed from the ground.",
+  "h3-2": "Remove",
+  "p-3": "The old or rusted cap taken off and hauled away.",
+  "h3-3": "Fit",
+  "p-4": "The new cap seated on the flue or crown, fastened and sealed weather-tight.",
+  "h3-4": "Verify",
+  "p-5": "Draft checked, screen clear, everything photographed for you."
+ },
+ "proof": {
+  "h2": "Real Work, Real Photos",
+  "p": "From our own jobs — not stock photography.",
+  "img": {
+   "src": "/g-03.jpg",
+   "alt": "Stainless multi-flue cap installed in Etobicoke"
+  },
+  "cap": "Stainless multi-flue cap<span>Etobicoke</span>",
+  "img-2": {
+   "src": "/g-05.jpg",
+   "alt": "New stainless cap and crown seal in Vaughan"
+  },
+  "cap-2": "New stainless cap &amp; crown seal<span>Vaughan</span>",
+  "img-3": {
+   "src": "/ba-caps-after.jpg",
+   "alt": "Chimney cap installed on a brick chimney"
+  },
+  "cap-3": "Chimney cap<span>Toronto &amp; GTA</span>",
+  "p-2": "See more before-and-after photos and recent jobs.",
+  "btn": "See all our work"
+ },
+ "faq": {
+  "h2": "Questions About Chimney Caps",
+  "p": "Anything else — call <a href=\"tel:{{site.phone_tel}}\" style=\"font-weight:800;color:var(--ink);white-space:nowrap\">{{site.phone}}</a>.",
+  "q": "Do I really need a chimney cap?",
+  "p-2": "If the flue is open to the sky, water, snow, animals and debris are getting in. A cap is the simplest protection a chimney can get.",
+  "q-2": "Which cap is right for my chimney?",
+  "p-3": "It depends on your flue size, the number of flues and the fuel. We measure on the roof and recommend the right fit — single, multi-flue or custom.",
+  "q-3": "Will a cap stop squirrels and raccoons?",
+  "p-4": "A properly installed cap with screening keeps animals out. If something is already nesting inside, we deal with that first.",
+  "q-4": "Will a cap affect drafting?",
+  "p-5": "A correctly sized cap won’t hurt draft — a wrong one can. That is why we size to the flue instead of guessing.",
+  "q-5": "How long does installation take?",
+  "p-6": "Usually a single short visit once the right cap is on hand. We confirm timing when we call you back."
+ },
+ "rel": {
+  "h2": "Often Booked Together",
+  "p": "One visit, one crew. Most jobs combine two of these.",
+  "img": {
+   "src": "/ba-flashing-after.jpg",
+   "alt": "Stone chimney with new crown and flashing at the roofline"
+  },
+  "h3": "Flashing & Waterproofing",
+  "p-2": "<b>Fixes</b>Leaks where the chimney meets the roof.",
+  "p-3": "Flashing replaced properly — no tar-over shortcuts.",
+  "img-2": {
+   "src": "/ba-masonry-after.jpg",
+   "alt": "Brick chimney after masonry repair"
+  },
+  "h3-2": "Masonry & Tuckpointing",
+  "p-4": "<b>Fixes</b>Open mortar joints, flaking brick, a worn crown.",
+  "p-5": "Repointed and matched to your brick.",
+  "img-3": {
+   "src": "/svc-cleaning.jpg",
+   "alt": "Fireplace after a Northmark chimney sweep, floor clean"
+  },
+  "h3-3": "Chimney Cleaning",
+  "p-6": "<b>Fixes</b>Soot and creosote building up in the flue.",
+  "p-7": "A cleaner-burning fireplace, and no mess left behind."
+ },
+ "book-bottom": {
+  "h2": "Cap It Right",
+  "p": "Tell us what’s on top of your chimney right now — or what isn’t — and we’ll take it from there.",
+  "p-2": "Every Day {{site.hours}}. If we miss your call, we call right back."
+ }
+}
