@@ -1,6 +1,6 @@
 /* Shared helpers for the admin functions. Requests from the admin pages carry the Netlify
    Identity JWT; Netlify verifies it and exposes the user on context.clientContext.user. */
-const { getStore } = require("@netlify/blobs");
+const { getStore, connectLambda } = require("@netlify/blobs");
 
 function user(context) {
   const u = context && context.clientContext && context.clientContext.user;
@@ -24,4 +24,4 @@ async function siteId(token) {
   return s.id;
 }
 
-module.exports = { user, json, store, siteId };
+module.exports = { user, json, store, siteId, connectLambda };

@@ -1,10 +1,11 @@
 /* Which days / time windows the booking form may offer.
    GET  (public)  -> { blocked: { "2026-11-12": ["all"] | ["Morning (7:00 – 11:00)", ...] }, closed_weekdays: [6], max_days: 60, lead_days: 0 }
    PUT  (admin)   -> replaces the whole object */
-const { user, json, store } = require("./_auth");
+const { user, json, store, connectLambda } = require("./_auth");
 const DEFAULT = { blocked: {}, closed_weekdays: [], max_days: 60, lead_days: 0 };
 
 exports.handler = async (event, context) => {
+  connectLambda(event);
   const s = store();
   if (event.httpMethod === "GET") {
     const v = (await s.get("availability", { type: "json" })) || DEFAULT;

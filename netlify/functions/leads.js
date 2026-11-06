@@ -2,10 +2,11 @@
    status / note the owner keeps per lead.
    GET   (admin) -> [{ id, created_at, name, phone, visit_date, visit_time, address, service, message, status, note, ... }]
    PATCH (admin) -> { id, status?, note?, visit_date?, visit_time? } updates the owner's notes */
-const { user, json, store, siteId } = require("./_auth");
+const { user, json, store, siteId, connectLambda } = require("./_auth");
 const FORM = "inspection-request";
 
 exports.handler = async (event, context) => {
+  connectLambda(event);
   if (!user(context)) return json(401, { error: "login required" });
   const token = process.env.NETLIFY_API_TOKEN;
   const s = store();
