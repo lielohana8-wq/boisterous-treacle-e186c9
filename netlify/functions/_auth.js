@@ -8,7 +8,7 @@ const cache = new Map(); // token -> { user, until }
 
 async function user(event) {
   const h = (event && event.headers) || {};
-  const m = String(h.authorization || h.Authorization || "").match(/^Bearers+(.+)$/i);
+  const m = String(h.authorization || h.Authorization || "").match(/^Bearer\s+(.+)$/i);
   if (!m) return null;
   const token = m[1].trim();
   const hit = cache.get(token);
