@@ -8,7 +8,6 @@ const FORM = "inspection-request";
 exports.handler = async (event, context) => {
   connectLambda(event);
   if (!(await user(event))) return json(401, { error: "login required" });
-  const token = process.env.NETLIFY_API_TOKEN;
   const s = store();
   if (event.httpMethod === "PATCH") {
     let body; try { body = JSON.parse(event.body || "{}"); } catch (e) { return json(400, { error: "bad json" }); }
@@ -21,27 +20,37 @@ exports.handler = async (event, context) => {
     return json(200, m);
   }
   if (event.httpMethod !== "GET") return json(405, { error: "method" });
-  if (!token) return json(500, { error: "NETLIFY_API_TOKEN is not set (Site settings → Environment variables)" });
-  const site = await siteId(token);
-  const h = { authorization: "Bearer " + token };
-  const forms = await (await fetch(`https://api.netlify.com/api/v1/sites/${site}/forms`, { headers: h })).json();
-  const form = (forms || []).find(f => f.name === FORM);
-  if (!form) return json(200, []);
-  let subs = [];
-  for (let page = 1; page <= 5; page++) {
-    const r = await fetch(`https://api.netlify.com/api/v1/forms/${form.id}/submissions?per_page=100&page=${page}`, { headers: h });
-    if (!r.ok) break;
-    const batch = await r.json(); subs = subs.concat(batch);
-    if (batch.length < 100) break;
+  const byId = {};
+  // 1. Leads saved by submission-created.js (no token needed).
+  const { blobs } = await s.list({ prefix: "lead/" });
+  const saved = await Promise.all(blobs.map(b => s.get(b.key, { type: "json" })));
+  for (const l of saved) if (l && l.id) byId[l.id] = l;
+  // 2. Optional: older submissions straight from Netlify Forms, if an API token is configured.
+  const token = process.env.NETLIFY_API_TOKEN;
+  if (token) {
+    try {
+      const site = await siteId(token);
+      const h = { authorization: "Bearer " + token };
+      const forms = await (await fetch(`https://api.netlify.com/api/v1/sites/${site}/forms`, { headers: h })).json();
+      const form = (forms || []).find(f => f.name === FORM);
+      for (let page = 1; form && page <= 5; page++) {
+        const r = await fetch(`https://api.netlify.com/api/v1/forms/${form.id}/submissions?per_page=100&page=${page}`, { headers: h });
+        if (!r.ok) break;
+        const batch = await r.json();
+        for (const x of batch) {
+          if (byId[x.id]) continue;
+          const d = x.data || {};
+          byId[x.id] = { id: x.id, created_at: x.created_at, name: d.name || x.name || "", phone: d.phone || "", email: d.email || "",
+            visit_date: d.visit_date || "", visit_time: d.visit_time || "", address: d.address || "", service: d.service || "",
+            message: d.message || "", page: d.referrer || x.referrer || "" };
+        }
+        if (batch.length < 100) break;
+      }
+    } catch (e) { /* the saved leads are still returned */ }
   }
   const meta = (await s.get("leads-meta", { type: "json" })) || {};
-  const out = subs.map(x => {
-    const d = x.data || {};
-    return Object.assign({
-      id: x.id, created_at: x.created_at, name: d.name || x.name || "", phone: d.phone || "", email: d.email || "",
-      visit_date: d.visit_date || "", visit_time: d.visit_time || "", address: d.address || "", service: d.service || "",
-      message: d.message || "", page: d.referrer || x.referrer || "", status: "new", note: "",
-    }, meta[x.id] || {});
-  });
+  const out = Object.values(byId)
+    .map(l => Object.assign({ status: "new", note: "" }, l, meta[l.id] || {}))
+    .sort((x, y) => String(y.created_at).localeCompare(String(x.created_at)));
   return json(200, out);
 };
