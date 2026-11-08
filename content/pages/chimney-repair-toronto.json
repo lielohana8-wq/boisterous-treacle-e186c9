@@ -9,7 +9,11 @@
   "p": "Cracked crowns, crumbling mortar, water getting in, a failing firebox or smoke chamber. We show you the damage with photos, tell you what is urgent and what can wait, and give you the price before any work starts.",
   "t-2": "<b>Damage shown with photos</b> — before any price is set",
   "t-3": "<b>Urgent or can-wait</b> — explained honestly",
-  "t-4": "<b>Materials matched</b> — to your home"
+  "t-4": "<b>Materials matched</b> — to your home",
+  "img": {
+   "src": "/ba-repairs-after.jpg",
+   "alt": "Brick chimney repaired above the roofline, new cap fitted"
+  }
  },
  "signs": {
   "h2": "Signs Your Chimney Needs Repair",

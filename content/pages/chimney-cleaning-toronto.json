@@ -10,7 +10,11 @@
   "p-2": "<b>{{site.offer_price}}</b><span>Winter chimney sweep — free inspection included</span>",
   "t-2": "<b>Flue, smoke chamber and firebox</b> — swept and vacuumed",
   "t-3": "<b>Photos of the flue</b> — before you decide anything else",
-  "t-4": "<b>Floors covered</b> — and the area left clean"
+  "t-4": "<b>Floors covered</b> — and the area left clean",
+  "img": {
+   "src": "/hero-fire.jpg",
+   "alt": "Wood-burning fireplace lit after a Northmark chimney sweep"
+  }
  },
  "signs": {
   "h2": "Signs Your Chimney Needs A Sweep",

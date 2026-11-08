@@ -24,28 +24,28 @@
   }
  },
  "w": {
-  "h2": "Before & After: Real Northmark Work",
+  "h2": "Real Northmark Work",
   "p": "Our own photos from homes across Toronto and the GTA.",
   "img": {
    "src": "/ba-flashing-before.jpg",
-   "alt": "Before: stone chimney with a worn crown and weathered joints"
+   "alt": "Restored stone chimney at the roofline: repointed stone, new concrete top and sealed flashing"
   },
-  "t": "Before",
+  "t": "Roofline",
   "img-2": {
    "src": "/ba-flashing-after.jpg",
-   "alt": "After: the same stone chimney with a new crown and flashing"
+   "alt": "The same stone chimney from above: new concrete top and crown with a stainless steel cap"
   },
-  "t-2": "After",
+  "t-2": "Top & cap",
   "t-3": "Flashing & Waterproofing",
-  "h3": "A weathered crown and worn joints on a stone chimney",
+  "h3": "A stone chimney restored: concrete top, stainless cap, joints repointed",
   "dt": "Where",
   "dd": "Toronto & GTA",
   "dt-2": "The Problem",
-  "dd-2": "A weathered crown and worn joints on a stone chimney.",
+  "dd-2": "Washed-out joints and a failing top on a fieldstone chimney.",
   "dt-3": "What We Did",
-  "dd-3": "New crown, joints filled, and the chimney sealed where it meets the roof.",
+  "dd-3": "Repointed the stone, rebuilt the top in concrete with a crown, fitted a stainless cap and sealed the roofline.",
   "dt-4": "The Result",
-  "dd-4": "Water-shedding crown and a sealed roofline on the same chimney.",
+  "dd-4": "Weather-tight, with the original stone preserved. Both photos show the finished chimney.",
   "btn": "Book my free inspection"
  },
  "why": {

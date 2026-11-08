@@ -9,7 +9,11 @@
   "p": "Cracked firebox panels, crumbling mortar, a damper that won’t seal, a gas fireplace that won’t light or stay lit. We work on the part of the system you actually sit in front of — wood-burning and gas.",
   "t-2": "<b>Wood-burning and gas</b> — fireplaces",
   "t-3": "<b>Firebox, damper</b> — and smoke chamber",
-  "t-4": "<b>Safety issues first</b> — explained in plain language"
+  "t-4": "<b>Safety issues first</b> — explained in plain language",
+  "img": {
+   "src": "/gas-fireplace-burner-installation-gta.jpg",
+   "alt": "Gas burner on its first test burn inside an existing fireplace"
+  }
  },
  "signs": {
   "h2": "Signs Your Fireplace Needs Repair",

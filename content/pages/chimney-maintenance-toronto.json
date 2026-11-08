@@ -10,7 +10,11 @@
   "p-2": "<b>{{site.offer_price}}</b><span>Winter chimney sweep — free inspection included</span>",
   "t-2": "<b>Sweep and full check</b> — in one visit",
   "t-3": "<b>Photos logged</b> — to compare year to year",
-  "t-4": "<b>Best booked</b> — before the first cold snap"
+  "t-4": "<b>Best booked</b> — before the first cold snap",
+  "img": {
+   "src": "/ba-cleaning-after.jpg",
+   "alt": "Brick chimney with a stainless cap after a maintenance visit"
+  }
  },
  "signs": {
   "h2": "Who Yearly Maintenance Is For",

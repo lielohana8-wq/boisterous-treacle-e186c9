@@ -9,7 +9,11 @@
   "p": "Not sure what shape your chimney is in? We check it top to bottom — inside the flue with a camera — and show you the photos. You find out what needs attention, what can wait and what is fine. Free, with no obligation.",
   "t-2": "<b>Camera inside the flue</b> — photos you keep",
   "t-3": "<b>What’s urgent, what can wait</b> — and what is fine",
-  "t-4": "<b>Buying or selling?</b> — know before your conditions date"
+  "t-4": "<b>Buying or selling?</b> — know before your conditions date",
+  "img": {
+   "src": "/g-03.jpg",
+   "alt": "Brick chimney above the roofline during a Northmark inspection"
+  }
  },
  "when": {
   "h2": "When To Book A Chimney Inspection",

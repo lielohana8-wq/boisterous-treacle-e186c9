@@ -10,8 +10,8 @@
   "p-2": "<b>{{site.offer_price}}</b><span>Standard chimney sweep — <b style=\"font-size:inherit\">free inspection included</b></span>",
   "btn": "Book my free inspection",
   "img": {
-   "src": "/svc-cleaning.jpg",
-   "alt": "Clean fireplace and hearth after a Northmark chimney sweep"
+   "src": "/g-08.jpg",
+   "alt": "Fire burning cleanly in a swept fireplace"
   }
  },
  "inc": {

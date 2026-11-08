@@ -9,7 +9,11 @@
   "p": "Toronto freeze-thaw is hard on brick. We repoint worn joints, replace damaged brick, repair crowns and rebuild above the roofline when it comes to that — matched as closely as possible to your home’s original brick.",
   "t-2": "<b>Joints cut out and repointed</b> — not smeared over",
   "t-3": "<b>Brick matched</b> — as closely as possible",
-  "t-4": "<b>From one joint</b> — to a rebuild above the roofline"
+  "t-4": "<b>From one joint</b> — to a rebuild above the roofline",
+  "img": {
+   "src": "/g-01.jpg",
+   "alt": "Rebuilt brick chimney with fresh mortar joints and a new cap"
+  }
  },
  "signs": {
   "h2": "Signs Your Chimney Masonry Needs Work",

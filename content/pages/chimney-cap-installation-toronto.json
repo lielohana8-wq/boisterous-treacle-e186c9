@@ -9,7 +9,11 @@
   "p": "An open flue lets in rain, snow, leaves and animals. A cap sized to your chimney keeps them out — single-flue, multi-flue or custom, measured on the roof, not guessed from the driveway.",
   "t-2": "<b>Measured on the roof</b> — to your flue size and count",
   "t-3": "<b>Old or rusted cap</b> — removed and taken away",
-  "t-4": "<b>Screened</b> — to keep animals and debris out"
+  "t-4": "<b>Screened</b> — to keep animals and debris out",
+  "img": {
+   "src": "/ba-caps-after.jpg",
+   "alt": "New chimney cap fitted on a brick chimney in Toronto"
+  }
  },
  "signs": {
   "h2": "Signs You Need A Chimney Cap",

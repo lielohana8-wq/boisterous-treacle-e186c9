@@ -9,7 +9,11 @@
   "p": "The liner carries heat and smoke up and out, and protects the rest of the chimney from them. When it cracks or breaks up, it needs attention. We check it with a camera, show you what we find, and reline with stainless steel sized to your appliance when that is what it needs.",
   "t-2": "<b>Camera check</b> — of the existing liner",
   "t-3": "<b>Stainless liner</b> — sized to the appliance",
-  "t-4": "<b>Draft tested</b> — before we call it done"
+  "t-4": "<b>Draft tested</b> — before we call it done",
+  "img": {
+   "src": "/g-05.jpg",
+   "alt": "Brick chimney with a sealed crown, viewed from the roof"
+  }
  },
  "signs": {
   "h2": "Signs Of A Damaged Chimney Liner",
