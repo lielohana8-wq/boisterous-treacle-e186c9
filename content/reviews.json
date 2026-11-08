@@ -1,0 +1,65 @@
+{
+ "rating": "4.9",
+ "count": "20",
+ "checked": "2026-11-08",
+ "heading": "What Homeowners Wrote On Google",
+ "lead": "Copied word for word from our Google Business Profile. Open the profile to read every review, including the ones we would rather you did not.",
+ "btn": "Read all {{count}} reviews on Google",
+ "items": [
+  {
+   "name": "Ziv R.",
+   "tags": ["masonry", "repair", "prices", "home"],
+   "text": "I highly recommend Northmark! They did an absolutely amazing and professional job on the tuckpointing, using high-quality materials. Thanks to their excellent work, I can continue safely using my chimney, and they prevented further damage to the concrete. Their pricing was also the best I found on the market. Great quality, professionalism, and value for money. I couldn’t be happier with the results! Highly recommended!"
+  },
+  {
+   "name": "C. C.",
+   "tags": ["cleaning", "sweep", "inspection", "maintenance", "home"],
+   "text": "Booked my appointment online for a chimney sweep. Ben was very quick on responding and confirming my time slot. Once Ben inspected my flue, he noticed an issue that I was not aware off and recommended we do not sweep until resolved. My previous chimney sweep company that I used did not even mention that issue to me. I thank Ben for his honesty and would definitely recommend this company."
+  },
+  {
+   "name": "Louise V.",
+   "tags": ["fireplace", "inspection", "repair", "home"],
+   "text": "We discussed my concerns... (The damper is bent and there's a noticable smell of smoke when the fire dies down). Pictures were taken and a solution was discussed and agreed upon. Very friendly and knowledgeable. Would absolutely recommend."
+  },
+  {
+   "name": "Jason H.",
+   "tags": ["fireplace", "inspection", "maintenance", "home"],
+   "text": "Great job and professional service. Took the time to explain potential future issues with my fireplace to keep it safe."
+  },
+  {
+   "name": "Nissan",
+   "tags": ["masonry", "repair", "prices", "home"],
+   "text": "I had them this week to repair my chimney's masonry clean work, great prices, great communication would recommend to anyone"
+  },
+  {
+   "name": "Joanna S.",
+   "tags": ["repair", "caps", "liners", "flashing", "home"],
+   "text": "Professional and friendly service. We are very happy with the work done. Would recommend to anyone interested in chimney repair."
+  },
+  {
+   "name": "R. H.",
+   "tags": ["masonry", "repair", "flashing", "caps"],
+   "text": "Big difference between before and after. Great service and awesome finished product!"
+  },
+  {
+   "name": "Or H.",
+   "tags": ["prices", "liners", "caps"],
+   "text": "Special thanks to Liel for the wonderful assistance, professionalism, and integrity. Highly recommended without a doubt, and that says a lot coming from someone who rarely gives recommendations!"
+  },
+  {
+   "name": "Shahar A.",
+   "tags": ["cleaning", "sweep", "maintenance"],
+   "text": "Ben helped me cleaning my chimney - perfect service, great guy would recommend to anyone"
+  },
+  {
+   "name": "Lynda D.",
+   "tags": ["cleaning", "inspection", "liners"],
+   "text": "Thank you for the service. Punctual, knowledgeable. Happy to recommend."
+  },
+  {
+   "name": "Paul B.",
+   "tags": ["flashing", "caps", "sweep"],
+   "text": "Very quick and fair, excellent work done"
+  }
+ ]
+}
