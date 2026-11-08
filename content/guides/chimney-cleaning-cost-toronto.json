@@ -1,0 +1,69 @@
+{
+ "title": "Chimney Cleaning Cost In Toronto: What You Pay | Northmark",
+ "description": "What a chimney sweep costs in Toronto, what changes the price, what should be included, and when a cleaning is not enough. Northmark's winter sweep is $200.",
+ "url_slug": "chimney-cleaning-cost-toronto",
+ "published": true,
+ "order": 1,
+ "date": "2026-11-07",
+ "tag": "Guide · Pricing",
+ "h1": "How Much Does Chimney Cleaning Cost In Toronto?",
+ "lead": "A straight answer: at Northmark a standard chimney sweep is {{site.offer_price}} this winter, and the inspection that comes with it is free. Here is what that covers, what can change the price on any chimney, and how to tell a real quote from a cheap one.",
+ "hero": {
+  "src": "/hero-fire.jpg",
+  "alt": "Wood-burning fireplace lit after a chimney sweep in a Toronto home"
+ },
+ "hero_caption": "A fireplace after a sweep — the flue, smoke chamber and firebox cleaned, and the room left as we found it.",
+ "service": "cleaning",
+ "related": [
+  "cleaning",
+  "inspection",
+  "maintenance"
+ ],
+ "sections": [
+  {
+   "h2": "The short version",
+   "body": "<p>A standard sweep of one wood-burning fireplace flue in Toronto costs {{site.offer_price}} with Northmark this winter. That is the whole job: the flue, the smoke chamber and the firebox brushed and vacuumed, the floor covered, photos of the inside of the chimney, and the 19-point inspection — which is free whether or not you book the sweep.</p><p>If you have been quoted much less than that, read the section on cheap quotes below before you book. If you have been quoted much more, ask what is included: a sweep and a repair are different jobs, and should be priced separately.</p>"
+  },
+  {
+   "h2": "What changes the price of a chimney cleaning",
+   "body": "<ul><li><b>How many flues.</b> A house with a fireplace and a separate furnace or boiler flue has two flues in one chimney. Each one is swept separately.</li><li><b>How much creosote, and what kind.</b> Light, flaky soot brushes out. Glazed, tar-like creosote — the result of years of slow, smoky fires — has to be removed with different tools and takes longer. We tell you which you have from the photos.</li><li><b>Access.</b> A chimney that can only be swept from the roof, a very tall chimney, or a flue with offsets takes more time than a straight flue swept from the fireplace.</li><li><b>Blockages.</b> Nests, leaves and the remains of animals have to be removed before the sweep can happen. That is extra work, and we show you the photos before we do it.</li><li><b>Inserts and stoves.</b> A wood-burning insert or stove usually has to be partly disconnected to reach the flue properly. It is still a sweep, but it is not a ten-minute one.</li></ul>"
+  },
+  {
+   "h2": "What a proper sweep should include",
+   "body": "<p>Whatever you pay, these should be part of it. If a quote does not include them, it is not the same job:</p><ul><li>The flue, the smoke chamber and the firebox — not just the flue.</li><li>A vacuum running while the brushing happens, so the soot does not end up in your living room.</li><li>Drop cloths on the floor and the hearth.</li><li>A look at the whole system: the damper, the cap, the crown, the liner — and photos of what the technician finds.</li><li>A clear answer to the question that matters: <em>is this chimney safe to use this winter?</em></li></ul>"
+  },
+  {
+   "h2": "Why some quotes are so cheap",
+   "body": "<p>A very low sweep price is usually one of two things. Either it is a quick brush of the flue only, with no inspection and no photos, or it is a door-opener: the sweep is cheap and the visit ends with an urgent, expensive repair you cannot see for yourself.</p><p>Our rule is the opposite. The inspection is free, the sweep is {{site.offer_price}}, and if we find something that needs fixing you get the photos and the price in writing before any work starts. You can take those photos to anyone else for a second opinion.</p>"
+  },
+  {
+   "h2": "When a cleaning is not enough",
+   "body": "<p>A sweep removes soot and creosote. It does not fix a cracked flue tile, a crumbling crown, open mortar joints or a missing cap — and those are what the inspection is for. The common findings in Toronto homes, in rough order of how often we see them:</p><ul><li>No cap, or a rusted one, letting rain and animals into the flue.</li><li>A cracked or crumbling crown at the top of the chimney.</li><li>Mortar joints above the roofline that have weathered open.</li><li>Flashing that has pulled away from the brick, showing up as a stain on the ceiling near the chimney.</li><li>Cracked clay flue tiles, which only a camera inspection shows.</li></ul><p>None of these change the price of the sweep. They are separate decisions, made with photos in hand. See <a href=\"/chimney-service-prices-toronto\">how we price repairs</a>.</p>"
+  },
+  {
+   "h2": "How often should a chimney be cleaned?",
+   "body": "<p>Once a year if you use the fireplace regularly, and in any case before the first fire of the season. A chimney that has not been used for a year or more should be inspected before it is lit again — nests and moisture damage happen while it sits idle.</p>"
+  }
+ ],
+ "faq_heading": "Questions About Chimney Cleaning Prices",
+ "faq": [
+  {
+   "q": "Is the inspection really free?",
+   "a": "Yes. A technician comes to your home, checks 19 points inside and out, photographs what he finds and tells you what, if anything, the chimney needs. There is no charge and no obligation. See <a href=\"/free-chimney-inspection-toronto\">the free inspection</a>."
+  },
+  {
+   "q": "Does the sweep price include the furnace flue?",
+   "a": "The {{site.offer_price}} price is for one wood-burning fireplace flue. A second flue in the same chimney is a separate sweep; we tell you the price for it before we start."
+  },
+  {
+   "q": "Do you clean gas fireplaces?",
+   "a": "A gas fireplace does not produce soot the way wood does, but the flue still needs to be inspected — gas exhaust is wet and works on the liner over time. Tell us what you have when you book."
+  },
+  {
+   "q": "How long does a chimney cleaning take?",
+   "a": "A straightforward sweep of one flue takes about an hour, including the inspection and the clean-up. Heavy creosote or a blockage takes longer, and we tell you before we start."
+  }
+ ],
+ "cta_heading": "Book The Winter Sweep",
+ "cta_lead": "{{site.offer_price}} for the sweep, the inspection free. Pick a day and a window and we confirm by phone."
+}

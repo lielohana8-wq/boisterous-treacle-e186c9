@@ -1,0 +1,77 @@
+{
+ "title": "Fireplace Smoking Into The Room? 8 Causes & Fixes | Northmark",
+ "description": "Why a fireplace smokes into the room: closed damper, cold flue, blocked chimney, wrong flue size, airtight house. What fixes each, from a Toronto technician.",
+ "url_slug": "smoke-coming-into-the-room",
+ "published": true,
+ "order": 6,
+ "date": "2026-11-08",
+ "tag": "Guide · Draft problems",
+ "h1": "Smoke Coming Into The Room? 8 Reasons A Fireplace Smokes, And What Fixes Each",
+ "lead": "A fireplace that pushes smoke into the room instead of up the chimney is annoying, and it is a carbon monoxide problem waiting to happen. The cause is almost always one of eight things. Some you can fix tonight; some need a technician. Here is how to tell.",
+ "hero": {
+  "src": "/g-08.jpg",
+  "alt": "Fire burning cleanly in a swept wood-burning fireplace"
+ },
+ "hero_caption": "A fireplace that draws: the smoke goes up, the heat comes out, and the room smells of nothing.",
+ "service": "cleaning",
+ "related": [
+  "cleaning",
+  "inspection",
+  "liners"
+ ],
+ "sections": [
+  {
+   "h2": "First: the two things to check yourself",
+   "body": "<p><b>1. The damper.</b> It sounds obvious and it is the cause more often than anyone admits. Reach up into the firebox with a flashlight and make sure the damper is fully open, not half. On old dampers the handle positions are not always what they seem.</p><p><b>2. A cold flue.</b> On a cold day the air in the chimney is heavy and sits there. Lighting a fire under it pushes smoke into the room until the flue warms up. Hold a rolled, lit newspaper up into the damper opening for thirty seconds before you light the fire; once you feel the air start to pull upward, light it.</p><p>If neither of those is it, read on.</p>"
+  },
+  {
+   "h2": "3. The chimney is blocked",
+   "body": "<p>A nest, a dead animal, a collapsed section of flue tile, or a flue full of creosote. The smoke has nowhere to go. The sign: it smoked badly from the first fire of the season, or got steadily worse over a few weeks.</p><p><b>The fix:</b> a sweep and a camera inspection. Do not keep lighting fires until the flue is confirmed clear — a creosote blockage is also a chimney-fire risk. See <a href=\"/chimney-cleaning-toronto\">chimney cleaning</a>.</p>"
+  },
+  {
+   "h2": "4. The house is too airtight",
+   "body": "<p>A fire needs air. In a house with new windows, a sealed basement and a range hood or bathroom fan running, the chimney cannot pull enough air in through the fireplace and the smoke rolls out instead. The sign: it is worse when the kitchen fan or dryer is on, and it gets better if you crack a window near the fireplace.</p><p><b>The fix:</b> open a window an inch while the fire is lit, or have an outside-air supply fitted to the fireplace. A liner that is correctly sized also helps the draft overcome the house.</p>"
+  },
+  {
+   "h2": "5. The flue is the wrong size",
+   "body": "<p>A fireplace opening that is too large for the flue above it will smoke, no matter how clean the chimney is. The rule of thumb is that the flue area should be about a tenth of the fireplace opening. Old fireplaces that were enlarged, or chimneys where a liner was fitted that is too small, have this problem built in.</p><p><b>The fix:</b> reduce the opening with a smoke guard across the top, or correct the flue with a properly sized liner. The inspection measures both and tells you which is realistic.</p>"
+  },
+  {
+   "h2": "6. The chimney is too short",
+   "body": "<p>A chimney has to extend above the roof — the code in Canada calls for at least 3 feet above the roof where it exits and at least 2 feet above anything within 10 feet. A chimney shorter than that sits in turbulent air and gets pushed down on by wind. The sign: it smokes on windy days and not on calm ones.</p><p><b>The fix:</b> extend the chimney, or fit a draft-inducing cap that helps the flue pull in wind.</p>"
+  },
+  {
+   "h2": "7. Downdraft from a second flue or an open door",
+   "body": "<p>A chimney with two flues — fireplace and furnace, or two fireplaces — can pull air down one flue while the other is in use, bringing smoke back down with it. The same happens with a basement fireplace when the upstairs one is lit. The sign: smoke in a room where nothing is burning.</p><p><b>The fix:</b> caps on both flues, and a top-sealing damper on the one not in use.</p>"
+  },
+  {
+   "h2": "8. Wet or unseasoned wood",
+   "body": "<p>Wood that is not dry burns at a low temperature and produces a lot of smoke and very little heat; the flue never gets warm enough to draw properly. The sign: hissing, sizzling logs and a fire that will not catch.</p><p><b>The fix:</b> burn wood that has been split and dried for at least a year. It is also the single biggest thing you can do to keep creosote out of the chimney.</p>"
+  },
+  {
+   "h2": "When to stop and call",
+   "body": "<p>If the smoke started suddenly, if there is a smell of smoke when no fire is lit, if a carbon monoxide alarm has sounded, or if you have found pieces of clay tile in the firebox — stop using the fireplace and have it inspected. The free inspection checks the damper, the flue with a camera, the chimney height and the cap, and tells you which of the eight it is. See <a href=\"/chimney-inspection-toronto\">chimney inspections</a>.</p>"
+  }
+ ],
+ "faq_heading": "Questions About Smoky Fireplaces",
+ "faq": [
+  {
+   "q": "Why does my fireplace smoke only when I first light it?",
+   "a": "A cold flue. Warm the chimney with a lit, rolled newspaper held up at the damper for half a minute before lighting the fire, and use small, dry kindling to get the flue hot quickly."
+  },
+  {
+   "q": "Is a smoky fireplace dangerous?",
+   "a": "Smoke in the room means combustion gases in the room, including carbon monoxide. Occasional smoke at lighting is common; a fireplace that smokes through the whole fire should not be used until the cause is found. Make sure you have a working CO alarm on each floor."
+  },
+  {
+   "q": "Will a chimney cap stop the smoke?",
+   "a": "If the cause is wind pushing down the flue, yes. If the cause is a blockage, the damper, an airtight house or a flue that is the wrong size, no. The inspection tells you which."
+  },
+  {
+   "q": "Can a gas fireplace smoke?",
+   "a": "A gas fireplace should never produce visible smoke; if it does, or if there is a smell, turn it off and have it looked at. See <a href=\"/fireplace-repair-toronto\">fireplace repair</a>."
+  }
+ ],
+ "cta_heading": "Fireplace Smoking?",
+ "cta_lead": "Book the free inspection. Damper, flue, cap and height checked, with camera photos, and the cause explained in plain language."
+}

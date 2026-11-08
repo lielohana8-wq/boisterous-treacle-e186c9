@@ -1,0 +1,69 @@
+{
+ "title": "Creosote In Your Chimney: 3 Stages & When It Is Dangerous",
+ "description": "What creosote is, the three stages from soot to glaze, why it causes chimney fires, how to tell how much you have, and how to burn so it builds up slowly.",
+ "url_slug": "creosote-explained",
+ "published": true,
+ "order": 9,
+ "date": "2026-11-08",
+ "tag": "Guide · Safety",
+ "h1": "Creosote: What It Is, The Three Stages, And When It Becomes Dangerous",
+ "lead": "Creosote is the reason chimneys are swept. It is also the reason chimneys catch fire. Here is what it is, how to tell the harmless kind from the dangerous kind, and the three things that decide how fast it builds up in your flue.",
+ "hero": {
+  "src": "/ba-cleaning-before.jpg",
+  "alt": "Inside of a fireplace and flue before a chimney sweep, with soot and creosote on the walls"
+ },
+ "hero_caption": "A flue before the sweep. What is on the walls decides whether this is routine or urgent.",
+ "service": "cleaning",
+ "related": [
+  "cleaning",
+  "inspection",
+  "maintenance"
+ ],
+ "sections": [
+  {
+   "h2": "What creosote is",
+   "body": "<p>When wood burns, the smoke carries unburned particles, water vapour and tar-like gases up the flue. As the smoke cools on the way up — and a chimney on the outside wall of a Toronto house in January is cold — those gases condense on the flue walls. The deposit they leave is creosote. It is black or dark brown, it smells of smoke, and it is flammable.</p><p>Every wood fire produces some. How much sticks to the chimney, and what form it takes, depends on how you burn and what the chimney is like.</p>"
+  },
+  {
+   "h2": "The three stages",
+   "body": "<ul><li><b>Stage 1 — soot.</b> Dry, flaky, dusty. Brushes off the flue walls easily. This is what a yearly sweep removes from a fireplace that is burned properly with dry wood. Routine.</li><li><b>Stage 2 — crunchy flakes and tar.</b> Harder, shiny black flakes with some tar. Takes more brushing and sometimes a rotary tool; it comes off, but it is the sign that something about how the fireplace is used is producing cooler, smokier fires. Still a normal sweep, but the technician will tell you why it is there.</li><li><b>Stage 3 — glaze.</b> A hard, shiny, tar-like coating that has baked onto the flue, sometimes running down it like black candle wax. It cannot be brushed off; it needs chemical treatment or specialised tools, and sometimes the liner cannot be fully cleaned. Glaze is concentrated fuel inside your chimney. It is the stage at which chimney fires happen.</li></ul>"
+  },
+  {
+   "h2": "Why it causes chimney fires",
+   "body": "<p>Creosote ignites at a temperature a hot fire can reach — especially a hot fire lit after weeks of slow, smoky ones. When it goes, it burns at well over a thousand degrees inside a flue that was never designed to be the firebox. Clay tiles crack from the heat shock, the mortar between them fails, and the heat reaches the framing around the chimney.</p><p>Many chimney fires are never noticed — a roar, some sparks from the top, over in a few minutes — and leave a cracked liner behind that is found years later, or never. If you have ever heard a low roaring from the chimney, or seen flames or dense smoke from the top, have the flue camera-inspected before you light another fire.</p>"
+  },
+  {
+   "h2": "What decides how fast it builds up",
+   "body": "<p><b>1. Wet wood.</b> The single biggest factor. Wood that has not been split and dried for a year burns cool and smoky, and the water in it keeps the flue temperature down so the smoke condenses. Dry wood — split, stacked, covered on top, open at the sides, for at least a full summer — burns hot and clean.</p><p><b>2. Smouldering fires.</b> Closing the damper or the air intake down to make a fire last overnight produces a slow, cool, smoky burn that coats the flue. A smaller, hotter fire makes far less creosote than a large one choked down.</p><p><b>3. A cold or oversized flue.</b> An uninsulated chimney on an outside wall, or a flue much larger than the fireplace needs, cools the smoke quickly. A correctly sized, insulated stainless liner keeps the flue warm and the creosote down — it is one of the reasons liners are fitted. See <a href=\"/guides/chimney-liner-do-you-need-one\">chimney liners</a>.</p>"
+  },
+  {
+   "h2": "How to tell how much you have",
+   "body": "<p>Open the damper on a cold fireplace and shine a strong flashlight up the flue. Scrape the inside of the smoke chamber with a fireplace poker: a dusting of black powder is stage 1; crunchy flakes are stage 2; a hard shiny surface the poker will not scratch is stage 3. If you can see a build-up of more than about 3 mm on the walls, the chimney needs sweeping before the next fire, whatever the stage.</p><p>The part you cannot see — the flue above the smoke chamber — is what the camera inspection is for. The free inspection photographs it, and you see what is on your flue walls.</p>"
+  },
+  {
+   "h2": "How often to sweep",
+   "body": "<p>Once a year for a fireplace in regular use, before the heating season. More often if you burn every day through the winter, burn a wood stove hard, or have had stage 2 deposits on the last sweep. A chimney that has not been used for a year or more should be inspected before it is lit again. See <a href=\"/chimney-cleaning-toronto\">chimney cleaning</a>.</p>"
+  }
+ ],
+ "faq_heading": "Questions About Creosote",
+ "faq": [
+  {
+   "q": "Do creosote sweeping logs work?",
+   "a": "Products burned in the fireplace can loosen some light deposits and make a sweep easier. They do not remove creosote from the flue, and they do nothing for glaze. They are not a substitute for a sweep, and no manufacturer claims they are."
+  },
+  {
+   "q": "Does a gas fireplace produce creosote?",
+   "a": "No. Gas burns clean and leaves no creosote. A gas fireplace venting through an old masonry chimney still needs the flue inspected — gas exhaust is wet and acidic — but not swept for creosote."
+  },
+  {
+   "q": "I had a chimney fire. Can I still use the fireplace?",
+   "a": "Not until the flue has been camera-inspected. A chimney fire routinely cracks clay flue tiles, and a cracked liner lets heat and gases reach the house. The inspection is free; if the liner is damaged, a stainless liner is the usual fix."
+  },
+  {
+   "q": "Why does my chimney smell in summer?",
+   "a": "Creosote absorbs moisture in humid weather and releases its smell, and in summer the air often flows down the chimney into the house rather than up. A sweep removes the source; a cap and a top-sealing damper stop the downdraft."
+  }
+ ],
+ "cta_heading": "Not Sure What Is In Your Flue?",
+ "cta_lead": "Book the free inspection. The camera goes up the flue and you see the walls yourself — and the $200 sweep is there if it needs one."
+}

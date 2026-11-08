@@ -1,0 +1,65 @@
+{
+ "title": "Chimney Crown Repair: Seal, Repair Or Rebuild? | Northmark",
+ "description": "What the chimney crown does, why it cracks, when a crack can be sealed and when the crown has to be rebuilt, and what a good crown looks like when done right.",
+ "url_slug": "chimney-crown-repair",
+ "published": true,
+ "order": 10,
+ "date": "2026-11-08",
+ "tag": "Guide · Repairs",
+ "h1": "Chimney Crown Repair: When A Crack Can Be Sealed, And When The Crown Has To Go",
+ "lead": "The crown is the slab of concrete on top of your chimney, and it takes more weather than any other part of the house. Most chimney leaks that are not the flashing start here. Here is what it does, how it fails, and how to tell a repair from a rebuild.",
+ "hero": {
+  "src": "/stone-chimney-concrete-crown-stainless-cap.jpg",
+  "alt": "New concrete crown and stainless steel cap on a restored stone chimney"
+ },
+ "hero_caption": "A new concrete top and crown on a restored stone chimney, with a stainless cap on the flue.",
+ "service": "repair",
+ "related": [
+  "repair",
+  "caps",
+  "masonry"
+ ],
+ "sections": [
+  {
+   "h2": "What the crown does",
+   "body": "<p>The chimney is a hollow brick or stone shaft. The crown is the concrete that closes the top of it, around the flue tile, so rain lands on concrete and runs off rather than falling onto the top course of brick and down inside the chimney walls. A good crown slopes away from the flue, overhangs the brick by an inch or two with a drip edge underneath, and is separated from the flue tile by a flexible joint so the two can expand at different rates.</p><p>Many Toronto chimneys have none of those things. The crown is a thin, flat wash of mortar troweled flush with the brick when the chimney was built. It cracks early and it fails completely within a few decades.</p>"
+  },
+  {
+   "h2": "Why crowns crack",
+   "body": "<ul><li><b>Thermal movement.</b> The clay flue tile heats up when the fireplace is used and expands; the crown around it does not. A crown poured tight against the tile cracks in the first few winters.</li><li><b>Freeze-thaw.</b> Water sits on a flat crown, gets into hairline cracks, freezes and opens them. Every winter widens the crack.</li><li><b>Too thin, wrong mix.</b> A mortar wash an inch thick, with no reinforcement and no overhang, is not a crown; it is a temporary cap that was never replaced.</li><li><b>Age.</b> Even a good crown weathers. Fifty years of Toronto winters is a lot to ask of a few inches of concrete.</li></ul>"
+  },
+  {
+   "h2": "What a failed crown does to the chimney",
+   "body": "<p>Water through the crown goes into the top courses of brick and the inside of the chimney wall. From there it does the two things water does to masonry: it washes out the mortar from the inside, and it freezes. The brick faces spall, the joints open, white staining appears below the crown, and the whole top of the chimney loosens. A crown that would have cost a modest amount to replace becomes a rebuild of the top of the chimney. See <a href=\"/guides/signs-your-chimney-is-leaking\">the signs of a leaking chimney</a>.</p>"
+  },
+  {
+   "h2": "Seal, repair or rebuild?",
+   "body": "<p><b>Seal</b> when the crown is thick, sound and properly shaped, with hairline cracks only. The cracks are cleaned and filled with a flexible crown sealant, and the whole crown is coated with a breathable waterproofing. A few years of life, bought cheaply.</p><p><b>Repair</b> when there are wider cracks or a corner has broken off but the bulk of the crown is solid. The damaged sections are cut out and patched, the joint at the flue is re-made, and the crown is sealed.</p><p><b>Rebuild</b> when the crown is crumbling, is a thin mortar wash, has no overhang, or has let enough water in that the top courses of brick have gone with it. The old crown comes off, any damaged brick is replaced, and a new crown is formed: at least two inches thick, sloped, overhanging with a drip edge, and with an expansion joint around the flue. Done properly, it is the last crown the chimney needs.</p><p>The inspection photographs the crown from the roof and tells you which of the three it is. From the ground, a crown always looks fine.</p>"
+  },
+  {
+   "h2": "What a good crown looks like when it is done",
+   "body": "<ul><li>Thick — two inches at the edge or more, not a smear of mortar.</li><li>Sloped from the flue down to the edges, so water runs off.</li><li>Overhanging the brick with a drip groove underneath, so water drips clear of the chimney instead of running down the face.</li><li>A flexible, sealed joint where it meets the flue tile.</li><li>A cap on the flue above it — the crown and the cap do two different jobs, and a chimney needs both. See <a href=\"/guides/chimney-cap-why-you-need-one\">chimney caps</a>.</li></ul>"
+  }
+ ],
+ "faq_heading": "Questions About Chimney Crowns",
+ "faq": [
+  {
+   "q": "Is the crown the same as the cap?",
+   "a": "No. The crown is the concrete top of the masonry; the cap is the metal cover on the flue above it. The crown keeps water off the brick; the cap keeps water and animals out of the flue. Most chimneys need both, and a missing cap is often blamed for a crown leak."
+  },
+  {
+   "q": "Can a crown be repaired in winter?",
+   "a": "Sealing can be done on a dry day above freezing. A rebuild needs concrete to cure and waits for spring; if the crown is letting water in now, a temporary cover over the chimney top gets you through the winter."
+  },
+  {
+   "q": "How long does a new crown last?",
+   "a": "A properly built crown — thick, sloped, overhanging, with an expansion joint — should outlast the brick around it. The thin mortar washes that fail in Toronto were never built to that standard."
+  },
+  {
+   "q": "Do you rebuild crowns on stone chimneys?",
+   "a": "Yes. On an old stone chimney the top is often rebuilt in concrete as a whole, with the crown formed on it, and the stone below repointed and kept. See <a href=\"/projects/stone-chimney-restoration\">a stone chimney we restored</a>."
+  }
+ ],
+ "cta_heading": "Is Your Crown Cracked?",
+ "cta_lead": "You cannot tell from the ground. Book the free inspection — we photograph the crown from the roof and give you the price in writing."
+}
