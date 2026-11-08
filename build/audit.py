@@ -5,7 +5,9 @@ from collections import Counter
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 pages = sorted(glob.glob("*.html"))  # built output at the repo root
-PROJECT_SLUGS = {"chimney-tuckpointing-toronto", "stone-chimney-restoration", "gas-fireplace-burner-installation"}
+import json as _j
+PROJECT_SLUGS = {os.path.basename(f)[:-5] for f in glob.glob("content/projects/*.json")}
+GUIDE_SLUGS = {os.path.basename(f)[:-5] for f in glob.glob("content/guides/*.json")}
 titles, descs, h1s, issues = {}, {}, {}, []
 existing = set(os.path.splitext(p)[0] for p in pages)
 redirects = open("_redirects").read()
@@ -14,7 +16,9 @@ sitemap = open("sitemap.xml").read()
 def url_of(p):
     if p == "index.html": return "/"
     if p == "projects.html": return "/projects/"
+    if p == "guides.html": return "/guides/"
     if p[:-5] in PROJECT_SLUGS: return "/projects/" + p[:-5]
+    if p[:-5] in GUIDE_SLUGS: return "/guides/" + p[:-5]
     return "/" + p[:-5]
 
 for p in pages:
@@ -49,7 +53,7 @@ for p in pages:
         if not os.path.exists(src.lstrip("/")): issues.append((p, "missing asset " + src))
     for href in set(re.findall(r'href="(/[^"#?]*)"', body)):
         tgt = href.rstrip("/") or "/"
-        if tgt == "/" or tgt == "/projects" or tgt[len("/projects/"):] in PROJECT_SLUGS and tgt.startswith("/projects/"): continue
+        if tgt in ("/", "/projects", "/guides") or (tgt.startswith("/projects/") and tgt[len("/projects/"):] in PROJECT_SLUGS) or (tgt.startswith("/guides/") and tgt[len("/guides/"):] in GUIDE_SLUGS): continue
         if tgt.lstrip("/") not in existing and not os.path.exists(tgt.lstrip("/")) and not os.path.exists(tgt.lstrip("/") + "/index.html") and not re.search(r"\.\w+$", tgt):
             issues.append((p, "dead internal link " + href))
     if re.search(r"\(416\) 000-0000", body) is None and "000-0000" in body: issues.append((p, "odd placeholder"))
@@ -57,7 +61,7 @@ for p in pages:
     if not noindex and f"<loc>https://northmark-chimney.ca{url_of(p)}</loc>" not in sitemap and p not in ("404.html", "thanks.html"): issues.append((p, "not in sitemap"))
     if p not in ("index.html", "404.html") and f"{url_of(p).rstrip('/') or '/'}  /{p}  200" not in redirects: issues.append((p, "no pretty-url redirect"))
     words = len(re.sub("<[^>]+>", " ", body).split())
-    if words < 500: issues.append((p, f"thin: {words} words"))
+    if words < 500 and p not in ("404.html", "thanks.html"): issues.append((p, f"thin: {words} words"))
 
 for k, v in titles.items():
     if len(v) > 1: issues.append(("dup title", f"{k!r}: {v}"))

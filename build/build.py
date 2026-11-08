@@ -61,6 +61,8 @@ def _slug(f, d):
 projects = sorted([dict(load(f), slug=_slug(f, load(f))) for f in glob.glob("content/projects/*.json")],
                   key=lambda p: (p.get("order", 999), p["slug"]))
 projects = [p for p in projects if p.get("published", True)]
+guides = sorted([dict(load(f), slug=_slug(f, load(f))) for f in glob.glob("content/guides/*.json")], key=lambda g: (g.get("order", 999), g["slug"]))
+guides = [g for g in guides if g.get("published", True)]
 
 PHONE_SVG = ('<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
              'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 '
@@ -82,7 +84,7 @@ def fill_slots(tpl, page_values):
     def slot(m):
         key = m.group(1)
         if key.startswith("site."): return m.group(0)  # tokens are done later
-        if key.startswith(("cards:", "project_link")): return m.group(0)
+        if key.startswith(("cards:", "project_link", "guide_links")): return m.group(0)
         v = lookup(key)
         if v is None:
             print("  missing slot", key); return ""
@@ -311,6 +313,149 @@ def project_pages(ourwork_html):
     return out
 
 
+# ----------------------------------------------------------------------------- guides
+GUIDE_CSS = """
+/* guides */
+.guide{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:56px;align-items:start}
+.guide .prose{max-width:72ch}
+.guide .prose h2{font-size:clamp(24px,2.4vw,30px);line-height:1.15;margin:40px 0 14px;letter-spacing:-.02em}
+.guide .prose h2:first-child{margin-top:0}
+.guide .prose p{font-size:17.5px;line-height:1.7;color:var(--ink-2);margin:0 0 16px}
+.guide .prose p b{color:var(--ink)}
+.guide .prose ul{margin:0 0 18px;padding-inline-start:22px;display:grid;gap:10px}
+.guide .prose li{font-size:17px;line-height:1.6;color:var(--ink-2)}
+.guide .prose li b{color:var(--ink)}
+.guide .prose a{color:var(--copper-2);font-weight:600;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(169,63,19,.35)}
+.gaside{position:sticky;top:98px;display:grid;gap:18px}
+.gcard{background:var(--card);border:1px solid var(--rule);border-radius:var(--r-card);padding:22px;box-shadow:var(--shadow)}
+.gcard h3{font-size:19px;margin:0 0 6px}
+.gcard p{color:var(--ink-2);font-size:15px;line-height:1.5;margin:0 0 14px}
+.gcard .btn{width:100%}
+.gcard ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.gcard li a{color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;line-height:1.4;display:block;padding:10px 12px;border:1px solid var(--rule-2);border-radius:10px;background:var(--field)}
+.gcard li a:hover{border-color:var(--copper)}
+.gcard .ph{display:block;text-align:center;margin-top:10px;color:var(--ink);font-weight:700;text-decoration:none;font-size:17px}
+.gread{margin-top:34px;padding-top:22px;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;font-size:15px;color:var(--mut)}
+.gread a{color:var(--copper-2);font-weight:600;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(169,63,19,.35)}
+.sec.stone .gread{border-top-color:var(--rule)}
+.gcards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+@media(max-width:1000px){.guide{grid-template-columns:1fr}.gaside{position:static}.gcards{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.gcards{grid-template-columns:1fr}}
+"""
+
+
+def guide_links(page):
+    """'Read the guide' row for a service page or the home page."""
+    if not guides: return ""
+    key = next((k for k, s in services.items() if s["url"] == "/" + page[:-5]), None)
+    gs = guides if page == "index.html" else [g for g in guides if g.get("service") == key or key in g.get("related", [])]
+    if not gs: return ""
+    links = " · ".join('<a href="/guides/%s">%s</a>' % (g["slug"], value(g.get("short_title") or re.sub(r"[:—].*$", "", g["h1"]))) for g in gs[:3])
+    return '<div class="wrap"><div class="gread"><span>Read the guide:</span> %s</div></div>' % links
+
+
+def guide_pages(src):
+    GTM = between(src, "<!-- Google Tag Manager -->", "<!-- End Google Tag Manager -->", True)
+    CSS = between(src, "<style>", "</style>").split("/* project case studies */")[0]
+    FONTS = '<link rel="icon"' + between(src, '<link rel="icon"', "<style>")
+    TAIL = src[src.index('<script src="/seo-hook.js"'):src.index("</head>")]
+    HEADER = between(src, "<body>", '<main id="main">').replace(' aria-current="page"', "")
+    FOOTER = src[src.index("</main>") + len("</main>"):]
+    FORM = between(src, '<form class="form two-step"', "</form>", True)
+    TRUST = between(src, '<section class="trust"', "</section>", True)
+    PH = site["phone"]; TEL = "tel:" + site["phone_tel"]
+
+    def head(g, url, title, desc, og, kind="article"):
+        return ('<!DOCTYPE html><html lang="en-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
+                + GTM + '<title>%s</title><meta name="description" content="%s">' % (esc_text(title), html.escape(desc, True))
+                + '<link rel="canonical" href="%s"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">' % url
+                + '<meta name="theme-color" content="#F5F2EC"><meta property="og:site_name" content="Northmark Chimney"><meta property="og:locale" content="en_CA">'
+                + '<meta property="og:title" content="%s"><meta property="og:description" content="%s"><meta property="og:type" content="%s">' % (html.escape(title, True), html.escape(desc, True), kind)
+                + '<meta property="og:url" content="%s"><meta property="og:image" content="%s">' % (url, SITE_URL + og)
+                + '<meta name="twitter:card" content="summary_large_image">' + FONTS + "<style>" + CSS + EXTRA_CSS + GUIDE_CSS + "</style>"
+                + '<script type="application/ld+json">%s</script>' % json.dumps(schema(g, url, title, desc), ensure_ascii=False) + TAIL + "</head><body>")
+
+    def schema(g, url, title, desc):
+        crumbs = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Guides", "item": SITE_URL + "/guides/"}]}
+        if g is None:
+            return [crumbs, {"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "url": url, "description": desc, "isPartOf": {"@id": SITE_URL + "/#website"},
+                             "hasPart": [{"@type": "Article", "headline": x["h1"], "url": SITE_URL + "/guides/" + x["slug"]} for x in guides]}]
+        crumbs["itemListElement"].append({"@type": "ListItem", "position": 3, "name": re.sub(r"[:—].*$", "", g["h1"]).strip(), "item": url})
+        art = {"@context": "https://schema.org", "@type": "Article", "@id": url + "#article", "headline": g["h1"], "description": desc, "url": url, "mainEntityOfPage": url,
+               "datePublished": g.get("date", TODAY), "dateModified": g.get("date", TODAY), "inLanguage": "en-CA", "image": SITE_URL + g["hero"]["src"],
+               "author": {"@type": "Organization", "name": "Northmark Chimney", "@id": SITE_URL + "/#business"},
+               "publisher": {"@type": "Organization", "name": "Northmark Chimney", "@id": SITE_URL + "/#business", "logo": {"@type": "ImageObject", "url": SITE_URL + "/logo.png"}},
+               "about": {"@type": "Service", "name": services.get(g.get("service"), {}).get("name", ""), "url": SITE_URL + services.get(g.get("service"), {}).get("url", "/")}}
+        out = [crumbs, art]
+        if g.get("faq"):
+            out.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": html.unescape(q["q"]), "acceptedAnswer": {"@type": "Answer", "text": re.sub("<[^>]+>", "", html.unescape(fill_tokens(q["a"])))}} for q in g["faq"]]})
+        return out
+
+    def acts():
+        return '<div class="acts"><a class="btn lg" href="#book">Book my free inspection</a><a class="btn line lg" href="%s">%sCall %s</a></div>' % (TEL, PHONE_SVG, PH)
+
+    def hero(g):
+        h = g["hero"]["src"]
+        return ('<main id="main"><section class="hero"><div class="wrap"><div class="hcopy">'
+                '<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/guides/">Guides</a> / <span aria-current="page">%s</span></nav>'
+                '<span class="tag">%s</span><h1>%s</h1><p class="lead">%s</p>%s</div>'
+                '<figure class="shot land"><img src="%s" alt="%s" width="1200" height="800" fetchpriority="high" decoding="async"><figcaption>%s</figcaption></figure></div></section>'
+                % (value(re.sub(r"[:—].*$", "", g["h1"]).strip()), value(g.get("tag", "Guide")), value(g["h1"]), value(g.get("lead", "")), acts(),
+                   html.escape(h, True), html.escape(g["hero"].get("alt", ""), True), value(g.get("hero_caption", ""))))
+
+    def body(g):
+        secs = "".join("<h2>%s</h2>%s" % (value(s["h2"]), esc_html(s["body"])) for s in g.get("sections", []))
+        others = [x for x in guides if x["slug"] != g["slug"]]
+        more = "".join('<li><a href="/guides/%s">%s</a></li>' % (x["slug"], value(re.sub(r"[:—].*$", "", x["h1"]).strip())) for x in others[:4])
+        rel = "".join('<li><a href="%s">%s</a></li>' % (services[k]["url"], value(services[k]["name"])) for k in g.get("related", []) if k in services)
+        aside = ('<div class="gaside"><div class="gcard"><h3>Free inspection, photos included</h3><p>A WETT-certified technician checks 19 points, photographs what he finds and gives you the price in writing before anything starts.</p>'
+                 '<a class="btn" href="#book">Book my free inspection</a><a class="ph" href="%s">%s</a></div>' % (TEL, PH))
+        if more: aside += '<div class="gcard"><h3>More guides</h3><ul>%s</ul></div>' % more
+        if rel: aside += '<div class="gcard"><h3>Related services</h3><ul>%s</ul></div>' % rel
+        proj = next((q for q in projects if q.get("service") == g.get("service") or g.get("service") in q.get("related", [])), None)
+        if proj:
+            aside += ('<a class="cs" href="/projects/%s"><img src="%s" alt="%s" width="1200" height="900" loading="lazy" decoding="async"><div class="cs-b"><span class="cs-k">From our work</span><h3>%s</h3><span class="go">Read the case study</span></div></a>'
+                      % (proj["slug"], html.escape(proj["card"]["src"], True), html.escape(proj["card"].get("alt", ""), True), value(proj.get("card_title", proj["h1"]))))
+        aside += "</div>"
+        return '<section class="sec" aria-label="Guide"><div class="wrap"><div class="guide"><article class="prose">%s</article>%s</div></div></section>' % (secs, aside)
+
+    def faq(g):
+        if not g.get("faq"): return ""
+        items = "".join('<details class="faq"><summary>%s</summary><p>%s</p></details>' % (value(q["q"]), value(q["a"])) for q in g["faq"])
+        return ('<section class="sec stone" id="faq" aria-labelledby="faq-h"><div class="wrap"><div class="faqwrap"><div><h2 id="faq-h">%s</h2>'
+                '<p class="lead" style="margin-top:14px">Straight answers. If yours is not here, call %s — every day %s.</p></div><div class="faqs">%s</div></div></div></section>'
+                % (value(g.get("faq_heading", "Questions")), PH, site["hours"], items))
+
+    def cta(h2, lead):
+        checks = "".join("<li>%s%s</li>" % (TICK, c) for c in ["No obligation", "Photos included", "Price before any work starts"])
+        return ('<section class="cta" id="book" aria-labelledby="book-h"><div class="wrap"><div><h2 id="book-h">%s</h2><p class="lead">%s</p>'
+                '<ul class="checks">%s</ul><a class="big" href="%s">%s%s</a><p class="sub">Every Day %s. If we miss your call, we call right back.</p></div>%s</div></section></main>'
+                % (value(h2), value(lead), checks, TEL, PHONE_SVG, PH, site["hours"], FORM))
+
+    def gcard(g):
+        return ('<a class="cs" href="/guides/%s"><img src="%s" alt="%s" width="1200" height="900" loading="lazy" decoding="async"><div class="cs-b"><span class="cs-k">%s</span><h3>%s</h3><p>%s</p><span class="go">Read the guide</span></div></a>'
+                % (g["slug"], html.escape(g["hero"]["src"], True), html.escape(g["hero"].get("alt", ""), True), value(g.get("tag", "Guide")), value(g["h1"]), value(g.get("description", ""))))
+
+    out = {}
+    for g in guides:
+        url = SITE_URL + "/guides/" + g["slug"]
+        out[g["slug"] + ".html"] = (head(g, url, g["title"], g["description"], g.get("og") or g["hero"]["src"]) + HEADER + hero(g) + TRUST + body(g) + faq(g)
+                                    + cta(g.get("cta_heading", "Book The Free Inspection"), g.get("cta_lead", "Pick a day and a window and we confirm by phone.")) + FOOTER)
+    hub = site.get("guides_hub", {})
+    title = hub.get("title", "Chimney Guides For Toronto Homeowners | Northmark Chimney")
+    desc = hub.get("description", "Plain-language guides from a WETT-certified Toronto chimney technician: what things cost, what inspections involve, and how to read the signs of a problem.")
+    hb = ('<main id="main"><section class="hero"><div class="wrap"><div class="hcopy"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <span aria-current="page">Guides</span></nav>'
+          '<span class="tag">Guides</span><h1>%s</h1><p class="lead">%s</p>%s</div></div></section>%s'
+          '<section class="sec" aria-labelledby="gl-h"><div class="wrap"><div class="head"><div><h2 id="gl-h">Start Here</h2></div><p class="lead">Written the way we explain things on a job: what it is, what it costs, what to do about it.</p></div><div class="gcards">%s</div></div></section>'
+          % (value(hub.get("h1", "Chimney Guides: Straight Answers For Toronto Homeowners")),
+             value(hub.get("lead", "What a sweep should cost, what a WETT inspection involves, how to read a water stain near the chimney. No sales pitch — the free inspection is at the end if you want it.")),
+             acts(), TRUST, "".join(gcard(g) for g in guides)))
+    out["guides.html"] = head(None, SITE_URL + "/guides/", title, desc, guides[0]["hero"]["src"] if guides else "/og-image.jpg", "website") + HEADER + hb + cta("Want A Technician To Look?", "Book the free inspection. Photos of what we find, the price in writing, no obligation.") + FOOTER
+    return out
+
+
 # ----------------------------------------------------------------------------- site files
 STATIC_REDIRECTS = [l for l in open("build/redirects.txt", encoding="utf-8").read().splitlines() if l.strip()]
 
@@ -318,6 +463,7 @@ STATIC_REDIRECTS = [l for l in open("build/redirects.txt", encoding="utf-8").rea
 def write_site_files(pages):
     lines = STATIC_REDIRECTS + ["/projects  /projects.html  200", "/projects/  /projects.html  200"]
     lines += ["/projects/%s  /%s.html  200" % (p["slug"], p["slug"]) for p in projects]
+    lines += ["/guides  /guides.html  200", "/guides/  /guides.html  200"] + ["/guides/%s  /%s.html  200" % (g["slug"], g["slug"]) for g in guides]
     lines += ["/build/*  /404.html  404", "/templates/*  /404.html  404", "/content/*  /404.html  404", "/netlify/*  /404.html  404", "/*  /404.html  404"]
     open("_redirects", "w", encoding="utf-8").write("\n".join(lines) + "\n")
     # sitemap
@@ -329,6 +475,7 @@ def write_site_files(pages):
         pr = prio.get(pg, "0.7" if pg.startswith("chimney-services-") else "0.9")
         urls.append((u, pr))
     urls.append(("/projects/", "0.8")); urls += [("/projects/" + p["slug"], "0.8") for p in projects]
+    urls.append(("/guides/", "0.8")); urls += [("/guides/" + g["slug"], "0.8") for g in guides]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sm += ["  <url><loc>%s%s</loc><lastmod>%s</lastmod><priority>%s</priority></url>" % (SITE_URL, u, TODAY, pr) for u, pr in urls]
     sm.append("</urlset>")
@@ -338,7 +485,22 @@ def write_site_files(pages):
     llms = llms.split("\n## Projects")[0].rstrip("\n")
     llms += "\n\n## Projects (case studies, our own photos)\n- [Chimney Projects In Toronto & The GTA](%s/projects/)\n" % SITE_URL
     llms += "".join("- [%s](%s/projects/%s)\n" % (re.sub("<[^>]+>", "", p["h1"]), SITE_URL, p["slug"]) for p in projects)
+    llms += "\n## Guides (plain-language explainers)\n- [Chimney Guides](%s/guides/)\n" % SITE_URL
+    llms += "".join("- [%s](%s/guides/%s)\n" % (re.sub("<[^>]+>", "", g["h1"]), SITE_URL, g["slug"]) for g in guides)
     open("llms.txt", "w", encoding="utf-8").write(llms)
+
+
+def responsive_images(h):
+    """Give every photo that has an -800 variant a srcset, so phones download the small one."""
+    def fix(m):
+        tag = m.group(0)
+        if "srcset=" in tag or "/logo." in tag: return tag
+        src = re.search(r' src="(/[^"]+)\.jpg"', tag)
+        if not src or not os.path.exists(src.group(1).lstrip("/") + "-800.jpg"): return tag
+        base = src.group(1)
+        sizes = "100vw" if "hero-bg" in tag else "(max-width:1000px) 92vw, 50vw"
+        return tag.replace(' src="%s.jpg"' % base, ' src="%s.jpg" srcset="%s-800.jpg 800w, %s.jpg 1200w" sizes="%s"' % (base, base, base, sizes), 1)
+    return re.sub(r"<img\b[^>]*>", fix, h)
 
 
 def main():
@@ -348,15 +510,19 @@ def main():
         vals = load(os.path.join("content/pages", pg[:-5] + ".json"))
         out = fill_slots(tpl, vals)
         out = out.replace("{{cards:home}}", cards_block("home", pg)).replace("{{cards:ourwork}}", cards_block("ourwork", pg)).replace("{{cards:svc}}", cards_block("svc", pg))
-        out = out.replace("{{project_link}}", project_link(pg))
+        out = out.replace("{{project_link}}", project_link(pg)).replace("{{guide_links}}", guide_links(pg))
         out = fill_tokens(out)
         out = re.sub(r' data-cms(?:-img)?="[^"]*"| data-orig="[^"]*"', "", out)  # editor hooks stay in the templates only
+        out = responsive_images(out)
         if "/booking.js" not in out:  # availability from the admin calendar
             out = out.replace("</body>", '<script src="/booking.js" defer></script></body>', 1)
+        if 'class="twoup"' in out and "/compare.js" not in out:  # before/after slider
+            out = out.replace("</body>", '<script src="/compare.js" defer></script></body>', 1)
         if pg == "index.html":  # Netlify Identity invite / recovery links land on the home page: send them to the admin
             out = out.replace("<body>", "<body><script>if(/^#(invite|recovery|confirmation|email_change)_token=/.test(location.hash))location.replace('/%s/'+location.hash)</script>" % ADMIN_DIR, 1)
         open(pg, "w", encoding="utf-8").write(out)
-    for name, h in project_pages(open("our-work.html", encoding="utf-8").read()).items():
+    chrome_src = open("our-work.html", encoding="utf-8").read()
+    for name, h in list(project_pages(chrome_src).items()) + list(guide_pages(chrome_src).items()):
         open(name, "w", encoding="utf-8").write(fill_tokens(h))
     write_site_files(pages)
     if os.path.exists("build/gen_config.py"):

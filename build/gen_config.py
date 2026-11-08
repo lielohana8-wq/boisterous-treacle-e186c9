@@ -122,6 +122,30 @@ def project_fields(services):
     ]
 
 
+def guide_fields(services):
+    svc_opts = [{"label": v["name"], "value": k} for k, v in services.items()]
+    return [
+        {"name": "title", "label": "Title in Google (title tag)", "widget": "string", "hint": "Up to 60 characters"},
+        {"name": "url_slug", "label": "Page address (slug)", "widget": "string", "pattern": ["^[a-z0-9-]+$", "Lowercase letters, digits and hyphens only"], "hint": "The page will live at /guides/<slug>"},
+        {"name": "published", "label": "Published", "widget": "boolean", "default": True},
+        {"name": "order", "label": "Order (1 = first)", "widget": "number", "value_type": "int", "default": 99, "required": False},
+        {"name": "date", "label": "Date", "widget": "datetime", "format": "YYYY-MM-DD", "date_format": "YYYY-MM-DD", "time_format": False, "required": False},
+        {"name": "description", "label": "Description in Google", "widget": "text", "hint": "Up to 160 characters"},
+        {"name": "tag", "label": "Small tag (e.g. Guide · Pricing)", "widget": "string", "default": "Guide"},
+        {"name": "h1", "label": "Heading (H1)", "widget": "string"},
+        {"name": "lead", "label": "Opening paragraph", "widget": "text"},
+        {"name": "hero", "label": "Photo (landscape)", "widget": "object", "fields": [{"name": "src", "label": "Image file", "widget": "image", "allow_multiple": False}, {"name": "alt", "label": "Image description (alt text)", "widget": "string", "required": False}]},
+        {"name": "hero_caption", "label": "Photo caption", "widget": "string", "required": False},
+        {"name": "service", "label": "Main service", "widget": "select", "options": svc_opts},
+        {"name": "related", "label": "Related services", "widget": "select", "multiple": True, "options": svc_opts, "required": False},
+        {"name": "sections", "label": "Sections", "widget": "list", "fields": [{"name": "h2", "label": "Heading", "widget": "string"}, {"name": "body", "label": "Text (HTML: <p>, <ul><li>, <b>, <a href>)", "widget": "text"}]},
+        {"name": "faq_heading", "label": "FAQ heading", "widget": "string", "required": False},
+        {"name": "faq", "label": "Questions and answers", "widget": "list", "collapsed": True, "fields": [{"name": "q", "label": "Question", "widget": "string"}, {"name": "a", "label": "Answer", "widget": "text"}]},
+        {"name": "cta_heading", "label": "Call-to-action heading (bottom)", "widget": "string", "required": False},
+        {"name": "cta_lead", "label": "Call-to-action text", "widget": "text", "required": False},
+    ]
+
+
 def site_fields(site):
     chrome = site.get("chrome", {})
     return [
@@ -167,6 +191,9 @@ def main():
             {"name": "projects", "label": "Jobs / Projects", "label_singular": "Job", "folder": "content/projects", "create": True, "delete": True,
              "extension": "json", "format": "json", "slug": "{{fields.url_slug}}", "identifier_field": "h1", "summary": "{{h1}}",
              "sortable_fields": ["order", "date", "h1"], "editor": {"preview": False}, "fields": project_fields(services)},
+            {"name": "guides", "label": "Guides (articles)", "label_singular": "Guide", "folder": "content/guides", "create": True, "delete": True,
+             "extension": "json", "format": "json", "slug": "{{fields.url_slug}}", "identifier_field": "h1", "summary": "{{h1}}", "sortable_fields": ["order", "date", "h1"], "editor": {"preview": False},
+             "fields": guide_fields(services)},
             {"name": "settings", "label": "Business details & settings", "editor": {"preview": False}, "files": [
                 {"name": "site", "label": "Business details (phone, email, hours, offer)", "file": "content/site.json", "fields": site_fields(site)},
                 {"name": "shared", "label": "Blocks that appear on many pages", "file": "content/shared.json", "fields": shared_fields}]},
