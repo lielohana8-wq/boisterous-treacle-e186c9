@@ -196,7 +196,19 @@ def main():
              "fields": guide_fields(services)},
             {"name": "settings", "label": "Business details & settings", "editor": {"preview": False}, "files": [
                 {"name": "site", "label": "Business details (phone, email, hours, offer)", "file": "content/site.json", "fields": site_fields(site)},
-                {"name": "shared", "label": "Blocks that appear on many pages", "file": "content/shared.json", "fields": shared_fields}]},
+                {"name": "shared", "label": "Blocks that appear on many pages", "file": "content/shared.json", "fields": shared_fields},
+                {"name": "reviews", "label": "Google reviews shown on the site", "file": "content/reviews.json", "fields": [
+                    {"name": "rating", "label": "Rating on Google (e.g. 4.9)", "widget": "string"},
+                    {"name": "count", "label": "Number of Google reviews", "widget": "string"},
+                    {"name": "checked", "label": "Date you last checked Google", "widget": "datetime", "format": "YYYY-MM-DD", "date_format": "YYYY-MM-DD", "time_format": False},
+                    {"name": "heading", "label": "Section heading", "widget": "string"},
+                    {"name": "lead", "label": "Intro line", "widget": "text"},
+                    {"name": "btn", "label": "Button text ({{count}} = number of reviews)", "widget": "string"},
+                    {"name": "items", "label": "Reviews (copy the text from Google exactly)", "widget": "list", "collapsed": True, "summary": "{{fields.name}} — {{fields.text}}", "fields": [
+                        {"name": "name", "label": "Reviewer name (first name + initial)", "widget": "string"},
+                        {"name": "text", "label": "Review text, word for word", "widget": "text"},
+                        {"name": "tags", "label": "Show on these pages", "widget": "select", "multiple": True, "required": False,
+                         "options": [{"label": "Home / About / Landing (first six)", "value": "home"}, {"label": "Prices page", "value": "prices"}] + [{"label": v["name"], "value": k} for k, v in services.items()]}]}]}]},
             {"name": "pages", "label": "Site pages (texts & photos)", "editor": {"preview": False}, "files": pages},
         ]}
     os.makedirs(ADMIN_DIR, exist_ok=True)

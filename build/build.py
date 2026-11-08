@@ -63,6 +63,73 @@ projects = sorted([dict(load(f), slug=_slug(f, load(f))) for f in glob.glob("con
 projects = [p for p in projects if p.get("published", True)]
 guides = sorted([dict(load(f), slug=_slug(f, load(f))) for f in glob.glob("content/guides/*.json")], key=lambda g: (g.get("order", 999), g["slug"]))
 guides = [g for g in guides if g.get("published", True)]
+reviews = load("content/reviews.json") if os.path.exists("content/reviews.json") else {"items": []}
+
+# ----------------------------------------------------------------------------- Google reviews
+REVIEWS_CSS = """
+/* google reviews */
+.gr{display:grid;gap:26px}
+.gr-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px 32px}
+.gr-head h2{margin-bottom:8px}
+.gr-head .lead{max-width:62ch}
+.gr-score{display:flex;align-items:center;gap:14px;padding:14px 18px;background:var(--card);border:1px solid var(--rule-2);border-radius:var(--r-card);box-shadow:var(--shadow);text-decoration:none;color:var(--ink)}
+.gr-score b{font-size:34px;line-height:1;letter-spacing:-.03em;font-weight:800}
+.gr-stars{display:flex;gap:2px;color:#E8A317}
+.gr-stars svg{width:18px;height:18px;fill:currentColor}
+.gr-score small{display:block;color:var(--mut);font-size:13.5px;margin-top:4px}
+.gr-score .g{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:14px}
+.gr-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;list-style:none;margin:0;padding:0}
+.gr-list li{background:var(--card);border:1px solid var(--rule-2);border-radius:var(--r-card);padding:24px 24px 20px;box-shadow:var(--shadow);display:grid;gap:14px;align-content:start;position:relative}
+.gr-list blockquote{padding-right:30px}
+.gr-list li::before{content:"\\201C";position:absolute;top:12px;right:18px;font-family:Georgia,serif;font-size:56px;line-height:1;color:var(--copper);opacity:.22}
+.gr-list blockquote{margin:0;font-size:16px;line-height:1.6;color:var(--ink-2)}
+.gr-list footer{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:14px;color:var(--mut)}
+.gr-list footer b{color:var(--ink);font-weight:700}
+.gr-list footer span{display:inline-flex;align-items:center;gap:6px}
+.gr-foot{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;justify-content:space-between;color:var(--mut);font-size:14px}
+@media(max-width:1000px){.gr-list{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.gr-list{grid-template-columns:1fr}.gr-score b{font-size:28px}}
+"""
+GOOGLE_G = ('<svg width="16" height="16" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/>'
+            '<path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h12.7c-.6 3-2.2 5.5-4.7 7.2l7.6 5.9c4.4-4.1 6.9-10.1 6.9-17.1z"/>'
+            '<path fill="#FBBC05" d="M10.5 28.7A14.5 14.5 0 0 1 9.7 24c0-1.6.3-3.2.8-4.7l-7.9-6.1A24 24 0 0 0 0 24c0 3.9.9 7.5 2.6 10.8l7.9-6.1z"/>'
+            '<path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.6-5.9c-2.1 1.4-4.9 2.3-8.3 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48z"/></svg>')
+STAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.2l1.4-7L2 9.4l7-.8z"/></svg>'
+
+
+def nice_date(iso):
+    try: return datetime.date.fromisoformat(str(iso)[:10]).strftime("%-d %B %Y")
+    except ValueError: return esc_text(iso)
+
+
+def reviews_block(page):
+    """Real Google reviews, quoted verbatim; three per service page, six on the home/about/landing pages."""
+    items = reviews.get("items", [])
+    if not items: return ""
+    key = next((k for k, s in services.items() if s["url"] == "/" + page[:-5]), None)
+    if key:
+        picked = [r for r in items if key in r.get("tags", [])] + [r for r in items if key not in r.get("tags", [])]
+        picked = picked[:3]
+    elif page == "chimney-service-prices-toronto.html":
+        picked = ([r for r in items if "prices" in r.get("tags", [])] + items)[:3]
+    else:
+        picked = ([r for r in items if "home" in r.get("tags", [])] + [r for r in items if "home" not in r.get("tags", [])])[:6]
+    seen, out = set(), []
+    for r in picked:
+        if r["text"] in seen: continue
+        seen.add(r["text"]); out.append(r)
+    url = site["google_profile"]
+    rating, count = str(reviews.get("rating", "")), str(reviews.get("count", ""))
+    stars = '<span class="gr-stars" aria-label="%s out of 5 stars">%s</span>' % (rating, STAR * 5)
+    cards = "".join('<li><blockquote>%s</blockquote><footer><b>%s</b><span>%sGoogle review</span></footer></li>' % (esc_text(r["text"]), esc_text(r["name"]), GOOGLE_G) for r in out)
+    btn = value(reviews.get("btn", "Read all reviews on Google")).replace("{{count}}", count)
+    return ('<section class="sec stone" id="google-reviews" aria-labelledby="gr-h"><div class="wrap gr">'
+            '<div class="gr-head"><div><h2 id="gr-h">%s</h2><p class="lead">%s</p></div>'
+            '<a class="gr-score" href="%s" target="_blank" rel="noopener"><b>%s</b><span>%s<small>%s Google reviews</small></span></a></div>'
+            '<ul class="gr-list">%s</ul>'
+            '<div class="gr-foot"><p>Rating and count as shown on Google on %s. Names shortened; text unedited.</p><a class="btn line" href="%s" target="_blank" rel="noopener">%s%s</a></div>'
+            '</div></section>') % (value(reviews.get("heading", "What Homeowners Wrote On Google")), value(reviews.get("lead", "")), url, esc_text(rating), stars, esc_text(count), cards,
+                                    nice_date(reviews.get("checked", TODAY)), url, GOOGLE_G, btn)
 
 PHONE_SVG = ('<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
              'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 '
@@ -84,7 +151,7 @@ def fill_slots(tpl, page_values):
     def slot(m):
         key = m.group(1)
         if key.startswith("site."): return m.group(0)  # tokens are done later
-        if key.startswith(("cards:", "project_link", "guide_links")): return m.group(0)
+        if key.startswith(("cards:", "project_link", "guide_links", "reviews")): return m.group(0)
         v = lookup(key)
         if v is None:
             print("  missing slot", key); return ""
@@ -344,11 +411,20 @@ GUIDE_CSS = """
 """
 
 
+GREAD_CSS = "\n".join(l for l in GUIDE_CSS.splitlines() if l.startswith(".gread") or l.startswith(".sec.stone .gread"))
+
+
 def guide_links(page):
-    """'Read the guide' row for a service page or the home page."""
+    """'Read the guide' row for a service page, an area page or the home page."""
     if not guides: return ""
     key = next((k for k, s in services.items() if s["url"] == "/" + page[:-5]), None)
-    gs = guides if page == "index.html" else [g for g in guides if g.get("service") == key or key in g.get("related", [])]
+    if page == "index.html":
+        gs = guides
+    elif page.startswith("chimney-services-"):  # area pages: a different trio per area, so every guide gets local links
+        start = sum(map(ord, page)) % len(guides)
+        gs = (guides * 2)[start:start + 3]
+    else:
+        gs = [g for g in guides if g.get("service") == key or key in g.get("related", [])]
     if not gs: return ""
     links = " · ".join('<a href="/guides/%s">%s</a>' % (g["slug"], value(g.get("short_title") or re.sub(r"[:—].*$", "", g["h1"]))) for g in gs[:3])
     return '<div class="wrap"><div class="gread"><span>Read the guide:</span> %s</div></div>' % links
@@ -510,7 +586,7 @@ def main():
         vals = load(os.path.join("content/pages", pg[:-5] + ".json"))
         out = fill_slots(tpl, vals)
         out = out.replace("{{cards:home}}", cards_block("home", pg)).replace("{{cards:ourwork}}", cards_block("ourwork", pg)).replace("{{cards:svc}}", cards_block("svc", pg))
-        out = out.replace("{{project_link}}", project_link(pg)).replace("{{guide_links}}", guide_links(pg))
+        out = out.replace("{{project_link}}", project_link(pg)).replace("{{guide_links}}", guide_links(pg)).replace("{{reviews}}", reviews_block(pg))
         out = fill_tokens(out)
         out = re.sub(r' data-cms(?:-img)?="[^"]*"| data-orig="[^"]*"', "", out)  # editor hooks stay in the templates only
         out = responsive_images(out)
@@ -518,6 +594,10 @@ def main():
             out = out.replace("</body>", '<script src="/booking.js" defer></script></body>', 1)
         if 'class="twoup"' in out and "/compare.js" not in out:  # before/after slider
             out = out.replace("</body>", '<script src="/compare.js" defer></script></body>', 1)
+        if 'class="wrap gr"' in out and ".gr-list{" not in out:  # Google reviews block styles
+            out = out.replace("</style>", REVIEWS_CSS + "</style>", 1)
+        if 'class="gread"' in out and ".gread{" not in out:  # "Read the guide" row needs its styles
+            out = out.replace("</style>", GREAD_CSS + "</style>", 1)
         if pg == "index.html":  # Netlify Identity invite / recovery links land on the home page: send them to the admin
             out = out.replace("<body>", "<body><script>if(/^#(invite|recovery|confirmation|email_change)_token=/.test(location.hash))location.replace('/%s/'+location.hash)</script>" % ADMIN_DIR, 1)
         open(pg, "w", encoding="utf-8").write(out)
